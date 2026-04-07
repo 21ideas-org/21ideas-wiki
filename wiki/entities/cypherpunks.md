@@ -6,9 +6,9 @@
 
 ## What the Cypherpunks Were
 
-The Cypherpunks were a loosely organized movement of cryptographers, programmers, and activists that formed in the early 1990s. Their thesis: cryptography could be used to protect individual privacy and freedom against state surveillance and control — and the best way to advance this was to *write code* rather than lobby politicians.
+The [[entities/cypherpunks|Cypherpunks]] were a loosely organized movement of cryptographers, programmers, and activists that formed in the early 1990s. Their thesis: cryptography could be used to protect individual [[concepts/privacy|privacy]] and freedom against state surveillance and control — and the best way to advance this was to *write code* rather than lobby politicians.
 
-The mailing list (founded 1992 by Eric Hughes, Timothy May, and John Gilmore) was the primary forum. At peak it had thousands of subscribers including Satoshi Nakamoto.
+The mailing list (founded 1992 by Eric Hughes, Timothy May, and John Gilmore) was the primary forum. At peak it had thousands of subscribers including [[entities/satoshi-nakamoto|Satoshi Nakamoto]].
 
 ---
 
@@ -21,11 +21,11 @@ The mailing list (founded 1992 by Eric Hughes, Timothy May, and John Gilmore) wa
 | John Gilmore | Co-founder; EFF co-founder |
 | Philip Zimmermann | Created PGP (1991); the first mass-market encryption tool |
 | David Chaum | eCash/DigiCash; blind signatures; the spiritual godfather |
-| Adam Back | Hashcash (1997); Blockstream CEO |
+| Adam Back | [[concepts/hashcash\|Hashcash]] (1997); Blockstream CEO |
 | Wei Dai | b-money (1998) |
 | Nick Szabo | Bit Gold, smart contracts |
-| Hal Finney | PGP dev; RPOW; first Bitcoin recipient |
-| Satoshi Nakamoto | Bitcoin (synthesized cypherpunk ideas into working system) |
+| [[entities/hal-finney\|Hal Finney]] | PGP dev; RPOW; first Bitcoin recipient |
+| [[entities/satoshi-nakamoto\|Satoshi Nakamoto]] | Bitcoin (synthesized cypherpunk ideas into working system) |
 
 ---
 
@@ -47,7 +47,7 @@ Written in 1988, distributed at "Crypto 88" conference, published on the mailing
 - This will fundamentally undermine the state's ability to tax and regulate
 - A new form of social order (crypto-anarchy) will emerge — not chaos, but voluntary cryptographic contracts
 
-Bitcoin fulfilled this prediction. May died in 2018 — not long enough to see Bitcoin become a trillion-dollar asset, but long enough to see SegWit.
+Bitcoin fulfilled this prediction. May died in 2018 — not long enough to see Bitcoin become a trillion-dollar asset, but long enough to see [[concepts/segwit|SegWit]].
 
 Source: `raw/Theory/philosophy/crypto-anarchist-manifesto.md`
 
@@ -68,13 +68,13 @@ The cypherpunks tried repeatedly to build digital cash:
 | Project | Year | Creator | Problem |
 |---------|------|---------|---------|
 | eCash / DigiCash | 1989 | David Chaum | Required trusted central mint; company went bankrupt |
-| Hashcash | 1997 | Adam Back | Anti-spam PoW; non-transferable |
+| [[concepts/hashcash\|Hashcash]] | 1997 | Adam Back | Anti-spam [[concepts/proof-of-work\|PoW]]; non-transferable |
 | b-money | 1998 | Wei Dai | Proposed but never implemented |
 | Bit Gold | 1998–2005 | Nick Szabo | Required trusted timestamping service |
 | RPOW | 2004 | Hal Finney | Transferable PoW tokens but required trusted server |
-| **Bitcoin** | **2008** | **Satoshi** | **Solved all prior problems** |
+| **Bitcoin** | **2008** | **[[entities/satoshi-nakamoto\|Satoshi]]** | **Solved all prior problems** |
 
-Satoshi explicitly cited Hashcash (Back) and b-money (Dai) in the whitepaper.
+[[entities/satoshi-nakamoto|Satoshi Nakamoto]] explicitly cited Hashcash (Back) and b-money (Dai) in the whitepaper.
 
 ---
 
@@ -87,6 +87,10 @@ This fight over encryption policy is the direct ancestor of today's debates over
 Source: `raw/Practice/security/pgp.md`
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/privacy|privacy]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/bitcoin|Bitcoin]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[entities/hal-finney|Hal Finney]] | [[entities/nick-szabo|Nick Szabo]] | [[history/pre-bitcoin-cypherpunks|pre-Bitcoin era]]
 
 ## Related Pages
 

@@ -6,7 +6,7 @@
 
 ## Overview
 
-Bitcoin did not emerge from nowhere. It is the culmination of 20+ years of cypherpunk research into digital cash, cryptographic protocols, and financial privacy. Five key systems preceded Bitcoin, each solving some problems and leaving others unsolved.
+Bitcoin did not emerge from nowhere. It is the culmination of 20+ years of [[entities/cypherpunks|cypherpunk]] research into digital cash, cryptographic protocols, and financial [[concepts/privacy|privacy]]. Five key systems preceded Bitcoin, each solving some problems and leaving others unsolved.
 
 Source: [[series/genesis-files]] (Aaron van Wirdum, Bitcoin Magazine)
 
@@ -24,9 +24,9 @@ David Chaum is the spiritual godfather of digital cash. In 1989 he founded DigiC
 
 ## Hashcash (Adam Back, 1997)
 
-Adam Back proposed Hashcash as an anti-spam mechanism. To send an email, you had to compute a proof of work — find a hash of the email header that starts with N zeros. This costs fractions of a second per email, negligible for humans, catastrophic for spammers at scale.
+Adam Back proposed Hashcash as an anti-spam mechanism. To send an email, you had to compute a [[concepts/proof-of-work|proof of work]] — find a hash of the email header that starts with N zeros. This costs fractions of a second per email, negligible for humans, catastrophic for spammers at scale.
 
-**The key insight**: proof of work creates **unforgeable costliness** — a token that cannot be counterfeited because it required real resources to produce.
+**The key insight**: [[concepts/proof-of-work|proof of work]] creates **unforgeable costliness** — a token that cannot be counterfeited because it required real resources to produce.
 
 **The limitation**: Hashcash tokens are single-use. They prove work was done but cannot be transferred. They are not money.
 
@@ -49,8 +49,8 @@ Satoshi also cites Dai in the whitepaper.
 
 ## Bit Gold (Nick Szabo, 1998–2005)
 
-Nick Szabo's Bit Gold was the closest precursor to Bitcoin in design. The scheme:
-1. Participant solves a cryptographic challenge (PoW)
+[[entities/nick-szabo|Nick Szabo]]'s Bit Gold was the closest precursor to Bitcoin in design. The scheme:
+1. Participant solves a cryptographic challenge ([[concepts/proof-of-work|PoW]])
 2. Solution is broadcast and timestamped by a quorum of servers
 3. Previous PoW strings are included in new ones, creating a chain
 4. Ownership is tracked via a property title registry
@@ -75,7 +75,7 @@ Reusable Proofs of Work was Hal Finney's attempt to make Hashcash tokens transfe
 
 **The limitation**: Required a trusted server. If the server is hacked, shut down, or coerced, the system fails. Hal acknowledged this explicitly.
 
-Satoshi solved it with the blockchain: distributed consensus replaces the trusted server.
+[[entities/satoshi-nakamoto|Satoshi]] solved it with the blockchain: distributed consensus replaces the trusted server.
 
 ---
 
@@ -95,6 +95,10 @@ Each system solved some problems and left others:
 Satoshi read all of these, synthesized the key insights, and solved the remaining problems with the blockchain + PoW + longest-chain rule.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/privacy|privacy]] | [[concepts/scarcity|scarcity]] | [[entities/cypherpunks|cypherpunks]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[entities/hal-finney|Hal Finney]] | [[entities/nick-szabo|Nick Szabo]] | [[series/genesis-files|Genesis Files]]
 
 ## Related Pages
 

@@ -48,9 +48,9 @@ Consumer adoption completes the demand loop: merchants accept Bitcoin because co
 
 ### 4. Security (Hash Rate)
 
-Higher price → higher miner revenue → more miners → more hash rate → more security.
+Higher price → higher miner revenue → more miners → more [[concepts/mining|hash rate]] → more security.
 
-The security network effect is economic: as Bitcoin's value grows, the cost of attacking it grows proportionally (a 51% attacker must outspend the entire honest mining network). Higher price also attracts more ASIC investment and manufacturing, making hash rate growth permanent rather than easily reversible.
+The security network effect is economic: as Bitcoin's value grows, the cost of attacking it grows proportionally (a 51% attacker must outspend the entire honest [[concepts/mining|mining]] network). Higher price also attracts more [[concepts/mining|ASIC]] investment and manufacturing, making hash rate growth permanent rather than easily reversible.
 
 Bitcoin's decentralized ledger also functions as a **triple-entry accounting system**: every transaction is debited, credited, and permanently confirmed by the network. This raises trust for merchants and institutional users alike.
 
@@ -66,7 +66,7 @@ Bitcoin is the most predictable, stable, and open monetary network to build on:
 - Permissionless innovation — no API key or partnership required
 - Longest track record of security and uptime
 
-The Lightning Network, multisig custody solutions, privacy tools, hardware wallets — all built by developers who chose Bitcoin because its base layer is stable enough to build on. Each new application increases Bitcoin's utility and attracts more developers, compounding this effect.
+The [[concepts/lightning-network|Lightning Network]], [[concepts/security|multisig]] custody solutions, [[concepts/privacy|privacy]] tools, [[concepts/security|hardware wallets]] — all built by developers who chose Bitcoin because its base layer is stable enough to build on. Each new application increases Bitcoin's utility and attracts more developers, compounding this effect.
 
 Mayer's 2015 argument: altcoins don't threaten this because Bitcoin already dominates as both a store of value and medium of exchange, making it the natural anchor for development.
 
@@ -118,15 +118,19 @@ The counter-argument is that a sufficiently superior technical or social innovat
 
 ## Connection to Monetary Theory
 
-The seven network effects explain the *mechanism* by which Bitcoin achieves the monetary properties described in [[concepts/money]]:
+The seven [[topics/network-effects|network effects]] explain the *mechanism* by which Bitcoin achieves the monetary properties described in [[concepts/money]]:
 
 - **Medium of exchange** — effects 2, 3, 6
 - **Store of value** — effects 1, 4, 7
 - **Unit of account** — emerges from effects 3, 6, 7 as adoption deepens
 
-Bitcoin is not adopted because it was declared money by a government. It is being adopted because each network effect makes it more useful, which attracts more users, which strengthens each effect further. This is the market-driven monetary emergence predicted by Austrian economics.
+Bitcoin is not adopted because it was declared [[concepts/money|money]] by a government. It is being adopted because each network effect makes it more useful, which attracts more users, which strengthens each effect further. This is the market-driven monetary emergence predicted by Austrian economics.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/money|sound money]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/scarcity|scarcity]] | [[concepts/mining|mining]] | [[concepts/lightning-network|Lightning Network]] | [[books/bullish-case|The Bullish Case for Bitcoin]] | [[series/gradually-then-suddenly|Gradually, Then Suddenly]]
 
 ## Related Pages
 

@@ -19,6 +19,8 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 - [SegWit](concepts/segwit.md) — 2017 soft fork: malleability fix, block weight, witness data
 - [Taproot](concepts/taproot.md) — 2021 soft fork: Schnorr signatures, MAST, P2TR, MuSig2
 - [Address Types](concepts/address-types.md) — P2PK, P2PKH, P2SH, P2WPKH, P2WSH, P2TR explained
+- [Hashcash](concepts/hashcash.md) — Adam Back's 1997 PoW anti-spam system; direct precursor to Bitcoin mining
+- [Cantillon Effect](concepts/cantillon-effect.md) — Non-neutral distributional effect of money creation; why Bitcoin is Cantillon-resistant
 
 ## Entities
 

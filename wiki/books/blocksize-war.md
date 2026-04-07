@@ -8,7 +8,7 @@
 
 The definitive account of the 2015–2017 conflict over Bitcoin's block size limit. Bier is a Bitcoin researcher who documented the conflict in real time; this book is a chronological, detailed history of every major event in the war. Available also as an audiobook.
 
-The war is the most important governance event in Bitcoin's history: it determined whether miners or full node operators controlled Bitcoin's rules. Small blockers won.
+The [[history/blocksize-war|blocksize war]] is the most important [[concepts/governance|governance]] event in Bitcoin's history: it determined whether [[concepts/mining|miners]] or [[concepts/governance|full node]] operators controlled Bitcoin's rules. Small blockers won.
 
 ---
 
@@ -40,11 +40,11 @@ The war is the most important governance event in Bitcoin's history: it determin
 
 ## Key Takeaways
 
-**Miners don't control Bitcoin**: Despite controlling hash rate and producing blocks, miners could not force a hard fork. Full node operators and the economic majority determined the outcome.
+**Miners don't control Bitcoin**: Despite controlling [[concepts/mining|hash rate]] and producing blocks, miners could not force a [[concepts/governance|hard fork]]. [[concepts/governance|Full node]] operators and the economic majority determined the outcome.
 
-**ASICBoost explains everything**: Bitmain's covert mining optimization was incompatible with SegWit. Their opposition to SegWit was not principled — it was economic self-interest. Once exposed, their credibility collapsed.
+**ASICBoost explains everything**: Bitmain's covert [[concepts/mining|mining]] optimization was incompatible with [[concepts/segwit|SegWit]]. Their opposition to SegWit was not principled — it was economic self-interest. Once exposed, their credibility collapsed.
 
-**UASF was the decisive move**: The threat of full node operators enforcing SegWit regardless of miner signaling changed the game. Miners faced losing all their revenue if they mined blocks the economic majority rejected.
+**UASF was the decisive move**: The threat of [[concepts/governance|full node]] operators enforcing [[concepts/segwit|SegWit]] regardless of miner signaling changed the game. Miners faced losing all their revenue if they mined blocks the economic majority rejected.
 
 **Craig Wright's involvement**: His fraudulent Satoshi claim and alignment with large blockers damaged that side's credibility. The book documents his behavior in detail.
 
@@ -57,6 +57,10 @@ The war is the most important governance event in Bitcoin's history: it determin
 The blocksize war set the template for Bitcoin governance: soft forks are the path of least resistance; hard forks require genuine network-wide consensus; full nodes are supreme. This template is now part of Bitcoin culture. Any future attempts to change Bitcoin's fundamental rules will face the same resistance — including attempts to raise the 21M cap.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/governance|governance]] | [[concepts/segwit|SegWit]] | [[concepts/mining|mining]] | [[concepts/lightning-network|Lightning Network]] | [[history/blocksize-war|blocksize war (summary)]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[history/timeline|timeline]]
 
 ## Related Pages
 

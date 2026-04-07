@@ -27,11 +27,11 @@ The final part extrapolates to civilizational spans, asking what Bitcoin's prope
 
 ## Core Insights
 
-**Bitcoin's properties are independent of geography**: The 21M cap, the 10-minute block time, the PoW security model — these are mathematical properties that apply at any scale. This is what makes Bitcoin interesting at cosmic scale.
+**Bitcoin's properties are independent of geography**: The [[concepts/scarcity|21M cap]], the 10-minute block time, the [[concepts/proof-of-work|PoW]] security model — these are mathematical properties that apply at any scale. This is what makes Bitcoin interesting at cosmic scale.
 
 **Block time is a fundamental constant**: Like the speed of light, Bitcoin's ~10-minute block time is a fundamental parameter. Civilization must adapt to Bitcoin's rhythm, not the other way around.
 
-**The energy-money connection at scale**: At Kardashev Type II scale, the connection between energy and money (embedded in PoW) becomes explicit. A star-harvesting civilization would mine Bitcoin proportionally to its energy capture.
+**The energy-money connection at scale**: At Kardashev Type II scale, the connection between energy and [[concepts/money|money]] (embedded in [[concepts/proof-of-work|PoW]]) becomes explicit. A star-harvesting civilization would [[concepts/mining|mine]] Bitcoin proportionally to its energy capture.
 
 **Implications for present**: The series reveals, by pushing Bitcoin's properties to extremes, what those properties actually are. The fact that Bitcoin works at interstellar scale without modification is evidence of its fundamental design quality.
 
@@ -42,6 +42,10 @@ The final part extrapolates to civilizational spans, asking what Bitcoin's prope
 The Bitcoin Astronomy series represents the "future" category of the 21ideas.org library — speculative, philosophical content that explores where Bitcoin might lead. It pairs naturally with [[philosophy/overview]] and [[entities/gigi]]'s "Bitcoin as Living Organism" framing.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/scarcity|scarcity]] | [[concepts/mining|mining]] | [[concepts/bitcoin|Bitcoin]] | [[philosophy/overview|philosophy overview]] | [[entities/gigi|Gigi]]
 
 ## Related Pages
 

@@ -6,7 +6,7 @@
 
 ## Summary
 
-Jeff Booth (Canadian entrepreneur) argues that technology is inherently deflationary — it makes things cheaper over time — and that central banks fighting this natural deflation with cheap credit are creating an increasingly unstable system. The solution is a deflationary monetary system aligned with technological reality: sound money (Bitcoin).
+Jeff Booth (Canadian entrepreneur) argues that technology is inherently deflationary — it makes things cheaper over time — and that central banks fighting this natural deflation with cheap credit are creating an increasingly unstable system. The solution is a deflationary monetary system aligned with technological reality: [[concepts/money|sound money]] (Bitcoin).
 
 The book is notable for arriving at the Bitcoin conclusion from a technology/business perspective rather than from Austrian economics or cypherpunk ideology.
 
@@ -51,9 +51,13 @@ Booth doesn't come to Bitcoin as a maximalist — he comes as an entrepreneur wh
 
 ## Complementary to Ammous
 
-Where Saifedean Ammous (*Fiat Standard*) argues from Austrian monetary theory, Booth argues from technology business cycles. They arrive at the same conclusion: the fiat debt system is unsustainable and Bitcoin is the exit. The two books are natural companions.
+Where Saifedean Ammous ([[books/fiat-standard|The Fiat Standard]]) argues from Austrian monetary theory, Booth argues from technology business cycles. They arrive at the same conclusion: the [[concepts/money|fiat]] debt system is unsustainable and Bitcoin is the exit. The two books are natural companions.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/money|sound money]] | [[concepts/scarcity|scarcity]] | [[concepts/bitcoin|Bitcoin]] | [[books/fiat-standard|The Fiat Standard]] | [[books/sovereign-individual|The Sovereign Individual]] | [[series/gradually-then-suddenly|Gradually, Then Suddenly]]
 
 ## Related Pages
 

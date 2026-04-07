@@ -11,7 +11,7 @@ Money is any good that functions as:
 2. **Store of value** — holds value over time
 3. **Unit of account** — used to price other goods
 
-The sources draw heavily on Austrian economics: money did not originate from state decree but emerged spontaneously from trade. Nick Szabo's "Shelling Out" traces the emergence of money from collectibles — shells, beads, rare stones — that served as unforgeable stores of value long before coinage.
+The sources draw heavily on Austrian economics: money did not originate from state decree but emerged spontaneously from trade. [[entities/nick-szabo|Nick Szabo]]'s "Shelling Out" traces the emergence of money from collectibles — shells, beads, rare stones — that served as unforgeable stores of value long before coinage.
 
 Sources: `raw/Theory/economics/chto-takoe-dengi.md`, `raw/Theory/economics/how-money-works.md`
 
@@ -50,7 +50,7 @@ Sources: `raw/Theory/economics/chto-takoe-dengi.md`, `raw/Theory/economics/how-m
 
 ## Sound Money vs. Hard Money
 
-**Sound money** = money that cannot be easily inflated by any party. The key test: *the stock-to-flow ratio*. Gold has high stock-to-flow (~60x); this is why it has been money for millennia. Bitcoin's stock-to-flow exceeds gold's after each halving.
+**[[concepts/money|Sound money]]** = money that cannot be easily inflated by any party. The key test: *the [[concepts/scarcity|stock-to-flow]]* ratio. Gold has high stock-to-flow (~60x); this is why it has been money for millennia. Bitcoin's stock-to-flow exceeds gold's after each [[concepts/scarcity|halving]].
 
 Sources: `raw/Books/fiatniy-standart/`, `raw/Books/Suverenitet-posredstvom-matematiki/`
 
@@ -58,7 +58,7 @@ Sources: `raw/Books/fiatniy-standart/`, `raw/Books/Suverenitet-posredstvom-matem
 
 ## Money as Claim on Human Time
 
-Robert Breedlove's framing (*Masters and Slaves of Money*): all money is ultimately a store of human time and energy. When a central bank inflates the money supply, it is literally confiscating the stored time of savers and transferring it to whoever receives the new money first (the Cantillon effect).
+Robert Breedlove's framing (*Masters and Slaves of Money*): all money is ultimately a store of human time and energy. When a central bank inflates the money supply, it is literally confiscating the stored time of savers and transferring it to whoever receives the new money first (the [[concepts/cantillon-effect|Cantillon effect]]). This is also why [[concepts/money|time preference]] matters: fiat money discourages long-term saving by eroding value.
 
 Historical analogy: European glass beads were cheap to produce but used as money in Africa, debasing local aggri beads. This mechanism enabled wealth extraction. The fiat system does the same globally.
 
@@ -80,11 +80,15 @@ Source: `raw/Theory/economics/in-defense-of-deflation.md`
 
 ## Social Scalability
 
-Nick Szabo's key insight: money is an *institutional technology* that lets humans cooperate beyond Dunbar's number (~150). Bitcoin is not trying to be computationally efficient. It trades computational waste for the elimination of trusted third parties — making economic cooperation possible at global scale without requiring trust.
+[[entities/nick-szabo|Nick Szabo]]'s key insight: money is an *institutional technology* that lets humans cooperate beyond Dunbar's number (~150). Bitcoin is not trying to be computationally efficient. It trades computational waste for the elimination of trusted third parties — making economic cooperation possible at global scale without requiring trust.
 
 Source: `raw/Theory/economics/money-blockchains-and-social-scalability.md`
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/scarcity|scarcity]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/cantillon-effect|Cantillon Effect]] | [[entities/nick-szabo|Nick Szabo]] | [[books/fiat-standard|The Fiat Standard]] | [[series/gradually-then-suddenly|Gradually, Then Suddenly]]
 
 ## Related Pages
 

@@ -12,7 +12,7 @@ Exchange   Hot Wallet   Hardware Wallet   Multisig
 (custodial) (software)   (single-sig)     (2-of-3+)
 ```
 
-The right setup depends on the amount you're holding and your threat model. For significant holdings, hardware wallet + multisig is the recommendation.
+The right setup depends on the amount you're holding and your threat model. For significant holdings, [[concepts/security|hardware wallet]] + [[concepts/security|multisig]] is the recommendation.
 
 ---
 
@@ -35,7 +35,7 @@ Keeps private keys offline. Significantly better than software wallets for savin
 
 ### Coldcard (`raw/Practice/hodl/coldcard.md`)
 - **Best security**: secure element, airgapped (microSD signing), open source firmware
-- Supports PSBT (Partially Signed Bitcoin Transactions)
+- Supports [[glossary|PSBT]] (Partially Signed Bitcoin Transactions)
 - Advanced features: duress PINs, brick-me PIN, passphrase support
 - Learning curve is steep; most powerful option
 
@@ -63,9 +63,9 @@ Keeps private keys offline. Significantly better than software wallets for savin
 Multisig requires M-of-N keys to spend. Eliminates single point of failure.
 
 **2-of-3 setup** (most common):
-- Key 1: Coldcard (home safe)
-- Key 2: SeedSigner (different location)
-- Key 3: Unchained Capital collaborative custody (or another hardware wallet with a trusted person)
+- Key 1: [[practice/storage|Coldcard]] (home safe)
+- Key 2: [[practice/storage|SeedSigner]] (different location)
+- Key 3: Unchained Capital collaborative custody (or another [[concepts/security|hardware wallet]] with a trusted person)
 
 One key lost → still spendable (use remaining 2)
 One key stolen → still secure (thief needs 2 keys)
@@ -83,7 +83,7 @@ Source: `raw/Theory/security/multisig-1.md`, `raw/Theory/security/multisig-2.md`
 
 ## Seed Phrase Best Practices
 
-- **12 words** (BIP39): adequate for most users; smaller backup to store
+- **12 words** ([[concepts/security|seed phrase]]): adequate for most users; smaller backup to store
 - **24 words**: higher entropy; recommended for large holdings
 - **Write on paper**: initial backup only; not durable long-term
 - **Metal plates**: fire/water resistant; essential for primary backup
@@ -107,6 +107,10 @@ Consider:
 - **Technical failure** (device breaks): solved by seed backup + multisig redundancy
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/security|self-custody]] | [[concepts/privacy|privacy]] | [[concepts/utxo|UTXO]] | [[concepts/address-types|address types]] | [[practice/buying|buying Bitcoin]] | [[practice/privacy-practice|privacy practice]] | [[practice/lightning-tools|Lightning tools]]
 
 ## Related Pages
 

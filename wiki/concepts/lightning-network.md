@@ -6,9 +6,9 @@
 
 ## What It Is
 
-The Lightning Network (LN) is a Layer 2 payment protocol built on top of Bitcoin. It enables near-instant, low-fee micropayments without recording every transaction on the blockchain. Two parties open a payment channel by locking BTC in a multisig UTXO on-chain; they can then exchange unlimited signed commitment transactions off-chain; they settle to the blockchain only when closing the channel.
+The Lightning Network (LN) is a Layer 2 payment protocol built on top of Bitcoin. It enables near-instant, low-fee micropayments without recording every transaction on the blockchain. Two parties open a [[concepts/lightning-network|payment channel]] by locking BTC in a [[concepts/security|multisig]] [[concepts/utxo|UTXO]] on-chain; they can then exchange unlimited signed commitment transactions off-chain; they settle to the blockchain only when closing the channel.
 
-Multi-hop routing uses **HTLC (Hash Time Lock Contracts)** to enable payments between parties who don't share a direct channel, without either party needing to trust the intermediary routers.
+Multi-hop routing uses **[[concepts/lightning-network|HTLC]] (Hash Time Lock Contracts)** to enable payments between parties who don't share a direct channel, without either party needing to trust the intermediary routers.
 
 Sources: `raw/Theory/lightning/`, `raw/Practice/lightning/`
 
@@ -18,13 +18,13 @@ Sources: `raw/Theory/lightning/`, `raw/Practice/lightning/`
 
 Bitcoin's base layer processes ~7 transactions per second. Global payment volume (Visa, etc.) is tens of thousands per second. The base layer is intentionally slow and expensive — it prioritizes security and decentralization over throughput. Lightning adds throughput at a higher layer without changing Bitcoin's base rules.
 
-SegWit (2017) was the prerequisite: it fixed transaction malleability, which was required for Lightning's commitment transaction scheme to work. Lightning was designed alongside SegWit.
+[[concepts/segwit|SegWit]] (2017) was the prerequisite: it fixed [[concepts/segwit|transaction malleability]], which was required for Lightning's commitment transaction scheme to work. Lightning was designed alongside SegWit.
 
 ---
 
 ## How Payment Channels Work
 
-1. Alice and Bob create a 2-of-2 multisig address and both sign a funding transaction (on-chain)
+1. Alice and Bob create a 2-of-2 [[concepts/security|multisig]] address and both sign a funding transaction (on-chain)
 2. They exchange signed "commitment transactions" — each reflects the current channel balance
 3. Any payment between them updates the commitment; old commitments are invalidated by sharing private revocation keys
 4. Either party can broadcast their latest commitment to settle on-chain at any time
@@ -97,11 +97,15 @@ See [[practice/lightning-tools]] for setup guides.
 
 ## Value-for-Value
 
-Lightning enables a new model for creator monetization: value-for-value. Instead of platforms taking a cut (YouTube, Spotify), listeners/readers pay creators directly via Lightning micropayments — "streaming sats." The Nostr protocol + Alby browser extension makes this seamless. Podcasting 2.0 uses this model.
+Lightning enables a new model for creator monetization: value-for-value. Instead of platforms taking a cut (YouTube, Spotify), listeners/readers pay creators directly via Lightning micropayments — "streaming sats." The Nostr protocol + Alby browser extension makes this seamless. Podcasting 2.0 uses this model. See [[entities/gigi|Gigi]]'s *Freedom of Value* for the philosophical case.
 
 Source: `raw/Theory/philosophy/freedom-of-value.md`
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/utxo|UTXO]] | [[concepts/segwit|SegWit]] | [[concepts/taproot|Taproot]] | [[concepts/privacy|privacy]] | [[concepts/security|multisig]] | [[practice/lightning-tools|Lightning tools]] | [[entities/gigi|Gigi]]
 
 ## Related Pages
 

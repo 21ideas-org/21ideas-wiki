@@ -6,7 +6,7 @@
 
 ## Overview
 
-The Blocksize War was a two-year conflict (2015–2017) over how to scale Bitcoin. Large blockers (miners, some businesses) wanted to increase the base block size limit (1MB) via a hard fork. Small blockers (developers, full node operators, most users) preferred a soft fork (SegWit) and Layer 2 scaling (Lightning). Small blockers won decisively.
+The [[history/blocksize-war|Blocksize War]] was a two-year conflict (2015–2017) over how to scale Bitcoin. Large blockers ([[concepts/mining|miners]], some businesses) wanted to increase the base block size limit (1MB) via a [[concepts/governance|hard fork]]. Small blockers (developers, [[concepts/governance|full node]] operators, most users) preferred a [[concepts/governance|soft fork]] ([[concepts/segwit|SegWit]]) and Layer 2 scaling ([[concepts/lightning-network|Lightning]]). Small blockers won decisively.
 
 Source: [[books/blocksize-war]] (Jonathan Bier's authoritative account)
 
@@ -57,7 +57,7 @@ Source: [[books/blocksize-war]] (Jonathan Bier's authoritative account)
 - No major Bitcoin Core developers sign
 
 **Aug 1, 2017 — Two forks:**
-- **UASF (BIP148) activates**: full node operators enforce SegWit rules; miners capitulate
+- **UASF ([[concepts/governance|BIP]]148) activates**: [[concepts/governance|full node]] operators enforce [[concepts/segwit|SegWit]] rules; miners capitulate
 - **Bitcoin Cash launches**: Roger Ver and Jihan Wu create 8MB hard fork chain; market immediately assigns it ~10% of Bitcoin's value (it fell further over time)
 
 **Aug 24, 2017:** SegWit officially activates on Bitcoin mainnet.
@@ -84,9 +84,13 @@ During the conflict, Craig Wright claimed to be Satoshi Nakamoto and threw his s
 
 ## Legacy
 
-The blocksize war established the template for Bitcoin governance: changes require genuine consensus, soft forks are strongly preferred over hard forks, and full nodes (not miners) are the ultimate arbiters of Bitcoin's rules. The SegWit activation also enabled the Lightning Network, which launched shortly after.
+The [[history/blocksize-war|blocksize war]] established the template for Bitcoin governance: changes require genuine consensus, [[concepts/governance|soft forks]] are strongly preferred over [[concepts/governance|hard forks]], and [[concepts/governance|full nodes]] (not miners) are the ultimate arbiters of Bitcoin's rules. The [[concepts/segwit|SegWit]] activation also enabled the [[concepts/lightning-network|Lightning Network]], which launched shortly after.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/governance|governance]] | [[concepts/segwit|SegWit]] | [[concepts/lightning-network|Lightning Network]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[books/blocksize-war|The Blocksize War (book)]] | [[history/timeline|timeline]]
 
 ## Related Pages
 

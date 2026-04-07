@@ -6,7 +6,7 @@
 
 ## The KYC Problem
 
-Most Bitcoin exchanges require KYC (Know Your Customer) — passport, ID, sometimes bank statements. The problem: this permanently links your identity to your Bitcoin addresses. Exchange databases get hacked. Governments compel exchanges to report or freeze funds. Once linked, every transaction from those addresses is tracked.
+Most Bitcoin exchanges require [[concepts/privacy|KYC]] (Know Your Customer) — passport, ID, sometimes bank statements. The problem: this permanently links your identity to your Bitcoin addresses. Exchange databases get hacked. Governments compel exchanges to report or freeze funds. Once linked, every transaction from those addresses is tracked.
 
 For maximum financial sovereignty, buy no-KYC. See [[concepts/privacy]] for the full argument.
 
@@ -14,8 +14,8 @@ For maximum financial sovereignty, buy no-KYC. See [[concepts/privacy]] for the 
 
 ## No-KYC Options
 
-### Hodl Hodl (`raw/Practice/buy/hodl-hodl.md`)
-P2P non-custodial exchange. Buyer and seller agree on terms; funds are locked in a 2-of-3 multisig contract (buyer + seller + Hodl Hodl). No ID required. Accepts many payment methods (bank transfer, cash, gift cards).
+### [[practice/buying|Hodl Hodl]] (`raw/Practice/buy/hodl-hodl.md`)
+[[practice/buying|P2P exchange]] (non-custodial). Buyer and seller agree on terms; funds are locked in a 2-of-3 [[concepts/security|multisig]] contract (buyer + seller + Hodl Hodl). No ID required. Accepts many payment methods (bank transfer, cash, gift cards).
 
 - **Pros**: No ID, non-custodial escrow, many payment methods, reasonable fees
 - **Cons**: Requires trust in counterparty (mitigated by reputation system), slower than centralized exchange
@@ -68,9 +68,13 @@ Source: `raw/Theory/economics/dollar-cost-averaging.md`
 
 ## After Buying: Self-Custody
 
-The most important step after buying: move your bitcoin to a wallet you control. An exchange balance is not Bitcoin — it is an IOU. See [[practice/storage]] for self-custody options.
+The most important step after buying: move your bitcoin to a wallet you control. An exchange balance is not Bitcoin — it is an IOU. See [[practice/storage]] for [[concepts/security|self-custody]] options.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/privacy|privacy]] | [[concepts/security|self-custody]] | [[concepts/utxo|UTXO]] | [[practice/storage|cold storage]] | [[practice/privacy-practice|privacy practice]] | [[practice/lightning-tools|Lightning tools]] | [[series/oxt-research|blockchain analysis]]
 
 ## Related Pages
 

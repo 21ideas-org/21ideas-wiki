@@ -6,13 +6,13 @@
 
 ## Who He Is
 
-Nick Szabo is a cryptographer, computer scientist, and legal scholar who was a central figure in the cypherpunk movement. He is best known for:
+[[entities/nick-szabo|Nick Szabo]] is a cryptographer, computer scientist, and legal scholar who was a central figure in the [[entities/cypherpunks|cypherpunk]] movement. He is best known for:
 - Inventing **Bit Gold** (~1998–2005) — a direct precursor to Bitcoin
 - Coining the term **smart contracts** (1994)
-- Writing **"Shelling Out"** — monetary anthropology tracing the origins of money
-- Writing **"Money, Blockchains, and Social Scalability"** — the key theoretical defense of Bitcoin's PoW design
+- Writing **"Shelling Out"** — monetary anthropology tracing the origins of [[concepts/money|money]]
+- Writing **"Money, Blockchains, and Social Scalability"** — the key theoretical defense of Bitcoin's [[concepts/proof-of-work|PoW]] design
 
-Szabo is widely suspected to be Satoshi Nakamoto; he has denied it.
+Szabo is widely suspected to be [[entities/satoshi-nakamoto|Satoshi Nakamoto]]; he has denied it.
 
 ---
 
@@ -31,9 +31,9 @@ Source: [[series/genesis-files]]
 
 ## "Shelling Out" (2002)
 
-A foundational essay tracing the origins of money through archaeological and anthropological evidence. Key argument: collectibles (shells, beads, rare stones) served as proto-money for hundreds of thousands of years because they had **unforgeable costliness** — they required real resources to produce, making them hard to counterfeit or inflate.
+A foundational essay tracing the origins of [[concepts/money|money]] through archaeological and anthropological evidence. Key argument: collectibles (shells, beads, rare stones) served as proto-money for hundreds of thousands of years because they had **unforgeable costliness** — they required real resources to produce, making them hard to counterfeit or inflate.
 
-This is the theoretical foundation for why PoW gives Bitcoin monetary value: like ancient collectibles, the costliness of mining is what makes the token scarce and trustworthy.
+This is the theoretical foundation for why [[concepts/proof-of-work|PoW]] gives Bitcoin monetary value: like ancient collectibles, the costliness of [[concepts/mining|mining]] is what makes the token [[concepts/scarcity|scarce]] and trustworthy.
 
 Source: `raw/Theory/history/shelling-out.md`
 
@@ -60,6 +60,10 @@ The computational "waste" of PoW is not waste; it is the price of eliminating tr
 Source: `raw/Theory/economics/money-blockchains-and-social-scalability.md`
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/money|money]] | [[concepts/scarcity|scarcity]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[entities/hal-finney|Hal Finney]] | [[entities/cypherpunks|cypherpunks]] | [[series/genesis-files|Genesis Files]]
 
 ## Related Pages
 

@@ -29,7 +29,7 @@ Source: `raw/Theory/protocol/bitcoin-address-types.md` (Tom Honzik / Unchained C
 
 ## P2PK (Pay-to-Public-Key)
 
-The original method Satoshi used. Bitcoin is sent directly to a public key (not an address). The first Bitcoin transaction ever (Satoshi → Hal Finney, block 170) used P2PK.
+The original method [[entities/satoshi-nakamoto|Satoshi]] used. Bitcoin is sent directly to a public key (not an address). The first Bitcoin transaction ever (Satoshi → [[entities/hal-finney|Hal Finney]], block 170) used P2PK.
 
 **Problems:** Exposes the full public key; more expensive; less private. No checksum. Now obsolete.
 
@@ -67,14 +67,14 @@ Introduced April 2012 (BIP16). Instead of paying to a key or raw script, you pay
 
 ## P2WPKH (Pay-to-Witness-Public-Key-Hash) — Native SegWit
 
-First native SegWit address type, introduced with the SegWit soft fork (August 2017). The SegWit equivalent of P2PKH.
+First native [[concepts/segwit|SegWit]] address type, introduced with the SegWit [[concepts/governance|soft fork]] (August 2017). The SegWit equivalent of [[concepts/address-types|P2PKH]].
 
 **Advantages over P2PKH:**
-- Witness data (signatures) gets a 75% discount in block weight → lower fees
-- Fixes transaction malleability
-- Better for Lightning Network
+- Witness data (signatures) gets a 75% discount in [[concepts/segwit|block weight]] → lower fees
+- Fixes [[concepts/segwit|transaction malleability]]
+- Better for [[concepts/lightning-network|Lightning Network]]
 
-**Addresses start with `bc1q`**, 42 characters, Bech32 encoded (no uppercase letters, better error detection).
+**Addresses start with `bc1q`**, 42 characters, [[concepts/segwit|Bech32]] encoded (no uppercase letters, better error detection).
 
 ---
 
@@ -98,13 +98,13 @@ Not a separate address type — SegWit outputs wrapped inside P2SH for backward 
 
 ## P2TR (Pay-to-Taproot) — `bc1p` addresses
 
-Introduced with Taproot (November 2021, BIP341). The most advanced address type.
+Introduced with [[concepts/taproot|Taproot]] (November 2021, BIP341). The most advanced address type.
 
 **Key features:**
-- Schnorr signatures instead of ECDSA
+- [[concepts/taproot|Schnorr]] signatures instead of ECDSA
 - Key path spending: simple single-signature spend, cheapest and most private
-- Script path spending: can satisfy any condition in a MAST (Merkle tree of scripts)
-- **All P2TR outputs look identical on-chain** — whether a single-sig, a 5-of-7 multisig, a Lightning channel, or a complex contract; this dramatically improves privacy
+- Script path spending: can satisfy any condition in a [[concepts/taproot|MAST]] (Merkle tree of scripts)
+- **All [[concepts/address-types|P2TR]] outputs look identical on-chain** — whether a single-sig, a 5-of-7 [[concepts/security|multisig]], a Lightning channel, or a complex contract; this dramatically improves [[concepts/privacy|privacy]]
 
 **Addresses start with `bc1p`**, 62 characters, Bech32m encoded.
 
@@ -119,9 +119,13 @@ See [[concepts/taproot]] for full details.
 - **Multisig** → P2WSH (`bc1q...`) or P2TR with MuSig2
 - **Avoid** → P2PKH (`1`) and P2SH (`3`) for new wallets (higher fees, less private)
 
-**Hardware wallets:** Coldcard, SeedSigner, Foundation Passport all support P2TR as of 2023+.
+**Hardware wallets:** [[practice/storage|Coldcard]], [[practice/storage|SeedSigner]], Foundation Passport all support [[concepts/address-types|P2TR]] as of 2023+.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/segwit|SegWit]] | [[concepts/taproot|Taproot]] | [[concepts/utxo|UTXO]] | [[concepts/privacy|privacy]] | [[concepts/security|multisig]] | [[concepts/lightning-network|Lightning Network]] | [[practice/storage|hardware wallets]]
 
 ## Related Pages
 

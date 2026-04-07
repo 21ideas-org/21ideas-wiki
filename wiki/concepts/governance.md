@@ -22,7 +22,7 @@ Source: `raw/Theory/protocol/bitcoin-governance.md` (Pierre Rochard), `raw/Theor
 
 ## Bitcoin Improvement Proposals (BIPs)
 
-Changes are proposed as BIPs (Bitcoin Improvement Proposals) — public documents specifying technical changes. Anyone can write a BIP. Adoption requires:
+Changes are proposed as [[concepts/governance|BIP]]s (Bitcoin Improvement Proposals) — public documents specifying technical changes. Anyone can write a BIP. Adoption requires:
 1. Developer review and refinement
 2. Implementation in Bitcoin Core
 3. Miner signaling (for soft forks) or node adoption
@@ -38,17 +38,17 @@ Examples:
 
 ## Soft Forks vs. Hard Forks
 
-**Soft fork:** New rules are backward-compatible. Non-upgraded nodes still accept blocks from upgraded nodes. SegWit and Taproot were soft forks.
+**[[concepts/governance|Soft fork]]:** New rules are backward-compatible. Non-upgraded nodes still accept blocks from upgraded nodes. [[concepts/segwit|SegWit]] and [[concepts/taproot|Taproot]] were soft forks.
 
-**Hard fork:** New rules break backward compatibility. The chain splits unless all nodes upgrade simultaneously. Hard forks require near-universal consensus — practically impossible in Bitcoin without extraordinary circumstances.
+**[[concepts/governance|Hard fork]]:** New rules break backward compatibility. The chain splits unless all nodes upgrade simultaneously. Hard forks require near-universal consensus — practically impossible in Bitcoin without extraordinary circumstances.
 
-The blocksize war (2015-2017) was largely a dispute over whether to implement a hard fork for larger blocks. Small blockers won; SegWit (soft fork) was the solution. See [[history/blocksize-war]].
+The [[history/blocksize-war|blocksize war]] (2015-2017) was largely a dispute over whether to implement a hard fork for larger blocks. Small blockers won; SegWit (soft fork) was the solution. See [[history/blocksize-war]].
 
 ---
 
 ## User-Activated Soft Fork (UASF)
 
-BIP148 (UASF) was a remarkable demonstration of user power. In 2017, when miners were stalling SegWit activation, a coalition of full node operators announced they would enforce SegWit rules starting August 1, 2017 — regardless of miner signaling. The economic threat of miners being on a chain that the economic majority rejected forced miner capitulation.
+BIP148 (UASF) was a remarkable demonstration of user power. In 2017, when miners were stalling [[concepts/segwit|SegWit]] activation, a coalition of [[concepts/governance|full node]] operators announced they would enforce SegWit rules starting August 1, 2017 — regardless of miner signaling. The economic threat of miners being on a chain that the economic majority rejected forced miner capitulation.
 
 This established a key precedent: **full nodes (not miners) are the ultimate arbiters of Bitcoin's rules.**
 
@@ -71,6 +71,10 @@ The 21 million supply cap is the most sacred rule. Changing it would require con
 Source: `raw/Theory/protocol/21-million-is-non-negotiable.md`
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/scarcity|21M cap]] | [[concepts/segwit|SegWit]] | [[concepts/taproot|Taproot]] | [[history/blocksize-war|blocksize war]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[books/blocksize-war|The Blocksize War]]
 
 ## Related Pages
 

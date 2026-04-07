@@ -31,6 +31,8 @@ Written in 1997, *The Sovereign Individual* predicted the transition from the in
 
 > "The emergence of the Internet will bring with it a new kind of money... digital cash... that will ultimately facilitate the withdrawal of individuals from the fiscal reach of the state."
 
+This prediction describes what [[concepts/bitcoin|Bitcoin]] and [[concepts/security|self-custody]] enable today.
+
 Davidson and Rees-Mogg predicted:
 - Digital cash that cannot be seized or inflated
 - Individuals able to operate across jurisdictions without physical presence
@@ -56,7 +58,7 @@ The "Sovereign Individual" is someone who:
 
 ## Why Bitcoin Community Loves This Book
 
-The Bitcoin community treats *The Sovereign Individual* as prophecy. Bitcoin is literally the "digital cash" the authors predicted. The book's analytical framework for understanding state power and individual sovereignty maps directly onto Bitcoin's value proposition: sound money that the state cannot inflate or confiscate.
+The Bitcoin community treats *The Sovereign Individual* as prophecy. Bitcoin is literally the "digital cash" the authors predicted. The book's analytical framework for understanding state power and individual sovereignty maps directly onto Bitcoin's value proposition: [[concepts/money|sound money]] that the state cannot inflate or confiscate. See [[concepts/security|self-custody]] for the practical implications.
 
 ---
 
@@ -68,6 +70,10 @@ The Bitcoin community treats *The Sovereign Individual* as prophecy. Bitcoin is 
 - Physical coercion is still very effective against most people
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/money|sound money]] | [[concepts/security|self-custody]] | [[concepts/governance|governance]] | [[entities/cypherpunks|cypherpunks]] | [[philosophy/overview|philosophy overview]] | [[books/price-of-tomorrow|The Price of Tomorrow]]
 
 ## Related Pages
 

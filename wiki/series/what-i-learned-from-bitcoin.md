@@ -34,7 +34,7 @@ The paradox: **You can't change Bitcoin, but Bitcoin will change you.**
 
 ### Lesson 2: Scarcity
 
-Digital files can be copied infinitely. Bitcoin introduced *absolute digital scarcity* — a concept previously impossible. The 21M cap is not just a number in code; it is enforced by every full node globally. This is as close to an unbreakable rule as humans have ever created.
+Digital files can be copied infinitely. Bitcoin introduced *absolute digital [[concepts/scarcity|scarcity]]* — a concept previously impossible. The [[concepts/scarcity|21M cap]] is not just a number in code; it is enforced by every [[concepts/governance|full node]] globally. This is as close to an unbreakable rule as humans have ever created.
 
 ### Lesson 3: Locality and Location
 
@@ -60,7 +60,7 @@ Bitcoin is so novel that even deeply technical people fail to understand it in t
 
 ## Part 2: Economic Teachings (not in library)
 
-Covers Bitcoin's economic lessons: sound money, time preference, savings, the problems of fiat. Gigi draws from Austrian economics as revealed through deep Bitcoin study.
+Covers Bitcoin's economic lessons: [[concepts/money|sound money]], [[concepts/money|time preference]], savings, the problems of [[concepts/money|fiat]]. [[entities/gigi|Gigi]] draws from Austrian economics as revealed through deep Bitcoin study.
 
 ---
 
@@ -77,6 +77,10 @@ Covers the technical insights Bitcoin provides: cryptographic proofs, decentrali
 See [[entities/gigi]] for Gigi's other work.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/scarcity|scarcity]] | [[concepts/money|sound money]] | [[concepts/governance|governance]] | [[concepts/bitcoin|Bitcoin]] | [[entities/gigi|Gigi]] | [[books/21-ways|21 Ways]] | [[philosophy/overview|philosophy overview]]
 
 ## Related Pages
 

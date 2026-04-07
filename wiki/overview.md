@@ -17,25 +17,25 @@
 The argument builds in layers:
 
 **1. Fiat money is broken by design.**
-Central banks create money by decree. This inflates away savings, enables wars, subsidizes bad banks, and distorts economic signals. The fiat system is not a neutral technology — it is a political tool. See: [[books/fiat-standard]], [[concepts/money]], [[history/timeline]].
+Central banks create [[concepts/money|fiat]] money by decree. This inflates away savings, enables wars, subsidizes bad banks, and distorts economic signals. The fiat system is not a neutral technology — it is a political tool. See: [[books/fiat-standard]], [[concepts/money]], [[history/timeline]].
 
 **2. Bitcoin solves the double-spend problem without trusted intermediaries.**
-Before Bitcoin, digital money required banks to track who owns what. Bitcoin uses [[concepts/proof-of-work]] and a public ledger so that anyone can verify ownership without trusting anyone. This is Satoshi's breakthrough. See: [[entities/satoshi-nakamoto]], [[books/inventing-bitcoin]].
+Before Bitcoin, digital money required banks to track who owns what. Bitcoin uses [[concepts/proof-of-work]] and a public ledger so that anyone can verify ownership without trusting anyone. This is [[entities/satoshi-nakamoto|Satoshi]]'s breakthrough. See: [[entities/satoshi-nakamoto]], [[books/inventing-bitcoin]].
 
 **3. 21 million is not negotiable.**
-The hard cap is enforced by math and network consensus, not by any company or government. [[concepts/scarcity]] — unlike gold, oil, or fiat — is *absolute* in Bitcoin. See: [[concepts/scarcity]], [[concepts/governance]].
+The hard cap is enforced by math and network consensus, not by any company or government. [[concepts/scarcity|Scarcity]] — unlike gold, oil, or fiat — is *absolute* in Bitcoin. The [[concepts/scarcity|21M cap]] is enforced by every [[concepts/governance|full node]]. See: [[concepts/scarcity]], [[concepts/governance]].
 
 **4. Bitcoin is the culmination of cypherpunk ideas developed over 20 years.**
-eCash → Hashcash → b-money → Bit Gold → RPOW → Bitcoin. Each precursor solved some problems, left others. Satoshi read all of them and synthesized them into a working system. See: [[entities/cypherpunks]], [[series/genesis-files]], [[history/pre-bitcoin-cypherpunks]].
+eCash → Hashcash → b-money → Bit Gold → RPOW → Bitcoin. Each precursor solved some problems, left others. [[entities/satoshi-nakamoto|Satoshi]] read all of them and synthesized them into a working system. See: [[entities/cypherpunks]], [[series/genesis-files]], [[history/pre-bitcoin-cypherpunks]].
 
 **5. Privacy and self-custody are not optional extras — they are the point.**
 If you trust a third party with your bitcoin, you do not have Bitcoin — you have an IOU. If your transactions are tracked, financial freedom is an illusion. See: [[concepts/privacy]], [[concepts/security]], [[practice/storage]], [[practice/privacy-practice]].
 
 **6. Lightning Network extends Bitcoin to everyday payments.**
-On-chain Bitcoin is slow and expensive for small payments. The [[concepts/lightning-network]] adds instant, near-free micropayments as a second layer, without changing Bitcoin's base rules.
+On-chain Bitcoin is slow and expensive for small payments. The [[concepts/lightning-network]] adds instant, near-free micropayments as a second layer, without changing Bitcoin's base rules. [[concepts/segwit|SegWit]] (2017) was the prerequisite that enabled it.
 
 **7. Altcoins are not alternatives — they are distractions.**
-Proof-of-Stake systems cannot actually achieve consensus (the "validator cartel" problem). Every altcoin reintroduces centralization, trusted parties, or inflation. The sources are explicit: Bitcoin, not crypto. See: [[philosophy/overview]].
+Proof-of-Stake systems cannot actually achieve consensus (the "validator cartel" problem). Every altcoin reintroduces centralization, trusted parties, or inflation. The sources are explicit: Bitcoin, not crypto. See: [[philosophy/overview]], [[concepts/proof-of-work]].
 
 ---
 
@@ -59,6 +59,12 @@ A recurring tension in the source material: the easiest Bitcoin experience (cust
 | Alex Gladstein — *Petrodollar / Structural Adjustment* | Geopolitics | USD hegemony harms the Global South; Bitcoin as exit |
 | Eric Hughes — *Cypherpunks Manifesto* | Privacy | "Cypherpunks write code"; privacy as social good |
 | Robert Breedlove — *Masters and Slaves of Money* | Philosophy of money | All money is a claim on human time; inflation steals time |
+
+---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/money|sound money]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/scarcity|scarcity]] | [[concepts/privacy|privacy]] | [[concepts/security|self-custody]] | [[concepts/lightning-network|Lightning Network]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[entities/cypherpunks|cypherpunks]]
 
 ---
 

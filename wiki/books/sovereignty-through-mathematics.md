@@ -31,11 +31,11 @@ The title captures the central argument: Bitcoin achieves sovereignty not throug
 
 ## Key Arguments
 
-**Financial Atheism**: The book opens with an analogy to religious faith. We accept fiat money as valuable because we were told to, just as people accept religious claims. Bitcoin forces a reckoning: either you understand why it has value (it is the hardest, most verifiable, most portable money ever created), or you're taking it on faith just like fiat.
+**Financial Atheism**: The book opens with an analogy to religious faith. We accept [[concepts/money|fiat]] money as valuable because we were told to, just as people accept religious claims. Bitcoin forces a reckoning: either you understand why it has value (it is the hardest, most verifiable, most portable [[concepts/money|sound money]] ever created), or you're taking it on faith just like fiat.
 
 **Immaculate Conception**: The circumstances of Bitcoin's creation are uniquely unreplicable: anonymous creator, no pre-mine, no company, no founder reward. Satoshi disappeared before Bitcoin had significant monetary value. Any future cryptocurrency is created *after* Bitcoin exists — making it trivially easy to ask "who benefits?" The first-mover advantage is not just technical but philosophical.
 
-**Absolute Scarcity**: For the first time in history, a resource exists that is *absolutely* scarce — not just relatively scarce (like gold, where we could theoretically mine more). The 21M cap is enforced by math and every full node on the network. This is new to the universe.
+**Absolute Scarcity**: For the first time in history, a resource exists that is *absolutely* [[concepts/scarcity|scarce]] — not just relatively scarce (like gold, where we could theoretically mine more). The [[concepts/scarcity|21M cap]] is enforced by math and every [[concepts/governance|full node]] on the network. This is new to the universe.
 
 **HODL as Strategy**: Holding bitcoin over time is the rational strategy for anyone who understands what they're holding. The book frames this not as speculation but as aligning one's savings with the best store of value. "Stack sats, shrug."
 
@@ -48,6 +48,10 @@ The title captures the central argument: Bitcoin achieves sovereignty not throug
 - Anyone skeptical that Bitcoin is intellectually serious
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/scarcity|scarcity]] | [[concepts/money|sound money]] | [[concepts/governance|governance]] | [[concepts/bitcoin|Bitcoin]] | [[books/inventing-bitcoin|Inventing Bitcoin]] | [[books/bullish-case|The Bullish Case for Bitcoin]] | [[entities/gigi|Gigi]]
 
 ## Related Pages
 

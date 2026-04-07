@@ -18,10 +18,10 @@ Bitcoin's design is not arbitrary — each component exists to solve a specific 
 
 1. You need a ledger (blockchain)
 2. The ledger needs to be distributed (no single point of failure)
-3. You need a way to agree on the ledger without trusting anyone (PoW + longest chain rule)
+3. You need a way to agree on the ledger without trusting anyone ([[concepts/proof-of-work|PoW]] + longest chain rule)
 4. You need accounts without identity (public/private key cryptography)
-5. You need to prevent inflation (fixed block rewards + halving schedule)
-6. You need rules everyone follows (consensus rules enforced by full nodes)
+5. You need to prevent inflation (fixed [[concepts/scarcity|block reward]]s + [[concepts/scarcity|halving]] schedule)
+6. You need rules everyone follows (consensus rules enforced by [[concepts/governance|full nodes]])
 
 ---
 
@@ -55,6 +55,10 @@ Bitcoin's design is not arbitrary — each component exists to solve a specific 
 - Readers who have basic numeracy and comfort with logical argument
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/scarcity|scarcity]] | [[concepts/governance|governance]] | [[concepts/mining|mining]] | [[concepts/utxo|UTXO]] | [[books/sovereignty-through-mathematics|Sovereignty Through Mathematics]]
 
 ## Related Pages
 

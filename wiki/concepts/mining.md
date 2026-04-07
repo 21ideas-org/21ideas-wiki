@@ -6,9 +6,9 @@
 
 ## What Mining Is
 
-Bitcoin mining is the process of:
-1. Collecting pending transactions from the mempool into a candidate block
-2. Finding a valid Proof of Work hash for that block
+Bitcoin [[concepts/mining|mining]] is the process of:
+1. Collecting pending transactions from the [[glossary|mempool]] into a candidate block
+2. Finding a valid [[concepts/proof-of-work|Proof of Work]] hash for that block
 3. Broadcasting the valid block to the network
 4. Receiving the block reward (new bitcoin subsidy + transaction fees)
 
@@ -20,7 +20,7 @@ Source: `raw/Theory/protocol/mining-walkthrough.md` (Arman The Parman / Bitcoin 
 
 ## SHA-256: The Hash Function
 
-Bitcoin uses the **SHA-256** (Secure Hash Algorithm, 256-bit) hash function. Properties:
+Bitcoin uses the **[[concepts/mining|SHA-256]]** (Secure Hash Algorithm, 256-bit) hash function. Properties:
 
 - **Fixed output size:** Any input → always a 256-bit (64 hex character) output
 - **Deterministic:** Same input always produces the same output
@@ -92,7 +92,7 @@ Bitcoin network hash rate as of 2024: ~500–700 EH/s. A single modern ASIC mine
 
 ## ASIC Miners
 
-**ASIC (Application-Specific Integrated Circuit):** Chips designed exclusively to compute SHA-256 hashes. Far more efficient than CPUs or GPUs for this task.
+**[[concepts/mining|ASIC]] (Application-Specific Integrated Circuit):** Chips designed exclusively to compute [[concepts/mining|SHA-256]] hashes. Far more efficient than CPUs or GPUs for this task.
 
 Key ASICs:
 - Antminer S19 XP: ~140 TH/s, ~3,000W
@@ -114,7 +114,7 @@ Pool centralization is watched carefully — if any pool approaches 50% of hash 
 
 ## The Block Reward
 
-Block reward = **block subsidy + transaction fees**.
+[[concepts/scarcity|Block reward]] = **block subsidy + transaction fees**.
 
 | Halving epoch | Subsidy |
 |---------------|---------|
@@ -140,6 +140,10 @@ Bitcoin mining consumes significant energy — this is intentional (PoW security
 Source: `raw/Theory/economics/bitcoin-is-not-harmful-for-the-environment.md`, [[series/gradually-then-suddenly]] Part 4.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/scarcity|scarcity / halving]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/governance|full nodes]] | [[concepts/utxo|UTXO]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[topics/network-effects|network effects]]
 
 ## Related Pages
 

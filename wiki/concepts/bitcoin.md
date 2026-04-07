@@ -30,17 +30,17 @@ Sources: `raw/Start/start.md`, `raw/Books/izobretaem-bitkoin/`
 | **Censorship-resistant** | No party can block valid transactions |
 | **Pseudonymous** | Transactions are public; identities are not |
 | **Trustless** | No need to trust any counterparty |
-| **Programmable** | Scripts enable conditional spending (multisig, timelocks, etc.) |
+| **Programmable** | Scripts enable conditional spending ([[concepts/security\|multisig]], timelocks, etc.) |
 
 ---
 
 ## How It Works (High Level)
 
 1. **Transactions** — signed messages transferring ownership of [[utxo|UTXOs]] from one address to another
-2. **Mempool** — transactions broadcast to the network wait in a pool until confirmed
-3. **Mining** — miners compete to include transactions in a block by solving a [[proof-of-work|Proof of Work]] puzzle
+2. **Mempool** — transactions broadcast to the network wait in a [[glossary|mempool]] until confirmed
+3. **[[concepts/mining|Mining]]** — [[concepts/mining|miners]] compete to include transactions in a block by solving a [[proof-of-work|Proof of Work]] puzzle
 4. **Blockchain** — a chain of blocks, each referencing the previous; tamper-evident by design
-5. **Full nodes** — nodes download and verify every block independently; they enforce the rules
+5. **[[concepts/governance|Full nodes]]** — nodes download and verify every block independently; they enforce the rules
 6. **Consensus rules** — all nodes agree on the same rules; violations are rejected
 
 ---
@@ -52,8 +52,8 @@ Sources: `raw/Start/start.md`, `raw/Books/izobretaem-bitkoin/`
 | Total supply | 21,000,000 BTC |
 | Smallest unit | 1 satoshi = 0.00000001 BTC |
 | Block time | ~10 minutes |
-| Halving interval | ~210,000 blocks (~4 years) |
-| Current block reward (2024) | 3.125 BTC |
+| [[concepts/scarcity\|Halving]] interval | ~210,000 blocks (~4 years) |
+| Current [[concepts/scarcity\|block reward]] (2024) | 3.125 BTC |
 | Last bitcoin mined | ~year 2140 |
 | Difficulty adjustment | Every 2,016 blocks (~2 weeks) |
 
@@ -62,9 +62,9 @@ Sources: `raw/Start/start.md`, `raw/Books/izobretaem-bitkoin/`
 ## Why Bitcoin Specifically
 
 The sources are explicit: Bitcoin is not interchangeable with "crypto" or "blockchain." Bitcoin has properties that no other system has achieved:
-- The longest PoW chain (most security)
+- The longest [[concepts/proof-of-work|PoW]] chain (most security)
 - Highest Lindy effect (oldest, most battle-tested)
-- Fixed supply with credibly neutral governance
+- Fixed supply with credibly neutral [[concepts/governance|governance]]
 - No pre-mine, no founder reward, no central entity
 
 See [[philosophy/overview]] for the full argument against altcoins.
@@ -76,10 +76,14 @@ See [[philosophy/overview]] for the full argument against altcoins.
 | Upgrade | Date | What It Added |
 |---------|------|--------------|
 | [[segwit\|SegWit]] | Aug 2017 | Fixed transaction malleability; enabled Lightning; ~2x block capacity |
-| Taproot | Nov 2021 | Schnorr signatures, MAST, improved privacy and smart contract flexibility |
-| MuSig2 | 2023+ | Efficient N-of-N Schnorr multisig |
+| [[concepts/taproot\|Taproot]] | Nov 2021 | [[concepts/taproot\|Schnorr]] signatures, [[concepts/taproot\|MAST]], improved privacy and smart contract flexibility |
+| [[concepts/taproot\|MuSig2]] | 2023+ | Efficient N-of-N [[concepts/taproot\|Schnorr]] multisig |
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/scarcity|scarcity]] | [[concepts/mining|mining]] | [[concepts/utxo|UTXO]] | [[concepts/governance|governance]] | [[concepts/segwit|SegWit]] | [[concepts/taproot|Taproot]] | [[concepts/lightning-network|Lightning Network]] | [[concepts/security|self-custody]]
 
 ## Related Pages
 

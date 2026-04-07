@@ -6,7 +6,7 @@
 
 ## Overview
 
-A 4-part series written by the developers of Samourai Wallet explaining blockchain analysis from the attacker's perspective — so that Bitcoin users can understand and defeat it. Also available as a video playlist.
+A 4-part series written by the developers of Samourai Wallet explaining [[series/oxt-research|blockchain analysis]] from the attacker's perspective — so that Bitcoin users can understand and defeat it. Also available as a video playlist.
 
 The series represents the deepest treatment of Bitcoin privacy in the 21ideas.org library. Understanding the attacker's view is the foundation of meaningful privacy practice.
 
@@ -33,13 +33,13 @@ Source files: `oxt-1.md` through `oxt-4.md`
 
 ### CIOH (Common Input Ownership Heuristic)
 
-The most powerful blockchain analysis heuristic: **if multiple inputs appear in the same transaction, they likely come from the same wallet.**
+The most powerful [[series/oxt-research|blockchain analysis]] heuristic: **if multiple [[concepts/utxo|UTXO]]s appear in the same transaction, they likely come from the same wallet.**
 
 Why: to spend multiple UTXOs, you must provide signatures for each — which requires controlling all the corresponding private keys. Standard wallets only have one user's keys.
 
 **Consequence:** An analyst seeing UTXOs A, B, C combined in one transaction infers A, B, C belong to the same entity. If A was identified (via KYC or other means), B and C are now also identified — even if they came from separate, previously unlinked sources.
 
-**CoinJoin defeats CIOH:** When 5 users combine inputs in a single transaction with equal outputs, the CIOH cannot determine which input belongs to which user.
+**[[concepts/privacy|CoinJoin]] defeats CIOH:** When 5 users combine inputs in a single transaction with equal outputs, the CIOH cannot determine which input belongs to which user.
 
 ### Change Detection
 
@@ -60,7 +60,7 @@ Following the flow of funds through multiple hops. Even after N transactions, if
 
 The third part provides the practical defensive toolkit:
 
-**CoinJoin (Whirlpool):**
+**[[concepts/privacy|CoinJoin]] ([[practice/privacy-practice|Whirlpool]]):**
 - Equal-output transactions break CIOH and make input-output linking impossible
 - 5 parties in, 5 equal outputs out → analyst cannot determine which input paid which output
 - "Toxic change" concept: the unequal pre-mix change retains prior history; treat separately from post-mix coins
@@ -106,6 +106,10 @@ The OXT Research series is the analytical foundation for the privacy practice gu
 *Note: Samourai Wallet developers (Keonne Rodriguez and William Hill) were arrested by the DOJ in April 2024. The OXT research and Whirlpool tools remain, though the ecosystem is under pressure.*
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/privacy|privacy]] | [[concepts/utxo|UTXO]] | [[practice/privacy-practice|privacy practice]] | [[practice/buying|no-KYC buying]] | [[entities/cypherpunks|cypherpunks]] | [[concepts/bitcoin|Bitcoin]]
 
 ## Related Pages
 

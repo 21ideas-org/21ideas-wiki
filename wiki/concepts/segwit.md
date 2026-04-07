@@ -9,7 +9,7 @@
 SegWit (Segregated Witness) is a soft fork protocol upgrade activated on Bitcoin on **August 24, 2017** (block 481,824). It changed the structure of Bitcoin transactions in two key ways:
 
 1. **Separated the witness data** (signatures/unlock scripts) from the rest of the transaction data
-2. **Changed how the Transaction ID (TXID) is calculated** — the TXID now excludes witness data
+2. **Changed how the [[concepts/segwit|TXID]] is calculated** — the [[concepts/segwit|TXID]] now excludes witness data
 
 Source: `raw/Theory/protocol/segwit.md` (translation of Greg Walker / learnmeabitcoin.com)
 
@@ -38,13 +38,13 @@ The TXID now reflects *what moves* (inputs/outputs) but not *how it's validated*
 
 In legacy transactions, the TXID could be changed by modifying the signature (signatures can have equivalent valid forms). A third party relaying a transaction could alter the TXID before it was confirmed — causing the sender to think the transaction failed when it actually succeeded with a different ID.
 
-**Why this mattered for Lightning:** Lightning Network's payment channel design requires knowing the TXID of the funding transaction to build the refund transaction. If the TXID could be changed, the refund transaction would become invalid, making Lightning impossible to build safely.
+**Why this mattered for [[concepts/lightning-network|Lightning Network]]:** Lightning's [[concepts/lightning-network|payment channel]] design requires knowing the TXID of the funding transaction to build the refund transaction. If the TXID could be changed, the refund transaction would become invalid, making Lightning impossible to build safely.
 
-SegWit fixed malleability: since signatures are excluded from the TXID calculation, changing the signature doesn't change the TXID.
+SegWit fixed [[concepts/segwit|malleability]]: since signatures are excluded from the TXID calculation, changing the signature doesn't change the TXID.
 
 ### Problem 2: Block Capacity
 
-SegWit introduced a new "block weight" metric:
+SegWit introduced a new "[[concepts/segwit|block weight]]" metric:
 - Non-witness data: 4 weight units per byte
 - Witness data: 1 weight unit per byte (discounted)
 - Block weight limit: 4,000,000 weight units
@@ -61,13 +61,13 @@ Since witness data is cheaper, effective block capacity increased from ~1MB to ~
 | P2WSH | `bc1q` (62 chars) | Native SegWit multisig/script; SHA-256 only |
 | P2SH-P2WPKH | `3` | "Nested SegWit" — SegWit inside P2SH for backward compatibility |
 
-**Bech32 encoding:** Unlike legacy Base58 addresses, Bech32 has no uppercase letters, includes error detection, and is more compact. Addresses starting with `bc1` are native SegWit.
+**[[concepts/segwit|Bech32]] encoding:** Unlike legacy Base58 addresses, Bech32 has no uppercase letters, includes error detection, and is more compact. Addresses starting with `bc1` are native SegWit.
 
 ---
 
 ## The Blocksize War Context
 
-SegWit was the solution to the 2015-2017 scaling debate. Large blockers wanted a hard fork increasing block size; small blockers (and Bitcoin Core developers) proposed SegWit as a soft fork that:
+SegWit was the solution to the 2015-2017 scaling debate. Large blockers wanted a [[concepts/governance|hard fork]] increasing block size; small blockers (and Bitcoin Core developers) proposed SegWit as a [[concepts/governance|soft fork]] that:
 - Increased capacity without a hard fork
 - Fixed malleability (enabling Lightning)
 - Kept full node costs manageable
@@ -81,6 +81,10 @@ The UASF (BIP148) forced SegWit activation when miners stalled. SegWit2x (SegWit
 SegWit was the prerequisite for the Lightning Network. Without malleability fixed, Lightning's payment channel design couldn't be safely constructed. Lightning launched and scaled rapidly after SegWit activation in August 2017. See [[concepts/lightning-network]].
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/taproot|Taproot]] | [[concepts/address-types|address types]] | [[concepts/utxo|UTXO]] | [[concepts/lightning-network|Lightning Network]] | [[concepts/governance|soft fork]] | [[history/blocksize-war|blocksize war]] | [[books/blocksize-war|The Blocksize War]]
 
 ## Related Pages
 

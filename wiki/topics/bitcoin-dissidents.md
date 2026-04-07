@@ -6,7 +6,7 @@
 
 ## Overview
 
-Bitcoin's properties — permissionless, censorship-resistant, borderless — make it a critical tool for dissidents, activists, and journalists operating under authoritarian regimes. This is not a hypothetical use case: in 2020, multiple real-world political movements adopted Bitcoin when their banking access was cut off.
+Bitcoin's properties — permissionless, censorship-resistant, borderless — make it a critical tool for [[topics/bitcoin-dissidents|dissidents]], [[topics/bitcoin-dissidents|activists]], and journalists operating under authoritarian regimes. This is not a hypothetical use case: in 2020, multiple real-world political movements adopted Bitcoin when their banking access was cut off.
 
 As Alex Gladstein (Human Rights Foundation) put it: *"You could say Bitcoin's 'headquarters' is now in Lagos. Or Minsk. Or Hong Kong."*
 
@@ -22,8 +22,8 @@ The same properties that Bitcoin advocates discuss technically become existentia
 |-----------------|-----------------|
 | No permission required | Can receive funds without bank account |
 | Censorship-resistant | Regime cannot block transactions |
-| Pseudonymous | Donors can give without identification |
-| Self-custodied | Funds cannot be frozen or confiscated |
+| Pseudonymous | Donors can give without identification — see [[concepts/privacy|privacy]] |
+| [[concepts/security|Self-custodied]] | Funds cannot be frozen or confiscated |
 | Global | Receive support from anyone worldwide |
 
 The pattern repeats across cases: **fiat payment channels fail first; Bitcoin remains the last resort.**
@@ -111,6 +111,10 @@ The question *"who actually needs Bitcoin?"* is answered not by bitcoiners but b
 > *"For us, Bitcoin is simply money."* — Leonid Volkov
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/privacy|privacy]] | [[concepts/security|self-custody]] | [[entities/cypherpunks|cypherpunks]] | [[philosophy/overview|philosophy overview]] | [[series/gradually-then-suddenly|Gradually, Then Suddenly]] | [[series/silk-road|Silk Road]]
 
 ## Related Pages
 

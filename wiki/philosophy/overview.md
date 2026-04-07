@@ -14,23 +14,23 @@ The 21ideas.org source library contains strong philosophical themes, mostly in t
 
 ### 1. Privacy as Fundamental Right
 
-Eric Hughes (1993): "Privacy is not secrecy... Privacy is the power to selectively reveal oneself to the world." An open society requires anonymous transaction capability. Cypherpunks build systems rather than wait for political permission. Cryptography makes geographic enforcement irrelevant.
+Eric Hughes (1993): "Privacy is not secrecy... Privacy is the power to selectively reveal oneself to the world." An open society requires anonymous transaction capability. [[entities/cypherpunks|Cypherpunks]] build systems rather than wait for political permission. Cryptography makes geographic enforcement irrelevant. See [[concepts/privacy]] for the practical dimension.
 
 Sources: `cypherpunks-manifesto.md`, `crypto-anarchist-manifesto.md`
 
 ### 2. Spontaneous Order and Emergent Money
 
-Drawing on Austrian/Hayekian tradition: money did not originate from state decree but emerged spontaneously from trade (Nick Szabo's "Shelling Out"). Law, language, and money are all spontaneous order phenomena. Bitcoin joins this lineage — it was not created by decree, it emerged from mathematical necessity.
+Drawing on Austrian/Hayekian tradition: money did not originate from state decree but emerged spontaneously from trade ([[entities/nick-szabo|Nick Szabo]]'s "Shelling Out"). Law, language, and [[concepts/money|money]] are all spontaneous order phenomena. Bitcoin joins this lineage — it was not created by decree, it emerged from mathematical necessity.
 
 Sources: `shelling-out.md`, `inalienable-property-rights.md`, `bitcoin-equals-freedom.md`
 
 ### 3. Bitcoin as Living Organism
 
-Gigi (*Proof of Life*) and Brandon Quittem (*Bitcoin is Mycelium*): Bitcoin exhibits properties of life:
-- **Metabolism**: energy consumption (PoW)
+[[entities/gigi|Gigi]] (*Proof of Life*) and Brandon Quittem (*Bitcoin is Mycelium*): Bitcoin exhibits properties of life:
+- **Metabolism**: energy consumption ([[concepts/proof-of-work|PoW]])
 - **Reproduction**: node propagation
 - **Evolution**: protocol upgrades via consensus
-- **Homeostasis**: difficulty adjustment
+- **Homeostasis**: [[concepts/mining|difficulty adjustment]]
 
 Mycelium fungi comparison: decentralized, resilient networks that distribute value without central control; survive attacks by fragmenting, not collapsing.
 
@@ -38,7 +38,7 @@ Sources: `proof-of-life.md`, `bitcoin-is-mycelium.md`
 
 ### 4. Money as Claim on Human Time
 
-Robert Breedlove: All money stores human time and energy. Inflating the money supply steals time from savers and transfers it to the Cantillon recipients. Historical parallel: European glass beads debased African aggri money and enabled wealth extraction — fiat does the same globally.
+Robert Breedlove: All [[concepts/money|money]] stores human time and energy. Inflating the money supply steals [[concepts/money|time preference]] from savers and transfers it to the [[concepts/cantillon-effect|Cantillon]] recipients. Historical parallel: European glass beads debased African aggri money and enabled wealth extraction — [[concepts/money|fiat]] does the same globally.
 
 Source: `masters-and-slaves-of-money.md`
 
@@ -130,9 +130,15 @@ The sources are unanimous: Bitcoin is not interchangeable with "crypto." Key arg
 - Ethereum's "difficulty bombs" prove PoS requires coercion
 - The "blockchain not Bitcoin" argument inverts the causality: blockchain is useful *only* as Bitcoin's specific monetary protocol
 
+See [[concepts/proof-of-work]] for why PoW cannot be replaced; see [[concepts/governance]] for why Bitcoin's decentralization is unique.
+
 Sources: `only-the-strong-survive.md`, `gradually-then-suddenly/07-bitcoin-not-blockchain.md`, `proof-of-stake-is-a-scam.md`
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/money|sound money]] | [[concepts/privacy|privacy]] | [[concepts/proof-of-work|Proof of Work]] | [[entities/cypherpunks|cypherpunks]] | [[entities/gigi|Gigi]] | [[entities/nick-szabo|Nick Szabo]] | [[series/gradually-then-suddenly|Gradually, Then Suddenly]]
 
 ## Related Pages
 

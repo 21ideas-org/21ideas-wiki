@@ -6,11 +6,11 @@
 
 ## Who He Was
 
-Harold Thomas Finney II (1956–2014) was a cypherpunk, PGP developer, and the first person to receive a Bitcoin transaction. He was a key link between the cypherpunk movement and Bitcoin's launch.
+Harold Thomas Finney II (1956–2014) was a [[entities/cypherpunks|cypherpunk]], PGP developer, and the first person to receive a Bitcoin transaction. He was a key link between the [[entities/cypherpunks|cypherpunk]] movement and Bitcoin's launch.
 
-- Received first Bitcoin transaction from Satoshi (10 BTC, January 12, 2009)
-- One of the earliest Bitcoin miners and bug reporters
-- Created **RPOW** (Reusable Proofs of Work) in 2004 — arguably the closest pre-Bitcoin digital cash system
+- Received first Bitcoin transaction from [[entities/satoshi-nakamoto|Satoshi Nakamoto]] (10 BTC, January 12, 2009)
+- One of the earliest Bitcoin [[concepts/mining|miners]] and bug reporters
+- Created **RPOW** (Reusable [[concepts/proof-of-work|Proofs of Work]]) in 2004 — arguably the closest pre-Bitcoin digital cash system
 - Worked at PGP Corporation developing the commercial PGP suite
 - Contracted ALS (Lou Gehrig's disease) in 2009
 - Died August 28, 2014; cryopreserved at Alcor Life Extension Foundation
@@ -29,7 +29,7 @@ Satoshi read RPOW. Bitcoin solved the trusted server problem with the blockchain
 
 ## "Bitcoin and Me"
 
-Hal's final known forum post (March 2013), written from bed with his disease advanced but his mind intact. He described running Bitcoin from the beginning, his email exchanges with Satoshi, losing interest after Bitcoin's early struggles, then returning to find the price had risen dramatically. He mentioned transferring most of his coins to cold storage and encrypting his laptop — a practical security guide in the final lines.
+Hal's final known forum post (March 2013), written from bed with his disease advanced but his mind intact. He described running Bitcoin from the beginning, his email exchanges with [[entities/satoshi-nakamoto|Satoshi]], losing interest after Bitcoin's early struggles, then returning to find the price had risen dramatically. He mentioned transferring most of his coins to [[concepts/security|cold storage]] and encrypting his laptop — a practical security guide in the final lines.
 
 Source: `raw/Theory/history/bitcoin-and-me.md`
 
@@ -40,6 +40,10 @@ Source: `raw/Theory/history/bitcoin-and-me.md`
 Hal Finney represents the direct human connection between the cypherpunk era and Bitcoin. He was the bridge: a working cryptographer who had spent decades on digital cash problems, immediately recognized Bitcoin as the solution, and helped debug it in its first weeks. His cryopreservation is seen by some in the Bitcoin community as consistent with long-term thinking — a bet that the future is better than the present.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/security|self-custody]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[entities/nick-szabo|Nick Szabo]] | [[entities/cypherpunks|cypherpunks]] | [[series/genesis-files|Genesis Files]] | [[history/pre-bitcoin-cypherpunks|pre-Bitcoin era]]
 
 ## Related Pages
 

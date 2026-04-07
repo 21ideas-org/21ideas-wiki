@@ -19,7 +19,7 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 | 1 | Bitcoin is Money | Bitcoin meets all monetary criteria; dismissing it as "not real money" reflects fiat thinking |
 | 2 | Bitcoin Can't Be Copied | Monetary value cannot be copied by creating new cryptocurrencies; network effects are cumulative |
 | 3 | Bitcoin is Not Too Volatile | Volatility is a feature of monetization, not a bug; decreases over time as adoption grows |
-| 4 | Bitcoin Does Not Waste Energy | Energy expenditure is the *cost* of trustless security; compare to fiat system's energy costs |
+| 4 | Bitcoin Does Not Waste Energy | Energy expenditure is the *cost* of trustless security; compare to [[concepts/money\|fiat]] system's energy costs |
 | 5 | Bitcoin is Not Too Slow | The base layer is slow *by design*; Lightning handles speed; settlement finality matters more |
 | 6 | Bitcoin Fixes This | Bitcoin fixes the structural problems of fiat: inflation, censorship, confiscation |
 | 7 | Bitcoin, Not Blockchain | Blockchain without Bitcoin's monetary incentives is just a slow database |
@@ -41,7 +41,7 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 
 **The inversion**: Every critique ("too volatile," "not backed by anything," "criminals use it") is inverted. The criticism is true of fiat, not Bitcoin. Fiat is volatile relative to real goods; fiat is backed by government promises (increasingly strained); fiat is the preferred currency for large-scale crime (wars, sanctions evasion, money laundering at scale).
 
-**Monetary first principles**: Lewis consistently grounds arguments in monetary theory rather than technology. Bitcoin is evaluated as *money*, not as a software project. This changes the frame entirely.
+**Monetary first principles**: Lewis consistently grounds arguments in monetary theory rather than technology. Bitcoin is evaluated as *[[concepts/money|money]]*, not as a software project. This changes the frame entirely.
 
 **The rally cry**: Parts 13-14 acknowledge that Bitcoin is not neutral — it is a declaration that the fiat system is broken and that something better exists. Understanding Bitcoin deeply enough makes this conclusion hard to avoid.
 
@@ -57,6 +57,10 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 - **Part 17** (Great Definancialization): the macro-economic conclusion
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/money|sound money]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/scarcity|scarcity]] | [[books/fiat-standard|The Fiat Standard]] | [[series/discovering-bitcoin|Discovering Bitcoin]] | [[topics/network-effects|network effects]]
 
 ## Related Pages
 

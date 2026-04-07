@@ -23,10 +23,10 @@ Source: `raw/Start/start.md`, `raw/Books/vojna-za-razmer-bloka/`, `raw/Theory/hi
 
 *"Bitcoin: A Peer-to-Peer Electronic Cash System"* — published October 31, 2008. Nine pages. Solves the double-spend problem using:
 1. A public transaction ledger (blockchain)
-2. Proof of Work consensus mechanism
-3. A network of nodes that independently validate and propagate transactions
+2. [[concepts/proof-of-work|Proof of Work]] consensus mechanism
+3. A network of [[concepts/governance|full nodes]] that independently validate and propagate transactions
 
-The whitepaper explicitly acknowledges predecessors: Adam Back's Hashcash, Wei Dai's b-money.
+The whitepaper explicitly acknowledges predecessors: Adam Back's Hashcash, Wei Dai's b-money. See [[series/genesis-files]] for the full prehistory.
 
 ---
 
@@ -36,7 +36,7 @@ Block 0, mined January 3, 2009. Embedded message:
 
 > "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"
 
-This message — a UK newspaper headline — roots Bitcoin's creation in a specific historical moment: the 2008 financial crisis and the response of printing money to bail out banks. The message signals Bitcoin's purpose.
+This message — a UK newspaper headline — roots Bitcoin's creation in a specific historical moment: the 2008 financial crisis and the response of printing money to bail out banks. The message signals Bitcoin's purpose. See [[history/timeline|Genesis block]] for chronological context.
 
 ---
 
@@ -50,9 +50,13 @@ Source: `raw/Theory/history/was-satoshi-a-greedy-miner.md`
 
 ## The Governance Gift
 
-One of Satoshi's most important acts was *disappearing*. A Bitcoin with a known, living creator would be perpetually subject to pressure — governments demanding changes, journalists seeking interviews, developers deferring to authority. Satoshi's disappearance transformed Bitcoin from a project into a protocol. This is explored in [[concepts/governance]].
+One of Satoshi's most important acts was *disappearing*. A Bitcoin with a known, living creator would be perpetually subject to pressure — governments demanding changes, journalists seeking interviews, developers deferring to authority. Satoshi's disappearance transformed Bitcoin from a project into a protocol. Bitcoin's [[concepts/scarcity|21M cap]] and [[concepts/proof-of-work|Proof of Work]] design endure unchanged. This is explored in [[concepts/governance]].
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/scarcity|scarcity]] | [[concepts/governance|governance]] | [[entities/hal-finney|Hal Finney]] | [[entities/nick-szabo|Nick Szabo]] | [[entities/cypherpunks|cypherpunks]] | [[history/timeline|timeline]]
 
 ## Related Pages
 

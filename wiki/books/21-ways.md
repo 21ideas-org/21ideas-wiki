@@ -19,10 +19,10 @@ Gigi is the most prolific Bitcoin philosopher in this library. See [[entities/gi
 | 1 | Bitcoin is an Idea | Ideas cannot be killed; once Bitcoin is understood, it cannot be uninvented |
 | 2 | Bitcoin is Time | Bitcoin creates time-stamped, unforgeable records; solving the timing problem is central to consensus |
 | 3 | Bitcoin is Magic Internet Money | Not dismissive — money is already "magic"; Bitcoin is just honest about it |
-| 4 | Bitcoin is Sound Money | Hardest money ever created; meets all monetary criteria better than alternatives |
+| 4 | Bitcoin is [[concepts/money\|Sound Money]] | Hardest money ever created; meets all monetary criteria better than alternatives |
 | 5 | Bitcoin is the Best Money Ever Created | Synthesizes monetary properties argument |
-| 6 | Bitcoin is Digital Scarcity | First time absolute scarcity exists in digital space |
-| 7 | Bitcoin is Absolute Scarcity | The 21M cap is not just rare — it is unique in the universe |
+| 6 | Bitcoin is Digital [[concepts/scarcity\|Scarcity]] | First time absolute scarcity exists in digital space |
+| 7 | Bitcoin is Absolute [[concepts/scarcity\|Scarcity]] | The [[concepts/scarcity\|21M cap]] is not just rare — it is unique in the universe |
 | 8 | Bitcoin is a Truth Machine | The blockchain produces unforgeable, objective records of transactions |
 | 9 | Bitcoin is Wealth Insurance | Protection against monetary debasement and political seizure |
 | 10 | Bitcoin is a Decentralized Network | No central point of failure; resilient like the internet |
@@ -54,6 +54,10 @@ Each frame is independently defensible and illuminating. A libertarian sees fram
 - **Chapter 21** (Living Organism): the most original framing; Gigi's signature idea
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/scarcity|scarcity]] | [[concepts/money|sound money]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/lightning-network|Lightning Network]] | [[entities/gigi|Gigi]] | [[philosophy/overview|philosophy overview]]
 
 ## Related Pages
 

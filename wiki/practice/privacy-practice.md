@@ -47,12 +47,12 @@ Setup: flash GrapheneOS on a supported Pixel phone. The guide covers the full pr
 
 When your wallet queries a third-party server for your balance and transaction history, that server learns all your addresses. Solution: run your own node and connect your wallet to it.
 
-**Dojo** (`raw/Practice/privacy/dojo/`): Samourai Wallet's node backend. Series of 7 guides covering complete setup on x86 hardware.
+**[[practice/privacy-practice|Dojo]]** (`raw/Practice/privacy/dojo/`): Samourai Wallet's node backend. Series of 7 guides covering complete setup on x86 hardware.
 
-**RoninDojo** (`raw/Practice/privacy/ronindojo.md`): Dojo packaged for easier deployment. Includes:
+**[[practice/privacy-practice|RoninDojo]]** (`raw/Practice/privacy/ronindojo.md`): Dojo packaged for easier deployment. Includes:
 - Dojo (full node + indexer)
 - Electrum Rust Server (for other wallets)
-- Whirlpool GUI (for CoinJoin)
+- [[practice/privacy-practice|Whirlpool]] GUI (for [[concepts/privacy|CoinJoin]])
 - Whirlpool CLI (for automated mixing)
 
 After setup, point your Samourai Wallet to your Dojo. Now the only server that knows your addresses is your own.
@@ -61,7 +61,7 @@ After setup, point your Samourai Wallet to your Dojo. Now the only server that k
 
 ## Step 4: Whirlpool CoinJoin
 
-CoinJoin mixes your UTXOs with other users', breaking the transaction history link. Whirlpool (Samourai Wallet) is the implementation in this library.
+[[concepts/privacy|CoinJoin]] mixes your [[concepts/utxo|UTXO]]s with other users', breaking the transaction history link. [[practice/privacy-practice|Whirlpool]] (Samourai Wallet) is the implementation in this library.
 
 **The process:**
 1. Move funds into Samourai Wallet (connected to your Dojo)
@@ -105,7 +105,7 @@ Best wallets for coin control: Sparrow Wallet, Electrum, Samourai Wallet.
 
 ## The OXT Research Series
 
-The OXT Research series (4 parts, `raw/Theory/privacy/oxt/`) explains blockchain analysis from the attacker's perspective, so you can understand what you're defending against:
+The [[series/oxt-research|OXT Research]] series (4 parts, `raw/Theory/privacy/oxt/`) explains [[series/oxt-research|blockchain analysis]] from the attacker's perspective, so you can understand what you're defending against:
 
 1. **Fundamentals of blockchain analysis**: what analysts do, what data they use
 2. **Key concepts**: CIOH (Common Input Ownership Heuristic), change detection methods
@@ -121,6 +121,10 @@ Understanding the attacker's view is essential for meaningful privacy.
 Lightning is better than on-chain for privacy (payments aren't broadcast publicly), but has its own issues. See [[concepts/lightning-network]] for the full breakdown. Key: use private (unannounced) channels where possible, and prefer Phoenix/Mutiny (which handle routing intelligently).
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/privacy|privacy]] | [[concepts/utxo|UTXO]] | [[concepts/security|self-custody]] | [[series/oxt-research|blockchain analysis]] | [[practice/buying|no-KYC buying]] | [[practice/lightning-tools|Lightning tools]] | [[entities/cypherpunks|cypherpunks]]
 
 ## Related Pages
 

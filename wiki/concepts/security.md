@@ -12,7 +12,7 @@
 
 ## Seed Phrases (BIP39)
 
-A 12- or 24-word mnemonic phrase is the master key to your bitcoin. All addresses and private keys are derived from this single seed using a deterministic algorithm (BIP32/44/49/84).
+A 12- or 24-word [[concepts/security|seed phrase]] (mnemonic) is the master key to your bitcoin. All addresses and private keys are derived from this single seed using a deterministic algorithm ([[concepts/governance|BIP]]32/44/49/84).
 
 **Critical rules:**
 - Never enter your seed online (no photos, no cloud storage, no typing into any website)
@@ -38,11 +38,11 @@ Source: `raw/Theory/security/passphrase.md`
 
 ## Hardware Wallets
 
-Hardware wallets are dedicated signing devices that keep private keys off internet-connected computers. The private key never leaves the device; transactions are signed on the device and broadcast via an airgap or USB.
+[[concepts/security|Hardware wallets]] are dedicated signing devices that keep private keys off internet-connected computers. The private key never leaves the device; transactions are signed on the device and broadcast via an airgap or USB.
 
 | Device | Security Model | Notable Feature |
 |--------|---------------|-----------------|
-| Coldcard | Airgapped (microSD), secure element | PSBT, advanced multisig, open firmware |
+| [[practice/storage\|Coldcard]] | Airgapped (microSD), secure element | [[glossary\|PSBT]], advanced [[concepts/security\|multisig]], open firmware |
 | SeedSigner | DIY (RPi Zero + camera), stateless | No persistent storage; generates keys from seed at runtime |
 | Foundation Passport | Open source, airgapped | US-made, QR-based signing |
 | Trezor | USB, open source | Most accessible; no secure element on older models |
@@ -57,7 +57,7 @@ Source: `raw/Theory/security/hwws.md`, `raw/Practice/hodl/coldcard.md`, `raw/Pra
 
 ## Multisig
 
-Multisig (M-of-N) requires M signatures out of N possible keys to spend. Benefits:
+[[concepts/security|Multisig]] (M-of-N) requires M signatures out of N possible keys to spend. Benefits:
 - **Eliminates single point of failure**: lose one key → funds still safe
 - **Eliminates single point of theft**: steal one key → funds still safe
 - **Geographic distribution**: keys can be stored in different locations
@@ -122,6 +122,10 @@ Best practices:
 | Malware | Clipboard hijacking of addresses | Air-gapped signing, hardware wallets |
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/privacy|privacy]] | [[concepts/utxo|UTXO]] | [[concepts/taproot|Taproot / MuSig2]] | [[practice/storage|cold storage]] | [[entities/hal-finney|Hal Finney]] | [[entities/cypherpunks|cypherpunks]]
 
 ## Related Pages
 

@@ -67,3 +67,50 @@ Append-only record of wiki operations. Format: `## [YYYY-MM-DD] operation | desc
 
 **Total session 3 files:** 9 created, 1 updated
 **Cumulative wiki files:** ~49 pages
+
+---
+
+## [2026-04-07] maintenance | Wikilink pass — added inline wikilinks and Related Terms sections to all 44 wiki files
+
+**Scope:** Full wikilink enrichment of the entire wiki — all existing pages updated, 2 new concept stubs created.
+
+**Operations performed:**
+- Added `[[wikilinks]]` throughout body text wherever glossary/concept terms appear (first or most meaningful occurrence per section)
+- Added `## Related Terms` section to every page (inline links separated by ` | `, placed before any existing Related Pages section)
+- Created 2 new stub concept pages for high-value terms that lacked dedicated pages
+
+**Term → Page mapping applied (key mappings):**
+- mining, miners, hash rate, ASIC, SHA-256, difficulty adjustment → `concepts/mining`
+- PoW, Proof of Work, unforgeable costliness → `concepts/proof-of-work`
+- scarcity, 21M cap, halving, block reward, stock-to-flow → `concepts/scarcity`
+- governance, full node, BIP, soft fork, hard fork → `concepts/governance`
+- SegWit, transaction malleability, block weight, Bech32, TXID → `concepts/segwit`
+- Taproot, Schnorr, MAST, MuSig2, P2TR → `concepts/taproot`
+- Lightning Network, payment channel, HTLC → `concepts/lightning-network`
+- UTXO, UTXOs → `concepts/utxo`
+- privacy, KYC, CoinJoin → `concepts/privacy`
+- seed phrase, hardware wallet, multisig, self-custody, cold storage → `concepts/security`
+- money, fiat, sound money, time preference → `concepts/money`
+- Cantillon effect → `concepts/cantillon-effect`
+- Hashcash → `concepts/hashcash`
+- address types, P2TR → `concepts/address-types`
+- Satoshi Nakamoto → `entities/satoshi-nakamoto`
+- Hal Finney → `entities/hal-finney`
+- Nick Szabo → `entities/nick-szabo`
+- cypherpunks → `entities/cypherpunks`
+- Gigi → `entities/gigi`
+- blocksize war → `history/blocksize-war`
+- blockchain analysis → `series/oxt-research`
+- Whirlpool, Dojo, RoninDojo → `practice/privacy-practice`
+- Coldcard, SeedSigner → `practice/storage`
+- Hodl Hodl, P2P exchange → `practice/buying`
+
+**Files updated (44):**
+concepts/bitcoin, concepts/money, concepts/proof-of-work, concepts/lightning-network, concepts/scarcity, concepts/privacy, concepts/security, concepts/utxo, concepts/governance, concepts/segwit, concepts/taproot, concepts/mining, concepts/address-types, entities/satoshi-nakamoto, entities/hal-finney, entities/nick-szabo, entities/cypherpunks, entities/gigi, history/timeline, history/pre-bitcoin-cypherpunks, history/blocksize-war, philosophy/overview, books/inventing-bitcoin, books/fiat-standard, books/bullish-case, books/sovereignty-through-mathematics, books/blocksize-war, books/sovereign-individual, books/price-of-tomorrow, books/21-ways, series/gradually-then-suddenly, series/genesis-files, series/discovering-bitcoin, series/bitcoin-astronomy, series/silk-road, series/oxt-research, series/what-i-learned-from-bitcoin, practice/buying, practice/storage, practice/lightning-tools, practice/privacy-practice, topics/bitcoin-dissidents, topics/network-effects, overview
+
+**New stub pages created (2):**
+- `wiki/concepts/hashcash.md` — Adam Back's 1997 Proof of Work anti-spam system; Hashcash vs Bitcoin mining comparison table
+- `wiki/concepts/cantillon-effect.md` — Richard Cantillon's observation on money non-neutrality; fiat era operation; Bitcoin as Cantillon-resistant money
+
+**Total session 4 files:** 2 created, 46 updated (44 wiki pages + index.md + log.md)
+**Cumulative wiki files:** ~51 pages

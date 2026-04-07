@@ -85,12 +85,12 @@ For users running their own Lightning node. Covers:
 
 ## Cleaning Bitcoin Through Lightning (`raw/Practice/lightning/ochishchaem-bitcoin-cherez-lajtning.md`)
 
-If you have KYC-tainted on-chain Bitcoin and want to reduce surveillance, you can use Lightning:
+If you have [[concepts/privacy|KYC]]-tainted on-chain Bitcoin and want to reduce surveillance, you can use [[concepts/lightning-network|Lightning]]:
 1. Load KYC Bitcoin into Lightning via a channel open
 2. Route payments through Lightning (off-chain, not traceable on the blockchain)
-3. Receive fresh UTXOs via submarine swaps back to on-chain
+3. Receive fresh [[concepts/utxo|UTXOs]] via submarine swaps back to on-chain
 
-This doesn't achieve the same privacy as Whirlpool CoinJoin but reduces the trivial traceability of on-chain spending.
+This doesn't achieve the same [[concepts/privacy|privacy]] as [[practice/privacy-practice|Whirlpool]] [[concepts/privacy|CoinJoin]] but reduces the trivial traceability of on-chain spending.
 
 ---
 
@@ -107,6 +107,10 @@ This doesn't achieve the same privacy as Whirlpool CoinJoin but reduces the triv
 | Running a routing node | Core Lightning / LND + Ride the Lightning |
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/lightning-network|Lightning Network]] | [[concepts/privacy|privacy]] | [[concepts/utxo|UTXO]] | [[concepts/security|self-custody]] | [[practice/privacy-practice|privacy practice]] | [[practice/storage|cold storage]] | [[practice/buying|buying Bitcoin]]
 
 ## Related Pages
 

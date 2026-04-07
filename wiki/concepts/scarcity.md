@@ -7,12 +7,12 @@
 ## The 21 Million Cap
 
 Bitcoin's protocol enforces a hard cap of 21 million BTC (2.1 quadrillion satoshis). This is achieved by:
-- Block rewards that halve every ~210,000 blocks (~4 years)
+- [[concepts/scarcity|Block rewards]] that [[concepts/scarcity|halve]] every ~210,000 blocks (~4 years)
 - Starting at 50 BTC per block (2009), halving to 25, 12.5, 6.25, 3.125 (current, 2024)
 - Last satoshi mined approximately year 2140
-- After that, miners are compensated only by transaction fees
+- After that, [[concepts/mining|miners]] are compensated only by transaction fees
 
-The 21M cap is enforced by every full node independently. No miner, developer, or government can change it without convincing the entire network to upgrade — and there is no economic incentive for any holder to accept inflation.
+The [[concepts/scarcity|21M cap]] is enforced by every [[concepts/governance|full node]] independently. No miner, developer, or government can change it without convincing the entire network to upgrade — and there is no economic incentive for any holder to accept inflation.
 
 Source: `raw/Theory/economics/pochemu-21-million.md`, `raw/Theory/protocol/21-million-is-non-negotiable.md`
 
@@ -22,7 +22,7 @@ Source: `raw/Theory/economics/pochemu-21-million.md`, `raw/Theory/protocol/21-mi
 
 The specific number comes from Satoshi's design: using integer satoshi arithmetic (avoiding floating point), given a 10-minute block time and the planned halving schedule, 21 million BTC is approximately what falls out. The exact number matters less than the *immutability* of whatever limit was chosen.
 
-Robert Breedlove's framing: Bitcoin introduced a concept previously impossible in digital space — **absolute scarcity**. Anything digital can be copied. Bitcoin's scarcity is not physical but cryptographic and social: the protocol + the network enforce it without any trusted party.
+Robert Breedlove's framing: Bitcoin introduced a concept previously impossible in digital space — **absolute scarcity**. Anything digital can be copied. Bitcoin's [[concepts/scarcity|scarcity]] is not physical but cryptographic and social: the protocol + the network enforce it without any trusted party.
 
 ---
 
@@ -65,8 +65,8 @@ The halving is automatic and built into the protocol — it cannot be postponed 
 Physical goods are scarce because matter is conserved. Information is not: any digital file can be copied at near-zero cost. Before Bitcoin, there was no mechanism for digital scarcity without a trusted third party maintaining the ledger.
 
 Bitcoin creates digital scarcity through:
-1. Consensus rules enforced by all full nodes
-2. Proof of Work making history costly to rewrite
+1. Consensus rules enforced by all [[concepts/governance|full nodes]]
+2. [[concepts/proof-of-work|Proof of Work]] making history costly to rewrite
 3. No central entity that can override these rules
 
 The analogy to gold: gold is scarce because physics constrains how much exists and how fast it can be mined. Bitcoin is scarce because mathematics and cryptography constrain the protocol.
@@ -80,6 +80,10 @@ Source: `raw/Theory/economics/discovering-bitcoin/05-digital-scarcity.md`
 Robert Breedlove draws a parallel between the invention of zero and Bitcoin (*The Number Zero and Bitcoin*). Zero was a paradigm-shifting concept that enabled modern mathematics. Bitcoin introduces an analogous concept: **absolute digital scarcity**. Like zero, it is both simple and revolutionary; like zero, it may take generations to appreciate.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/mining|mining]] | [[concepts/governance|governance]] | [[concepts/money|sound money]] | [[books/bullish-case|The Bullish Case for Bitcoin]] | [[books/sovereignty-through-mathematics|Sovereignty Through Mathematics]]
 
 ## Related Pages
 

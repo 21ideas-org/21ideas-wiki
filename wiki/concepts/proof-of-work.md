@@ -8,13 +8,13 @@
 
 Proof of Work (PoW) is the consensus mechanism that secures [[concepts/bitcoin|Bitcoin]]. Miners compete to add new blocks by repeatedly hashing block data until their hash meets a difficulty target (starts with a certain number of zeros). The only way to find a valid hash is brute-force guessing — there is no shortcut.
 
-When a valid block is found, the miner broadcasts it to the network and collects the block reward + transaction fees. All other nodes verify the PoW and accept the block.
+When a valid block is found, the miner broadcasts it to the network and collects the [[concepts/scarcity|block reward]] + transaction fees. All other nodes verify the PoW and accept the block.
 
 ---
 
 ## Why It Matters
 
-PoW anchors digital money to the physical world. Every valid block represents real energy expenditure — this expenditure cannot be faked or undone. Satoshi's key insight: **unforgeable costliness** is what gives digital scarcity meaning.
+PoW anchors digital money to the physical world. Every valid block represents real energy expenditure — this expenditure cannot be faked or undone. [[entities/satoshi-nakamoto|Satoshi]]'s key insight: **unforgeable costliness** is what gives digital [[concepts/scarcity|scarcity]] meaning.
 
 Adam Gibson's framing: PoW is like a court system for digital money. Physical enforcement makes cheating expensive. PoW makes rewriting history expensive — you would have to redo all the work of all blocks since the target, faster than the honest chain grows.
 
@@ -24,7 +24,7 @@ Source: `raw/Theory/protocol/proof-of-work.md`
 
 ## Hashcash: The Precursor
 
-Adam Back invented Hashcash in 1997 as an anti-spam tool. To send an email, you had to compute a proof of work — a small cost per email that is negligible for humans but catastrophic for spammers at scale. Satoshi adapted this concept directly for Bitcoin.
+Adam Back invented [[concepts/hashcash|Hashcash]] in 1997 as an anti-spam tool. To send an email, you had to compute a proof of work — a small cost per email that is negligible for humans but catastrophic for spammers at scale. [[entities/satoshi-nakamoto|Satoshi]] adapted this concept directly for Bitcoin.
 
 Source: [[series/genesis-files]]
 
@@ -34,7 +34,7 @@ Source: [[series/genesis-files]]
 
 Every 2,016 blocks (~2 weeks), the network adjusts the difficulty target so that blocks continue to arrive at ~10 minutes on average, regardless of how many miners join or leave. This is Bitcoin's homeostasis — it self-regulates without any central coordinator.
 
-If hash rate doubles, blocks would come every 5 minutes until adjustment. If half the miners quit, blocks slow to 20 minutes until adjustment. The difficulty adjustment means Bitcoin is resilient to any level of miner participation.
+If [[concepts/mining|hash rate]] doubles, blocks would come every 5 minutes until adjustment. If half the miners quit, blocks slow to 20 minutes until adjustment. The [[concepts/mining|difficulty adjustment]] means Bitcoin is resilient to any level of miner participation.
 
 Source: `raw/Theory/protocol/difficulty.md`
 
@@ -74,15 +74,19 @@ Source: `raw/Theory/protocol/proof-of-stake-is-a-scam.md`, `raw/Theory/economics
 ## Energy and Environment
 
 The criticism that Bitcoin "wastes energy" is addressed across many sources. Key arguments:
-- Bitcoin mining consumes energy that has *already been produced* — often stranded, excess, or curtailed energy
+- Bitcoin [[concepts/mining|mining]] consumes energy that has *already been produced* — often stranded, excess, or curtailed energy
 - Jevons Paradox: efficiency gains in energy use tend to increase total energy consumption (not unique to Bitcoin)
-- Fiat money infrastructure (banks, central banks, mints, armies that protect petrodollar) consumes vastly more energy
+- [[concepts/money|Fiat]] money infrastructure (banks, central banks, mints, armies that protect petrodollar) consumes vastly more energy
 - Mining incentivizes renewable development (miners prefer cheap energy; cheapest energy is often stranded renewables)
 - Energy use is the *price* of trustless monetary security; it is not waste
 
 Source: `raw/Theory/economics/bitcoin-is-not-harmful-for-the-environment.md`, `raw/Theory/economics/gradually-then-suddenly/04-bitcoin-does-not-waste-energy.md`
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/scarcity|scarcity]] | [[concepts/mining|mining]] | [[concepts/governance|governance]] | [[concepts/hashcash|Hashcash]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[entities/hal-finney|Hal Finney]] | [[entities/cypherpunks|cypherpunks]]
 
 ## Related Pages
 

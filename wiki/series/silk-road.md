@@ -26,7 +26,7 @@ Key facts:
 
 In 2011, Bitcoin's value was uncertain. Silk Road proved several things:
 - Bitcoin could function as a medium of exchange for real commerce
-- Pseudonymity (not anonymity) was sufficient for many use cases
+- Pseudonymity (not anonymity) was sufficient for many use cases — see [[concepts/privacy]] for the distinction
 - Censorship-resistance was a real property — no one could shut down Bitcoin payments even as the marketplace grew
 - The "criminals use Bitcoin" narrative cut both ways: criminals chose it because it *worked*
 
@@ -59,6 +59,10 @@ Silk Road's shutdown demonstrated that you could destroy a *website* but not Bit
 The government's seizure of ~144,000 BTC from Silk Road (worth ~$48 billion at 2021 prices) and subsequent auctions became a notable part of Bitcoin history — US Marshals auctioning seized Bitcoin to institutional buyers, who resold it at higher prices.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/privacy|privacy]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[history/timeline|timeline]] | [[philosophy/overview|philosophy overview]] | [[topics/bitcoin-dissidents|Bitcoin for dissidents]]
 
 ## Related Pages
 

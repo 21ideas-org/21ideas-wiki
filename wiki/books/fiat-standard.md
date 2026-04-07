@@ -6,7 +6,7 @@
 
 ## Summary
 
-Saifedean Ammous (author of *The Bitcoin Standard*) analyzes fiat money not as political or historical phenomenon but as an *engineering system* — with specific inputs, outputs, failure modes, and emergent properties. Analyzed on its own terms, fiat is a poorly designed monetary technology. Bitcoin is its liquidator.
+Saifedean Ammous (author of *The Bitcoin Standard*) analyzes [[concepts/money|fiat]] money not as political or historical phenomenon but as an *engineering system* — with specific inputs, outputs, failure modes, and emergent properties. Analyzed on its own terms, fiat is a poorly designed monetary technology. Bitcoin is its liquidator.
 
 The book's structure mirrors *The Bitcoin Standard*: first explain the technology (fiat), then show its pathologies, then show Bitcoin as the solution.
 
@@ -42,7 +42,7 @@ The book's structure mirrors *The Bitcoin Standard*: first explain the technolog
 
 ## Key Arguments
 
-**The Cantillon Effect**: New money enters the economy through specific channels (banks, governments, large corporations). Those who receive new money first benefit at the expense of those who receive it last (workers, savers). Inflation is not neutral — it redistributes wealth systematically upward.
+**The [[concepts/cantillon-effect|Cantillon Effect]]**: New [[concepts/money|fiat]] money enters the economy through specific channels (banks, governments, large corporations). Those who receive new money first benefit at the expense of those who receive it last (workers, savers). Inflation is not neutral — it redistributes wealth systematically upward. See [[concepts/money]] for the full monetary theory.
 
 **Fiat food**: Cheap credit enables and incentivizes industrial food production (grain-heavy, vegetable-oil-heavy diets subsidized by agricultural policy). Fiat is literally making people sick via dietary distortion. This is one of Ammous's most controversial arguments — he draws a direct line from central banking to obesity and chronic disease.
 
@@ -65,6 +65,10 @@ The book's structure mirrors *The Bitcoin Standard*: first explain the technolog
 The fiat-food thesis (Part II, Chapter 9) is the most controversial. Ammous argues that the fiat system is the root cause of modern dietary dysfunction. Many readers find this compelling; others find it an overreach.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/money|sound money]] | [[concepts/scarcity|scarcity]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/mining|mining]] | [[books/bullish-case|The Bullish Case for Bitcoin]] | [[series/gradually-then-suddenly|Gradually, Then Suddenly]] | [[books/price-of-tomorrow|The Price of Tomorrow]]
 
 ## Related Pages
 

@@ -7,9 +7,9 @@
 ## Why Bitcoin Privacy Matters
 
 Bitcoin's ledger is fully public — every transaction is visible to anyone. This is necessary for the consensus mechanism but creates surveillance risks:
-- Address clusters can be linked to identities (via KYC at exchanges, IP addresses, merchant data)
+- Address clusters can be linked to identities (via [[concepts/privacy|KYC]] at exchanges, IP addresses, merchant data)
 - Once an identity is linked to an address, the entire transaction history becomes deanonymized
-- Governments and chain analysis firms (Chainalysis, Elliptic) actively perform this surveillance
+- Governments and [[series/oxt-research|blockchain analysis]] firms (Chainalysis, Elliptic) actively perform this surveillance
 - "Tainted" coins can be blacklisted by exchanges, threatening fungibility
 
 Privacy is not about hiding illegal activity — it is the foundation of financial sovereignty.
@@ -35,7 +35,7 @@ Source: `raw/Theory/privacy/bitcoin-fungibility.md`
 - Address surveillance: all future transactions from those addresses are tracked
 
 **No-KYC acquisition:**
-- P2P exchanges: Hodl Hodl, RoboSats, Bisq
+- [[practice/buying|P2P exchange]]s: [[practice/buying|Hodl Hodl]], RoboSats, Bisq
 - ATMs (small amounts, higher fees)
 - Mining, earning, accepting payment
 
@@ -59,9 +59,9 @@ Source: `raw/Theory/privacy/oxt/`
 
 ## CoinJoin / Whirlpool
 
-CoinJoin merges multiple users' inputs in a single transaction with equal-value outputs, making input-output linking impossible. The equal outputs defeat the CIOH heuristic.
+[[concepts/privacy|CoinJoin]] merges multiple users' inputs in a single transaction with equal-value outputs, making input-output linking impossible. The equal outputs defeat the CIOH heuristic.
 
-**Whirlpool** (Samourai Wallet implementation):
+**[[practice/privacy-practice|Whirlpool]]** (Samourai Wallet implementation):
 - 5 equal-output pools (100k, 1M, 5M, 50M satoshis)
 - ZeroLink protocol: fresh UTXOs, no post-mix address reuse
 - Pre-mix and post-mix UTXO management
@@ -111,7 +111,7 @@ Source: `raw/Theory/lightning/lightning-privacy.md`
 
 Dojo is the node backend for Samourai Wallet. Without it, Samourai's servers see your addresses and transaction history. With Dojo, your wallet connects to your own node — Samourai learns nothing.
 
-**RoninDojo** = Dojo packaged for x86 hardware with GUI, Whirlpool integration, and Electrum Rust Server.
+**[[practice/privacy-practice|RoninDojo]]** = [[practice/privacy-practice|Dojo]] packaged for x86 hardware with GUI, Whirlpool integration, and Electrum Rust Server.
 
 The Dojo series (7 parts, `raw/Practice/privacy/dojo/`) covers the complete setup.
 
@@ -126,6 +126,10 @@ GrapheneOS is a hardened Android OS for Pixel phones. It removes Google Play Ser
 Source: `raw/Practice/privacy/grapheneos.md`
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/bitcoin|Bitcoin]] | [[concepts/utxo|UTXO]] | [[concepts/security|self-custody]] | [[concepts/lightning-network|Lightning Network]] | [[series/oxt-research|blockchain analysis]] | [[practice/privacy-practice|privacy practice]] | [[entities/cypherpunks|cypherpunks]] | [[practice/buying|no-KYC buying]]
 
 ## Related Pages
 

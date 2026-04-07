@@ -17,8 +17,8 @@ The series establishes that Bitcoin was not invented from scratch — it is the 
 **Part 1: eCash (David Chaum)**
 DigiCash and blind signatures. Chaum solved privacy in digital payments (the bank cannot link deposits to withdrawals). Failed: required a trusted central mint. Without the mint, the system dies. DigiCash went bankrupt in 1998.
 
-**Part 2: Hashcash (Adam Back)**
-Proof-of-work for anti-spam. Solved: unforgeable costliness — tokens that require real energy to produce. Failed: tokens are single-use and non-transferable. Satoshi cited Back in the whitepaper.
+**Part 2: [[concepts/hashcash|Hashcash]] (Adam Back)**
+[[concepts/proof-of-work|Proof-of-work]] for anti-spam. Solved: unforgeable costliness — tokens that require real energy to produce. Failed: tokens are single-use and non-transferable. [[entities/satoshi-nakamoto|Satoshi]] cited Back in the whitepaper.
 
 **Part 3: b-money (Wei Dai)**
 Proposed distributed ledger + PoW for money creation. Solved: the design concept of decentralized digital cash. Failed: never implemented; no solution to maintaining a consistent ledger without a coordinator. Satoshi cited Dai in the whitepaper.
@@ -42,7 +42,7 @@ Reusable Proofs of Work. Solved: made PoW tokens transferable — you could exch
 | RPOW | ✓ | ✓ | ✗ (trusted server) |
 | **Bitcoin** | **✓** | **✓** | **✓** |
 
-Bitcoin solved all three simultaneously: PoW provides unforgeable scarcity; the UTXO model enables transfer; the blockchain + longest-chain rule provides decentralized consensus.
+Bitcoin solved all three simultaneously: [[concepts/proof-of-work|PoW]] provides unforgeable [[concepts/scarcity|scarcity]]; the [[concepts/utxo|UTXO]] model enables transfer; the blockchain + longest-chain rule provides decentralized consensus.
 
 ---
 
@@ -53,11 +53,15 @@ Beyond the technical analysis, the series traces the human story:
 - Back and Dai published proposals but didn't pursue them further
 - Szabo developed Bit Gold extensively but couldn't solve the timestamping problem
 - Finney was the most persistent — RPOW was the last thing he tried before Bitcoin
-- When Bitcoin was published, Finney was the *only person Satoshi emailed* before releasing it publicly
+- When Bitcoin was published, [[entities/hal-finney|Finney]] was the *only person [[entities/satoshi-nakamoto|Satoshi]] emailed* before releasing it publicly
 
 The first Bitcoin transaction (Satoshi → Finney, 10 BTC, January 12, 2009) was not random — it was the passing of the torch.
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/proof-of-work|Proof of Work]] | [[concepts/scarcity|scarcity]] | [[concepts/utxo|UTXO]] | [[entities/cypherpunks|cypherpunks]] | [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[entities/hal-finney|Hal Finney]] | [[entities/nick-szabo|Nick Szabo]] | [[history/pre-bitcoin-cypherpunks|pre-Bitcoin era]]
 
 ## Related Pages
 

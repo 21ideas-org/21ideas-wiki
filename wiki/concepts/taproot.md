@@ -20,16 +20,16 @@ Source: `raw/Theory/protocol/taproot.md`, `raw/Start/glossary.md`
 
 ## Schnorr Signatures (BIP 340)
 
-Bitcoin previously used **ECDSA** (Elliptic Curve Digital Signature Algorithm) for signing transactions. Taproot adds **Schnorr signatures**, which are:
+Bitcoin previously used **ECDSA** (Elliptic Curve Digital Signature Algorithm) for signing transactions. Taproot adds **[[concepts/taproot|Schnorr]] signatures**, which are:
 
 **More efficient:**
 - 32-byte public keys vs. 33-byte ECDSA
 - 65-byte signatures vs. 71-72-byte ECDSA
 - Smaller size → lower fees
 
-**Key aggregation (MuSig):**
+**Key aggregation ([[concepts/taproot|MuSig2]]):**
 - Multiple signers can aggregate their public keys and signatures into a single key/signature that looks identical to a single-sig transaction on-chain
-- 3-of-5 multisig looks like a simple payment → massive privacy improvement + fee reduction
+- 3-of-5 [[concepts/security|multisig]] looks like a simple payment → massive privacy improvement + fee reduction
 - See [[concepts/security]] (multisig section)
 
 **Linear:** Schnorr signatures are linear, enabling more efficient batch verification and protocol composition.
@@ -38,7 +38,7 @@ Bitcoin previously used **ECDSA** (Elliptic Curve Digital Signature Algorithm) f
 
 ## Taproot / MAST (BIP 341)
 
-Taproot introduces the **P2TR (Pay-to-Taproot)** output type and integrates **MAST (Merklized Abstract Syntax Trees)**.
+Taproot introduces the **[[concepts/address-types|P2TR]] (Pay-to-Taproot)** output type and integrates **[[concepts/taproot|MAST]] (Merklized Abstract Syntax Trees)**.
 
 **How P2TR works:**
 1. Funds are sent to a single public key `Q`
@@ -86,10 +86,10 @@ Taproot adoption has been growing since 2022, accelerating with hardware wallet 
 
 ## Relationship to SegWit
 
-Taproot builds on SegWit's foundation:
-- Uses SegWit's block weight system for cheaper witness data
-- Required SegWit's malleability fix (same principle extended further)
-- P2TR is a native SegWit v1 output type
+Taproot builds on [[concepts/segwit|SegWit]]'s foundation:
+- Uses SegWit's [[concepts/segwit|block weight]] system for cheaper witness data
+- Required SegWit's [[concepts/segwit|malleability]] fix (same principle extended further)
+- [[concepts/address-types|P2TR]] is a native SegWit v1 output type
 
 ---
 
@@ -98,6 +98,10 @@ Taproot builds on SegWit's foundation:
 MuSig2 (standardized 2023+) is the Schnorr multi-party key aggregation protocol enabled by Taproot. N-of-N participants cooperatively generate a single key and signature — indistinguishable from a regular single-sig on-chain. See [[concepts/security]].
 
 ---
+
+## Related Terms
+
+[[glossary|Glossary]] | [[concepts/segwit|SegWit]] | [[concepts/address-types|address types]] | [[concepts/security|multisig]] | [[concepts/privacy|privacy]] | [[concepts/lightning-network|Lightning Network]] | [[concepts/governance|soft fork]] | [[concepts/utxo|UTXO]]
 
 ## Related Pages
 
