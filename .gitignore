@@ -1,0 +1,22 @@
+# Obsidian settings and volatile files - ignore most config
+.obsidian/
+.obsidian/workspace.json
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/bookmarks.json
+.obsidian/core-plugins.json
+.obsidian/community-plugins.json
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/.gitkeep
+
+# System / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Optional: if you want to keep some plugin data private
+# .obsidian/plugins/  # uncomment only if you want to exclude ALL plugins
+
+# LLM-specific logs if they grow large
+log.md  # you can commit it, but some people .gitignore large logs

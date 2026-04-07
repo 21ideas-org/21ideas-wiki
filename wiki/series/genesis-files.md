@@ -1,0 +1,68 @@
+# Genesis Files
+
+*Author: Aaron van Wirdum (Bitcoin Magazine) | Parts: 5 + intro | Source: `raw/Theory/history/genesis-files/` | Tags: series, history, cypherpunks, digital-cash*
+
+---
+
+## Overview
+
+Aaron van Wirdum's series traces the intellectual prehistory of Bitcoin through the five key systems that preceded it. Each part profiles one system: who built it, what problem it solved, what it failed to solve, and why it mattered for Bitcoin.
+
+The series establishes that Bitcoin was not invented from scratch — it is the synthesis of 20+ years of cypherpunk research.
+
+---
+
+## The Five Systems
+
+**Part 1: eCash (David Chaum)**
+DigiCash and blind signatures. Chaum solved privacy in digital payments (the bank cannot link deposits to withdrawals). Failed: required a trusted central mint. Without the mint, the system dies. DigiCash went bankrupt in 1998.
+
+**Part 2: Hashcash (Adam Back)**
+Proof-of-work for anti-spam. Solved: unforgeable costliness — tokens that require real energy to produce. Failed: tokens are single-use and non-transferable. Satoshi cited Back in the whitepaper.
+
+**Part 3: b-money (Wei Dai)**
+Proposed distributed ledger + PoW for money creation. Solved: the design concept of decentralized digital cash. Failed: never implemented; no solution to maintaining a consistent ledger without a coordinator. Satoshi cited Dai in the whitepaper.
+
+**Part 4: Bit Gold (Nick Szabo)**
+PoW chain with timestamped ownership records. Closest design to Bitcoin. Solved: decentralized creation of scarce digital tokens via PoW chain. Failed: (1) required trusted timestamping; (2) different PoW strings had different values (no uniform unit). Never implemented.
+
+**Part 5: RPOW (Hal Finney)**
+Reusable Proofs of Work. Solved: made PoW tokens transferable — you could exchange them like money. Failed: required a trusted server to prevent double-spending (Hal acknowledged this explicitly). Implemented and ran briefly.
+
+---
+
+## The Pattern
+
+| System | Unforgeable Scarcity | Transferable | Decentralized |
+|--------|---------------------|-------------|---------------|
+| eCash | ✓ (blind sigs) | ✓ | ✗ (central mint) |
+| Hashcash | ✓ (PoW) | ✗ | ✓ |
+| b-money | ✓ | ✓ | ✓ (design only) |
+| Bit Gold | ✓ (PoW chain) | ✓ | ~ (trusted timestamps) |
+| RPOW | ✓ | ✓ | ✗ (trusted server) |
+| **Bitcoin** | **✓** | **✓** | **✓** |
+
+Bitcoin solved all three simultaneously: PoW provides unforgeable scarcity; the UTXO model enables transfer; the blockchain + longest-chain rule provides decentralized consensus.
+
+---
+
+## The Human Story
+
+Beyond the technical analysis, the series traces the human story:
+- Chaum was ahead of his time by a decade; his company died for lack of internet penetration
+- Back and Dai published proposals but didn't pursue them further
+- Szabo developed Bit Gold extensively but couldn't solve the timestamping problem
+- Finney was the most persistent — RPOW was the last thing he tried before Bitcoin
+- When Bitcoin was published, Finney was the *only person Satoshi emailed* before releasing it publicly
+
+The first Bitcoin transaction (Satoshi → Finney, 10 BTC, January 12, 2009) was not random — it was the passing of the torch.
+
+---
+
+## Related Pages
+
+- [[entities/cypherpunks]] — the movement producing these systems
+- [[entities/hal-finney]] — RPOW and the first Bitcoin recipient
+- [[entities/nick-szabo]] — Bit Gold creator
+- [[history/pre-bitcoin-cypherpunks]] — condensed summary
+- [[history/timeline]] — chronological context
