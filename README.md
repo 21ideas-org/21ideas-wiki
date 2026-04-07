@@ -1,4 +1,4 @@
-# Bitcoin LLM Wiki — 21 Ideas
+# Bitcoin LLM Wiki — 21ideas
 
 A living, AI-maintained knowledge base for Bitcoin education. Built from **200+ articles** and **10+ foundational books** using [Andrej Karpathy’s LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
@@ -13,7 +13,7 @@ A living, AI-maintained knowledge base for Bitcoin education. Built from **200+ 
    git clone https://github.com/yourusername/bitcoin-llm-wiki.git
    ```
 
- Open the folder as a vault in Obsidian → explore the graph starting from `index.md` or `overview.md`.
+Open the folder as a vault in Obsidian → explore the graph starting from `index.md` or `overview.md`.
 
 2. **Query with AI agents**
 Any LLM that can read folders (Claude Code, Cursor, Gemini, local models, etc.) can be pointed at this repo. Instruct it: “Use only the wiki/ folder as source of truth, follow [[wikilinks]], synthesize...”
@@ -22,7 +22,6 @@ Any LLM that can read folders (Claude Code, Cursor, Gemini, local models, etc.) 
 Fork this repo and run your own LLM agent against it. Add new raw sources → let the agent update the wiki. Great for personal Bitcoin research, education projects, or building Telegram/Substack content.
 
 ## Structure
-
 `concepts/` — Core ideas, mechanics, terms (heavily linked to the glossary)
 `entities/` — People, projects, events
 `books/` — Summaries and syntheses
@@ -34,6 +33,7 @@ Fork this repo and run your own LLM agent against it. Add new raw sources → le
 Feel free to open issues or PRs if you spot gaps or want to contribute new syntheses. 
 The wiki is designed to be agent-friendly.  
 This wiki is a work in progress and will keep evolving as new material is added.  
-Built as part of the 21ideas Bitcoin education project.  
+Built as part of the [21ideas](https://21ideas.org) Bitcoin education project.  
 
+⚡️ Found the project useful? [Zap](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7) Tony a coffee.
 
