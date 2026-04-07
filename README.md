@@ -35,5 +35,11 @@ The wiki is designed to be agent-friendly.
 This wiki is a work in progress and will keep evolving as new material is added.  
 Built as part of the [21ideas](https://21ideas.org) Bitcoin education project.  
 
+## License
+
+This project is licensed under the [MIT License](LICENSE) — feel free to fork, use, and build upon it.
+
+---
+
 ⚡️ Found the project useful? [Zap](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7) [Tony](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7) a coffee.
 
