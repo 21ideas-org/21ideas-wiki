@@ -68,4 +68,4 @@ A recurring tension in the source material: the easiest Bitcoin experience (cust
 - Mining economics / hardware specifics
 - Regulatory landscape (mentioned but not systematically tracked)
 - Non-Russian Bitcoin communities / non-Western perspectives (except Gladstein's HRF work)
-- DeFi / altcoins / Web3 — covered only to argue against them
+- DeFi / altcoins / Web3 — intentionally covered only to argue against them
