@@ -1,3 +1,11 @@
+---
+title: "What I Learned From Bitcoin"
+category: series
+tags: [bitcoin, wiki, series, philosophy, gigi]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # What I Learned From Bitcoin
 
 *Author: Gigi (dergigi) | Parts: 3 planned (1 available in library) | Source: `raw/Theory/philosophy/what-i-learned-from-bitcoin/` | Tags: series, philosophy, economics, technology*

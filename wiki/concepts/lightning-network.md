@@ -1,3 +1,11 @@
+---
+title: "Lightning Network"
+category: concepts
+tags: [bitcoin, wiki, lightning, layer-2, payments]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Lightning Network
 
 *Tags: layer-2, payments, scalability, lightning*

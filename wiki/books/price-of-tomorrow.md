@@ -1,3 +1,12 @@
+---
+title: "The Price of Tomorrow"
+author: Jeff Booth
+category: books
+tags: [bitcoin, wiki, books, economics, deflation]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # The Price of Tomorrow
 
 *Author: Jeff Booth | Source: `raw/Books/cena-zavtrashnego-dnja/` | Tags: book, economics, deflation, technology*

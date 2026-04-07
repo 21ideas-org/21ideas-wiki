@@ -1,3 +1,11 @@
+---
+title: "The Blocksize War (2015-2017)"
+category: history
+tags: [bitcoin, wiki, history, governance, blocksize-war]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # The Blocksize War (2015–2017)
 
 *Tags: history, governance, SegWit, Bitcoin-Cash, UASF*

@@ -1,3 +1,11 @@
+---
+title: "UTXOs (Unspent Transaction Outputs)"
+category: concepts
+tags: [bitcoin, wiki, protocol, accounting, utxo]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # UTXOs (Unspent Transaction Outputs)
 
 *Tags: protocol, accounting, privacy*

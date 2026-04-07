@@ -1,3 +1,12 @@
+---
+title: "The Bullish Case for Bitcoin"
+author: Vijay Boyapati
+category: books
+tags: [bitcoin, wiki, books, economics, monetary-theory]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # The Bullish Case for Bitcoin
 
 *Author: Vijay Boyapati | Foreword: Michael Saylor | Source: `raw/Books/bychij-kejs-dlya-bitcoin/` | Tags: book, investment, monetary-theory*

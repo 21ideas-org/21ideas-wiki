@@ -1,3 +1,11 @@
+---
+title: "SegWit (Segregated Witness)"
+category: concepts
+tags: [bitcoin, wiki, protocol, upgrade, segwit]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # SegWit (Segregated Witness)
 
 *Tags: protocol, upgrade, soft-fork, 2017, transaction-malleability, lightning*

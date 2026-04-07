@@ -1,3 +1,12 @@
+---
+title: "Inventing Bitcoin"
+author: Yan Pritzker
+category: books
+tags: [bitcoin, wiki, books, technical, primer]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Inventing Bitcoin
 
 *Author: Yan Pritzker | Source: `raw/Books/izobretaem-bitkoin/` | Tags: book, technical, beginner*

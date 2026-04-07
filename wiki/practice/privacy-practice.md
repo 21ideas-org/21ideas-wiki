@@ -1,3 +1,11 @@
+---
+title: "Privacy in Practice"
+category: practice
+tags: [bitcoin, wiki, practice, privacy, coinjoin]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Privacy in Practice
 
 *Tags: practice, privacy, CoinJoin, Dojo, GrapheneOS*
@@ -131,5 +139,6 @@ Lightning is better than on-chain for privacy (payments aren't broadcast publicl
 - [[concepts/privacy]] — the theory
 - [[concepts/utxo]] — UTXO management concepts
 - [[practice/buying]] — no-KYC acquisition
+- [[practice/running-a-node]] — connect Sparrow/Samourai to your own node for full address privacy
 - [[practice/lightning-tools]] — Lightning privacy tools
 - [[entities/cypherpunks]] — why privacy matters

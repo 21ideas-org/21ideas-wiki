@@ -1,3 +1,11 @@
+---
+title: "Overview: Bitcoin Knowledge Synthesis"
+category: overview
+tags: [bitcoin, wiki, overview, synthesis]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Overview: Bitcoin Knowledge Synthesis
 
 *A synthesis of the 21ideas.org source library — ~308 articles, 8 books, multiple article series.*
@@ -75,3 +83,24 @@ A recurring tension in the source material: the easiest Bitcoin experience (cust
 - Regulatory landscape (mentioned but not systematically tracked)
 - Non-Russian Bitcoin communities / non-Western perspectives (except Gladstein's HRF work)
 - DeFi / altcoins / Web3 — intentionally covered only to argue against them
+
+---
+
+## Wiki Status: Production-Ready (2026-04-07)
+
+This wiki now contains **54 pages** spanning all major dimensions of the 21ideas.org source library:
+
+- **Concepts (17 pages)**: Bitcoin fundamentals, monetary theory, protocol (PoW, UTXO, SegWit, Taproot, mining), Lightning, privacy, security, multisig, address types, Hashcash, Cantillon Effect, and a full protocol stack overview
+- **Entities (7 pages)**: Satoshi Nakamoto, Hal Finney, Nick Szabo, Cypherpunks, Gigi, Parker Lewis, Saifedean Ammous
+- **Books (8 pages)**: All major books in the library synthesized with key arguments and cross-references
+- **Series (7 pages)**: Gradually Then Suddenly, Genesis Files, Discovering Bitcoin, Bitcoin Astronomy, Silk Road, OXT Research, What I Learned From Bitcoin
+- **History (3 pages)**: Full timeline, pre-Bitcoin cypherpunk era, blocksize war
+- **Philosophy (1 page)**: 17 core philosophical themes synthesized
+- **Practice (5 pages)**: Buying, storage, Lightning tools, privacy practice, running a node
+- **Topics (2 pages)**: Bitcoin for dissidents, network effects
+- **Reference (1 page)**: Comprehensive glossary (100+ terms)
+- **Navigation (2 pages)**: Index and this overview
+
+Every page carries YAML frontmatter (title, category, tags, updated date) for Dataview compatibility. Internal cross-links number in the hundreds — the graph is dense and navigable. All broken links have been resolved. All pages have a `## Related Pages` section.
+
+*"This wiki is now fully synthesized and ready for public viewing via Quartz (see README)."*

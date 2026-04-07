@@ -1,3 +1,11 @@
+---
+title: "Bitcoin Timeline"
+category: history
+tags: [bitcoin, wiki, history, timeline, events]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Bitcoin Timeline
 
 *Tags: history, timeline, events*
@@ -29,9 +37,9 @@ See [[history/pre-bitcoin-cypherpunks]] and [[series/genesis-files]].
 |------|-------|
 | Aug 18, 2008 | bitcoin.org domain registered |
 | Oct 31, 2008 | Bitcoin whitepaper published to cryptography mailing list |
-| Jan 3, 2009 | [[history/timeline\|Genesis block]] mined by [[entities/satoshi-nakamoto\|Satoshi Nakamoto]]; embedded headline: "Chancellor on brink of second bailout for banks" |
+| Jan 3, 2009 | [[history/timeline|Genesis block]] mined by [[entities/satoshi-nakamoto|Satoshi Nakamoto]]; embedded headline: "Chancellor on brink of second bailout for banks" |
 | Jan 9, 2009 | Bitcoin v0.1 released on SourceForge |
-| Jan 12, 2009 | First Bitcoin transaction: [[entities/satoshi-nakamoto\|Satoshi]] → [[entities/hal-finney\|Hal Finney]] (10 BTC) |
+| Jan 12, 2009 | First Bitcoin transaction: [[entities/satoshi-nakamoto|Satoshi]] → [[entities/hal-finney|Hal Finney]] (10 BTC) |
 | Oct 5, 2009 | First Bitcoin exchange rate: $1 = 1,309 BTC (New Liberty Standard) |
 | May 22, 2010 | **Bitcoin Pizza Day**: Laszlo Hanyecz pays 10,000 BTC for 2 pizzas — first real-world commerce |
 | Aug 15, 2010 | **Value overflow bug**: exploit creates 184 billion BTC; fixed in hours by community |
@@ -44,7 +52,7 @@ See [[history/pre-bitcoin-cypherpunks]] and [[series/genesis-files]].
 
 | Date | Event | Bitcoin Relevance |
 |------|-------|------------------|
-| Aug 15, 1971 | **Nixon Shock**: USD-gold link severed | [[concepts/money\|Fiat]] era begins; Bitcoin's purpose crystallized |
+| Aug 15, 1971 | **Nixon Shock**: USD-gold link severed | [[concepts/money|Fiat]] era begins; Bitcoin's purpose crystallized |
 | 1974 | US-Saudi petrodollar deal | USD reserve currency cemented via oil pricing |
 | 2008 | **Global Financial Crisis** | Direct catalyst for Bitcoin creation |
 
@@ -63,7 +71,7 @@ See [[history/blocksize-war]] and [[books/blocksize-war]] for detailed account.
 | Apr 2016 | Bitcoin Classic (2MB hard fork) loses momentum |
 | Apr 2017 | ASICBoost controversy: Bitmain's covert optimization incompatible with SegWit |
 | May 2017 | New York Agreement signed by 58 companies (Segwit + 2MB hard fork) |
-| Aug 1, 2017 | UASF ([[concepts/governance\|BIP]]148) activates; [[concepts/segwit\|SegWit]] forced through user pressure |
+| Aug 1, 2017 | UASF ([[concepts/governance|BIP]]148) activates; [[concepts/segwit|SegWit]] forced through user pressure |
 | Aug 1, 2017 | Bitcoin Cash hard fork (8MB blocks; Roger Ver, Jihan Wu) |
 | Aug 24, 2017 | SegWit activates on Bitcoin mainnet |
 | Nov 2017 | SegWit2x cancelled due to community opposition |
@@ -74,9 +82,9 @@ See [[history/blocksize-war]] and [[books/blocksize-war]] for detailed account.
 
 | Date | Upgrade | What Changed |
 |------|---------|-------------|
-| Aug 2017 | **[[concepts/segwit\|SegWit]]** | Fixed [[concepts/segwit\|transaction malleability]]; enabled [[concepts/lightning-network\|Lightning]]; ~2x capacity |
-| Nov 2021 | **[[concepts/taproot\|Taproot]]** | [[concepts/taproot\|Schnorr]] signatures, [[concepts/taproot\|MAST]]; improved [[concepts/privacy\|privacy]] and smart contracts |
-| 2023+ | **[[concepts/taproot\|MuSig2]]** | Efficient Schnorr [[concepts/security\|multisig]]; N-of-N looks like single sig on-chain |
+| Aug 2017 | **[[concepts/segwit|SegWit]]** | Fixed [[concepts/segwit|transaction malleability]]; enabled [[concepts/lightning-network|Lightning]]; ~2x capacity |
+| Nov 2021 | **[[concepts/taproot|Taproot]]** | [[concepts/taproot|Schnorr]] signatures, [[concepts/taproot|MAST]]; improved [[concepts/privacy|privacy]] and smart contracts |
+| 2023+ | **[[concepts/taproot|MuSig2]]** | Efficient Schnorr [[concepts/security|multisig]]; N-of-N looks like single sig on-chain |
 
 ---
 

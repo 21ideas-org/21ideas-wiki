@@ -1,3 +1,11 @@
+---
+title: "OXT Research: Understanding Bitcoin Privacy"
+category: series
+tags: [bitcoin, wiki, series, privacy, blockchain-analysis]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # OXT Research: Understanding Bitcoin Privacy
 
 *Authors: Samourai Wallet team (TDevD and others) | Parts: 4 | Source: `raw/Theory/privacy/oxt/` | Tags: series, privacy, blockchain-analysis, chain-surveillance*

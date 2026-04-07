@@ -1,3 +1,11 @@
+---
+title: "Genesis Files"
+category: series
+tags: [bitcoin, wiki, series, history, cypherpunks]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Genesis Files
 
 *Author: Aaron van Wirdum (Bitcoin Magazine) | Parts: 5 + intro | Source: `raw/Theory/history/genesis-files/` | Tags: series, history, cypherpunks, digital-cash*

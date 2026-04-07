@@ -1,3 +1,11 @@
+---
+title: "Bitcoin"
+category: concepts
+tags: [bitcoin, wiki, fundamentals, protocol, money]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Bitcoin
 
 *Tags: fundamentals, protocol, money*
@@ -30,15 +38,15 @@ Sources: `raw/Start/start.md`, `raw/Books/izobretaem-bitkoin/`
 | **Censorship-resistant** | No party can block valid transactions |
 | **Pseudonymous** | Transactions are public; identities are not |
 | **Trustless** | No need to trust any counterparty |
-| **Programmable** | Scripts enable conditional spending ([[concepts/security\|multisig]], timelocks, etc.) |
+| **Programmable** | Scripts enable conditional spending ([[concepts/security|multisig]], timelocks, etc.) |
 
 ---
 
 ## How It Works (High Level)
 
-1. **Transactions** — signed messages transferring ownership of [[utxo|UTXOs]] from one address to another
+1. **Transactions** — signed messages transferring ownership of [[concepts/utxo|UTXOs]] from one address to another
 2. **Mempool** — transactions broadcast to the network wait in a [[glossary|mempool]] until confirmed
-3. **[[concepts/mining|Mining]]** — [[concepts/mining|miners]] compete to include transactions in a block by solving a [[proof-of-work|Proof of Work]] puzzle
+3. **[[concepts/mining|Mining]]** — [[concepts/mining|miners]] compete to include transactions in a block by solving a [[concepts/proof-of-work|Proof of Work]] puzzle
 4. **Blockchain** — a chain of blocks, each referencing the previous; tamper-evident by design
 5. **[[concepts/governance|Full nodes]]** — nodes download and verify every block independently; they enforce the rules
 6. **Consensus rules** — all nodes agree on the same rules; violations are rejected
@@ -52,8 +60,8 @@ Sources: `raw/Start/start.md`, `raw/Books/izobretaem-bitkoin/`
 | Total supply | 21,000,000 BTC |
 | Smallest unit | 1 satoshi = 0.00000001 BTC |
 | Block time | ~10 minutes |
-| [[concepts/scarcity\|Halving]] interval | ~210,000 blocks (~4 years) |
-| Current [[concepts/scarcity\|block reward]] (2024) | 3.125 BTC |
+| [[concepts/scarcity|Halving]] interval | ~210,000 blocks (~4 years) |
+| Current [[concepts/scarcity|block reward]] (2024) | 3.125 BTC |
 | Last bitcoin mined | ~year 2140 |
 | Difficulty adjustment | Every 2,016 blocks (~2 weeks) |
 
@@ -75,9 +83,9 @@ See [[philosophy/overview]] for the full argument against altcoins.
 
 | Upgrade | Date | What It Added |
 |---------|------|--------------|
-| [[segwit\|SegWit]] | Aug 2017 | Fixed transaction malleability; enabled Lightning; ~2x block capacity |
-| [[concepts/taproot\|Taproot]] | Nov 2021 | [[concepts/taproot\|Schnorr]] signatures, [[concepts/taproot\|MAST]], improved privacy and smart contract flexibility |
-| [[concepts/taproot\|MuSig2]] | 2023+ | Efficient N-of-N [[concepts/taproot\|Schnorr]] multisig |
+| [[concepts/segwit|SegWit]] | Aug 2017 | Fixed transaction malleability; enabled Lightning; ~2x block capacity |
+| [[concepts/taproot|Taproot]] | Nov 2021 | [[concepts/taproot|Schnorr]] signatures, [[concepts/taproot|MAST]], improved privacy and smart contract flexibility |
+| [[concepts/taproot|MuSig2]] | 2023+ | Efficient N-of-N [[concepts/taproot|Schnorr]] multisig |
 
 ---
 
@@ -91,6 +99,7 @@ See [[philosophy/overview]] for the full argument against altcoins.
 - [[concepts/scarcity]] — why 21 million
 - [[concepts/governance]] — who controls Bitcoin
 - [[concepts/utxo]] — the accounting model
+- [[concepts/protocol-stack]] — layered view of Bitcoin's architecture (P2P, base chain, Lightning, apps)
 - [[entities/satoshi-nakamoto]] — the creator
 - [[books/inventing-bitcoin]] — best technical primer
 - [[series/gradually-then-suddenly]] — Parker Lewis's case for Bitcoin as money

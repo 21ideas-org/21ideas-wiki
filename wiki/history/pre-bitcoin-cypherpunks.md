@@ -1,3 +1,11 @@
+---
+title: "Pre-Bitcoin: The Cypherpunk Era"
+category: history
+tags: [bitcoin, wiki, history, cypherpunks, precursors]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Pre-Bitcoin: The Cypherpunk Era
 
 *Tags: history, cypherpunks, digital-cash, eCash, Hashcash, Bit-Gold*

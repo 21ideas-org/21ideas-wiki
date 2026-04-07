@@ -1,3 +1,12 @@
+---
+title: "Sovereignty Through Mathematics"
+author: Knut Svanholm
+category: books
+tags: [bitcoin, wiki, books, philosophy, cryptography]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Sovereignty Through Mathematics
 
 *Author: Knut Svanholm | Source: `raw/Books/Suverenitet-posredstvom-matematiki/` | Tags: book, philosophy, beginner, Austrian-economics*

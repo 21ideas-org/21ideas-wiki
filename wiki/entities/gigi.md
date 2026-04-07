@@ -1,3 +1,11 @@
+---
+title: "Gigi (dergigi)"
+category: entities
+tags: [bitcoin, wiki, philosophy, author, entities]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Gigi (dergigi)
 
 *Tags: entity, person, Bitcoin-philosopher, author*

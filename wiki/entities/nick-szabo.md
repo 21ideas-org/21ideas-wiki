@@ -1,3 +1,11 @@
+---
+title: "Nick Szabo"
+category: entities
+tags: [bitcoin, wiki, cypherpunks, history, entities]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Nick Szabo
 
 *Tags: entity, person, cypherpunk, Bit-Gold, smart-contracts*

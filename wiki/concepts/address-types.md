@@ -1,3 +1,11 @@
+---
+title: "Bitcoin Address Types"
+category: concepts
+tags: [bitcoin, wiki, protocol, addresses, taproot]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Bitcoin Address Types
 
 *Tags: protocol, addresses, SegWit, Taproot, P2PKH, P2SH, P2TR*

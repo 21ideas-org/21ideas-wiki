@@ -1,3 +1,11 @@
+---
+title: "Bitcoin's Seven Network Effects"
+category: topics
+tags: [bitcoin, wiki, economics, adoption, network-effects]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Bitcoin's Seven Network Effects
 
 *Tags: economics, network-effects, adoption, monetary-competition*

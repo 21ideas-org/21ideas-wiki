@@ -1,3 +1,11 @@
+---
+title: "Wiki Index"
+category: index
+tags: [bitcoin, wiki, index, navigation]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Wiki Index
 
 Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin education site (~308 source files). All source material is in Russian; wiki synthesis is in English.
@@ -13,12 +21,14 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 - [UTXOs](concepts/utxo.md) — Bitcoin's accounting model
 - [Privacy](concepts/privacy.md) — Bitcoin privacy: threats, tools, techniques
 - [Security](concepts/security.md) — Self-custody, seed phrases, multisig, hardware wallets
+- [Multisig (Multisignature)](concepts/multisig.md) — M-of-N schemes, PSBT workflow, collaborative custody, MuSig2
 - [Scarcity](concepts/scarcity.md) — 21 million cap, halving, digital scarcity
 - [Bitcoin Governance](concepts/governance.md) — Who controls Bitcoin, how changes happen
 - [Mining](concepts/mining.md) — SHA-256, proof of work, difficulty adjustment, ASICs, block rewards
 - [SegWit](concepts/segwit.md) — 2017 soft fork: malleability fix, block weight, witness data
 - [Taproot](concepts/taproot.md) — 2021 soft fork: Schnorr signatures, MAST, P2TR, MuSig2
 - [Address Types](concepts/address-types.md) — P2PK, P2PKH, P2SH, P2WPKH, P2WSH, P2TR explained
+- [Bitcoin Protocol Stack](concepts/protocol-stack.md) — Layered architecture: P2P, base chain, Script, Lightning, apps
 - [Hashcash](concepts/hashcash.md) — Adam Back's 1997 PoW anti-spam system; direct precursor to Bitcoin mining
 - [Cantillon Effect](concepts/cantillon-effect.md) — Non-neutral distributional effect of money creation; why Bitcoin is Cantillon-resistant
 
@@ -29,6 +39,8 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 - [Nick Szabo](entities/nick-szabo.md) — Bit Gold, Shelling Out, social scalability
 - [Cypherpunks](entities/cypherpunks.md) — The movement that made Bitcoin possible
 - [Gigi (dergigi)](entities/gigi.md) — Bitcoin philosopher, author of 21 Ways
+- [Parker Lewis](entities/parker-lewis.md) — Author of "Gradually, Then Suddenly"; Head of BD at Unchained Capital
+- [Saifedean Ammous](entities/saifedean-ammous.md) — Author of *The Bitcoin Standard* and *The Fiat Standard*
 
 ## Books
 
@@ -67,6 +79,7 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 - [Storage & Self-Custody](practice/storage.md) — Hardware wallets, multisig, cold storage
 - [Lightning Tools](practice/lightning-tools.md) — Wallets, apps, services
 - [Privacy in Practice](practice/privacy-practice.md) — CoinJoin, Dojo, GrapheneOS
+- [Running a Bitcoin Node](practice/running-a-node.md) — Why it matters, hardware, Bitcoin Core, Umbrel, connecting wallets
 
 ## Topics
 
@@ -79,4 +92,8 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 
 ## Overview
 
-- [Synthesis](overview.md) — Big-picture synthesis: what this knowledge base is about
+- [[overview|Synthesis]] — Big-picture synthesis: what this knowledge base is about
+
+---
+
+*This wiki contains 54 pages synthesized from 308 source files in the 21ideas.org raw/ library. It is fully interlinked and ready for public hosting via Quartz or Obsidian Publish. Last updated: 2026-04-07.*

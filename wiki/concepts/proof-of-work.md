@@ -1,3 +1,11 @@
+---
+title: "Proof of Work"
+category: concepts
+tags: [bitcoin, wiki, protocol, consensus, mining]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Proof of Work
 
 *Tags: protocol, mining, consensus, security*

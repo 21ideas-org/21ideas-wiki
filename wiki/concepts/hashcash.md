@@ -1,3 +1,11 @@
+---
+title: "Hashcash"
+category: concepts
+tags: [bitcoin, wiki, proof-of-work, cypherpunks, precursor]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Hashcash
 
 *Tags: protocol, proof-of-work, cypherpunks, precursor, anti-spam*

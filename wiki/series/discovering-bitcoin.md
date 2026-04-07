@@ -1,3 +1,11 @@
+---
+title: "Discovering Bitcoin"
+category: series
+tags: [bitcoin, wiki, series, philosophy, zucco]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Discovering Bitcoin
 
 *Author: Giacomo Zucco (BHB Network) | Parts: 7 | Source: `raw/Theory/economics/discovering-bitcoin/` | Tags: series, monetary-history, economics, beginner*

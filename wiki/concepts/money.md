@@ -1,3 +1,11 @@
+---
+title: "Money"
+category: concepts
+tags: [bitcoin, wiki, economics, monetary-theory, austrian-school]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Money
 
 *Tags: monetary-theory, economics, Austrian-school*

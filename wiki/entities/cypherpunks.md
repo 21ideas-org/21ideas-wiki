@@ -1,3 +1,11 @@
+---
+title: "Cypherpunks"
+category: entities
+tags: [bitcoin, wiki, cypherpunks, history, philosophy]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Cypherpunks
 
 *Tags: entity, movement, history, privacy, cryptography*
@@ -21,11 +29,11 @@ The mailing list (founded 1992 by Eric Hughes, Timothy May, and John Gilmore) wa
 | John Gilmore | Co-founder; EFF co-founder |
 | Philip Zimmermann | Created PGP (1991); the first mass-market encryption tool |
 | David Chaum | eCash/DigiCash; blind signatures; the spiritual godfather |
-| Adam Back | [[concepts/hashcash\|Hashcash]] (1997); Blockstream CEO |
+| Adam Back | [[concepts/hashcash|Hashcash]] (1997); Blockstream CEO |
 | Wei Dai | b-money (1998) |
 | Nick Szabo | Bit Gold, smart contracts |
-| [[entities/hal-finney\|Hal Finney]] | PGP dev; RPOW; first Bitcoin recipient |
-| [[entities/satoshi-nakamoto\|Satoshi Nakamoto]] | Bitcoin (synthesized cypherpunk ideas into working system) |
+| [[entities/hal-finney|Hal Finney]] | PGP dev; RPOW; first Bitcoin recipient |
+| [[entities/satoshi-nakamoto|Satoshi Nakamoto]] | Bitcoin (synthesized cypherpunk ideas into working system) |
 
 ---
 
@@ -68,11 +76,11 @@ The cypherpunks tried repeatedly to build digital cash:
 | Project | Year | Creator | Problem |
 |---------|------|---------|---------|
 | eCash / DigiCash | 1989 | David Chaum | Required trusted central mint; company went bankrupt |
-| [[concepts/hashcash\|Hashcash]] | 1997 | Adam Back | Anti-spam [[concepts/proof-of-work\|PoW]]; non-transferable |
+| [[concepts/hashcash|Hashcash]] | 1997 | Adam Back | Anti-spam [[concepts/proof-of-work|PoW]]; non-transferable |
 | b-money | 1998 | Wei Dai | Proposed but never implemented |
 | Bit Gold | 1998–2005 | Nick Szabo | Required trusted timestamping service |
 | RPOW | 2004 | Hal Finney | Transferable PoW tokens but required trusted server |
-| **Bitcoin** | **2008** | **[[entities/satoshi-nakamoto\|Satoshi]]** | **Solved all prior problems** |
+| **Bitcoin** | **2008** | **[[entities/satoshi-nakamoto|Satoshi]]** | **Solved all prior problems** |
 
 [[entities/satoshi-nakamoto|Satoshi Nakamoto]] explicitly cited Hashcash (Back) and b-money (Dai) in the whitepaper.
 

@@ -1,3 +1,11 @@
+---
+title: "Bitcoin Governance"
+category: concepts
+tags: [bitcoin, wiki, governance, protocol, bip]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Bitcoin Governance
 
 *Tags: governance, decentralization, protocol, consensus*
@@ -81,4 +89,5 @@ Source: `raw/Theory/protocol/21-million-is-non-negotiable.md`
 - [[concepts/bitcoin]] — the system governed this way
 - [[concepts/scarcity]] — the most important rule
 - [[history/blocksize-war]] — the greatest governance test
+- [[practice/running-a-node]] — running a node is how you enforce the rules you believe in
 - [[entities/satoshi-nakamoto]] — the governance problem he solved by disappearing

@@ -1,3 +1,11 @@
+---
+title: "Cantillon Effect"
+category: concepts
+tags: [bitcoin, wiki, economics, monetary-theory, fiat]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Cantillon Effect
 
 *Tags: economics, monetary-theory, Austrian-school, fiat, inequality*

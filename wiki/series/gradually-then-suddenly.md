@@ -1,3 +1,11 @@
+---
+title: "Gradually, Then Suddenly"
+category: series
+tags: [bitcoin, wiki, series, economics, parker-lewis]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Gradually, Then Suddenly
 
 *Author: Parker Lewis | Platform: Unchained Capital blog | Parts: 17 | Source: `raw/Theory/economics/gradually-then-suddenly/` | Tags: series, monetary-theory, economics*
@@ -19,7 +27,7 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 | 1 | Bitcoin is Money | Bitcoin meets all monetary criteria; dismissing it as "not real money" reflects fiat thinking |
 | 2 | Bitcoin Can't Be Copied | Monetary value cannot be copied by creating new cryptocurrencies; network effects are cumulative |
 | 3 | Bitcoin is Not Too Volatile | Volatility is a feature of monetization, not a bug; decreases over time as adoption grows |
-| 4 | Bitcoin Does Not Waste Energy | Energy expenditure is the *cost* of trustless security; compare to [[concepts/money\|fiat]] system's energy costs |
+| 4 | Bitcoin Does Not Waste Energy | Energy expenditure is the *cost* of trustless security; compare to [[concepts/money|fiat]] system's energy costs |
 | 5 | Bitcoin is Not Too Slow | The base layer is slow *by design*; Lightning handles speed; settlement finality matters more |
 | 6 | Bitcoin Fixes This | Bitcoin fixes the structural problems of fiat: inflation, censorship, confiscation |
 | 7 | Bitcoin, Not Blockchain | Blockchain without Bitcoin's monetary incentives is just a slow database |
@@ -68,4 +76,5 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 - [[concepts/proof-of-work]] — Part 4 (energy) and Part 8 (backing)
 - [[concepts/bitcoin]] — Part 1's subject
 - [[books/fiat-standard]] — shares the fiat critique
+- [[entities/parker-lewis]] — author profile and argument structure
 - [[series/discovering-bitcoin]] — complementary 7-part history of money

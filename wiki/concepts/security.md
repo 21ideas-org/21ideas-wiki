@@ -1,3 +1,11 @@
+---
+title: "Security"
+category: concepts
+tags: [bitcoin, wiki, security, custody, multisig]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Security
 
 *Tags: self-custody, seed, multisig, hardware-wallets, cold-storage*
@@ -42,7 +50,7 @@ Source: `raw/Theory/security/passphrase.md`
 
 | Device | Security Model | Notable Feature |
 |--------|---------------|-----------------|
-| [[practice/storage\|Coldcard]] | Airgapped (microSD), secure element | [[glossary\|PSBT]], advanced [[concepts/security\|multisig]], open firmware |
+| [[practice/storage|Coldcard]] | Airgapped (microSD), secure element | [[glossary|PSBT]], advanced [[concepts/security|multisig]], open firmware |
 | SeedSigner | DIY (RPi Zero + camera), stateless | No persistent storage; generates keys from seed at runtime |
 | Foundation Passport | Open source, airgapped | US-made, QR-based signing |
 | Trezor | USB, open source | Most accessible; no secure element on older models |
@@ -131,5 +139,6 @@ Best practices:
 
 - [[concepts/bitcoin]] — what you're securing
 - [[concepts/privacy]] — privacy enhances security
+- [[concepts/multisig]] — deep-dive on multisignature schemes, M-of-N, MuSig2, PSBT workflow
 - [[practice/storage]] — practical setup guides
 - [[entities/hal-finney]] — PGP pioneer, security thinking

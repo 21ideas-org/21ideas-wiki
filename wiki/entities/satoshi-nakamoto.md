@@ -1,3 +1,11 @@
+---
+title: "Satoshi Nakamoto"
+category: entities
+tags: [bitcoin, wiki, satoshi, history, entities]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Satoshi Nakamoto
 
 *Tags: entity, person, Bitcoin-creator, anonymous*

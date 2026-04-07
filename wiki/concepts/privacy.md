@@ -1,3 +1,11 @@
+---
+title: "Privacy"
+category: concepts
+tags: [bitcoin, wiki, privacy, security, coinjoin]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Privacy
 
 *Tags: privacy, coinjoin, surveillance, fungibility, on-chain*

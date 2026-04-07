@@ -1,3 +1,11 @@
+---
+title: "Lightning Tools"
+category: practice
+tags: [bitcoin, wiki, practice, lightning, tools]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Lightning Tools
 
 *Tags: practice, lightning, wallets, apps*

@@ -1,3 +1,11 @@
+---
+title: "Storage & Self-Custody"
+category: practice
+tags: [bitcoin, wiki, practice, security, cold-storage]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Storage & Self-Custody
 
 *Tags: practice, storage, cold-storage, hardware-wallet, multisig*
@@ -115,6 +123,8 @@ Consider:
 ## Related Pages
 
 - [[concepts/security]] — detailed security concepts
+- [[concepts/multisig]] — comprehensive guide to multisig schemes, PSBT, collaborative custody
 - [[concepts/privacy]] — privacy in storage
 - [[practice/buying]] — where bitcoin comes from before storage
+- [[practice/running-a-node]] — run your own node to validate self-custody transactions
 - [[practice/lightning-tools]] — for spending/Lightning amounts

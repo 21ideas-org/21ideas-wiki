@@ -1,3 +1,11 @@
+---
+title: "Bitcoin Astronomy"
+category: series
+tags: [bitcoin, wiki, series, philosophy, long-term]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Bitcoin Astronomy
 
 *Author: Dhruv Bansal (Unchained Capital) | Parts: 3 | Source: `raw/Theory/future/bitcoin-astronomy/` | Tags: series, future, speculative, philosophy*

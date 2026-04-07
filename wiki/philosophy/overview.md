@@ -1,3 +1,11 @@
+---
+title: "Philosophy Overview"
+category: philosophy
+tags: [bitcoin, wiki, philosophy, fundamentals, overview]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Philosophy Overview
 
 *Tags: philosophy, ideology, Bitcoin-maximalism, cypherpunk*

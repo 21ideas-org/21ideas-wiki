@@ -1,3 +1,11 @@
+---
+title: "Glossary"
+category: reference
+tags: [bitcoin, wiki, reference, glossary, terms]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Glossary
 
 *Source: `raw/Start/glossary.md` — the master Bitcoin term reference for 21ideas.org. All terms defined in the Russian educational context of the site. Terms with dedicated wiki pages are linked.*
@@ -293,3 +301,14 @@
 | P2TR | `bc1p` | 2021 | Taproot; Schnorr; all scripts look identical |
 
 See [[concepts/address-types]] for full details.
+
+---
+
+## Related Pages
+
+- [[concepts/bitcoin]] — Bitcoin fundamentals
+- [[concepts/address-types]] — full address type guide
+- [[concepts/utxo]] — UTXO model
+- [[concepts/lightning-network]] — Lightning terminology
+- [[concepts/security]] — self-custody terms
+- [[index]] — full wiki navigation

@@ -1,3 +1,11 @@
+---
+title: "Scarcity"
+category: concepts
+tags: [bitcoin, wiki, economics, supply, halving]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Scarcity
 
 *Tags: economics, 21M, halving, supply*

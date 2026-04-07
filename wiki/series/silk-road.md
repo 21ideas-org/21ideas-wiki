@@ -1,3 +1,11 @@
+---
+title: "Silk Road"
+category: series
+tags: [bitcoin, wiki, series, history, adoption]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Silk Road
 
 *Source: `raw/Theory/history/silk-road/` | Parts: 6 | Tags: series, history, Ross-Ulbricht, darknet*

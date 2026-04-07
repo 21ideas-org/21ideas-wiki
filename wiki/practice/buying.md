@@ -1,3 +1,11 @@
+---
+title: "Buying Bitcoin"
+category: practice
+tags: [bitcoin, wiki, practice, buying, kyc-free]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Buying Bitcoin
 
 *Tags: practice, buying, no-KYC, P2P*

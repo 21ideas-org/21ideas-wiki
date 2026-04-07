@@ -1,3 +1,11 @@
+---
+title: "Bitcoin for Dissidents"
+category: topics
+tags: [bitcoin, wiki, human-rights, activism, censorship-resistance]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Bitcoin for Dissidents
 
 *Tags: human-rights, censorship-resistance, activism, real-world-use*

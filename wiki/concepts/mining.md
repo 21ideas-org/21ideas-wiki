@@ -1,3 +1,11 @@
+---
+title: "Mining"
+category: concepts
+tags: [bitcoin, wiki, mining, protocol, sha256, pow]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # Mining
 
 *Tags: mining, SHA256, PoW, hash-rate, difficulty, nonce, ASIC*

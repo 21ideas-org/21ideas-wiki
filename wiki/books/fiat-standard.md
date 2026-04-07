@@ -1,3 +1,12 @@
+---
+title: "The Fiat Standard"
+author: Saifedean Ammous
+category: books
+tags: [bitcoin, wiki, books, economics, austrian-school]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # The Fiat Standard
 
 *Author: Saifedean Ammous | Source: `raw/Books/fiatniy-standart/` | Tags: book, economics, monetary-theory, Austrian-school*
@@ -74,6 +83,7 @@ The fiat-food thesis (Part II, Chapter 9) is the most controversial. Ammous argu
 
 - [[concepts/money]] — monetary theory covered here
 - [[concepts/scarcity]] — the alternative Ammous advocates
+- [[entities/saifedean-ammous]] — author profile with full thesis overview
 - [[books/price-of-tomorrow]] — complementary macroeconomic view (Jeff Booth)
 - [[books/bullish-case]] — investment-focused complement
 - [[series/gradually-then-suddenly]] — overlapping themes on fiat critique

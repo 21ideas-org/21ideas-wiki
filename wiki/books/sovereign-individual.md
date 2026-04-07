@@ -1,3 +1,12 @@
+---
+title: "The Sovereign Individual"
+author: James Dale Davidson & Lord William Rees-Mogg
+category: books
+tags: [bitcoin, wiki, books, philosophy, history]
+source: "Synthesized from raw/ sources + glossary"
+updated: "2026-04-07"
+---
+
 # The Sovereign Individual
 
 *Authors: James Dale Davidson & Lord William Rees-Mogg | Published: 1997 | Source: `raw/Books/suverennaya-lichnost/` | Tags: book, philosophy, future, political-economy*
