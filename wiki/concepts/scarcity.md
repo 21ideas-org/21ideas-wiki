@@ -2,10 +2,9 @@
 title: "Scarcity"
 category: concepts
 tags: [bitcoin, wiki, economics, supply, halving]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
-sources: []
+sources: ["https://21ideas.org/21-million-ne-podlezhit-obsuzhdeniyu/", "https://21ideas.org/pochemu-21-million/", "https://21ideas.org/bitcoin-myths/"]
 synthesized_date: "2026-04-07"
 completeness: high
 ---
@@ -95,7 +94,9 @@ Robert Breedlove draws a parallel between the invention of zero and Bitcoin (*Th
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/21-million-ne-podlezhit-obsuzhdeniyu/  
+- https://21ideas.org/pochemu-21-million/  
+- https://21ideas.org/bitcoin-myths/
 
 ---
 

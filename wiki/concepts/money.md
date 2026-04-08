@@ -2,10 +2,9 @@
 title: "Money"
 category: concepts
 tags: [bitcoin, wiki, economics, monetary-theory, austrian-school]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
-sources: []
+sources: ["https://21ideas.org/chto-takoe-dengi/", "https://21ideas.org/kak-rabotajut-dengi/", "https://21ideas.org/negativnye-effekty-neftedollara/", "https://21ideas.org/fiatniy-standart", "https://21ideas.org/suverenitet-posredstvom-matematiki/", "https://21ideas.org/hozyaeva-i-raby-deneg/", "https://21ideas.org/v-zaschitu-defliazii-book/", "https://21ideas.org/v-zashchitu-deflyacii/", "https://21ideas.org/dengi-blokchejny-i-socialnaya-masshtabiruemost/"]
 synthesized_date: "2026-04-07"
 completeness: high
 ---
@@ -100,7 +99,15 @@ Source: `raw/Theory/economics/money-blockchains-and-social-scalability.md`
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/chto-takoe-dengi/  
+- https://21ideas.org/kak-rabotajut-dengi/  
+- https://21ideas.org/negativnye-effekty-neftedollara/  
+- https://21ideas.org/fiatniy-standart  
+- https://21ideas.org/suverenitet-posredstvom-matematiki/  
+- https://21ideas.org/hozyaeva-i-raby-deneg/  
+- https://21ideas.org/v-zaschitu-defliazii-book/  
+- https://21ideas.org/v-zashchitu-deflyacii/  
+- https://21ideas.org/dengi-blokchejny-i-socialnaya-masshtabiruemost/
 
 ---
 

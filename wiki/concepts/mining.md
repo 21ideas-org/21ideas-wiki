@@ -2,10 +2,9 @@
 title: "Mining"
 category: concepts
 tags: [bitcoin, wiki, mining, protocol, sha256, pow]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
-sources: ["https://21ideas.org/mining-walkthrough"]
+sources: ["https://21ideas.org/mining-walkthrough", "https://21ideas.org/difficulty/"]
 synthesized_date: "2026-04-07"
 completeness: high
 ---
@@ -156,6 +155,7 @@ Source: `raw/Theory/economics/bitcoin-is-not-harmful-for-the-environment.md`, [[
 ## Sources
 
 - [Original article on 21ideas.org](https://21ideas.org/mining-walkthrough)
+- [Difficulty Adjustment](https://21ideas.org/difficulty/)
 
 ---
 

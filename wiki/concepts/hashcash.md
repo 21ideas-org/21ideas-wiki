@@ -2,7 +2,7 @@
 title: "Hashcash"
 category: concepts
 tags: [bitcoin, wiki, proof-of-work, cypherpunks, precursor]
-source: "Synthesized from raw/ sources + glossary"
+source: ["https://21ideas.org/gf/genesis-2/", "https://21ideas.org/glossary/"]
 updated: "2026-04-07"
 quality: synthesized
 sources: []

@@ -16,7 +16,7 @@ completeness: medium
 
 ---
 
-Parker Lewis is Head of Business Development at Unchained Capital and the author of the "Gradually, Then Suddenly" series — a 17-part series of essays published on the Unchained Capital blog between 2019 and 2020. The series is widely regarded as the most comprehensive and systematic case for Bitcoin-as-money written for a general educated audience. It is among the most cited works in the 21ideas.org library.
+Parker Lewis is the author of the "Gradually, Then Suddenly" series — a 17-part series of essays published on the Unchained Capital blog between 2019 and 2020. The series is widely regarded as the most comprehensive and systematic case for Bitcoin-as-money written for a general educated audience. It is among the most cited works in the 21ideas.org library.
 
 See also: [[series/gradually-then-suddenly]], [[concepts/money]], [[concepts/scarcity]], [[books/bullish-case]]
 

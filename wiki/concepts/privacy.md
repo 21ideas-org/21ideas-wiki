@@ -2,10 +2,9 @@
 title: "Privacy"
 category: concepts
 tags: [bitcoin, wiki, privacy, security, coinjoin]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
-sources: []
+sources: [https://21ideas.org/privacy/]
 synthesized_date: "2026-04-07"
 completeness: high
 ---
@@ -141,7 +140,7 @@ Source: `raw/Practice/privacy/grapheneos.md`
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+*Synthesized from multiple sources in the `/raw/privacy` directory https://21ideas.org/privacy/. No single canonical source article.*
 
 ---
 

@@ -2,10 +2,9 @@
 title: "Satoshi Nakamoto"
 category: entities
 tags: [bitcoin, wiki, satoshi, history, entities]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
-sources: []
+sources: ["https://21ideas.org/gf/", "https://21ideas.org/start/", "https://21ideas.org/vojna-za-razmer-bloka/glava-20/", "https://21ideas.org/byl-li-satoshi-zhadnym-majnerom/"]
 synthesized_date: "2026-04-07"
 completeness: medium
 ---
@@ -68,7 +67,10 @@ One of Satoshi's most important acts was *disappearing*. A Bitcoin with a known,
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/gf/
+- https://21ideas.org/start/  
+- https://21ideas.org/vojna-za-razmer-bloka/glava-20/  
+- https://21ideas.org/byl-li-satoshi-zhadnym-majnerom/
 
 ---
 

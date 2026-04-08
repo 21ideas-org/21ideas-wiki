@@ -12,7 +12,7 @@ updated: "2026-04-07"
 
 ---
 
-Saifedean Ammous is a Lebanese-American economist and author best known for *The Bitcoin Standard: The Decentralized Alternative to Central Banking* (2018) and *The Fiat Standard: The Debt Slavery Alternative to Human Civilization* (2021). He holds a PhD in Sustainable Development from Columbia University and has taught economics at the Lebanese American University. He operates through his own platform, Saifedean.com, which offers subscription-based courses in Austrian economics and Bitcoin.
+Saifedean Ammous is a Lebanese-American economist and author best known for [The Bitcoin Standard: The Decentralized Alternative to Central Banking](https://21ideas.org/bitcoin-standard/) (2018) and [The Fiat Standard: The Debt Slavery Alternative to Human Civilization](https://21ideas.org/fiatniy-standart) (2021). He holds a PhD in Sustainable Development from Columbia University and has taught economics at the Lebanese American University. He operates through his own platform, Saifedean.com, which offers subscription-based courses in Austrian economics and Bitcoin.
 
 *The Bitcoin Standard* is the most-cited book in the 21ideas.org library and is widely considered the foundational text for understanding Bitcoin through the lens of Austrian monetary theory.
 

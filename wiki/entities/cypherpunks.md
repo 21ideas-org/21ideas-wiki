@@ -2,10 +2,9 @@
 title: "Cypherpunks"
 category: entities
 tags: [bitcoin, wiki, cypherpunks, history, philosophy]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
-sources: []
+sources: ["https://21ideas.org/manifest-shifropanka/", "https://21ideas.org/manifest-kriptoanarhista/", "https://21ideas.org/libertaria/", "https://21ideas.org/pgp-verify/"]
 synthesized_date: "2026-04-07"
 completeness: medium
 ---
@@ -102,7 +101,10 @@ Source: `raw/Practice/security/pgp.md`
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/manifest-shifropanka/  
+- https://21ideas.org/manifest-kriptoanarhista/  
+- https://21ideas.org/libertaria/  
+- https://21ideas.org/pgp-verify/ 
 
 ---
 

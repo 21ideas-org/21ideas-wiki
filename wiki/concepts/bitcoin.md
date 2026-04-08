@@ -2,7 +2,6 @@
 title: "Bitcoin"
 category: concepts
 tags: [bitcoin, wiki, fundamentals, protocol, money]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: canonical
 sources: ["https://21ideas.org/start/start"]

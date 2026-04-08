@@ -2,10 +2,9 @@
 title: "Discovering Bitcoin"
 category: series
 tags: [bitcoin, wiki, series, philosophy, zucco]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
-sources: []
+sources: ["https://21ideas.org/sb/"]
 synthesized_date: "2026-04-07"
 completeness: medium
 ---
@@ -66,7 +65,7 @@ Zucco is a prominent Bitcoin maximalist and educator. He is associated with BHB 
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/sb/
 
 ---
 

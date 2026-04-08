@@ -2,7 +2,6 @@
 title: "Bitcoin's Seven Network Effects"
 category: topics
 tags: [bitcoin, wiki, economics, adoption, network-effects]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/sem-setevyh-effektov-bitkoina"]

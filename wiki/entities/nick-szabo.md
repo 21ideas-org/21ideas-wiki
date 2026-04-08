@@ -2,10 +2,9 @@
 title: "Nick Szabo"
 category: entities
 tags: [bitcoin, wiki, cypherpunks, history, entities]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
-sources: []
+sources: ["https://21ideas.org/gf/genesis-1/", "https://21ideas.org/gf/genesis-4/"]
 synthesized_date: "2026-04-07"
 completeness: medium
 ---
@@ -75,7 +74,8 @@ Source: `raw/Theory/economics/money-blockchains-and-social-scalability.md`
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/gf/genesis-1/  
+- https://21ideas.org/gf/genesis-4/  
 
 ---
 

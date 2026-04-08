@@ -2,10 +2,9 @@
 title: "Bitcoin Astronomy"
 category: series
 tags: [bitcoin, wiki, series, philosophy, long-term]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
-sources: []
+sources: ["https://21ideas.org/ba/"]
 synthesized_date: "2026-04-07"
 completeness: medium
 ---
@@ -57,7 +56,7 @@ The Bitcoin Astronomy series represents the "future" category of the 21ideas.org
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/ba/
 
 ---
 

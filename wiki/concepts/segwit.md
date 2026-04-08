@@ -5,7 +5,7 @@ tags: [bitcoin, wiki, protocol, upgrade, segwit]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
-sources: ["https://21ideas.org/segwit"]
+sources: ["https://21ideas.org/segwit", "https://21ideas.org/vojna-za-razmer-bloka/glava-5/", "https://21ideas.org/vojna-za-razmer-bloka/glava-20/" ]
 synthesized_date: "2026-04-07"
 completeness: high
 ---
@@ -97,6 +97,8 @@ SegWit was the prerequisite for the Lightning Network. Without malleability fixe
 ## Sources
 
 - [Original article on 21ideas.org](https://21ideas.org/segwit)
+- Block Size War [Chapter 5 – SegWit](https://21ideas.org/vojna-za-razmer-bloka/glava-5/)  
+- Block Size War [Chapter 20 – SegWit2X](https://21ideas.org/vojna-za-razmer-bloka/glava-20/)
 
 ---
 

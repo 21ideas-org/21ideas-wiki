@@ -2,10 +2,9 @@
 title: "Hal Finney"
 category: entities
 tags: [bitcoin, wiki, cypherpunks, history, entities]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
-sources: []
+sources: ["https://21ideas.org/hal-finney/", "https://21ideas.org/gf/genesis-5//", "https://21ideas.org/bitcoin-and-me/"]
 synthesized_date: "2026-04-07"
 completeness: medium
 ---
@@ -55,7 +54,9 @@ Hal Finney represents the direct human connection between the cypherpunk era and
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/hal-finney/  
+- https://21ideas.org/gf/genesis-5/  
+- https://21ideas.org/bitcoin-and-me/  
 
 ---
 

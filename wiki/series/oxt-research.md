@@ -2,7 +2,6 @@
 title: "OXT Research: Understanding Bitcoin Privacy"
 category: series
 tags: [bitcoin, wiki, series, privacy, blockchain-analysis]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/privacy/oxt-1", "https://21ideas.org/privacy/oxt-2", "https://21ideas.org/privacy/oxt-3", "https://21ideas.org/privacy/oxt-4"]

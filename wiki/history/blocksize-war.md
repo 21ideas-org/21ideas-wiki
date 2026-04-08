@@ -2,10 +2,9 @@
 title: "The Blocksize War (2015-2017)"
 category: history
 tags: [bitcoin, wiki, history, governance, blocksize-war]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
-sources: []
+sources: [https://21ideas.org/vojna-za-razmer-bloka/]
 synthesized_date: "2026-04-07"
 completeness: high
 ---
@@ -102,7 +101,7 @@ The [[history/blocksize-war|blocksize war]] established the template for Bitcoin
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/vojna-za-razmer-bloka/ 
 
 ---
 

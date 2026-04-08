@@ -5,7 +5,7 @@ tags: [bitcoin, wiki, protocol, accounting, utxo]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
-sources: []
+sources: ["https://21ideas.org/protocol/utxo-1/", "https://21ideas.org/protocol/utxo-2/", "https://21ideas.org/protocol/utxo-3/"]
 synthesized_date: "2026-04-07"
 completeness: high
 ---
@@ -88,7 +88,9 @@ This is why [[concepts/lightning-network|Lightning]] is efficient: thousands of 
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/protocol/utxo-1/  
+- https://21ideas.org/protocol/utxo-2/  
+- https://21ideas.org/protocol/utxo-3/  
 
 ---
 

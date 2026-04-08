@@ -3,10 +3,9 @@ title: "The Fiat Standard"
 author: Saifedean Ammous
 category: books
 tags: [bitcoin, wiki, books, economics, austrian-school]
-source: "Synthesized from raw/ sources + glossary"
+sources: ["https://21ideas.org/fiatniy-standart", "https://21ideas.org/glossary/"]
 updated: "2026-04-07"
 quality: reference
-sources: ["https://21ideas.org/fiatniy-standart"]
 synthesized_date: "2026-04-07"
 completeness: high
 ---

@@ -3,10 +3,9 @@ title: "The Bullish Case for Bitcoin"
 author: Vijay Boyapati
 category: books
 tags: [bitcoin, wiki, books, economics, monetary-theory]
-source: "Synthesized from raw/ sources + glossary"
+sources: ["https://21ideas.org/bychij-kejs-dlya-bitcoin/", "https://21ideas.org/glossary/"]
 updated: "2026-04-07"
 quality: reference
-sources: []
 synthesized_date: "2026-04-07"
 completeness: high
 ---

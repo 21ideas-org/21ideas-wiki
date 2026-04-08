@@ -2,7 +2,6 @@
 title: "Bitcoin for Dissidents"
 category: topics
 tags: [bitcoin, wiki, human-rights, activism, censorship-resistance]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/bitcoin-dissidenty"]

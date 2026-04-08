@@ -2,10 +2,9 @@
 title: "Bitcoin Governance"
 category: concepts
 tags: [bitcoin, wiki, governance, protocol, bip]
-source: "Synthesized from raw/ sources + glossary"
+sources: ["https://21ideas.org/kto-kontroliruet-bitkoin-kor/", "https://21ideas.org/upravlenie-bitcoin/"]
 updated: "2026-04-07"
 quality: reference
-sources: []
 synthesized_date: "2026-04-07"
 completeness: high
 ---

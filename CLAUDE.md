@@ -1,3 +1,29 @@
+# 21ideas Bitcoin Wiki — Project-Specific Rules (April 2026)
+
+This file extends the general LLM Wiki pattern below for our specific Bitcoin education use case.
+
+## Core Conventions (always follow these first)
+
+- **Source of truth**: All content must be grounded in `raw/` files from 21ideas.org. Never hallucinate or add external knowledge.
+- **Frontmatter (mandatory on every wiki page)**:
+  ```yaml
+  ---
+  title: 
+  category: concepts | entities | books | series | history | philosophy | practice | topics
+  quality: canonical | reference | synthesized | stub
+  sources: ["https://21ideas.org/..."]   # full URLs when available, otherwise []
+  synthesized_date: "2026-04-XX"
+  completeness: high | medium | low
+  language: en   # or ru for wiki-ru/
+  ```
+
+- Style & Tone: Clear, precise, neutral but firm on Bitcoin’s monetary sovereignty, censorship resistance, and first-principles thinking. Cite contradictions honestly. Use [[wikilinks]] liberally.
+- Source linking: Always include a "## Sources" section at the bottom with links back to original 21ideas.org pages when available.
+- Quality & Trust: Be explicit about what is synthesized vs. direct reference. Flag any remaining gaps.
+- Russian mirror: When working in wiki-ru/, use the original files in `/raw` directory naturally while preserving technical accuracy and the same frontmatter structure.
+
+All general LLM Wiki rules below still apply. When in doubt, prioritize provenance, consistency, and compounding value.
+
 # LLM Wiki
 
 A pattern for building personal knowledge bases using LLMs.

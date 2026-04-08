@@ -3,10 +3,9 @@ title: "The Blocksize War"
 author: Jonathan Bier
 category: books
 tags: [bitcoin, wiki, books, history, governance]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
-sources: []
+sources: ["https://21ideas.org/vojna-za-razmer-bloka", "https://21ideas.org/glossary/"]
 synthesized_date: "2026-04-07"
 completeness: high
 ---

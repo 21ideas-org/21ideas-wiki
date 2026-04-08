@@ -2,7 +2,6 @@
 title: "Gradually, Then Suddenly"
 category: series
 tags: [bitcoin, wiki, series, economics, parker-lewis]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/pzv"]

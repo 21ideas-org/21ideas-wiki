@@ -3,7 +3,6 @@ title: "21 Ways"
 author: Gigi
 category: books
 tags: [bitcoin, wiki, books, philosophy, gigi]
-source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/21-sposob"]

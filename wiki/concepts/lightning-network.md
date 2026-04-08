@@ -2,10 +2,9 @@
 title: "Lightning Network"
 category: concepts
 tags: [bitcoin, wiki, lightning, layer-2, payments]
-source: "Synthesized from raw/ sources + glossary"
+sources: ["https://21ideas.org/mekhanizm-raboty-lightning/", "https://21ideas.org/glossary/", "https://21ideas.org/privatnost-v-lajtning/", "https://21ideas.org/centralizovanna-li-set-lightning/", "https://21ideas.org/vojna-za-razmer-bloka/glava-6/", "https://21ideas.org/likvidnost-v-lajtning/", "https://21ideas.org/posts/replacement-cycling/"]
 updated: "2026-04-07"
 quality: reference
-sources: []
 synthesized_date: "2026-04-07"
 completeness: high
 ---
@@ -117,7 +116,13 @@ Source: `raw/Theory/philosophy/freedom-of-value.md`
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+- https://21ideas.org/mekhanizm-raboty-lightning/  
+- https://21ideas.org/glossary/  
+- https://21ideas.org/privatnost-v-lajtning/  
+- https://21ideas.org/centralizovanna-li-set-lightning/  
+- https://21ideas.org/vojna-za-razmer-bloka/glava-6/  
+- https://21ideas.org/likvidnost-v-lajtning/  
+- https://21ideas.org/posts/replacement-cycling/
 
 ---
 
