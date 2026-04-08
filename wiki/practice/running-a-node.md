@@ -2,8 +2,12 @@
 title: "Running a Bitcoin Node"
 category: practice
 tags: [bitcoin, wiki, practice, node, sovereignty, privacy, bitcoin-core]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Running a Bitcoin Node

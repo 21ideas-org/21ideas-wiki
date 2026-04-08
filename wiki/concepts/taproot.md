@@ -2,6 +2,7 @@
 title: "Taproot"
 category: concepts
 tags: [bitcoin, wiki, protocol, upgrade, taproot, schnorr]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference

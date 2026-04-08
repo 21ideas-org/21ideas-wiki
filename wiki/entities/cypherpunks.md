@@ -2,6 +2,7 @@
 title: "Cypherpunks"
 category: entities
 tags: [bitcoin, wiki, cypherpunks, history, philosophy]
+language: en
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/manifest-shifropanka/", "https://21ideas.org/manifest-kriptoanarhista/", "https://21ideas.org/libertaria/", "https://21ideas.org/pgp-verify/"]

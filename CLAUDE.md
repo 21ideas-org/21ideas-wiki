@@ -24,6 +24,64 @@ This file extends the general LLM Wiki pattern below for our specific Bitcoin ed
 
 All general LLM Wiki rules below still apply. When in doubt, prioritize provenance, consistency, and compounding value.
 
+---
+
+# 21ideas Bitcoin Wiki — Bilingual Lint Rules (April 2026)
+
+This section extends the general LLM Wiki pattern with a repeatable, bilingual-aware lint workflow.
+
+## How to run lint
+Tell the agent:  
+> "Run a full bilingual lint on the entire wiki (both wiki/ and wiki-ru/)"
+
+The agent must always perform a **complete pass** across both language layers in one session.
+
+## What the lint must check
+
+### 1. Structural health (both languages)
+- Broken or malformed [[wikilinks]]
+- Orphan pages (no incoming links)
+- Pages missing required frontmatter fields (`title`, `category`, `quality`, `sources`, `synthesized_date`, `completeness`, `language`)
+- Missing or outdated entries in `index.md` / `overview.md`
+
+### 2. Trust & provenance
+- Every page must have valid `sources:` (real 21ideas.org URLs or the fallback note)
+- `synthesized_date` and `completeness:` must be present and reasonable
+
+### 3. Bilingual linking discipline (CRITICAL RULE)
+- In **all `wiki-ru/` pages**, every internal wikilink **must** use the explicit prefix `[[wiki-ru/...]]`.  
+  Examples: `[[wiki-ru/concepts/taproot|Taproot]]` or `[[wiki-ru/taproot|Taproot]]`.
+- **Never** remove the `wiki-ru/` prefix from any Russian page. Bare links (`[[concepts/taproot]]` or `[[taproot]]`) are **forbidden** inside `wiki-ru/` because they resolve to the English version in the shared vault.
+- In the English `wiki/` layer, bare links (`[[concepts/taproot]]`) are acceptable and preferred.
+- Flag any Russian page that uses a bare link without the `wiki-ru/` prefix.
+
+### 4. Bilingual consistency & fidelity
+- For every page that exists in both languages, verify that core concepts, key facts, and conclusions are conceptually aligned (even if phrasing and emphasis differ for linguistic/cultural accuracy).
+- Flag significant divergences that could confuse readers switching languages.
+
+### 5. Bitcoin education quality + Quartz readiness
+- Glossary terms are properly linked in both languages
+- High-importance pages have sufficient wikilinks
+- No raw Obsidian-only syntax that will break on Quartz
+- All frontmatter is clean and consistent
+
+## Output format
+1. Append a clear entry to `log.md`.
+2. Create or update `lint-report.md` in the root with a summary table, categorized issues, and suggested fixes.
+
+**Important**: Auto-fix **only** safe mechanical issues (missing frontmatter, incorrect Russian wikilink prefixes).  
+Never remove `wiki-ru/` prefixes from Russian pages. For content contradictions or Bitcoin-specific accuracy, flag for human review instead of editing.
+
+---
+
+### Immediate action for you
+
+1. **Revert Claude’s destructive change** (easy with Git):
+   ```bash
+   git checkout HEAD~1 -- wiki-ru/
+
+---
+
 # LLM Wiki
 
 A pattern for building personal knowledge bases using LLMs.

@@ -3,6 +3,7 @@ title: "Inventing Bitcoin"
 author: Yan Pritzker
 category: books
 tags: [bitcoin, wiki, books, technical, primer]
+language: en
 sources: ["https://21ideas.org/izobretaem-bitkoin/", "https://21ideas.org/glossary/"]
 updated: "2026-04-07"
 quality: reference

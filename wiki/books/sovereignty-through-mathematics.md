@@ -3,6 +3,7 @@ title: "Sovereignty Through Mathematics"
 author: Knut Svanholm
 category: books
 tags: [bitcoin, wiki, books, philosophy, cryptography]
+language: en
 sources: ["https://21ideas.org/suverenitet-posredstvom-matematiki/", "https://21ideas.org/glossary/"]
 updated: "2026-04-07"
 quality: reference

@@ -2,6 +2,7 @@
 title: "Bitcoin Protocol Stack"
 category: concepts
 tags: [bitcoin, wiki, protocol, architecture, layers, lightning]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized

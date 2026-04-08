@@ -2,6 +2,7 @@
 title: "Hal Finney"
 category: entities
 tags: [bitcoin, wiki, cypherpunks, history, entities]
+language: en
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/hal-finney/", "https://21ideas.org/gf/genesis-5//", "https://21ideas.org/bitcoin-and-me/"]

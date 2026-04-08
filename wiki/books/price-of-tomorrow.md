@@ -3,6 +3,7 @@ title: "The Price of Tomorrow"
 author: Jeff Booth
 category: books
 tags: [bitcoin, wiki, books, economics, deflation]
+language: en
 sources: ["https://21ideas.org/cena", "https://21ideas.org/glossary/"]
 updated: "2026-04-07"
 quality: reference

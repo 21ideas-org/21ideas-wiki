@@ -2,6 +2,7 @@
 title: "Bitcoin Timeline"
 category: history
 tags: [bitcoin, wiki, history, timeline, events]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: canonical

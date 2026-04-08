@@ -2,6 +2,11 @@
 
 A guide to using the 21ideas Bitcoin Wiki — 54 pages synthesized from 308 Russian-language source articles.
 
+### Multilingual support
+
+- **English synthesis**: `wiki/` — synthesized from Russian sources into English; dense wikilinks; all concept/entity/book/series/practice pages
+- **Russian synthesis (parallel, higher fidelity)**: `wiki-ru/` — full 53-page mirror, re-synthesized directly from the original Russian `raw/` source files; not a translation of the English wiki; uses natural 21ideas.org Russian throughout
+
 ## What this wiki is
 
 This is a synthesized English-language knowledge base built from the 21ideas.org source library — a Russian Bitcoin education platform covering philosophy, economics, technical protocol, history, and practical self-custody. It is not a mirror or translation of the source material. A language model agent read the Russian sources, extracted key concepts, and compiled a structured set of interlinked wiki pages — integrating content across sources, flagging contradictions, and building up a layered synthesis. The wiki is maintained by Claude Code and grows richer each time a new source is ingested or a question is explored.

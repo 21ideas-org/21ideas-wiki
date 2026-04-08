@@ -2,6 +2,7 @@
 title: "Storage & Self-Custody"
 category: practice
 tags: [bitcoin, wiki, practice, security, cold-storage]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized

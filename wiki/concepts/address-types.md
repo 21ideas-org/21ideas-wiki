@@ -2,6 +2,7 @@
 title: "Bitcoin Address Types"
 category: concepts
 tags: [bitcoin, wiki, protocol, addresses, taproot]
+language: en
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/sravnenie-tipov-bitcoin-adresov"]

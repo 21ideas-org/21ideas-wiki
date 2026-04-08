@@ -1,3 +1,14 @@
+---
+title: "Wiki Log"
+category: log
+tags: [bitcoin, wiki, log]
+language: en
+quality: reference
+synthesized_date: "2026-04-07"
+completeness: high
+source: "Operational log"
+---
+
 # Log
 
 Append-only record of wiki operations. Format: `## [YYYY-MM-DD] operation | description`
@@ -75,7 +86,7 @@ Append-only record of wiki operations. Format: `## [YYYY-MM-DD] operation | desc
 **Scope:** Full wikilink enrichment of the entire wiki — all existing pages updated, 2 new concept stubs created.
 
 **Operations performed:**
-- Added `[[wikilinks]]` throughout body text wherever glossary/concept terms appear (first or most meaningful occurrence per section)
+- Added `wikilinks` throughout body text wherever glossary/concept terms appear (first or most meaningful occurrence per section)
 - Added `## Related Terms` section to every page (inline links separated by ` | `, placed before any existing Related Pages section)
 - Created 2 new stub concept pages for high-value terms that lacked dedicated pages
 
@@ -114,3 +125,12 @@ concepts/bitcoin, concepts/money, concepts/proof-of-work, concepts/lightning-net
 
 **Total session 4 files:** 2 created, 46 updated (44 wiki pages + index.md + log.md)
 **Cumulative wiki files:** ~51 pages
+
+---
+
+## Related Pages
+
+- [[index]] — Full wiki index
+- [[overview]] — Big-picture synthesis
+- [[concepts/bitcoin]] — Core concept page
+- [[glossary]] — Key Bitcoin terms

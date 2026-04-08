@@ -2,6 +2,7 @@
 title: "Security"
 category: concepts
 tags: [bitcoin, wiki, security, custody, multisig]
+language: en
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/multisig/", "https://21ideas.org/glossary/", "https://21ideas.org/seed-security/", "https://21ideas.org/seed/", "https://21ideas.org/passphrase/", "https://21ideas.org/hwws/", "https://21ideas.org/coldcard/", "https://21ideas.org/seedsigner/"]

@@ -2,6 +2,7 @@
 title: "Discovering Bitcoin"
 category: series
 tags: [bitcoin, wiki, series, philosophy, zucco]
+language: en
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/sb/"]

@@ -2,6 +2,7 @@
 title: "Pre-Bitcoin: The Cypherpunk Era"
 category: history
 tags: [bitcoin, wiki, history, cypherpunks, precursors]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized

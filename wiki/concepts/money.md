@@ -2,6 +2,7 @@
 title: "Money"
 category: concepts
 tags: [bitcoin, wiki, economics, monetary-theory, austrian-school]
+language: en
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/chto-takoe-dengi/", "https://21ideas.org/kak-rabotajut-dengi/", "https://21ideas.org/negativnye-effekty-neftedollara/", "https://21ideas.org/fiatniy-standart", "https://21ideas.org/suverenitet-posredstvom-matematiki/", "https://21ideas.org/hozyaeva-i-raby-deneg/", "https://21ideas.org/v-zaschitu-defliazii-book/", "https://21ideas.org/v-zashchitu-deflyacii/", "https://21ideas.org/dengi-blokchejny-i-socialnaya-masshtabiruemost/"]

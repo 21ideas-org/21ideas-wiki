@@ -2,6 +2,7 @@
 title: "Buying Bitcoin"
 category: practice
 tags: [bitcoin, wiki, practice, buying, kyc-free]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized

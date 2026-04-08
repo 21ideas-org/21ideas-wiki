@@ -2,6 +2,7 @@
 title: "Mining"
 category: concepts
 tags: [bitcoin, wiki, mining, protocol, sha256, pow]
+language: en
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/mining-walkthrough", "https://21ideas.org/difficulty/"]

@@ -2,6 +2,7 @@
 title: "Multisig (Multisignature)"
 category: concepts
 tags: [bitcoin, wiki, security, multisig, custody, taproot]
+language: en
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/multisig/", "https://21ideas.org/glossary/"]

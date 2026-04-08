@@ -2,6 +2,7 @@
 title: "Nick Szabo"
 category: entities
 tags: [bitcoin, wiki, cypherpunks, history, entities]
+language: en
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/gf/genesis-1/", "https://21ideas.org/gf/genesis-4/"]

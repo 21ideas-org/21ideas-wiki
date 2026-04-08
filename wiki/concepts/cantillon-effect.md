@@ -2,6 +2,7 @@
 title: "Cantillon Effect"
 category: concepts
 tags: [bitcoin, wiki, economics, monetary-theory, fiat]
+language: en
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/hozyaeva-i-raby-deneg"]

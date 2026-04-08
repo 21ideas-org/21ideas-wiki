@@ -2,6 +2,7 @@
 title: "Scarcity"
 category: concepts
 tags: [bitcoin, wiki, economics, supply, halving]
+language: en
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/21-million-ne-podlezhit-obsuzhdeniyu/", "https://21ideas.org/pochemu-21-million/", "https://21ideas.org/bitcoin-myths/"]

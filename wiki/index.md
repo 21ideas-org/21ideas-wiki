@@ -2,6 +2,7 @@
 title: "Wiki Index"
 category: index
 tags: [bitcoin, wiki, index, navigation]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: reference
@@ -107,3 +108,12 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 ---
 
 *This wiki contains 54 pages synthesized from 308 source files in the 21ideas.org raw/ library. It is fully interlinked and ready for public hosting via Quartz or Obsidian Publish. Last updated: 2026-04-07.*
+
+---
+
+## Related Pages
+
+- [[overview]] — Big-picture synthesis of the wiki's content
+- [[glossary]] — Key Bitcoin terms A–Z
+- [[concepts/bitcoin]] — The core concept
+- [[history/timeline]] — Chronological history of Bitcoin

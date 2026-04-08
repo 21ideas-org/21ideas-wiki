@@ -2,6 +2,7 @@
 title: "Overview: Bitcoin Knowledge Synthesis"
 category: overview
 tags: [bitcoin, wiki, overview, synthesis]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: canonical

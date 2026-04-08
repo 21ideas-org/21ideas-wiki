@@ -2,6 +2,7 @@
 title: "Satoshi Nakamoto"
 category: entities
 tags: [bitcoin, wiki, satoshi, history, entities]
+language: en
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/gf/", "https://21ideas.org/start/", "https://21ideas.org/vojna-za-razmer-bloka/glava-20/", "https://21ideas.org/byl-li-satoshi-zhadnym-majnerom/"]

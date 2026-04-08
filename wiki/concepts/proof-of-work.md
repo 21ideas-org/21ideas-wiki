@@ -2,6 +2,7 @@
 title: "Proof of Work"
 category: concepts
 tags: [bitcoin, wiki, protocol, consensus, mining]
+language: en
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/proof-of-work"]

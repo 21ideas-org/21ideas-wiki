@@ -1,3 +1,83 @@
+# 21ideas Bitcoin Wiki — Project-Specific Rules (April 2026)
+
+This file extends the general LLM Wiki pattern below for our specific Bitcoin education use case.
+
+## Core Conventions (always follow these first)
+
+- **Source of truth**: All content must be grounded in `raw/` files from 21ideas.org. Never hallucinate or add external knowledge.
+- **Frontmatter (mandatory on every wiki page)**:
+  ```yaml
+  ---
+  title: 
+  category: concepts | entities | books | series | history | philosophy | practice | topics
+  quality: canonical | reference | synthesized | stub
+  sources: ["https://21ideas.org/..."]   # full URLs when available, otherwise []
+  synthesized_date: "2026-04-XX"
+  completeness: high | medium | low
+  language: en   # or ru for wiki-ru/
+  ```
+
+- Style & Tone: Clear, precise, neutral but firm on Bitcoin’s monetary sovereignty, censorship resistance, and first-principles thinking. Cite contradictions honestly. Use [[wikilinks]] liberally.
+- Source linking: Always include a "## Sources" section at the bottom with links back to original 21ideas.org pages when available.
+- Quality & Trust: Be explicit about what is synthesized vs. direct reference. Flag any remaining gaps.
+- Russian mirror: When working in wiki-ru/, use the original files in `/raw` directory naturally while preserving technical accuracy and the same frontmatter structure.
+
+All general LLM Wiki rules below still apply. When in doubt, prioritize provenance, consistency, and compounding value.
+
+---
+
+# 21ideas Bitcoin Wiki — Bilingual Lint Rules (April 2026)
+
+This section extends the general LLM Wiki pattern with a repeatable, bilingual-aware lint workflow.
+
+## How to run lint
+Tell the agent:  
+> "Run a full bilingual lint on the entire wiki (both wiki/ and wiki-ru/)"
+
+The agent must always perform a **complete pass** across both language layers in one session.
+
+## What the lint must check
+
+### 1. Structural health (both languages)
+- Broken or malformed [[wikilinks]]
+- Orphan pages (no incoming links)
+- Pages missing required frontmatter fields (`title`, `category`, `quality`, `sources`, `synthesized_date`, `completeness`, `language`)
+- Missing or outdated entries in `index.md` / `overview.md`
+- Duplicate concept/entity names across languages
+
+### 2. Trust & provenance
+- Every page must have either valid `sources:` with real 21ideas.org URLs or the `source:` fallback note
+- `synthesized_date` must be present and reasonable
+- `quality:` and `completeness:` fields must be set correctly
+- Flag any page where `completeness:` is "low" or "medium" for more than 30 days
+
+### 3. Bilingual consistency & fidelity
+- For every page that exists in both `wiki/` and `wiki-ru/`, verify that the core concepts, key facts, and conclusions are conceptually aligned (even if phrasing and emphasis differ for linguistic/cultural accuracy)
+- Flag significant divergences that could confuse readers switching languages
+- Ensure all [[wikilinks]] in `wiki-ru/` pages use the correct prefix `[[wiki-ru/...]]` (never bare `[[concepts/...]]`)
+
+### 4. Bitcoin education quality
+- Glossary terms are properly linked in both languages
+- High-importance pages (`concepts/bitcoin`, `concepts/utxo`, `concepts/mining`, etc.) have at least 8–10 meaningful wikilinks
+- Any outdated references to pre-2024/2025 Bitcoin mechanics are flagged
+- Contradictions between sources are clearly noted with `> [!warning]` callouts
+
+### 5. Quartz readiness
+- No raw Obsidian-only syntax that will break on the public site
+- All frontmatter is clean and consistent
+
+## Output format
+1. Append a clear entry to `log.md` with the date and summary (e.g. `## [2026-04-XX] lint | bilingual | X issues found`).
+2. Create or update `lint-report.md` in the root with:
+   - Summary table of findings
+   - Categorized issues (Critical / Warning / Info)
+   - Suggested fixes for safe items
+   - `> [!note]` or `> [!warning]` callouts for pages that need human review
+
+The lint should be **helpful, not destructive**. Auto-fix only safe, mechanical issues (missing frontmatter, incorrect wikilink prefixes in Russian pages). For content contradictions or Bitcoin-specific accuracy, flag them for human review instead of changing text.
+
+---
+
 # LLM Wiki
 
 A pattern for building personal knowledge bases using LLMs.

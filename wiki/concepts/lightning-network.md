@@ -2,6 +2,7 @@
 title: "Lightning Network"
 category: concepts
 tags: [bitcoin, wiki, lightning, layer-2, payments]
+language: en
 sources: ["https://21ideas.org/mekhanizm-raboty-lightning/", "https://21ideas.org/glossary/", "https://21ideas.org/privatnost-v-lajtning/", "https://21ideas.org/centralizovanna-li-set-lightning/", "https://21ideas.org/vojna-za-razmer-bloka/glava-6/", "https://21ideas.org/likvidnost-v-lajtning/", "https://21ideas.org/posts/replacement-cycling/"]
 updated: "2026-04-07"
 quality: reference

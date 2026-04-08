@@ -3,7 +3,8 @@
 A living, AI-maintained knowledge base for Bitcoin education. Built from **100+ articles** and **10+ foundational books** using [Andrej Karpathy’s LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
 - `raw/` — Immutable source material (21ideas original Markdown with frontmatter and links).
-- `wiki/` — The synthesized, densely interlinked layer (concepts, entities, terms/glossary, book summaries, series, history, etc.). This is the part that compounds over time.
+- `wiki/` — English synthesis: 54 pages synthesized from Russian sources into English; dense wikilinks across concepts, entities, books, series, practice.
+- `wiki-ru/` — Russian parallel wiki: 53 pages re-synthesized directly from the original Russian `raw/` sources. Higher fidelity to source material; not a translation of the English wiki.
 - Powered by Obsidian (graph view shines here) + LLM agent that ingests, updates, and cross-links everything.
 
 The wiki now includes **trust markers** on every page (quality level, original source URLs where available, synthesis date, and completeness rating) and a concrete showcase of the synthesis process on the Cantillon Effect page.
@@ -26,11 +27,12 @@ Instruct it:
 Fork this repo and run your own LLM agent against it. Add new raw sources → let the agent update the wiki. Great for personal Bitcoin research, education projects, or building content.
 
 ## What’s inside
-- 54 synthesized pages with consistent YAML frontmatter
-- Dense internal linking (~400–450 wikilinks)
-- Full glossary integration
+- **107 wiki pages total**: 54 English (`wiki/`) + 53 Russian (`wiki-ru/`)
+- Consistent YAML frontmatter on every page (quality, completeness, sources, language)
+- Dense internal linking (~400–450 wikilinks in each language layer)
+- Full glossary integration in both languages
 - Real source links back to 21ideas.org on key pages
-- Quality field (quality:, completeness:) on every page
+- Russian wiki synthesized directly from original Russian sources — not translated
 
 See the full user guide with examples and directory map in [WIKI-GUIDE.md](/WIKI-GUIDE.md).
 

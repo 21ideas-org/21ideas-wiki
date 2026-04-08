@@ -2,6 +2,7 @@
 title: "Parker Lewis"
 category: entities
 tags: [bitcoin, wiki, entities, economics, parker-lewis, gradually-then-suddenly]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized

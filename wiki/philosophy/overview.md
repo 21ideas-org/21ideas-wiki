@@ -2,6 +2,7 @@
 title: "Philosophy Overview"
 category: philosophy
 tags: [bitcoin, wiki, philosophy, fundamentals, overview]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
 quality: synthesized

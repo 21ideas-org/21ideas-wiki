@@ -3,6 +3,7 @@ title: "21 Ways"
 author: Gigi
 category: books
 tags: [bitcoin, wiki, books, philosophy, gigi]
+language: en
 updated: "2026-04-07"
 quality: reference
 sources: ["https://21ideas.org/21-sposob"]
@@ -31,10 +32,10 @@ Gigi is the most prolific Bitcoin philosopher in this library. See [[entities/gi
 | 1 | Bitcoin is an Idea | Ideas cannot be killed; once Bitcoin is understood, it cannot be uninvented |
 | 2 | Bitcoin is Time | Bitcoin creates time-stamped, unforgeable records; solving the timing problem is central to consensus |
 | 3 | Bitcoin is Magic Internet Money | Not dismissive — money is already "magic"; Bitcoin is just honest about it |
-| 4 | Bitcoin is Sound [[Money]] | Hardest money ever created; meets all monetary criteria better than alternatives |
+| 4 | Bitcoin is Sound [[concepts/money|Money]] | Hardest money ever created; meets all monetary criteria better than alternatives |
 | 5 | Bitcoin is the Best Money Ever Created | Synthesizes monetary properties argument |
-| 6 | Bitcoin is Digital [[Scarcity]] | First time absolute scarcity exists in digital space |
-| 7 | Bitcoin is Absolute [[Scarcity]] | The [[scarcity]] is not just rare — it is unique in the universe |
+| 6 | Bitcoin is Digital [[concepts/scarcity|Scarcity]] | First time absolute scarcity exists in digital space |
+| 7 | Bitcoin is Absolute [[concepts/scarcity|Scarcity]] | The [[concepts/scarcity|scarcity]] is not just rare — it is unique in the universe |
 | 8 | Bitcoin is a Truth Machine | The blockchain produces unforgeable, objective records of transactions |
 | 9 | Bitcoin is Wealth Insurance | Protection against monetary debasement and political seizure |
 | 10 | Bitcoin is a Decentralized Network | No central point of failure; resilient like the internet |

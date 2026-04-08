@@ -2,8 +2,12 @@
 title: "Saifedean Ammous"
 category: entities
 tags: [bitcoin, wiki, entities, economics, austrian-school, bitcoin-standard]
+language: en
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Saifedean Ammous

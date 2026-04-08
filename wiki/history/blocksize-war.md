@@ -2,6 +2,7 @@
 title: "The Blocksize War (2015-2017)"
 category: history
 tags: [bitcoin, wiki, history, governance, blocksize-war]
+language: en
 updated: "2026-04-07"
 quality: synthesized
 sources: [https://21ideas.org/vojna-za-razmer-bloka/]

@@ -2,6 +2,7 @@
 title: "Bitcoin Astronomy"
 category: series
 tags: [bitcoin, wiki, series, philosophy, long-term]
+language: en
 updated: "2026-04-07"
 quality: synthesized
 sources: ["https://21ideas.org/ba/"]
