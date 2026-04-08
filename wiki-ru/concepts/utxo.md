@@ -102,7 +102,7 @@ UTXO может иметь **произвольный номинал**: 0.00001 
 
 ## Связанные страницы
 
-- [[wiki-ru/concepts/privacy]] — приватность и UTXO
-- [[wiki-ru/glossary]] — UTXO, комиссия, мемпул, coin control
-- [[wiki-ru/practice/storage]] — безопасное хранение
-- [[wiki-ru/series/oxt-research]] — блокчейн-аналитика
+- [[ru/concepts/privacy]] — приватность и UTXO
+- [[ru/glossary]] — UTXO, комиссия, мемпул, coin control
+- [[ru/practice/storage]] — безопасное хранение
+- [[ru/series/oxt-research]] — блокчейн-аналитика

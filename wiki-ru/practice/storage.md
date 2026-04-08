@@ -42,7 +42,7 @@ completeness: high
 **Coldcard** (`coldcard.com`):
 - Самый безопасный аппаратный кошелёк
 - Работает в полностью air-gapped режиме (через SD-карту или QR)
-- Поддержка [[wiki-ru/concepts/multisig|мультиподписи]]
+- Поддержка [[ru/concepts/multisig|мультиподписи]]
 - Прозрачный корпус, несколько уровней PIN-защиты
 - Рекомендован для опытных пользователей и крупных сумм
 
@@ -55,7 +55,7 @@ completeness: high
 
 ### Уровень 3: Мультиподпись
 
-Для крупных сумм. [[wiki-ru/concepts/multisig|Мультисиг]] 2-из-3 устраняет единую точку отказа.
+Для крупных сумм. [[ru/concepts/multisig|Мультисиг]] 2-из-3 устраняет единую точку отказа.
 
 ---
 
@@ -88,7 +88,7 @@ completeness: high
 1. Установите **Blue Wallet** на телефон для небольших сумм
 2. При накоплении от ~$1000 — купите **Coldcard** или соберите **SeedSigner**
 3. Запишите сид-фразу и проверьте восстановление
-4. При значительных суммах — переходите на [[wiki-ru/concepts/multisig|мультиподпись]]
+4. При значительных суммах — переходите на [[ru/concepts/multisig|мультиподпись]]
 
 ---
 
@@ -98,8 +98,8 @@ completeness: high
 
 ## Связанные страницы
 
-- [[wiki-ru/concepts/security]] — основы безопасности
-- [[wiki-ru/concepts/multisig]] — мультиподпись для больших сумм
-- [[wiki-ru/concepts/utxo]] — управление UTXO
-- [[wiki-ru/practice/buying]] — как купить биткоин
-- [[wiki-ru/practice/privacy-practice]] — приватность при хранении
+- [[ru/concepts/security]] — основы безопасности
+- [[ru/concepts/multisig]] — мультиподпись для больших сумм
+- [[ru/concepts/utxo]] — управление UTXO
+- [[ru/practice/buying]] — как купить биткоин
+- [[ru/practice/privacy-practice]] — приватность при хранении

@@ -2,10 +2,10 @@
 
 ## Add
 
-- Page in the `concets` directory dedicated to deflation
+- Page in the `concepts` directory dedicated to deflation
 - Concept page dedicated to forks
 - Concept of third parties - what dangers they bring, how bitcoin fixes the problem
-- Blockchain concept page
+- Concept of Blockchain page
 - Decentralization
 - Double spend 
 - Byzantine general's problem

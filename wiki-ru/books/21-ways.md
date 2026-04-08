@@ -13,7 +13,7 @@ completeness: medium
 
 # 21 способ — Gigi
 
-«21 способ» (21 Ways) — серия эссе [[wiki-ru/entities/gigi|Gigi]], в каждом из которых Биткоин исследуется через отдельную концептуальную линзу. Каждое эссе — самостоятельное произведение, раскрывающее одну грань протокола.
+«21 способ» (21 Ways) — серия эссе [[ru/entities/gigi|Gigi]], в каждом из которых Биткоин исследуется через отдельную концептуальную линзу. Каждое эссе — самостоятельное произведение, раскрывающее одну грань протокола.
 
 ---
 
@@ -59,8 +59,8 @@ Gigi пишет без технического жаргона, но с точн
 
 ## Связанные страницы
 
-- [[wiki-ru/entities/gigi]] — об авторе
-- [[wiki-ru/series/what-i-learned-from-bitcoin]] — другая серия Gigi
-- [[wiki-ru/concepts/bitcoin]] — базовый протокол
-- [[wiki-ru/philosophy/overview]] — философские основы
-- [[wiki-ru/concepts/proof-of-work]] — «физика» Биткоина
+- [[ru/entities/gigi]] — об авторе
+- [[ru/series/what-i-learned-from-bitcoin]] — другая серия Gigi
+- [[ru/concepts/bitcoin]] — базовый протокол
+- [[ru/philosophy/overview]] — философские основы
+- [[ru/concepts/proof-of-work]] — «физика» Биткоина

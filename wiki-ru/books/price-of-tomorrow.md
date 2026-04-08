@@ -72,7 +72,7 @@ completeness: medium
 
 ## Связанные страницы
 
-- [[wiki-ru/concepts/scarcity]] — ограниченное предложение Биткоина
-- [[wiki-ru/concepts/cantillon-effect]] — перераспределение через инфляцию
-- [[wiki-ru/concepts/money]] — денежная теория
-- [[wiki-ru/books/fiat-standard]] — критика фиатной системы
+- [[ru/concepts/scarcity]] — ограниченное предложение Биткоина
+- [[ru/concepts/cantillon-effect]] — перераспределение через инфляцию
+- [[ru/concepts/money]] — денежная теория
+- [[ru/books/fiat-standard]] — критика фиатной системы

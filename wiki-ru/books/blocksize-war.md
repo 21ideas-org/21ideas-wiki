@@ -30,8 +30,8 @@ completeness: high
 | 1 | Первый удар (Bitcoin XT, август 2015) |
 | 2 | Начало |
 | 3–4 | Конференции по масштабированию (Монреаль, Гонконг) |
-| 5 | [[wiki-ru/concepts/segwit|SegWit]] |
-| 6 | [[wiki-ru/concepts/lightning-network|Сеть Lightning]] |
+| 5 | [[ru/concepts/segwit|SegWit]] |
+| 6 | [[ru/concepts/lightning-network|Сеть Lightning]] |
 | 7 | Bitcoin Classic |
 | 8 | Круглый стол в Гонконге |
 | 9 | Фейковый Сатоши (Крейг Райт) |
@@ -49,7 +49,7 @@ completeness: high
 
 ## Центральный вопрос
 
-Книга отвечает не только на вопрос «что произошло?», но и на более глубокий: [[wiki-ru/concepts/governance|кто управляет Биткоином?]].
+Книга отвечает не только на вопрос «что произошло?», но и на более глубокий: [[ru/concepts/governance|кто управляет Биткоином?]].
 
 Бир показывает, что ответ оказался неожиданным для многих: не разработчики Bitcoin Core, не крупные майнеры, не биржи и не корпорации — а **пользователи полных узлов**. Именно UASF (User-Activated Soft Fork) стал поворотным моментом: рядовые операторы узлов активировали SegWit самостоятельно, не дожидаясь согласия майнеров.
 
@@ -77,7 +77,7 @@ completeness: high
 
 ## Связанные страницы
 
-- [[wiki-ru/history/blocksize-war]] — обзор событий
-- [[wiki-ru/concepts/governance]] — управление протоколом
-- [[wiki-ru/concepts/segwit]] — техническое решение
-- [[wiki-ru/concepts/protocol-stack]] — принцип «не нарушай базовый слой»
+- [[ru/history/blocksize-war]] — обзор событий
+- [[ru/concepts/governance]] — управление протоколом
+- [[ru/concepts/segwit]] — техническое решение
+- [[ru/concepts/protocol-stack]] — принцип «не нарушай базовый слой»

@@ -32,8 +32,8 @@ completeness: high
 | Глава 2 | Финансовый атеизм |
 | Глава 3 | Доверчивость |
 | Глава 4 | Непорочное зачатие |
-| Глава 5 | [[wiki-ru/concepts/proof-of-work|Proof of Work]] |
-| Глава 6 | [[wiki-ru/concepts/scarcity|Редкость]] |
+| Глава 5 | [[ru/concepts/proof-of-work|Proof of Work]] |
+| Глава 6 | [[ru/concepts/scarcity|Редкость]] |
 | Глава 7 | Ходл Он |
 | Глава 8 | Изменение правил |
 | Глава 9 | Деньги как акселератор |
@@ -72,8 +72,8 @@ completeness: high
 
 ## Связанные страницы
 
-- [[wiki-ru/concepts/proof-of-work]] — Глава 5
-- [[wiki-ru/concepts/scarcity]] — Глава 6
-- [[wiki-ru/entities/gigi]] — схожий философский взгляд
-- [[wiki-ru/books/inventing-bitcoin]] — техническое дополнение
-- [[wiki-ru/books/bullish-case]] — экономическое дополнение
+- [[ru/concepts/proof-of-work]] — Глава 5
+- [[ru/concepts/scarcity]] — Глава 6
+- [[ru/entities/gigi]] — схожий философский взгляд
+- [[ru/books/inventing-bitcoin]] — техническое дополнение
+- [[ru/books/bullish-case]] — экономическое дополнение

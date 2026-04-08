@@ -63,13 +63,13 @@ completeness: medium
 
 | Год | Событие |
 |---|---|
-| **2017** | [[wiki-ru/history/blocksize-war|Война за размер блока]]: победа малых блоков и SegWit |
-| **Август 2017** | Активация [[wiki-ru/concepts/segwit|SegWit]]; хардфорк → Bitcoin Cash |
+| **2017** | [[ru/history/blocksize-war|Война за размер блока]]: победа малых блоков и SegWit |
+| **Август 2017** | Активация [[ru/concepts/segwit|SegWit]]; хардфорк → Bitcoin Cash |
 | **Декабрь 2017** | Цена достигает ~$20 000 — первый крупный пик |
 | **2018–2019** | Медвежий рынок; активное строительство инфраструктуры |
 | **Май 2020** | **Третий халвинг**: субсидия 12,5 → 6,25 BTC/блок |
 | **2020–2021** | Институциональное принятие: MicroStrategy, Tesla, Square |
-| **Ноябрь 2021** | Активация [[wiki-ru/concepts/taproot|Taproot]] (BIP 340/341/342) |
+| **Ноябрь 2021** | Активация [[ru/concepts/taproot|Taproot]] (BIP 340/341/342) |
 | **Ноябрь 2021** | Исторический максимум ~$69 000 |
 
 ---
@@ -95,10 +95,10 @@ completeness: medium
 
 ## Связанные страницы
 
-- [[wiki-ru/entities/satoshi-nakamoto]] — создатель Биткоина
-- [[wiki-ru/entities/hal-finney]] — первый пользователь
-- [[wiki-ru/history/blocksize-war]] — война за размер блока
-- [[wiki-ru/history/pre-bitcoin-cypherpunks]] — предыстория
-- [[wiki-ru/concepts/scarcity]] — халвинг и ограниченное предложение
-- [[wiki-ru/concepts/segwit]] — SegWit 2017
-- [[wiki-ru/concepts/taproot]] — Taproot 2021
+- [[ru/entities/satoshi-nakamoto]] — создатель Биткоина
+- [[ru/entities/hal-finney]] — первый пользователь
+- [[ru/history/blocksize-war]] — война за размер блока
+- [[ru/history/pre-bitcoin-cypherpunks]] — предыстория
+- [[ru/concepts/scarcity]] — халвинг и ограниченное предложение
+- [[ru/concepts/segwit]] — SegWit 2017
+- [[ru/concepts/taproot]] — Taproot 2021

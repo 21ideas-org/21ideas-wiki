@@ -28,39 +28,39 @@ updated: "2026-04-08"
 
 ### Если вы только начинаете
 
-1. Прочитайте [[wiki-ru/concepts/bitcoin]] — базовое понимание протокола
-2. Изучите [[wiki-ru/glossary]] — словарь терминов
-3. Прочитайте [[wiki-ru/concepts/money]] — почему понимание концепта денег важно
-4. Продолжите с [[wiki-ru/books/inventing-bitcoin]] или [[wiki-ru/books/sovereignty-through-mathematics]] — каждая уместила самое важное в 100 страниц А5
+1. Прочитайте [[ru/concepts/bitcoin]] — базовое понимание протокола
+2. Изучите [[ru/glossary]] — словарь терминов
+3. Прочитайте [[ru/concepts/money]] — почему понимание концепта денег важно
+4. Продолжите с [[ru/books/inventing-bitcoin]] или [[ru/books/sovereignty-through-mathematics]] — каждая уместила самое важное в 100 страниц А5
 
 ### Если вас интересует история
 
-1. [[wiki-ru/history/pre-bitcoin-cypherpunks]] — откуда взялся Биткоин
-2. [[wiki-ru/entities/cypherpunks]] — люди, которые его создали
-3. [[wiki-ru/series/genesis-files]] — детальный разбор каждого предшественника
-4. [[wiki-ru/history/timeline]] — хронология ключевых событий
+1. [[ru/history/pre-bitcoin-cypherpunks]] — откуда взялся Биткоин
+2. [[ru/entities/cypherpunks]] — люди, которые его создали
+3. [[ru/series/genesis-files]] — детальный разбор каждого предшественника
+4. [[ru/history/timeline]] — хронология ключевых событий
 
 ### Если вас интересует экономика
 
-1. [[wiki-ru/concepts/money]] — функции денег и их история
-2. [[wiki-ru/concepts/cantillon-effect]] — как инфляция перераспределяет богатство
-3. [[wiki-ru/concepts/scarcity]] — в чём значимость ограничения в 21 миллион 
-4. [[wiki-ru/series/gradually-then-suddenly]] — 17 эссе Паркера Льюиса
+1. [[ru/concepts/money]] — функции денег и их история
+2. [[ru/concepts/cantillon-effect]] — как инфляция перераспределяет богатство
+3. [[ru/concepts/scarcity]] — в чём значимость ограничения в 21 миллион 
+4. [[ru/series/gradually-then-suddenly]] — 17 эссе Паркера Льюиса
 
 ### Если вы хотите начать использовать Биткоин
 
-1. [[wiki-ru/practice/buying]] — как купить
-2. [[wiki-ru/practice/storage]] — как безопасно хранить
-3. [[wiki-ru/practice/lightning-tools]] — как использовать Lightning для повседневных платежей
-4. [[wiki-ru/concepts/security]] — основы безопасности
+1. [[ru/practice/buying]] — как купить
+2. [[ru/practice/storage]] — как безопасно хранить
+3. [[ru/practice/lightning-tools]] — как использовать Lightning для повседневных платежей
+4. [[ru/concepts/security]] — основы безопасности
 
 ### Если вас интересует техническая сторона
 
-1. [[wiki-ru/concepts/proof-of-work]] — механизм консенсуса
-2. [[wiki-ru/concepts/mining]] — как устроена добыча блоков (майнинг)
-3. [[wiki-ru/concepts/utxo]] — модель хранения балансов
-4. [[wiki-ru/concepts/segwit]] и [[wiki-ru/concepts/taproot]] — ключевые обновления протокола
-5. [[wiki-ru/concepts/protocol-stack]] — многоуровневая архитектура
+1. [[ru/concepts/proof-of-work]] — механизм консенсуса
+2. [[ru/concepts/mining]] — как устроена добыча блоков (майнинг)
+3. [[ru/concepts/utxo]] — модель хранения балансов
+4. [[ru/concepts/segwit]] и [[ru/concepts/taproot]] — ключевые обновления протокола
+5. [[ru/concepts/protocol-stack]] — многоуровневая архитектура
 
 ---
 
@@ -119,6 +119,6 @@ wiki-ru/
 
 ## Связанные страницы
 
-- [[wiki-ru/index]] — полный каталог вики
-- [[wiki-ru/glossary]] — словарь терминов
-- [[wiki-ru/concepts/bitcoin]] — с чего начать
+- [[ru/index]] — полный каталог вики
+- [[ru/glossary]] — словарь терминов
+- [[ru/concepts/bitcoin]] — с чего начать

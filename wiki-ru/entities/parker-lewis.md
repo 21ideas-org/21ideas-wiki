@@ -67,7 +67,7 @@ completeness: medium
 
 ## Связанные страницы
 
-- [[wiki-ru/series/gradually-then-suddenly]] — полная серия эссе
-- [[wiki-ru/concepts/scarcity]] — ограниченное предложение Биткоина
-- [[wiki-ru/concepts/money]] — денежная теория
-- [[wiki-ru/concepts/cantillon-effect]] — эффект Кантильона и инфляция
+- [[ru/series/gradually-then-suddenly]] — полная серия эссе
+- [[ru/concepts/scarcity]] — ограниченное предложение Биткоина
+- [[ru/concepts/money]] — денежная теория
+- [[ru/concepts/cantillon-effect]] — эффект Кантильона и инфляция

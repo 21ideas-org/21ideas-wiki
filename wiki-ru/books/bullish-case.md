@@ -64,8 +64,8 @@ completeness: high
 
 ## Связанные страницы
 
-- [[wiki-ru/concepts/money]] — денежная теория
-- [[wiki-ru/concepts/scarcity]] — ограниченное предложение
-- [[wiki-ru/entities/saifedean-ammous]] — схожая аргументация
-- [[wiki-ru/books/fiat-standard]] — критика фиатной системы
-- [[wiki-ru/series/gradually-then-suddenly]] — близкая по смыслу серия эссе
+- [[ru/concepts/money]] — денежная теория
+- [[ru/concepts/scarcity]] — ограниченное предложение
+- [[ru/entities/saifedean-ammous]] — схожая аргументация
+- [[ru/books/fiat-standard]] — критика фиатной системы
+- [[ru/series/gradually-then-suddenly]] — близкая по смыслу серия эссе

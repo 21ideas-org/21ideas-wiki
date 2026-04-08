@@ -13,7 +13,7 @@ completeness: medium
 
 # Становление Биткоина — Джакомо Зукко
 
-«Становление Биткоина» (Discovering Bitcoin) — серия из семи статей, охватывающая путь человечества от пещерных людей до сети [[wiki-ru/concepts/lightning-network|Lightning]]. Один из лучших способов понять Биткоин в историческом контексте.
+«Становление Биткоина» (Discovering Bitcoin) — серия из семи статей, охватывающая путь человечества от пещерных людей до сети [[ru/concepts/lightning-network|Lightning]]. Один из лучших способов понять Биткоин в историческом контексте.
 
 ---
 
@@ -48,8 +48,8 @@ completeness: medium
 
 ## Связанные страницы
 
-- [[wiki-ru/concepts/money]] — денежная теория
-- [[wiki-ru/concepts/scarcity]] — цифровая редкость
-- [[wiki-ru/concepts/proof-of-work]] — решение проблемы цифровой редкости
-- [[wiki-ru/concepts/lightning-network]] — технологии второго уровня
-- [[wiki-ru/series/gradually-then-suddenly]] — смежная серия
+- [[ru/concepts/money]] — денежная теория
+- [[ru/concepts/scarcity]] — цифровая редкость
+- [[ru/concepts/proof-of-work]] — решение проблемы цифровой редкости
+- [[ru/concepts/lightning-network]] — технологии второго уровня
+- [[ru/series/gradually-then-suddenly]] — смежная серия

@@ -66,8 +66,8 @@ completeness: high
 
 ## Связанные страницы
 
-- [[wiki-ru/entities/parker-lewis]] — автор серии
-- [[wiki-ru/concepts/scarcity]] — ограниченное предложение Биткоина
-- [[wiki-ru/concepts/money]] — денежная теория
-- [[wiki-ru/concepts/cantillon-effect]] — инфляция и перераспределение
-- [[wiki-ru/books/bullish-case]] — смежная аргументация
+- [[ru/entities/parker-lewis]] — автор серии
+- [[ru/concepts/scarcity]] — ограниченное предложение Биткоина
+- [[ru/concepts/money]] — денежная теория
+- [[ru/concepts/cantillon-effect]] — инфляция и перераспределение
+- [[ru/books/bullish-case]] — смежная аргументация

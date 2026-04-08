@@ -55,7 +55,7 @@ completeness: medium
 
 ## Связанные страницы
 
-- [[wiki-ru/books/fiat-standard]] — «Фиатный стандарт»
-- [[wiki-ru/concepts/money]] — денежная теория
-- [[wiki-ru/concepts/cantillon-effect]] — эффект Кантильона
-- [[wiki-ru/concepts/scarcity]] — ограниченное предложение Биткоина
+- [[ru/books/fiat-standard]] — «Фиатный стандарт»
+- [[ru/concepts/money]] — денежная теория
+- [[ru/concepts/cantillon-effect]] — эффект Кантильона
+- [[ru/concepts/scarcity]] — ограниченное предложение Биткоина

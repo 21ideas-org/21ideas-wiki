@@ -13,16 +13,16 @@ This is a synthesized English-language knowledge base built from the 21ideas.org
 
 ## What you can use the 21ideas Bitcoin Wiki for
 
-- **Learning Bitcoin** — Start at [[wiki/concepts/bitcoin]] → [[wiki/concepts/money]] → [[wiki/concepts/proof-of-work]] for a complete conceptual foundation
-- **Looking up terms** — [[wiki/glossary]] covers ~100 terms with wikilinks to concept pages
+- **Learning Bitcoin** — Start at [[wiki-en/concepts/bitcoin]] → [[wiki-en/concepts/money]] → [[wiki-en/concepts/proof-of-work]] for a complete conceptual foundation
+- **Looking up terms** — [[wiki-en/glossary]] covers ~100 terms with wikilinks to concept pages
 - **Finding the right book** — [[wiki/books/]] pages summarize all 8 books with quality and best-for ratings
-- **Following a learning path** — [[wiki/series/gradually-then-suddenly]] (Parker Lewis) for economics; [[wiki/series/genesis-files]] for history; [[wiki/series/oxt-research]] for privacy
+- **Following a learning path** — [[wiki-en/series/gradually-then-suddenly]] (Parker Lewis) for economics; [[wiki-en/series/genesis-files]] for history; [[wiki-en/series/oxt-research]] for privacy
 - **Checking original sources** — Every page lists its `sources:` in frontmatter and a `## Sources` section linking back to 21ideas.org original articles
 - **Obsidian graph exploration** — Open in Obsidian and use Graph View to see how concepts interconnect
 
 ### Real example of the wiki in action
 
-The [[wiki/concepts/cantillon-effect]] page shows what synthesis looks like in practice. It draws from two sources that approach the same concept differently — Saifedean Ammous's *The Fiat Standard* (structural/economic framing) and Robert Breedlove's *Masters and Slaves of Money* (philosophical/moral framing) — reconciles them, flags where emphasis differs, and arrives at a single synthesized conclusion: Bitcoin is Cantillon-resistant because PoW makes money creation open and competitive rather than politically concentrated. See the `## Example of synthesis` section on that page for a live demonstration.
+The [[wiki-en/concepts/cantillon-effect]] page shows what synthesis looks like in practice. It draws from two sources that approach the same concept differently — Saifedean Ammous's *The Fiat Standard* (structural/economic framing) and Robert Breedlove's *Masters and Slaves of Money* (philosophical/moral framing) — reconciles them, flags where emphasis differs, and arrives at a single synthesized conclusion: Bitcoin is Cantillon-resistant because PoW makes money creation open and competitive rather than politically concentrated. See the `## Example of synthesis` section on that page for a live demonstration.
 
 ## How the wiki is structured
 

@@ -48,7 +48,7 @@ completeness: medium
 
 **Hodl Hodl** (`hodlhodl.com`):
 - Без хранения средств (non-custodial): прямое взаимодействие покупателя и продавца
-- [[wiki-ru/concepts/multisig|Мультисиг]]-эскроу защищает обе стороны
+- [[ru/concepts/multisig|Мультисиг]]-эскроу защищает обе стороны
 - Подходит для более опытных пользователей
 
 **RoboSats** (`robosats.com`):
@@ -64,7 +64,7 @@ completeness: medium
 
 ## Первые шаги
 
-1. Установите кошелёк ([[wiki-ru/practice/storage|руководство по хранению]])
+1. Установите кошелёк ([[ru/practice/storage|руководство по хранению]])
 2. Купите небольшую сумму на любой доступной бирже
 3. Немедленно выведите на собственный кошелёк
 4. Запишите сид-фразу в надёжном месте
@@ -87,7 +87,7 @@ completeness: medium
 
 ## Связанные страницы
 
-- [[wiki-ru/practice/storage]] — хранение биткоинов
-- [[wiki-ru/concepts/security]] — безопасность и самохранение
-- [[wiki-ru/concepts/utxo]] — как работают биткоин-балансы
-- [[wiki-ru/concepts/privacy]] — приватность покупки
+- [[ru/practice/storage]] — хранение биткоинов
+- [[ru/concepts/security]] — безопасность и самохранение
+- [[ru/concepts/utxo]] — как работают биткоин-балансы
+- [[ru/concepts/privacy]] — приватность покупки

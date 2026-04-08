@@ -51,7 +51,7 @@ completeness: medium
 
 ### Coin Control
 
-Ручной выбор [[wiki-ru/concepts/utxo|UTXO]] при каждой транзакции. Не смешивайте UTXO из разных источников в одну транзакцию — это раскрывает связь между ними (Common Input Ownership Heuristic).
+Ручной выбор [[ru/concepts/utxo|UTXO]] при каждой транзакции. Не смешивайте UTXO из разных источников в одну транзакцию — это раскрывает связь между ними (Common Input Ownership Heuristic).
 
 Поддерживается в: Sparrow Wallet, Electrum, Coldcard.
 
@@ -102,8 +102,8 @@ completeness: medium
 
 ## Связанные страницы
 
-- [[wiki-ru/concepts/privacy]] — теория приватности в Биткоине
-- [[wiki-ru/concepts/utxo]] — модель UTXO
-- [[wiki-ru/series/oxt-research]] — анализ цепочки транзакций
-- [[wiki-ru/practice/storage]] — безопасное хранение
-- [[wiki-ru/practice/lightning-tools]] — Lightning как инструмент приватности
+- [[ru/concepts/privacy]] — теория приватности в Биткоине
+- [[ru/concepts/utxo]] — модель UTXO
+- [[ru/series/oxt-research]] — анализ цепочки транзакций
+- [[ru/practice/storage]] — безопасное хранение
+- [[ru/practice/lightning-tools]] — Lightning как инструмент приватности

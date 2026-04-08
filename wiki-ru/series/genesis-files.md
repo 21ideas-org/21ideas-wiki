@@ -49,7 +49,7 @@ completeness: high
 
 Адам Бэк предложил Proof of Work на основе SHA-1 для борьбы со спамом. Нонс + хэш с нулями = «цифровая почтовая марка». Сатоши прямо процитировал Hashcash в белой книге.
 
-→ [[wiki-ru/concepts/hashcash]]
+→ [[ru/concepts/hashcash]]
 
 ### Часть III: b-money (1998)
 
@@ -57,11 +57,11 @@ completeness: high
 
 ### Часть IV: Bit Gold (1998–2005)
 
-[[wiki-ru/entities/nick-szabo|Ник Сабо]] разработал Bit Gold — цепочку хэшей Proof of Work с цифровым реестром собственности. Ближайший предшественник Биткоина. Нерешённая проблема: атака Сивиллы.
+[[ru/entities/nick-szabo|Ник Сабо]] разработал Bit Gold — цепочку хэшей Proof of Work с цифровым реестром собственности. Ближайший предшественник Биткоина. Нерешённая проблема: атака Сивиллы.
 
 ### Часть V: RPOW (2004)
 
-[[wiki-ru/entities/hal-finney|Хэл Финни]] создал Reusable Proof of Work — токены, которые можно тратить, получая новые взамен. Требовал доверия к серверу Финни. Финни знал об этом ограничении и продолжал поиски решения... пока не появился Биткоин.
+[[ru/entities/hal-finney|Хэл Финни]] создал Reusable Proof of Work — токены, которые можно тратить, получая новые взамен. Требовал доверия к серверу Финни. Финни знал об этом ограничении и продолжал поиски решения... пока не появился Биткоин.
 
 ---
 
@@ -77,8 +77,8 @@ completeness: high
 
 ## Связанные страницы
 
-- [[wiki-ru/entities/cypherpunks]] — движение шифропанков
-- [[wiki-ru/entities/hal-finney]] — главный герой Части V
-- [[wiki-ru/entities/nick-szabo]] — главный герой Части IV
-- [[wiki-ru/concepts/hashcash]] — Часть II
-- [[wiki-ru/history/pre-bitcoin-cypherpunks]] — обобщённая история
+- [[ru/entities/cypherpunks]] — движение шифропанков
+- [[ru/entities/hal-finney]] — главный герой Части V
+- [[ru/entities/nick-szabo]] — главный герой Части IV
+- [[ru/concepts/hashcash]] — Часть II
+- [[ru/history/pre-bitcoin-cypherpunks]] — обобщённая история

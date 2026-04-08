@@ -65,6 +65,6 @@ Silk Road доказал, что:
 
 ## Связанные страницы
 
-- [[wiki-ru/concepts/privacy]] — приватность и анализ блокчейна
-- [[wiki-ru/history/timeline]] — 2011–2013 в истории Биткоина
-- [[wiki-ru/series/oxt-research]] — анализ цепочки транзакций
+- [[ru/concepts/privacy]] — приватность и анализ блокчейна
+- [[ru/history/timeline]] — 2011–2013 в истории Биткоина
+- [[ru/series/oxt-research]] — анализ цепочки транзакций

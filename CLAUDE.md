@@ -49,11 +49,10 @@ The agent must always perform a **complete pass** across both language layers in
 - `synthesized_date` and `completeness:` must be present and reasonable
 
 ### 3. Bilingual linking discipline (CRITICAL RULE)
-- In **all `wiki-ru/` pages**, every internal wikilink **must** use the explicit prefix `[[wiki-ru/...]]`.  
-  Examples: `[[wiki-ru/concepts/taproot|Taproot]]` or `[[wiki-ru/taproot|Taproot]]`.
-- **Never** remove the `wiki-ru/` prefix from any Russian page. Bare links (`[[concepts/taproot]]` or `[[taproot]]`) are **forbidden** inside `wiki-ru/` because they resolve to the English version in the shared vault.
-- In the English `wiki/` layer, bare links (`[[concepts/taproot]]`) are acceptable and preferred.
-- Flag any Russian page that uses a bare link without the `wiki-ru/` prefix.
+- In **all `wiki-ru/` pages**, every internal wikilink **must** use the explicit prefix `[[ru/...]]`.  
+  Examples: `[[ru/concepts/taproot|Taproot]]` or `[[ru/taproot|Taproot]]`.
+- **Never** remove the `ru/` prefix from any Russian page. Bare links (`[[concepts/taproot]]` or `[[taproot]]`) are **forbidden** inside `wiki-ru/` because they resolve to the English version in the shared vault.
+- In the English `wiki/` layer, every internal wikilink **must** use the explicit prefix `[[en/...]]`
 
 ### 4. Bilingual consistency & fidelity
 - For every page that exists in both languages, verify that core concepts, key facts, and conclusions are conceptually aligned (even if phrasing and emphasis differ for linguistic/cultural accuracy).
