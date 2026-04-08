@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, protocol, upgrade, taproot, schnorr]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: ["https://21ideas.org/taproot"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Taproot
@@ -104,6 +108,12 @@ Taproot builds on [[concepts/segwit|SegWit]]'s foundation:
 ## MuSig2
 
 MuSig2 (standardized 2023+) is the Schnorr multi-party key aggregation protocol enabled by Taproot. N-of-N participants cooperatively generate a single key and signature — indistinguishable from a regular single-sig on-chain. See [[concepts/security]].
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/taproot)
 
 ---
 

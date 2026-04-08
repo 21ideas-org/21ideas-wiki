@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, proof-of-work, cypherpunks, precursor]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Hashcash
@@ -47,6 +51,12 @@ Satoshi cited Hashcash directly in the Bitcoin whitepaper. He adapted the mechan
 ## Why It Matters
 
 Hashcash established the principle that **energy expenditure can create unforgeable digital tokens**. This is the theoretical foundation for Bitcoin's [[concepts/scarcity|scarcity]]: the tokens are valuable precisely because they required real resources to produce — like gold, but in digital form. [[entities/nick-szabo|Nick Szabo]] developed this idea further in his "Shelling Out" and "Bit Gold" work.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

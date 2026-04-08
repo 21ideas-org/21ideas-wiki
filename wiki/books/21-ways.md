@@ -5,6 +5,10 @@ category: books
 tags: [bitcoin, wiki, books, philosophy, gigi]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: ["https://21ideas.org/21-sposob"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # 21 Ways
@@ -61,6 +65,12 @@ Each frame is independently defensible and illuminating. A libertarian sees fram
 - **Chapter 6** (Digital Scarcity): clearest explanation of what's new about Bitcoin
 - **Chapter 13** (Separation of Money and State): the political philosophy case
 - **Chapter 21** (Living Organism): the most original framing; Gigi's signature idea
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/21-sposob)
 
 ---
 

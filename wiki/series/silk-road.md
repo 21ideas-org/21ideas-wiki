@@ -4,6 +4,10 @@ category: series
 tags: [bitcoin, wiki, series, history, adoption]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: ["https://21ideas.org/sr"]
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Silk Road
@@ -65,6 +69,12 @@ Source: `raw/Theory/philosophy/bitcoin-equals-freedom.md`
 Silk Road's shutdown demonstrated that you could destroy a *website* but not Bitcoin. The marketplace died; the money lived. This was one of Bitcoin's first major resilience tests.
 
 The government's seizure of ~144,000 BTC from Silk Road (worth ~$48 billion at 2021 prices) and subsequent auctions became a notable part of Bitcoin history — US Marshals auctioning seized Bitcoin to institutional buyers, who resold it at higher prices.
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/sr)
 
 ---
 

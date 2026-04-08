@@ -4,6 +4,10 @@ category: practice
 tags: [bitcoin, wiki, practice, security, cold-storage]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Storage & Self-Custody
@@ -113,6 +117,12 @@ Consider:
 - **Theft** (seed stolen): solved by passphrase (25th word) + multisig
 - **Physical coercion** ($5 wrench attack): solved by multisig with geographically distributed keys (attacker can't get all keys in one location) + small "decoy" wallet with plausible deniability
 - **Technical failure** (device breaks): solved by seed backup + multisig redundancy
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

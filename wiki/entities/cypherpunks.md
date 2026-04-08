@@ -4,6 +4,10 @@ category: entities
 tags: [bitcoin, wiki, cypherpunks, history, philosophy]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Cypherpunks
@@ -93,6 +97,12 @@ PGP (Pretty Good Privacy), created by Philip Zimmermann in 1991, was the first p
 This fight over encryption policy is the direct ancestor of today's debates over Bitcoin and financial privacy.
 
 Source: `raw/Practice/security/pgp.md`
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

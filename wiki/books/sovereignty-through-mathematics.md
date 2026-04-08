@@ -5,6 +5,10 @@ category: books
 tags: [bitcoin, wiki, books, philosophy, cryptography]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Sovereignty Through Mathematics
@@ -55,6 +59,12 @@ The title captures the central argument: Bitcoin achieves sovereignty not throug
 - Philosophical beginners who want the "why" before the "how"
 - Readers who find monetary-technical books dry
 - Anyone skeptical that Bitcoin is intellectually serious
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

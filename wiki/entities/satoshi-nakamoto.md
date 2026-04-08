@@ -4,6 +4,10 @@ category: entities
 tags: [bitcoin, wiki, satoshi, history, entities]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Satoshi Nakamoto
@@ -59,6 +63,12 @@ Source: `raw/Theory/history/was-satoshi-a-greedy-miner.md`
 ## The Governance Gift
 
 One of Satoshi's most important acts was *disappearing*. A Bitcoin with a known, living creator would be perpetually subject to pressure — governments demanding changes, journalists seeking interviews, developers deferring to authority. Satoshi's disappearance transformed Bitcoin from a project into a protocol. Bitcoin's [[concepts/scarcity|21M cap]] and [[concepts/proof-of-work|Proof of Work]] design endure unchanged. This is explored in [[concepts/governance]].
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

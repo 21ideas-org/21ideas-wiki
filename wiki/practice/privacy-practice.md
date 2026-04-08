@@ -4,6 +4,10 @@ category: practice
 tags: [bitcoin, wiki, practice, privacy, coinjoin]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Privacy in Practice
@@ -127,6 +131,12 @@ Understanding the attacker's view is essential for meaningful privacy.
 ## Lightning Privacy
 
 Lightning is better than on-chain for privacy (payments aren't broadcast publicly), but has its own issues. See [[concepts/lightning-network]] for the full breakdown. Key: use private (unannounced) channels where possible, and prefer Phoenix/Mutiny (which handle routing intelligently).
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

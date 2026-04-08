@@ -5,6 +5,10 @@ category: books
 tags: [bitcoin, wiki, books, history, governance]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # The Blocksize War
@@ -64,6 +68,12 @@ The [[history/blocksize-war|blocksize war]] is the most important [[concepts/gov
 ## Why It Matters Today
 
 The blocksize war set the template for Bitcoin governance: soft forks are the path of least resistance; hard forks require genuine network-wide consensus; full nodes are supreme. This template is now part of Bitcoin culture. Any future attempts to change Bitcoin's fundamental rules will face the same resistance — including attempts to raise the 21M cap.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

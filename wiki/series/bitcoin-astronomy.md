@@ -4,6 +4,10 @@ category: series
 tags: [bitcoin, wiki, series, philosophy, long-term]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Bitcoin Astronomy
@@ -48,6 +52,12 @@ The final part extrapolates to civilizational spans, asking what Bitcoin's prope
 ## Why It's in This Library
 
 The Bitcoin Astronomy series represents the "future" category of the 21ideas.org library — speculative, philosophical content that explores where Bitcoin might lead. It pairs naturally with [[philosophy/overview]] and [[entities/gigi]]'s "Bitcoin as Living Organism" framing.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, lightning, layer-2, payments]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Lightning Network
@@ -108,6 +112,12 @@ See [[practice/lightning-tools]] for setup guides.
 Lightning enables a new model for creator monetization: value-for-value. Instead of platforms taking a cut (YouTube, Spotify), listeners/readers pay creators directly via Lightning micropayments — "streaming sats." The Nostr protocol + Alby browser extension makes this seamless. Podcasting 2.0 uses this model. See [[entities/gigi|Gigi]]'s *Freedom of Value* for the philosophical case.
 
 Source: `raw/Theory/philosophy/freedom-of-value.md`
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

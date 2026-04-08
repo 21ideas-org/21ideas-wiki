@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, economics, monetary-theory, austrian-school]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Money
@@ -91,6 +95,12 @@ Source: `raw/Theory/economics/in-defense-of-deflation.md`
 [[entities/nick-szabo|Nick Szabo]]'s key insight: money is an *institutional technology* that lets humans cooperate beyond Dunbar's number (~150). Bitcoin is not trying to be computationally efficient. It trades computational waste for the elimination of trusted third parties — making economic cooperation possible at global scale without requiring trust.
 
 Source: `raw/Theory/economics/money-blockchains-and-social-scalability.md`
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

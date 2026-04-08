@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, economics, monetary-theory, fiat]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: ["https://21ideas.org/hozyaeva-i-raby-deneg"]
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Cantillon Effect
@@ -51,6 +55,26 @@ Bitcoin's [[concepts/scarcity|21M cap]] and rule-based [[concepts/mining|mining]
 - Anyone can mine; access to new coins is not gated by political proximity
 
 In a Bitcoin standard, there is no first recipient with privileged access to newly created money. The system is Cantillon-resistant by design.
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/hozyaeva-i-raby-deneg)
+
+---
+
+## Example of synthesis
+
+This page was built from two distinct sources that approach the Cantillon Effect from different angles — and the gap between them is instructive.
+
+**Saifedean Ammous** in *The Fiat Standard* (Chapter 7, "Fiat Debt") treats the Cantillon Effect as an engineering feature of fiat monetary architecture. His analysis is structural and systemic: the mechanism is baked into the plumbing of how central banks create credit. Banks receive cheap money first because that is how the system is designed. Governments can borrow cheaply because they sit closest to the money spigot. Ammous's language is economic and clinical — this is not a conspiracy but a predictable consequence of centralized money creation. The Cantillon Effect, in his framing, is an implicit subsidy to the financial sector and the state, funded by the purchasing-power erosion of everyone else.
+
+**Robert Breedlove** in *Masters and Slaves of Money* (the essay at https://21ideas.org/hozyaeva-i-raby-deneg) covers the same mechanism but through a philosophical and moral lens. His frame is time: money is a claim on human life energy, and inflation is therefore a form of time-theft. The glass-bead analogy — Europeans using cheap manufactured beads to extract real goods from African societies — makes the abstraction visceral. Breedlove's Cantillon recipients are not just banks and governments but any entity with money-creation privileges, a broader class that includes anyone who can issue currency-equivalent instruments.
+
+**These framings are complementary, not contradictory.** Ammous gives you the mechanism; Breedlove gives you the moral weight. One contradiction worth flagging: Ammous focuses tightly on commercial banks and sovereign governments as the proximate Cantillon winners (the entities closest to central bank credit). Breedlove extends this to a broader class of "money creators," which could include private entities with quasi-monetary privileges. The difference in emphasis matters for policy conclusions but does not undermine either analysis.
+
+**The wiki's synthesis:** Bitcoin neutralizes the Cantillon Effect not by making money creation "fair" through politics, but by making it open and competitive — via [[concepts/proof-of-work|Proof of Work]], anyone can participate in new coin issuance, and the rules are fixed in advance, requiring no trust in any institution.
 
 ---
 

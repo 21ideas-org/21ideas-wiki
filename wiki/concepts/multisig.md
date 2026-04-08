@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, security, multisig, custody, taproot]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Multisig (Multisignature)
@@ -135,6 +139,12 @@ Multisig increases security but also increases operational complexity:
 | Fee overhead | None | Higher (larger scripts, more data) |
 | Privacy (P2TR + MuSig2) | High | High (N-of-N) |
 | Best use case | Spending wallet | Cold storage, large holdings |
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

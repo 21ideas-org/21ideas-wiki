@@ -4,6 +4,10 @@ category: history
 tags: [bitcoin, wiki, history, cypherpunks, precursors]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Pre-Bitcoin: The Cypherpunk Era
@@ -101,6 +105,12 @@ Each system solved some problems and left others:
 | **Bitcoin** | **✓** | **✓** | **✓** | **✓** |
 
 Satoshi read all of these, synthesized the key insights, and solved the remaining problems with the blockchain + PoW + longest-chain rule.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

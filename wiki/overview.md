@@ -4,6 +4,10 @@ category: overview
 tags: [bitcoin, wiki, overview, synthesis]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: canonical
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Overview: Bitcoin Knowledge Synthesis
@@ -67,6 +71,12 @@ A recurring tension in the source material: the easiest Bitcoin experience (cust
 | Alex Gladstein — *Petrodollar / Structural Adjustment* | Geopolitics | USD hegemony harms the Global South; Bitcoin as exit |
 | Eric Hughes — *Cypherpunks Manifesto* | Privacy | "Cypherpunks write code"; privacy as social good |
 | Robert Breedlove — *Masters and Slaves of Money* | Philosophy of money | All money is a claim on human time; inflation steals time |
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

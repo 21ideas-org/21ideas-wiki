@@ -4,6 +4,10 @@ category: entities
 tags: [bitcoin, wiki, entities, economics, parker-lewis, gradually-then-suddenly]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Parker Lewis
@@ -82,6 +86,12 @@ Lewis's series complements and extends:
 ## Reception and Influence
 
 The "Gradually, Then Suddenly" series has been translated into multiple languages and is frequently cited by Bitcoin educators, financial analysts, and institutional adopters as the clearest explanation of why Bitcoin succeeds as money. Lewis's work is notable for treating Bitcoin's critics seriously — he engages the best version of each objection rather than dismissing them.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

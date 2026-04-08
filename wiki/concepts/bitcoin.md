@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, fundamentals, protocol, money]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: canonical
+sources: ["https://21ideas.org/start/start"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Bitcoin
@@ -86,6 +90,12 @@ See [[philosophy/overview]] for the full argument against altcoins.
 | [[concepts/segwit|SegWit]] | Aug 2017 | Fixed transaction malleability; enabled Lightning; ~2x block capacity |
 | [[concepts/taproot|Taproot]] | Nov 2021 | [[concepts/taproot|Schnorr]] signatures, [[concepts/taproot|MAST]], improved privacy and smart contract flexibility |
 | [[concepts/taproot|MuSig2]] | 2023+ | Efficient N-of-N [[concepts/taproot|Schnorr]] multisig |
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/start/start)
 
 ---
 

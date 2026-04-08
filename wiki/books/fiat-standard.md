@@ -5,6 +5,10 @@ category: books
 tags: [bitcoin, wiki, books, economics, austrian-school]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: ["https://21ideas.org/fiatniy-standart"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # The Fiat Standard
@@ -72,6 +76,12 @@ The book's structure mirrors *The Bitcoin Standard*: first explain the technolog
 ## Controversies
 
 The fiat-food thesis (Part II, Chapter 9) is the most controversial. Ammous argues that the fiat system is the root cause of modern dietary dysfunction. Many readers find this compelling; others find it an overreach.
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/fiatniy-standart)
 
 ---
 

@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, economics, supply, halving]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Scarcity
@@ -86,6 +90,12 @@ Source: `raw/Theory/economics/discovering-bitcoin/05-digital-scarcity.md`
 ## Number Zero and Bitcoin
 
 Robert Breedlove draws a parallel between the invention of zero and Bitcoin (*The Number Zero and Bitcoin*). Zero was a paradigm-shifting concept that enabled modern mathematics. Bitcoin introduces an analogous concept: **absolute digital scarcity**. Like zero, it is both simple and revolutionary; like zero, it may take generations to appreciate.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

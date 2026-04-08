@@ -4,6 +4,10 @@ category: topics
 tags: [bitcoin, wiki, economics, adoption, network-effects]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: ["https://21ideas.org/sem-setevyh-effektov-bitkoina"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Bitcoin's Seven Network Effects
@@ -133,6 +137,12 @@ The seven [[topics/network-effects|network effects]] explain the *mechanism* by 
 - **Unit of account** — emerges from effects 3, 6, 7 as adoption deepens
 
 Bitcoin is not adopted because it was declared [[concepts/money|money]] by a government. It is being adopted because each network effect makes it more useful, which attracts more users, which strengthens each effect further. This is the market-driven monetary emergence predicted by Austrian economics.
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/sem-setevyh-effektov-bitkoina)
 
 ---
 

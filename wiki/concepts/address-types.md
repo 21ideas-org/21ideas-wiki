@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, protocol, addresses, taproot]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: ["https://21ideas.org/sravnenie-tipov-bitcoin-adresov"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Bitcoin Address Types
@@ -128,6 +132,12 @@ See [[concepts/taproot]] for full details.
 - **Avoid** → P2PKH (`1`) and P2SH (`3`) for new wallets (higher fees, less private)
 
 **Hardware wallets:** [[practice/storage|Coldcard]], [[practice/storage|SeedSigner]], Foundation Passport all support [[concepts/address-types|P2TR]] as of 2023+.
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/sravnenie-tipov-bitcoin-adresov)
 
 ---
 

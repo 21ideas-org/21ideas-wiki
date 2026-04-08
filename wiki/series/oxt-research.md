@@ -4,6 +4,10 @@ category: series
 tags: [bitcoin, wiki, series, privacy, blockchain-analysis]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: ["https://21ideas.org/privacy/oxt-1", "https://21ideas.org/privacy/oxt-2", "https://21ideas.org/privacy/oxt-3", "https://21ideas.org/privacy/oxt-4"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # OXT Research: Understanding Bitcoin Privacy
@@ -112,6 +116,15 @@ This series establishes that:
 The OXT Research series is the analytical foundation for the privacy practice guides in [[practice/privacy-practice]].
 
 *Note: Samourai Wallet developers (Keonne Rodriguez and William Hill) were arrested by the DOJ in April 2024. The OXT research and Whirlpool tools remain, though the ecosystem is under pressure.*
+
+---
+
+## Sources
+
+- [Part 1 — Blockchain Analysis and Transaction Privacy](https://21ideas.org/privacy/oxt-1)
+- [Part 2 — Key Concepts of Chain Analysis](https://21ideas.org/privacy/oxt-2)
+- [Part 3 — Defenses Against Chain Analysis](https://21ideas.org/privacy/oxt-3)
+- [Part 4 — Applying Chain Analysis Concepts](https://21ideas.org/privacy/oxt-4)
 
 ---
 

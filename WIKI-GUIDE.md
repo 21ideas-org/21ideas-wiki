@@ -1,101 +1,66 @@
-# 21ideas Bitcoin Wiki — Living Knowledge Base
+# Bitcoin Wiki — User Guide
 
-**A synthesized, densely interlinked, AI-assisted knowledge base for Bitcoin education.**
+A guide to using the 21ideas Bitcoin Wiki — 54 pages synthesized from 308 Russian-language source articles.
 
-Built from **100+ articles + 10 foundational books** curated on [21ideas.org](https://21ideas.org), using Andrej Karpathy’s [LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+## What this wiki is
 
-This is not another static archive. It is a living knowledge system that compounds over time: new material is ingested, synthesized, and connected to the existing structure, making the whole wiki progressively more useful.
-
-## What has been accomplished so far (April 2026)
-
-The wiki is now in a solid, usable state after the initial build phase:
-
-- **Total wiki files**: 54 pages with consistent structure
-- **Core sections**:
-  - `concepts/` — Core ideas, mechanics, and a fully integrated glossary
-  - `entities/` — Key individuals and projects
-  - `books/` — Syntheses and cross-references for all 10 books
-  - `series/` — Coverage of major multi-part educational series
-  - `history/`, `philosophy/`, `practice/` — Timelines, philosophical themes, and practical guides
-- **Glossary integration** — Important Bitcoin terms have dedicated pages with definitions, context from multiple sources, and extensive backlinks
-- **Dense internal linking** — Approximately 400–450 wikilinks connecting concepts across the vault
-- **Consistent YAML frontmatter** on every page (compatible with Obsidian, Dataview, and Quartz)
-- **Clean separation**: `raw/` contains immutable original sources, `wiki/` contains the synthesized and interlinked layer
-- **Obsidian-ready** — Graph view reveals rich connections with major hubs such as Bitcoin, mining, UTXO, and glossary terms
-
-The result is a high-density, queryable knowledge artifact grounded in the 21ideas.org library.
+This is a synthesized English-language knowledge base built from the 21ideas.org source library — a Russian Bitcoin education platform covering philosophy, economics, technical protocol, history, and practical self-custody. It is not a mirror or translation of the source material. A language model agent read the Russian sources, extracted key concepts, and compiled a structured set of interlinked wiki pages — integrating content across sources, flagging contradictions, and building up a layered synthesis. The wiki is maintained by Claude Code and grows richer each time a new source is ingested or a question is explored.
 
 ## What you can use the 21ideas Bitcoin Wiki for
 
-### For readers and learners
-- Explore Bitcoin concepts from first principles through interconnected pages
-- Trace how ideas have evolved across books, articles, and series over 15+ years
-- Discover unexpected connections via the graph view
-- Browse the upcoming public website at **wiki.21ideas.org**
+- **Learning Bitcoin** — Start at [[wiki/concepts/bitcoin]] → [[wiki/concepts/money]] → [[wiki/concepts/proof-of-work]] for a complete conceptual foundation
+- **Looking up terms** — [[wiki/glossary]] covers ~100 terms with wikilinks to concept pages
+- **Finding the right book** — [[wiki/books/]] pages summarize all 8 books with quality and best-for ratings
+- **Following a learning path** — [[wiki/series/gradually-then-suddenly]] (Parker Lewis) for economics; [[wiki/series/genesis-files]] for history; [[wiki/series/oxt-research]] for privacy
+- **Checking original sources** — Every page lists its `sources:` in frontmatter and a `## Sources` section linking back to 21ideas.org original articles
+- **Obsidian graph exploration** — Open in Obsidian and use Graph View to see how concepts interconnect
 
-### For content creators and educators
-- Generate Telegram threads and social media posts that combine current events with solid fundamentals
-- Draft deeper blog posts and articles more efficiently
-- Create lesson plans, comparison tables, or educational sequences
-- Maintain a reliable reference that reduces repetition of earlier material
+### Real example of the wiki in action
 
-### For developers and researchers
-- Fork the repository and run your own LLM agent against it
-- Query the synthesized wiki with Claude, Cursor, Gemini, or local models
-- Build tools or applications on top of the structured knowledge layer
+The [[wiki/concepts/cantillon-effect]] page shows what synthesis looks like in practice. It draws from two sources that approach the same concept differently — Saifedean Ammous's *The Fiat Standard* (structural/economic framing) and Robert Breedlove's *Masters and Slaves of Money* (philosophical/moral framing) — reconciles them, flags where emphasis differs, and arrives at a single synthesized conclusion: Bitcoin is Cantillon-resistant because PoW makes money creation open and competitive rather than politically concentrated. See the `## Example of synthesis` section on that page for a live demonstration.
 
-### Practical examples
-1. Open `index.md` in Obsidian and follow links from any concept page.
-2. Query an LLM with access to the `wiki/` folder:  
-   > “Using only the wiki/ folder, compare different views on Lightning Network scaling across sources.”
-3. Generate content:  
-   > “Create a Telegram post on the Cantillon Effect using only content from the wiki/.”
-4. Combine with fresh news:  
-   > “Take the news article below and write a blog post that supplements it with relevant explanations from the wiki/ folder.”
+## How the wiki is structured
 
-## How to use it right now
+The wiki lives in the `wiki/` directory with the following layout:
 
-### Option A — Local Obsidian (recommended)
-1. `git clone https://github.com/21ideas-org/21ideas-wiki.git`
-2. Open the folder as a vault in Obsidian
-3. Start exploring from `index.md` or `overview.md`
-4. Enjoy the graph view
+- `wiki/concepts/` — Core Bitcoin concepts: bitcoin, money, proof-of-work, scarcity, mining, lightning-network, privacy, security, utxo, governance, segwit, taproot, address-types, multisig, hashcash, cantillon-effect, protocol-stack
+- `wiki/entities/` — Key people: Satoshi Nakamoto, Hal Finney, Nick Szabo, Gigi, Parker Lewis, Saifedean Ammous, and the Cypherpunks movement
+- `wiki/books/` — Summaries of 8 foundational books: *Inventing Bitcoin*, *The Fiat Standard*, *The Bullish Case for Bitcoin*, *Sovereignty Through Mathematics*, *The Blocksize War*, *The Sovereign Individual*, *The Price of Tomorrow*, *21 Ways*
+- `wiki/series/` — Article series: Gradually Then Suddenly, Genesis Files, Discovering Bitcoin, Bitcoin Astronomy, Silk Road, OXT Research, What I Learned From Bitcoin
+- `wiki/history/` — Historical narrative: pre-Bitcoin cypherpunk era, the Blocksize War, and a full timeline
+- `wiki/philosophy/` — 17 philosophical themes extracted and synthesized across the source library
+- `wiki/practice/` — Practical guides: buying, storage/self-custody, Lightning tools, privacy practice, running a node
+- `wiki/topics/` — Thematic deep-dives: Bitcoin for dissidents, Bitcoin's seven network effects
+- `wiki/glossary.md` — A-Z term reference (~100 terms) drawn from the 21ideas.org glossary
+- `wiki/overview.md` — Big-picture synthesis of the entire knowledge base
+- `wiki/index.md` — Navigation index linking all 54 pages
 
-### Option B — Query with AI agents
-- Point Claude Code, Cursor, Gemini CLI, or any folder-aware LLM at the vault
-- Use a grounding prompt such as:  
-  > “You are assisting with the 21ideas Bitcoin Wiki. Use **only** the wiki/ folder as your source of truth. Follow [[wikilinks]] and cite relevant pages.”
+## Frontmatter fields
 
-High-quality outputs can be saved back into the `wiki/` folder so the knowledge continues to grow.
+Each page has YAML frontmatter that Obsidian's Dataview plugin can query:
+- `title` — human-readable page title
+- `category` — page type (concepts, entities, books, series, history, philosophy, practice, topics)
+- `tags` — topic tags; always include `bitcoin` and `wiki`
+- `quality` — canonical | reference | synthesized | stub
+- `completeness` — high | medium | low
+- `sources` — list of original 21ideas.org URLs (empty array if no single source)
+- `synthesized_date` — date this synthesis was created
 
-### Option C — Public website (coming soon)
-- Planned at **wiki.21ideas.org**
-- Clean, searchable interface with graph support
-- Multilingual support (English + Russian)
-- Simple AI chatbot for natural-language questions
+### Example Dataview query
+To list all high-completeness concept pages:
+```dataview
+TABLE title, quality, completeness
+FROM "wiki/concepts"
+WHERE completeness = "high"
+SORT title ASC
+```
 
-## Technical notes
+## Source material
 
-- `raw/` — Immutable source of truth (do not edit directly)
-- `wiki/` — AI-assisted synthesis layer (the agent helps maintain this)
-- `CLAUDE.md` — Defines the rules and workflow the agent follows
-- All changes are tracked in Git
+All 308 source files are in `raw/`. They are immutable — the wiki is built from them but never modifies them. Source language: Russian. Wiki synthesis: English.
 
-## Contributing
+## Maintenance
 
-The wiki is intentionally agent-friendly. Ways to contribute:
-1. Open an issue suggesting new raw sources or areas that need expansion
-2. Fork the repo, add material to `raw/`, run the agent, and open a pull request
+This wiki is maintained by Claude Code (Anthropic). To add a new source: drop the markdown file in `raw/`, then ask Claude to ingest it. To run a lint pass: ask Claude to check for orphan pages, broken links, and stale content.
 
-Every addition helps strengthen the shared knowledge base.
-
----
-
-**Built as part of the [21ideas Bitcoin education project](https://21ideas.org).**
-
-Happy learning,  
-— [Tony](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)
-
----
-
-⚡️ Found this useful? [Zap me a coffee](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)  
+*Last updated: 2026-04-07. Contains 54 wiki pages.*

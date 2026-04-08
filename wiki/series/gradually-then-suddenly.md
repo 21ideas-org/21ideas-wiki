@@ -4,6 +4,10 @@ category: series
 tags: [bitcoin, wiki, series, economics, parker-lewis]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: ["https://21ideas.org/pzv"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Gradually, Then Suddenly
@@ -63,6 +67,12 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 - **Part 7** (Bitcoin, not Blockchain): cleanest refutation of "blockchain not Bitcoin"
 - **Part 15** (Antifragile): elegant synthesis of why attacks help
 - **Part 17** (Great Definancialization): the macro-economic conclusion
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/pzv)
 
 ---
 

@@ -4,6 +4,10 @@ category: topics
 tags: [bitcoin, wiki, human-rights, activism, censorship-resistance]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: ["https://21ideas.org/bitcoin-dissidenty"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Bitcoin for Dissidents
@@ -117,6 +121,12 @@ The dissident use case validates Bitcoin's core claims empirically — not in th
 The question *"who actually needs Bitcoin?"* is answered not by bitcoiners but by BYSOL volunteers, Nigerian activists, Hong Kong journalists, and Russian opposition workers who discovered the answer themselves under duress.
 
 > *"For us, Bitcoin is simply money."* — Leonid Volkov
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/bitcoin-dissidenty)
 
 ---
 

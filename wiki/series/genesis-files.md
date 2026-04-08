@@ -4,6 +4,10 @@ category: series
 tags: [bitcoin, wiki, series, history, cypherpunks]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: ["https://21ideas.org/gf", "https://21ideas.org/gf/genesis-1", "https://21ideas.org/gf/genesis-2"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Genesis Files
@@ -64,6 +68,14 @@ Beyond the technical analysis, the series traces the human story:
 - When Bitcoin was published, [[entities/hal-finney|Finney]] was the *only person [[entities/satoshi-nakamoto|Satoshi]] emailed* before releasing it publicly
 
 The first Bitcoin transaction (Satoshi → Finney, 10 BTC, January 12, 2009) was not random — it was the passing of the torch.
+
+---
+
+## Sources
+
+- [Genesis Files series on 21ideas.org](https://21ideas.org/gf)
+- [Part 1 — How David Chaum's eCash Spawned a Cypherpunk Dream](https://21ideas.org/gf/genesis-1)
+- [Part 2 — Hashcash or How Adam Back Designed Bitcoin's Motor Block](https://21ideas.org/gf/genesis-2)
 
 ---
 

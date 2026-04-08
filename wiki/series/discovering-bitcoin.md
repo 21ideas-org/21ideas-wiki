@@ -4,6 +4,10 @@ category: series
 tags: [bitcoin, wiki, series, philosophy, zucco]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Discovering Bitcoin
@@ -57,6 +61,12 @@ The series is pedagogically excellent because it derives each innovation from th
 ## Zucco's Position
 
 Zucco is a prominent Bitcoin maximalist and educator. He is associated with BHB Network and has contributed to many Bitcoin educational initiatives. His work is rigorous and explicitly anti-altcoin.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, protocol, consensus, mining]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: ["https://21ideas.org/proof-of-work"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Proof of Work
@@ -89,6 +93,12 @@ The criticism that Bitcoin "wastes energy" is addressed across many sources. Key
 - Energy use is the *price* of trustless monetary security; it is not waste
 
 Source: `raw/Theory/economics/bitcoin-is-not-harmful-for-the-environment.md`, `raw/Theory/economics/gradually-then-suddenly/04-bitcoin-does-not-waste-energy.md`
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/proof-of-work)
 
 ---
 

@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, security, custody, multisig]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Security
@@ -128,6 +132,12 @@ Best practices:
 | Phishing | Fake wallet website | Verify URLs; use hardware wallets |
 | $5 wrench | Physical coercion | Geographic key distribution, multisig, decoy wallets |
 | Malware | Clipboard hijacking of addresses | Air-gapped signing, hardware wallets |
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

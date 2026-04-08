@@ -6,6 +6,8 @@ A living, AI-maintained knowledge base for Bitcoin education. Built from **100+ 
 - `wiki/` — The synthesized, densely interlinked layer (concepts, entities, terms/glossary, book summaries, series, history, etc.). This is the part that compounds over time.
 - Powered by Obsidian (graph view shines here) + LLM agent that ingests, updates, and cross-links everything.
 
+The wiki now includes **trust markers** on every page (quality level, original source URLs where available, synthesis date, and completeness rating) and a concrete showcase of the synthesis process on the Cantillon Effect page.
+
 ## How to use this repo
 
 1. **Clone & open in Obsidian**  
@@ -16,18 +18,31 @@ A living, AI-maintained knowledge base for Bitcoin education. Built from **100+ 
 Open the folder as a vault in Obsidian → explore the graph starting from `index.md` or `overview.md`.
 
 2. **Query with AI agents**
-Any LLM that can read folders (Claude Code, Cursor, Gemini, local models, etc.) can be pointed at this repo. Instruct it: “Use only the wiki/ folder as source of truth, follow [[wikilinks]], synthesize...”
+Any LLM that can read folders (Claude Code, Cursor, Gemini, local models, etc.) can be pointed at this repo. 
+Instruct it: 
+> “Use only the wiki/ folder as source of truth, follow [[wikilinks]], synthesize...”
 
 3. **Fork & extend**
 Fork this repo and run your own LLM agent against it. Add new raw sources → let the agent update the wiki. Great for personal Bitcoin research, education projects, or building content.
 
+## What’s inside
+- 54 synthesized pages with consistent YAML frontmatter
+- Dense internal linking (~400–450 wikilinks)
+- Full glossary integration
+- Real source links back to 21ideas.org on key pages
+- Quality field (quality:, completeness:) on every page
+
+See the full user guide with examples and directory map in [WIKI-GUIDE.md](/WIKI-GUIDE.md).
+
+
+
 ## Structure
-`concepts/` — Core ideas, mechanics, terms (heavily linked to the glossary)
-`entities/` — People, projects, events
-`books/` — Summaries and syntheses
-`series/` — Multi-part educational series
-`history/`, `philosophy/`, `practice/` — etc.
-`CLAUDE.md` (or `GEMINI.md`) — Rules the agent follows
+`concepts/` — Core ideas, mechanics, terms (heavily linked to the glossary)  
+`entities/` — People, projects, events  
+`books/` — Summaries and syntheses  
+`series/` — Multi-part educational series  
+`history/`, `philosophy/`, `practice/` — Additional focused sections  
+`CLAUDE.md` (or `GEMINI.md`) — Rules the agent follows  
 
 ## Contributing / Building on this
 Feel free to open issues or PRs if you spot gaps or want to contribute new syntheses. 

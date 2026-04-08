@@ -5,6 +5,10 @@ category: books
 tags: [bitcoin, wiki, books, economics, monetary-theory]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # The Bullish Case for Bitcoin
@@ -60,6 +64,12 @@ Each stage brings new buyers, higher prices, lower volatility. The transition fr
 ## Key Quote
 
 > "Bitcoin is not a stock or a bond or a piece of real estate. Buying Bitcoin is a bet that it will become the monetary base of the world, or at least a significant part of it."
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

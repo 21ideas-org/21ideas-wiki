@@ -5,6 +5,10 @@ category: books
 tags: [bitcoin, wiki, books, philosophy, history]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # The Sovereign Individual
@@ -77,6 +81,12 @@ The Bitcoin community treats *The Sovereign Individual* as prophecy. Bitcoin is 
 - The "cognitive elite" framing has been criticized as elitist
 - The transition they predicted may take longer than they expected
 - Physical coercion is still very effective against most people
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

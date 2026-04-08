@@ -4,6 +4,10 @@ category: philosophy
 tags: [bitcoin, wiki, philosophy, fundamentals, overview]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Philosophy Overview
@@ -141,6 +145,12 @@ The sources are unanimous: Bitcoin is not interchangeable with "crypto." Key arg
 See [[concepts/proof-of-work]] for why PoW cannot be replaced; see [[concepts/governance]] for why Bitcoin's decentralization is unique.
 
 Sources: `only-the-strong-survive.md`, `gradually-then-suddenly/07-bitcoin-not-blockchain.md`, `proof-of-stake-is-a-scam.md`
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

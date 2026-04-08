@@ -5,6 +5,10 @@ category: books
 tags: [bitcoin, wiki, books, economics, deflation]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # The Price of Tomorrow
@@ -61,6 +65,12 @@ Booth doesn't come to Bitcoin as a maximalist — he comes as an entrepreneur wh
 ## Complementary to Ammous
 
 Where Saifedean Ammous ([[books/fiat-standard|The Fiat Standard]]) argues from Austrian monetary theory, Booth argues from technology business cycles. They arrive at the same conclusion: the [[concepts/money|fiat]] debt system is unsustainable and Bitcoin is the exit. The two books are natural companions.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

@@ -4,6 +4,10 @@ category: entities
 tags: [bitcoin, wiki, philosophy, author, entities]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Gigi (dergigi)
@@ -43,6 +47,12 @@ Gigi (pen name; Twitter: @dergigi) is a Bitcoin author, philosopher, and develop
 3. **Bitcoin as truth machine**: the blockchain produces objective, unforgeable records
 4. **Value-for-value**: Lightning as infrastructure for creator sovereignty
 5. **Bitcoin as idea**: once understood, Bitcoin cannot be "uninvented" — it is a permanent addition to human knowledge
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

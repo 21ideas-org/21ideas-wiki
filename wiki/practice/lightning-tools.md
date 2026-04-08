@@ -4,6 +4,10 @@ category: practice
 tags: [bitcoin, wiki, practice, lightning, tools]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Lightning Tools
@@ -113,6 +117,12 @@ This doesn't achieve the same [[concepts/privacy|privacy]] as [[practice/privacy
 | Telegram community | ZapGram |
 | Recurring payments | ZapPlanner |
 | Running a routing node | Core Lightning / LND + Ride the Lightning |
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

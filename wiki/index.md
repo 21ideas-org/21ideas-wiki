@@ -4,6 +4,10 @@ category: index
 tags: [bitcoin, wiki, index, navigation]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Wiki Index
@@ -93,6 +97,12 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 ## Overview
 
 - [[overview|Synthesis]] — Big-picture synthesis: what this knowledge base is about
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

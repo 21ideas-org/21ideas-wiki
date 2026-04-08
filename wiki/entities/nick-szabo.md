@@ -4,6 +4,10 @@ category: entities
 tags: [bitcoin, wiki, cypherpunks, history, entities]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Nick Szabo
@@ -66,6 +70,12 @@ Money is an **institutional technology** that allows humans to cooperate beyond 
 The computational "waste" of PoW is not waste; it is the price of eliminating trusted parties at planetary scale.
 
 Source: `raw/Theory/economics/money-blockchains-and-social-scalability.md`
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

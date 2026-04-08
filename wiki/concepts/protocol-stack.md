@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, protocol, architecture, layers, lightning]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Bitcoin Protocol Stack
@@ -150,6 +154,12 @@ The correct analogy for Lightning is not "Bitcoin is slow, but Lightning is fast
 | 1.5 | Script/Taproot | Same as L1 | Trustless | Same as L1 |
 | 2 | Lightning | Milliseconds | Near-trustless | Millions TPS |
 | 3 | Applications | Varies | Varies | Unlimited |
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

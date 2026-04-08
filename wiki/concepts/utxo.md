@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, protocol, accounting, utxo]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # UTXOs (Unspent Transaction Outputs)
@@ -79,6 +83,12 @@ This is Bitcoin's trustless validation — no need to trust anyone, the math che
 A Lightning channel is a single 2-of-2 multisig UTXO on-chain. The entire channel balance lives in one UTXO; off-chain commitment transactions determine the split between parties. Closing a channel creates one or two UTXOs (one per party).
 
 This is why [[concepts/lightning-network|Lightning]] is efficient: thousands of off-chain payments settle to a single on-chain UTXO pair.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

@@ -4,6 +4,10 @@ category: history
 tags: [bitcoin, wiki, history, governance, blocksize-war]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # The Blocksize War (2015–2017)
@@ -93,6 +97,12 @@ During the conflict, Craig Wright claimed to be Satoshi Nakamoto and threw his s
 ## Legacy
 
 The [[history/blocksize-war|blocksize war]] established the template for Bitcoin governance: changes require genuine consensus, [[concepts/governance|soft forks]] are strongly preferred over [[concepts/governance|hard forks]], and [[concepts/governance|full nodes]] (not miners) are the ultimate arbiters of Bitcoin's rules. The [[concepts/segwit|SegWit]] activation also enabled the [[concepts/lightning-network|Lightning Network]], which launched shortly after.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

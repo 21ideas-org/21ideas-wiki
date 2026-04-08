@@ -4,6 +4,10 @@ category: entities
 tags: [bitcoin, wiki, cypherpunks, history, entities]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Hal Finney
@@ -46,6 +50,12 @@ Source: `raw/Theory/history/bitcoin-and-me.md`
 ## Legacy
 
 Hal Finney represents the direct human connection between the cypherpunk era and Bitcoin. He was the bridge: a working cryptographer who had spent decades on digital cash problems, immediately recognized Bitcoin as the solution, and helped debug it in its first weeks. His cryopreservation is seen by some in the Bitcoin community as consistent with long-term thinking — a bet that the future is better than the present.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

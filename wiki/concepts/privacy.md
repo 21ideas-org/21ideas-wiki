@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, privacy, security, coinjoin]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Privacy
@@ -132,6 +136,12 @@ Source: `raw/Practice/privacy/ronindojo.md`, `raw/Practice/privacy/dojo/`
 GrapheneOS is a hardened Android OS for Pixel phones. It removes Google Play Services, sandboxes apps, and hardens the OS against exploitation. Recommended for maximum privacy on mobile Bitcoin/Lightning use.
 
 Source: `raw/Practice/privacy/grapheneos.md`
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

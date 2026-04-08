@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, governance, protocol, bip]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Bitcoin Governance
@@ -77,6 +81,12 @@ Jameson Lopp: "Bitcoin Core contributors have zero control over the Bitcoin netw
 The 21 million supply cap is the most sacred rule. Changing it would require convincing every bitcoin holder that they benefit from inflation — which is economically incoherent for anyone who holds BTC as a store of value. It has never been seriously proposed and has never changed.
 
 Source: `raw/Theory/protocol/21-million-is-non-negotiable.md`
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

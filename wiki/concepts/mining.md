@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, mining, protocol, sha256, pow]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: ["https://21ideas.org/mining-walkthrough"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Mining
@@ -146,6 +150,12 @@ Bitcoin mining consumes significant energy — this is intentional (PoW security
 4. **Incentive for renewables:** Bitcoin miners create demand for cheap, stranded renewable energy, potentially accelerating renewable deployment
 
 Source: `raw/Theory/economics/bitcoin-is-not-harmful-for-the-environment.md`, [[series/gradually-then-suddenly]] Part 4.
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/mining-walkthrough)
 
 ---
 

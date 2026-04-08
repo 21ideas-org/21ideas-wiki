@@ -5,6 +5,10 @@ category: books
 tags: [bitcoin, wiki, books, technical, primer]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: ["https://21ideas.org/izobretaem-bitkoin"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Inventing Bitcoin
@@ -62,6 +66,12 @@ Bitcoin's design is not arbitrary — each component exists to solve a specific 
 - Technical beginners wanting to understand *how* Bitcoin works
 - Engineers who want a first-principles derivation
 - Readers who have basic numeracy and comfort with logical argument
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/izobretaem-bitkoin)
 
 ---
 

@@ -4,6 +4,10 @@ category: series
 tags: [bitcoin, wiki, series, philosophy, gigi]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: ["https://21ideas.org/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # What I Learned From Bitcoin
@@ -83,6 +87,12 @@ Covers the technical insights Bitcoin provides: cryptographic proofs, decentrali
 "What I Learned From Bitcoin" represents something rare: a serious thinker documenting the intellectual journey of being changed by Bitcoin. Most Bitcoin content is about Bitcoin; this series is about what Bitcoin reveals about reality — philosophy, economics, physics, sociology. It is the deepest single-author intellectual engagement with Bitcoin in the 21ideas.org library.
 
 See [[entities/gigi]] for Gigi's other work.
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina)
 
 ---
 

@@ -4,6 +4,10 @@ category: history
 tags: [bitcoin, wiki, history, timeline, events]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: canonical
+sources: []
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Bitcoin Timeline
@@ -113,6 +117,12 @@ See [[history/blocksize-war]] and [[books/blocksize-war]] for detailed account.
 | May 11, 2020 | 630,000 | 6.25 BTC |
 | Apr 19, 2024 | 840,000 | 3.125 BTC |
 | ~2028 | 1,050,000 | 1.5625 BTC |
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 

@@ -4,6 +4,10 @@ category: concepts
 tags: [bitcoin, wiki, protocol, upgrade, segwit]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: reference
+sources: ["https://21ideas.org/segwit"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # SegWit (Segregated Witness)
@@ -87,6 +91,12 @@ The UASF (BIP148) forced SegWit activation when miners stalled. SegWit2x (SegWit
 ## Importance for Lightning Network
 
 SegWit was the prerequisite for the Lightning Network. Without malleability fixed, Lightning's payment channel design couldn't be safely constructed. Lightning launched and scaled rapidly after SegWit activation in August 2017. See [[concepts/lightning-network]].
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/segwit)
 
 ---
 

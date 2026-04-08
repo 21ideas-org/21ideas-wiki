@@ -4,6 +4,10 @@ category: reference
 tags: [bitcoin, wiki, reference, glossary, terms]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: canonical
+sources: ["https://21ideas.org/glossary"]
+synthesized_date: "2026-04-07"
+completeness: high
 ---
 
 # Glossary
@@ -301,6 +305,12 @@ updated: "2026-04-07"
 | P2TR | `bc1p` | 2021 | Taproot; Schnorr; all scripts look identical |
 
 See [[concepts/address-types]] for full details.
+
+---
+
+## Sources
+
+- [Original article on 21ideas.org](https://21ideas.org/glossary)
 
 ---
 

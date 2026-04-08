@@ -4,6 +4,10 @@ category: practice
 tags: [bitcoin, wiki, practice, buying, kyc-free]
 source: "Synthesized from raw/ sources + glossary"
 updated: "2026-04-07"
+quality: synthesized
+sources: []
+synthesized_date: "2026-04-07"
+completeness: medium
 ---
 
 # Buying Bitcoin
@@ -77,6 +81,12 @@ Source: `raw/Theory/economics/dollar-cost-averaging.md`
 ## After Buying: Self-Custody
 
 The most important step after buying: move your bitcoin to a wallet you control. An exchange balance is not Bitcoin — it is an IOU. See [[practice/storage]] for [[concepts/security|self-custody]] options.
+
+---
+
+## Sources
+
+*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
 
 ---
 
