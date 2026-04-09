@@ -1,56 +1,40 @@
-# Bitcoin LLM Wiki — 21ideas
+# 21ideas Bitcoin Wiki
 
-A living, AI-maintained knowledge base for Bitcoin education. Built from **100+ articles** and **10+ foundational books** using [Andrej Karpathy’s LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+A living, AI-maintained Bitcoin knowledge base built **strictly from 21ideas.org source material** in `raw/`.
 
-- `raw/` — Immutable source material (21ideas original Markdown with frontmatter and links).
-- `wiki/` — English synthesis: 54 pages synthesized from Russian sources into English; dense wikilinks across concepts, entities, books, series, practice.
-- `wiki-ru/` — Russian parallel wiki: 53 pages re-synthesized directly from the original Russian `raw/` sources. Higher fidelity to source material; not a translation of the English wiki.
-- Powered by Obsidian (graph view shines here) + LLM agent that ingests, updates, and cross-links everything.
+This repo contains two first-class wiki layers:
 
-The wiki now includes **trust markers** on every page (quality level, original source URLs where available, synthesis date, and completeness rating) and a concrete showcase of the synthesis process on the Cantillon Effect page.
+- **English wiki**: `wiki-en/` — synthesized from Russian `raw/` sources into English
+- **Russian wiki**: `wiki-ru/` — a parallel, source-grounded Russian wiki (not a translation of the English pages)
 
-## How to use this repo
+Both layers follow strict conventions: required YAML frontmatter (trust markers), consistent tags, and bilingual wikilink discipline.
 
-1. **Clone & open in Obsidian**  
-   ```bash
-   git clone https://github.com/21ideas-org/21ideas-wiki.git
-   ```
+## What’s inside (current)
 
-Open the folder as a vault in Obsidian → explore the graph starting from `index.md` or `overview.md`.
+- **Source library**: `raw/` — immutable markdown sources from 21ideas.org
+- **English wiki**: `wiki-en/` — **77** markdown pages total (**73** content pages excluding index/overview/log + glossary)
+- **Russian wiki**: `wiki-ru/` — **76** markdown pages total (**73** content pages excluding index/overview/log + glossary)
 
-2. **Query with AI agents**
-Any LLM that can read folders (Claude Code, Cursor, Gemini, local models, etc.) can be pointed at this repo. 
-Instruct it: 
-> “Use only the wiki/ folder as source of truth, follow [[wikilinks]], synthesize...”
+Coverage includes core Bitcoin concepts (protocol + economics), key protocol elements (PoW, mining, difficulty, forks, mempool, BIPs, etc.), cypherpunk history (Genesis Files + manifestos), and key entities.
 
-3. **Fork & extend**
-Fork this repo and run your own LLM agent against it. Add new raw sources → let the agent update the wiki. Great for personal Bitcoin research, education projects, or building content.
+## How to use
 
-## What’s inside
-- **107 wiki pages total**: 54 English (`wiki/`) + 53 Russian (`wiki-ru/`)
-- Consistent YAML frontmatter on every page (quality, completeness, sources, language)
-- Dense internal linking (~400–450 wikilinks in each language layer)
-- Full glossary integration in both languages
-- Real source links back to 21ideas.org on key pages
-- Russian wiki synthesized directly from original Russian sources — not translated
+- **Open in Obsidian**: clone the repo and open it as a vault.
+  - Start here:
+    - `wiki-en/index.md`
+    - `wiki-ru/index.md`
+- **Navigate by topic**: use `wiki-en/overview.md` / `wiki-ru/overview.md`, then follow links.
+- **Verify provenance**: every page contains trust markers (quality, completeness, synthesis date, and sources when available).
 
-See the full user guide with examples and directory map in [WIKI-GUIDE.md](/WIKI-GUIDE.md).
+## Contributing / maintaining
 
+- **Rules of the project** live in `CLAUDE.md` (frontmatter requirements + bilingual lint rules).
+- To extend the wiki: add new immutable sources to `raw/` and run an agent-driven ingest/update workflow that maintains structure, links, and trust markers.
 
-
-## Structure
-`concepts/` — Core ideas, mechanics, terms (heavily linked to the glossary)  
-`entities/` — People, projects, events  
-`books/` — Summaries and syntheses  
-`series/` — Multi-part educational series  
-`history/`, `philosophy/`, `practice/` — Additional focused sections  
-`CLAUDE.md` (or `GEMINI.md`) — Rules the agent follows  
-
-## Contributing / Building on this
 Feel free to open issues or PRs if you spot gaps or want to contribute new syntheses. 
 The wiki is designed to be agent-friendly.  
 This wiki is a work in progress and will keep evolving as new material is added.  
-Built as part of the [21ideas](https://21ideas.org) Bitcoin education project.  
+Built as part of the [21ideas](https://21ideas.org) Bitcoin education project. 
 
 ## License
 
