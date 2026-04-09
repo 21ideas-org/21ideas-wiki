@@ -128,6 +128,36 @@ concepts/bitcoin, concepts/money, concepts/proof-of-work, concepts/lightning-net
 
 ---
 
+## [2026-04-09] ingest | Nine new bilingual concept pages (batch 1)
+
+**Scope:** Core protocol and economics concepts synthesized from `raw/` (Start guide, *Inventing Bitcoin*, *Sovereignty Through Mathematics*, difficulty article, blocksize-war book).
+
+**Created (18 files):**
+- `wiki-en/concepts/` — deflation, forks, decentralization, double-spend, byzantine-generals-problem, mempool, bip, difficulty-adjustment, blockchain
+- `wiki-ru/concepts/` — same slugs (Russian mirror)
+
+**Also updated:** `wiki-en/index.md`, `wiki-ru/index.md`, `lint-report.md` (root), this log.
+
+**Lint:** Targeted bilingual check on new pages only — frontmatter complete; `[[en/...]]` / `[[ru/...]]` prefixes verified; cross-links validated against existing pages.
+
+---
+
+## [2026-04-09] ingest | Batch 3 — Whitepaper, AML, cypherpunk entities, and Genesis Files predecessors (bilingual)
+
+**Scope:** Create missing concept + entity pages in both languages, grounded strictly in `raw/` sources (Genesis Files series, cypherpunk/crypto-anarchist manifestos, PGP practice guide, and the 21ideas whitepaper page).
+
+**Created (20 files):**
+- `wiki-en/concepts/` — bitcoin-whitepaper, aml, b-money, bit-gold, rpow
+- `wiki-ru/concepts/` — same slugs (Russian mirror)
+- `wiki-en/entities/` — adam-back, tim-may, eric-hughes, david-chaum, phil-zimmermann
+- `wiki-ru/entities/` — same slugs (Russian mirror)
+
+**Also updated:** `wiki-en/index.md`, `wiki-ru/index.md`, `lint-report.md` (root), this log.
+
+**Lint:** Targeted bilingual check on Batch 3 pages only — required frontmatter verified; `[[en/...]]` / `[[ru/...]]` prefixes verified.
+
+---
+
 ## Related Pages
 
 - [[en/index]]] — Full wiki index

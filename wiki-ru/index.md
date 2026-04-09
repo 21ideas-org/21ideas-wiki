@@ -51,6 +51,20 @@ updated: "2026-04-08"
 | [[ru/concepts/privacy]] | Приватность UTXO, базовые правила |
 | [[ru/concepts/security]] | Самостоятельное хранение, сид-фразы, аппаратные кошельки |
 | [[ru/concepts/governance]] | BIPs, управление протоколом |
+| [[ru/concepts/blockchain]] | Цепь блоков, связь через PoW, реестр |
+| [[ru/concepts/bip]] | Bitcoin Improvement Proposals, активация обновлений |
+| [[ru/concepts/byzantine-generals-problem]] | Византийские генералы и консенсус Биткоина |
+| [[ru/concepts/decentralization]] | Отсутствие центра, полные узлы, нюансы блока |
+| [[ru/concepts/deflation]] | Покупательная способность vs фиат; язык «дефляции» |
+| [[ru/concepts/difficulty-adjustment]] | Пересчёт каждые 2016 блоков, ~10 минут |
+| [[ru/concepts/double-spend]] | Двойная трата; подтверждения и атака 51% |
+| [[ru/concepts/forks]] | Разветвления, софтфорк и хардфорк |
+| [[ru/concepts/mempool]] | Неподтверждённые транзакции, комиссии |
+| [[ru/concepts/bitcoin-whitepaper]] | Белая книга Биткоина: факты, ограничения, контекст |
+| [[ru/concepts/aml]] | AML как надзор и риск цензуры со стороны кастодианов (по 21ideas) |
+| [[ru/concepts/b-money]] | b-money Вэя Дая (1998): “первый черновик” в Genesis Files |
+| [[ru/concepts/bit-gold]] | Bit Gold Ника Сабо: почти-решение цифрового золота |
+| [[ru/concepts/rpow]] | RPOW Хэла Финни (2004): многоразовые PoW-токены |
 
 ---
 
@@ -64,6 +78,11 @@ updated: "2026-04-08"
 | [[ru/entities/hal-finney]] | Первый пользователь Биткоина, RPOW |
 | [[ru/entities/nick-szabo]] | Bit Gold, смарт-контракты |
 | [[ru/entities/cypherpunks]] | Движение шифропанков |
+| [[ru/entities/adam-back]] | Hashcash и предыстория Proof of Work |
+| [[ru/entities/tim-may]] | Манифест криптоанархиста; контекст шифропанков |
+| [[ru/entities/eric-hughes]] | Манифест шифропанка; “шифропанки пишут код” |
+| [[ru/entities/david-chaum]] | eCash / DigiCash: приватность, но централизация |
+| [[ru/entities/phil-zimmermann]] | PGP: подписи и аутентичность ПО |
 | [[ru/entities/gigi]] | «21 способ», философия Биткоина |
 | [[ru/entities/parker-lewis]] | «Постепенно, затем внезапно» |
 | [[ru/entities/saifedean-ammous]] | «Краткая история денег», «Фиатный стандарт» |

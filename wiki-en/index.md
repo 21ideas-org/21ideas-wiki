@@ -36,6 +36,20 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 - [Bitcoin Protocol Stack](wiki-en/concepts/protocol-stack.md) — Layered architecture: P2P, base chain, Script, Lightning, apps
 - [Hashcash](wiki-en/concepts/hashcash.md) — Adam Back's 1997 PoW anti-spam system; direct precursor to Bitcoin mining
 - [Cantillon Effect](wiki-en/concepts/cantillon-effect.md) — Non-neutral distributional effect of money creation; why Bitcoin is Cantillon-resistant
+- [Blockchain](wiki-en/concepts/blockchain.md) — Chain of blocks, PoW linkage, tamper-evident ledger (Bitcoin-specific framing)
+- [BIP](wiki-en/concepts/bip.md) — Bitcoin Improvement Proposals; upgrade design docs and activation context
+- [Byzantine Generals Problem](wiki-en/concepts/byzantine-generals-problem.md) — Trust-minimized agreement; how sources map it to Bitcoin consensus
+- [Decentralization](wiki-en/concepts/decentralization.md) — No central control; validation, nodes, and blocksize-war nuance
+- [Deflation](wiki-en/concepts/deflation.md) — Purchasing-power framing vs fiat; disinflation vs popular “deflation” language
+- [Difficulty Adjustment](wiki-en/concepts/difficulty-adjustment.md) — 2016-block retargeting; ~10-minute block schedule
+- [Double Spend](wiki-en/concepts/double-spend.md) — The digital-cash problem Bitcoin solves; confirmations and 51% nuance
+- [Forks](wiki-en/concepts/forks.md) — Accidental splits, soft vs hard forks, Bitcoin Cash example
+- [Mempool](wiki-en/concepts/mempool.md) — Unconfirmed transactions; miners, fees, reorgs
+- [Bitcoin Whitepaper](wiki-en/concepts/bitcoin-whitepaper.md) — 2008 technical paper; foundational but incomplete spec framing
+- [AML (Anti-Money Laundering) in Bitcoin](wiki-en/concepts/aml.md) — 21ideas framing of AML as surveillance + custodial censorship risk
+- [b-money](wiki-en/concepts/b-money.md) — Wei Dai’s 1998 proposal; “first draft” precursor in Genesis Files
+- [Bit Gold](wiki-en/concepts/bit-gold.md) — Nick Szabo’s digital gold proposal; near-miss predecessor
+- [RPOW](wiki-en/concepts/rpow.md) — Hal Finney’s reusable proof-of-work prototype (2004)
 
 ## Entities
 
@@ -43,6 +57,11 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 - [Hal Finney](wiki-en/entities/hal-finney.md) — First Bitcoin recipient, cypherpunk legend
 - [Nick Szabo](wiki-en/entities/nick-szabo.md) — Bit Gold, Shelling Out, social scalability
 - [Cypherpunks](wiki-en/entities/cypherpunks.md) — The movement that made Bitcoin possible
+- [Adam Back](wiki-en/entities/adam-back.md) — Hashcash creator; cited precursor to Bitcoin PoW
+- [Tim May](wiki-en/entities/tim-may.md) — Crypto Anarchist Manifesto; cypherpunk co-founder framing
+- [Eric Hughes](wiki-en/entities/eric-hughes.md) — Author of A Cypherpunk’s Manifesto (“cypherpunks write code”)
+- [David Chaum](wiki-en/entities/david-chaum.md) — eCash / DigiCash; privacy-forward but centralized predecessor
+- [Phil Zimmermann](wiki-en/entities/phil-zimmermann.md) — Creator of PGP; signatures and software authenticity mindset
 - [Gigi (dergigi)](wiki-en/entities/gigi.md) — Bitcoin philosopher, author of 21 Ways
 - [Parker Lewis](wiki-en/entities/parker-lewis.md) — Author of "Gradually, Then Suddenly"; Head of BD at Unchained Capital
 - [Saifedean Ammous](wiki-en/entities/saifedean-ammous.md) — Author of *The Bitcoin Standard* and *The Fiat Standard*
