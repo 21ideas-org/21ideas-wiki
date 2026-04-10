@@ -6,12 +6,8 @@ sources: ["https://21ideas.org/difficulty/", "https://21ideas.org/mining-walkthr
 synthesized_date: "2026-04-09"
 completeness: "high"
 language: "ru"
-tags: ["bitcoin", "wiki", "mining" "protocol"]
+tags: ["bitcoin", "wiki", "mining", "protocol"]
 reviewed: "2026-04-10"
----
-
-# Корректировка сложности
-
 ---
 
 ## Назначение

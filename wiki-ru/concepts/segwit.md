@@ -1,18 +1,19 @@
 ---
 title: "SegWit — Segregated Witness"
-category: concepts
-tags: [bitcoin, wiki, segwit, protocol, transactions, lightning]
-language: ru
-sources: ["https://21ideas.org/segwit", "https://21ideas.org/vojna-za-razmer-bloka/"]
-updated: "2026-04-08"
-quality: reference
+category: "concepts"
+quality: "reference"
+sources:
+  - "https://21ideas.org/segwit"
+  - "https://21ideas.org/vojna-za-razmer-bloka/"
 synthesized_date: "2026-04-08"
-completeness: high
+completeness: "high"
+language: "ru"
+tags: [bitcoin, wiki, concept, protocol, segwit, scaling, lightning]
+updated: "2026-04-10"
+reviewed: "2026-04-10"
 ---
 
-# SegWit — Segregated Witness
-
-Segregated Witness (SegWit) — обновление протокола Биткоин, активированное в августе 2017 года. Оно изменило структуру данных транзакции, исправило критическую уязвимость и увеличило эффективную ёмкость блока. SegWit стал фундаментом для развёртывания [[ru/concepts/lightning-network|сети Lightning]].
+**[[ru/glossary#SegWit (Segregated Witness)|Segregated Witness]] (SegWit)** — обновление [[ru/concepts/protocol-stack|протокола]] [[ru/concepts/bitcoin|Биткоина]], активированное в августе 2017 года. Оно изменило структуру данных [[ru/glossary#Транзакция|транзакции]], исправило критическую уязвимость и увеличило эффективную ёмкость [[ru/glossary#Блок|блока]]. SegWit стал фундаментом для развёртывания [[ru/concepts/lightning-network|сети Lightning]].
 
 ---
 
@@ -34,11 +35,11 @@ Segregated Witness (SegWit) — обновление протокола Битк
 
 ### 1. Исправление пластичности транзакций
 
-**Пластичность транзакций** — уязвимость, при которой третья сторона могла изменить подпись транзакции (не нарушая её валидность) и тем самым изменить TXID. Получатель думал, что транзакция не прошла, хотя биткоины уже были переведены.
+**Пластичность транзакций** — уязвимость, при которой [[ru/concepts/third-parties|третья сторона]] могла изменить подпись транзакции (не нарушая её валидность) и тем самым изменить TXID. Получатель думал, что транзакция не прошла, хотя биткоины уже были переведены.
 
 SegWit устранил эту проблему, исключив подписи из расчёта TXID. Теперь TXID фиксирован с момента создания транзакции.
 
-**Почему это важно**: пластичность транзакций делала невозможным надёжную работу [[ru/concepts/lightning-network|Lightning Network]]. SegWit открыл путь для развёртывания Лайтнинга.
+**Почему это важно**: пластичность транзакций делала невозможным надёжную работу Lightning Network. SegWit открыл путь для развёртывания Лайтнинга.
 
 ### 2. Увеличение ёмкости блока
 
@@ -51,24 +52,23 @@ SegWit ввёл новую метрику — **вес транзакции (wei
 
 ### 3. Снижение комиссий для SegWit-транзакций
 
-Поскольку данные подписей считаются «дешевле» (1 единица веса против 4), транзакции с SegWit-адресами платят меньшие комиссии.
+Поскольку данные подписей считаются «дешевле» (1 единица веса против 4), транзакции с SegWit-адресами платят меньшие [[ru/glossary#Комиссия (Transaction Fee)|комиссии]].
 
 ### 4. Новые типы адресов
 
 SegWit ввёл новые форматы адресов:
+
 - **P2SH-P2WPKH** (начинаются с `3`) — «обёрнутый» SegWit, обратно совместимый
 - **P2WPKH** (bech32, начинаются с `bc1q`) — нативный SegWit
 - **P2WSH** (bech32, начинаются с `bc1q`) — нативный SegWit для скриптов
 
-Подробнее [[ru/concepts/address-types|address-types|здесь]]
-
----
+Подробнее — на странице [[ru/concepts/address-types|типы биткоин-адресов]].
 
 ## SegWit как софт-форк
 
-SegWit был активирован как **софт-форк**: старые узлы продолжали принимать SegWit-блоки как валидные (хотя и не проверяли witness-данные). Это обеспечило плавный переход без принудительного обновления всей сети.
+SegWit был активирован как **[[ru/glossary#Софтфорк (Soft Fork)|софт-форк]]**: старые [[ru/glossary#Нода (Узел)|узлы]] продолжали принимать SegWit-блоки как валидные (хотя и не проверяли witness-данные). Это обеспечило плавный переход без принудительного обновления всей сети.
 
-Активация SegWit сопровождалась острыми дебатами — [[ru/history/blocksize-war|войной за размер блока]]. В итоге предложение SegWit2x (увеличение блока до 2 МБ в дополнение к SegWit) было отвергнуто сообществом, и SegWit активировался без этого изменения.
+Активация SegWit сопровождалась острыми дебатами — [[ru/history/blocksize-war|войной за размер блока]]; В итоге предложение SegWit2x (увеличение блока до 2 МБ в дополнение к SegWit) [было отвергнуто сообществом](https://21ideas.org/vojna-za-razmer-bloka/glava-20/), и SegWit активировался без этого изменения.
 
 ---
 
@@ -76,7 +76,7 @@ SegWit был активирован как **софт-форк**: старые 
 
 SegWit стал одним из важнейших обновлений Биткоина:
 
-- Разблокировал развёртывание [[ru/concepts/lightning-network|Lightning Network]]
+- Разблокировал развёртывание Lightning Network
 - Сделал транзакции более дешёвыми и компактными
 - Заложил основу для дальнейших улучшений, реализованных в [[ru/concepts/taproot|Taproot]]
 
@@ -84,13 +84,14 @@ SegWit стал одним из важнейших обновлений Битк
 
 ## Источники
 
-- [https://21ideas.org/segwit](https://21ideas.org/segwit)
-- [Война за размер блока](https://21ideas.org/vojna-za-razmer-bloka/)
+- [21ideas.org — SegWit](https://21ideas.org/segwit)
+- [21ideas.org — война за размер блока](https://21ideas.org/vojna-za-razmer-bloka/)
+- [Типы биткоин-адресов](https://21ideas.org/sravnenie-tipov-bitcoin-adresov/)
 
-## Связанные страницы
+## Дополнительные материалы
 
-- [[ru/concepts/taproot]] — следующее крупное обновление
-- [[ru/concepts/lightning-network]] — возможность, открытая SegWit
-- [[ru/concepts/governance]] — процесс активации обновлений
-- [[ru/history/blocksize-war]] — контекст принятия SegWit
-- [[ru/concepts/address-types]] — типы адресов
+- [[ru/concepts/taproot|Taproot — следующее крупное обновление]]
+- [[ru/concepts/lightning-network|Lightning Network и связь с SegWit]]
+- [[ru/concepts/governance|Активация обновлений и управление консенсусом]]
+- [[ru/history/blocksize-war|История: война за размер блока]]
+- [[ru/concepts/address-types|Форматы адресов после SegWit]]

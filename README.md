@@ -1,5 +1,8 @@
 # 21ideas Bitcoin Wiki
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Release](https://img.shields.io/github/v/release/21ideas-org/21ideas-wiki)](https://github.com/21ideas-org/21ideas-wiki/releases/latest)
+
 A living, AI-maintained Bitcoin knowledge base built **strictly from 21ideas.org source material** in `raw/`.
 
 This repo contains two first-class wiki layers:

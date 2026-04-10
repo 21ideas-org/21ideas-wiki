@@ -31,19 +31,18 @@ Format: `## [YYYY-MM-DD] operation | description`
 
 ---
 
-## [2026-04-10] maintenance | RU concept page standardization + stronger wikilinking standard
+## [2026-04-10] maintenance | wiki-ru/concepts — full PAGE-ENHANCEMENT pass + meta docs
 
-**Layers:** Russian wiki (`wiki-ru/`) + meta docs.
+**Layers:** Russian wiki (`wiki-ru/concepts/`), project documentation.
 
 **Changes:**
-- **Standardized pages:** `wiki-ru/concepts/decentralization.md`, `wiki-ru/concepts/deflation.md`, `wiki-ru/concepts/difficulty-adjustment.md`
-  - Frontmatter normalized (quoted scalars; consistent ordering)
-  - Removed reader-facing `raw/...` mentions from page bodies, replaced with `21ideas.org` links already listed in `sources:`
-  - Replaced `## Связанные термины` / `## Связанные страницы` with a single `## Дополнительные материалы` section (pipe links)
-- **Wikilinking quality bar raised:** `PAGE-ENHANCEMENT-STANDARD.md` now explicitly requires a deliberately thorough linking sweep (terms, concepts, entities) and adds a pre-flight checklist line to prevent missed obvious links.
+- **All concept pages:** Completed a vault-wide polish of **`wiki-ru/concepts/*.md`** using `PAGE-ENHANCEMENT-STANDARD.md`: YAML frontmatter with double-quoted scalars, field order, and tags strictly from `CLAUDE.md`; `[[ru/...]]` wikilinks with backbone + glossary sweeps (verified anchors); reader-facing **`https://21ideas.org/...`** citations in bodies (no `raw/...` paths for readers); bottom navigation unified as **`## Дополнительные материалы`** (pipe links). Intended as mechanical/provenance hygiene, not substantive rewrites.
+- **Early batch (same pass):** Included among others `decentralization`, `deflation`, `difficulty-adjustment`; later tranches covered the remaining concepts (e.g. scarcity, security, segwit, taproot, third-parties, utxo) until the full `concepts/` tree was consistent.
+- **Standard doc:** `PAGE-ENHANCEMENT-STANDARD.md` — raised wikilinking expectations and pre-flight checklist for single-page edits.
+- **Repo docs:** `README.md` (structure, counts, pointers to `log.md` and the enhancement standard); `WIKI-BACKLOG.md` (backlog refresh).
+- **Review:** Maintainer manually reviewed updated RU concept pages.
 
-**Notes:**
-- Mechanical-only changes; no intended changes to substantive claims.
+**Notes:** Operational changelog remains repo root `log.md` (see sibling entry same date).
 
 ## [2026-04-07] ingest | Initial bulk ingest — 308 source files across 4 categories
 

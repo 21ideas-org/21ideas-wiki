@@ -59,7 +59,8 @@ You are editing a single page in the 21ideas Bitcoin Wiki.
    - Link explicitly mentioned related systems/pages when they exist (examples: b-money, Hashcash, RPOW, SegWit, Taproot)
 
    Pass B — Glossary sweep (must do):
-   - Link high-value primitives to `ru/glossary` anchors when a dedicated page doesn’t exist
+   - Prefer linking to an existing dedicated page when it exists (even if a glossary heading also exists)
+   - Use `ru/glossary` on `wiki-ru/` and `en/glossary` on `wiki-en/` pages anchors for high-value primitives when no dedicated page exists
    - IMPORTANT: before adding any `[[ru/glossary#...]]` link, verify the exact heading exists in `wiki-ru/glossary.md`
      - Example (correct pattern): `[[ru/glossary#Знай своего клиента (KYC)|KYC]]`
      - Do NOT assume short anchors like `#KYC` exist.
@@ -81,6 +82,7 @@ You are editing a single page in the 21ideas Bitcoin Wiki.
 
 3. **Section Handling**
    - Completely remove any “terms” section if it exists (examples: `## Термины`, `## Terms`, `## Related Terms`, `## Связанные термины`).
+   - Keep exactly one top-level heading (`# ...`) in the page body for SEO. Do not start the page body with `## ...`.
    - Ensure there is a single bottom navigation section named:
      - For `wiki-ru/`: `## Дополнительные материалы`
      - For `wiki-en/`: `## Related pages`
@@ -95,11 +97,15 @@ You are editing a single page in the 21ideas Bitcoin Wiki.
 5. **Reader-facing sources (no `raw/` paths in the page body)**
    - Do **not** place per-paragraph provenance like `` `raw/...` `` or “Источник: raw/…” in wiki pages meant for readers (Obsidian publish / Quartz). Those paths are not clickable for most readers and duplicate what already belongs in workflow metadata.
    - **While editing**, agents still ground claims in `raw/` per `CLAUDE.md`; that is author workflow, not the reader-facing citation layer.
-   - When a section synthesizes a specific 21ideas URL, tie it inline where natural:
-     - Link the **title or chapter** in prose: `[Изобретаем Биткоин — глава 2](https://21ideas.org/...)` or `[Каждому следует запустить…](https://21ideas.org/practice/bitcoin-node/)` on first use in that section, **or**
-     - One short line after the section header or block: e.g. `Основа: [название](https://21ideas.org/...)`.
+   - Avoid third-party links. Use reader-facing links **only** to `https://21ideas.org/...`.
+   - Prefer linking sources directly in the paragraph text where it fits naturally and does not require you to infer extra claims.
+   - If inline linking would be awkward, add a short `Основа:` line immediately after the paragraph that used those sources (maximum 1–2 such lines per page):
+     - `Основа: [название](https://21ideas.org/...)`.
    - Every `https://21ideas.org/...` URL cited inline must already appear in YAML `sources:` and in the bottom `## Источники` / `## Sources` list (deduplicated). Never fabricate URLs.
    - If no public 21ideas URL exists for a claim, keep `sources: []` or the project’s agreed fallback note in frontmatter only; do not invent a pretty link.
+
+   Markdown tables:
+   - Keep existing table formatting unless it is actually broken. Do not “reformat to satisfy a linter” if it changes readability or semantics.
 
 **Important constraints:**
 - Do not change the **substantive** wording, headings, tables, or meaning — except where task (5) asks to **replace** `raw/...` citations with `https://21ideas.org/...` links (or add such links) without altering claims.

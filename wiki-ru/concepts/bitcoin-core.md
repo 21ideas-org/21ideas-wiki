@@ -14,8 +14,6 @@ tags: [bitcoin, wiki, concept, protocol, node, governance]
 reviewed: "2026-04-09"
 ---
 
-# Bitcoin Core
-
 ## Что такое Bitcoin Core (и чем он не является)
 
 Источники проводят границу между:

@@ -12,8 +12,6 @@ tags: [bitcoin, wiki, concept, protocol, governance]
 reviewed: "2026-04-09"
 ---
 
-# BIP (Bitcoin Improvement Proposal)
-
 ## Что такое BIP
 
 Изменения в **[[ru/concepts/bitcoin-core|Bitcoin Core]]** и экосистеме проходят открытый процесс; в «Изобретаем Биткоин» [названы](https://21ideas.org/izobretaem-bitkoin/glava-8) **Bitcoin Improvement Proposals (BIP)** как формат предложений — с **публичным ревью**, видимым кодом и обсуждением.
