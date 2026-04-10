@@ -1,13 +1,18 @@
 ---
-title: "Glossary"
+title: Glossary
 category: reference
-tags: [bitcoin, wiki, reference, glossary, terms]
+tags:
+  - bitcoin
+  - wiki
+  - glossary
+  - terms
 language: en
-source: "Synthesized from raw/ sources + glossary"
-updated: "2026-04-07"
+source: Synthesized from raw/ sources + glossary
+updated: 2026-04-07
 quality: canonical
-sources: ["https://21ideas.org/glossary"]
-synthesized_date: "2026-04-07"
+sources:
+  - https://21ideas.org/glossary
+synthesized_date: 2026-04-07
 completeness: high
 ---
 

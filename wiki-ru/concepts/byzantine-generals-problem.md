@@ -1,59 +1,67 @@
 ---
-title: "Задача византийских генералов"
+title: Задача византийских генералов
 category: concepts
-tags: [bitcoin, wiki, distributed-systems, consensus, security]
-language: ru
 quality: reference
 sources:
-  - "https://21ideas.org/suverenitet-posredstvom-matematiki/glava-8"
-synthesized_date: "2026-04-09"
+  - https://21ideas.org/suverenitet-posredstvom-matematiki/glava-8
+  - https://21ideas.org/gf/genesis-4
+synthesized_date: 2026-04-10
 completeness: medium
+language: ru
+tags:
+  - bitcoin
+  - wiki
+  - concept
+  - protocol
+  - governance
+  - decentralization
+reviewed: 2026-04-10
 ---
 
 # Задача византийских генералов
 
-*Теги: распределённый консенсус, минимизация доверия*
-
----
-
-## Что это (в формулировке 21ideas)
+## Что такое задача византийских генералов 
 
 **Задача византийских генералов** — классическая постановка: как участникам **договориться об истинном состоянии**, **не доверяя** друг другу и при возможных **ложных** или **ошибочных** сообщениях?
 
-В «Суверенитете посредством математики» сказано прямо: с точки зрения автора, **блокчейн Биткоина** при соблюдении правил консенсуса решает именно эту задачу — позволяет **без доверия** согласовывать **достоверность** информации в сети.
+В [восьмой главе книги Кнута Сванхольма «Суверенитет посредством математики»](https://21ideas.org/suverenitet-posredstvom-matematiki/glava-8) сказано прямо: **[[ru/concepts/blockchain|блокчейн]] [[ru/concepts/bitcoin|Биткоина]]** при соблюдении правил [[ru/glossary#Консенсус Накамото|консенсуса]] решает именно эту задачу — позволяет **без доверия** согласовывать **достоверность** информации в сети.
 
-В той же главе предупреждают: само слово **«блокчейн»** не гарантирует децентрализацию; ключевое изобретение — **Биткоин**; к «универсальному блокчейну» без этого контекста стоит относиться скептически.
+Автор также предупреждает: само слово **«блокчейн»** не гарантирует [[ru/concepts/decentralization|децентрализацию]]; ключевое изобретение — **Биткоин**; к «универсальному блокчейну» без этого контекста стоит относиться скептически.
 
-Источник: `raw/Books/Suverenitet-posredstvom-matematiki/chapter-8.md`
+Основа: [Суверенитет посредством математики](https://21ideas.org/suverenitet-posredstvom-matematiki/).
 
 ---
 
 ## Как это соотносится с Биткоином
 
-Биткоин сочетает:
+[[ru/concepts/bitcoin|Биткоин]] сочетает:
 
-- **Явные правила** (скрипт, подписи, график эмиссии и т.д.), которые проверяет каждый **полный узел**
-- **Proof of Work**, делающий **глобальный порядок** дорогим для подделки
+- **Явные правила** (скрипт, подписи, график эмиссии и т.д.), которые проверяет каждый **[[ru/concepts/bitcoin-node|полный узел]]**
+- **[[ru/concepts/proof-of-work|Proof of Work]]**, гарантирует, что изменение **глобального порядка** энергозатратно и дорого, а значит подделка становится экономически невыгодной
 - **Экономические стимулы**, из-за которых переписывание глубокой истории обычно невыгодно
 
-См. [[ru/concepts/proof-of-work]], [[ru/concepts/governance]], [[ru/concepts/double-spend]].
+В «Генезис-файлах» (часть про [[ru/concepts/bit-gold|Bit Gold]]) отдельно подчёркивается византийская рамка: PoW в Биткоине — не “добавка”, а компонента **византийски устойчивой одноранговой системы**, снижающей риск того, что ненадёжная сторона получит контроль над большинством узлов и сможет подорвать ключевые свойства безопасности.  
+
+Основа: [Genesis Files — часть IV (Bit Gold)](https://21ideas.org/gf/genesis-4).
 
 ---
 
 ## Источники
 
 - [Суверенитет посредством математики — гл. 8](https://21ideas.org/suverenitet-posredstvom-matematiki/glava-8)
+- [Генезис-файлы — часть IV (Bit Gold)](https://21ideas.org/gf/genesis-4)
 
 ---
 
-## Связанные термины
+## Дополнительные материалы
 
-[[ru/glossary|Глоссарий]] | [[ru/concepts/proof-of-work|Proof of Work]] | [[ru/concepts/governance|управление]] | [[ru/concepts/double-spend|двойная трата]] | [[ru/concepts/blockchain|блокчейн]]
-
-## Связанные страницы
-
-- [[ru/concepts/bitcoin]] — обзор системы
-- [[ru/concepts/proof-of-work]] — устойчивость к Сибиле и порядок блоков
-- [[ru/concepts/double-spend]] — денежная специфика атаки
-- [[ru/concepts/decentralization]] — почему «без лидера» сложно
-- [[ru/books/sovereignty-through-mathematics]] — контекст книги
+- [[ru/glossary|Глоссарий]]
+- [[ru/glossary#Задача византийских генералов|Задача византийских генералов (глоссарий)]]
+- [[ru/concepts/bitcoin|Биткоин: обзор системы]]
+- [[ru/concepts/blockchain|Блокчейн в Биткоине]]
+- [[ru/concepts/proof-of-work|Proof of Work: устойчивость к Сибиле и порядок блоков]]
+- [[ru/concepts/governance|Управление сетью и правила]]
+- [[ru/concepts/double-spend|Двойная трата]]
+- [[ru/concepts/decentralization|Децентрализация]]
+- [[ru/concepts/bit-gold|Bit Gold]]
+- [[ru/books/sovereignty-through-mathematics|Книга «Суверенитет посредством математики»]]

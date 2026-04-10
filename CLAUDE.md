@@ -6,19 +6,81 @@ This file extends the general LLM Wiki pattern below for our specific Bitcoin ed
 
 - **Source of truth**: All content must be grounded in `raw/` files from 21ideas.org. Never hallucinate or add external knowledge.
 - **Frontmatter (mandatory on every wiki page)**:
+
+  Use **double-quoted** strings for scalar fields (`title`, `category`, `quality`, `language`, `completeness`, dates) so titles with punctuation/Unicode and Quartz-style builds parse reliably. `tags` remain a YAML list of bare tag names from the allowlist below.
+
   ```yaml
   ---
-  title: 
-  category: concepts | entities | books | series | history | philosophy | practice | topics
-  quality: canonical | reference | synthesized | stub
+  title: "Example page title"
+  category: "concepts"   # concepts | entities | books | series | history | philosophy | practice | topics
+  quality: "reference"   # canonical | reference | synthesized | stub
   sources: ["https://21ideas.org/..."]   # full URLs when available, otherwise []
   synthesized_date: "2026-04-XX"
-  completeness: high | medium | low
-  language: en   # or ru for wiki-ru/
+  completeness: "high"   # high | medium | low
+  language: "en"         # or "ru" for wiki-ru/
+  tags: [bitcoin, wiki, concept, protocol, node, governance]
   ```
 
+  ### Tags Policy (Strict — enforced on every page)
+
+  All pages must use **only** the tags listed below. Never invent new tags.
+
+  **Always include these two core tags:**
+  - `bitcoin`
+  - `wiki`
+
+  **Category tags** (choose the most relevant ones):
+  - `concept`
+  - `entity`
+  - `glossary`
+  - `protocol`
+  - `economics`
+  - `history`
+  - `philosophy`
+  - `security`
+  - `privacy`
+  - `governance`
+  - `scaling`
+  - `mining`
+
+  **Page type tags** (choose when applicable):
+  - `synthesized`
+  - `reference`
+  - `stub`
+
+  **Specific high-value tags** (use when relevant):
+  - `utxo`
+  - `lightning`
+  - `bip`
+  - `node`
+  - `fork`
+  - `censorship-resistance`
+  - `decentralization`
+  - `double-spend`
+  - `difficulty-adjustment`
+  - `third-party`
+  - `whitepaper`
+  - `aml`
+  - `addresses`
+  - `multisig`
+  - `taproot`
+  - `segwit`
+
+  **Rules:**
+  - Tags must be **lowercase** and **hyphenated** (never spaces or camelCase).
+  - Use 3–8 tags per page maximum.
+  - Every page must have at least `bitcoin` and `wiki`.
+  - Example of a good tags line:
+
+    ```yaml
+    tags: [bitcoin, wiki, concept, protocol, addresses, segwit, taproot, privacy]
+    ```
+
+  When in doubt, prefer fewer, high-value tags over many generic ones.
+
+
 - Style & Tone: Clear, precise, neutral but firm on Bitcoin’s monetary sovereignty, censorship resistance, and first-principles thinking. Cite contradictions honestly. Use [[wikilinks]] liberally.
-- Source linking: Always include a "## Sources" section at the bottom with links back to original 21ideas.org pages when available.
+- Source linking: Always include a `## Sources` section for wiki-en/ at the bottom with links back to original 21ideas.org pages when available. For wiki-ru/ use `## Источники`
 - Quality & Trust: Be explicit about what is synthesized vs. direct reference. Flag any remaining gaps.
 - Russian mirror: When working in wiki-ru/, use the original files in `/raw` directory naturally while preserving technical accuracy and the same frontmatter structure.
 
@@ -32,7 +94,7 @@ This section extends the general LLM Wiki pattern with a repeatable, bilingual-a
 
 ## How to run lint
 Tell the agent:  
-> "Run a full bilingual lint on the entire wiki (both wiki/ and wiki-ru/)"
+> "Run a full bilingual lint on the entire wiki (both wiki-en/ and wiki-ru/)"
 
 The agent must always perform a **complete pass** across both language layers in one session.
 
@@ -41,7 +103,7 @@ The agent must always perform a **complete pass** across both language layers in
 ### 1. Structural health (both languages)
 - Broken or malformed [[wikilinks]]
 - Orphan pages (no incoming links)
-- Pages missing required frontmatter fields (`title`, `category`, `quality`, `sources`, `synthesized_date`, `completeness`, `language`)
+- Pages missing required frontmatter fields (`title`, `category`, `quality`, `sources`, `synthesized_date`, `completeness`, `language`, `tags`)
 - Missing or outdated entries in `index.md` / `overview.md`
 
 ### 2. Trust & provenance
@@ -52,7 +114,7 @@ The agent must always perform a **complete pass** across both language layers in
 - In **all `wiki-ru/` pages**, every internal wikilink **must** use the explicit prefix `[[ru/...]]`.  
   Examples: `[[ru/concepts/taproot|Taproot]]` or `[[ru/taproot|Taproot]]`.
 - **Never** remove the `ru/` prefix from any Russian page. Bare links (`[[concepts/taproot]]` or `[[taproot]]`) are **forbidden** inside `wiki-ru/` because they resolve to the English version in the shared vault.
-- In the English `wiki/` layer, every internal wikilink **must** use the explicit prefix `[[en/...]]`
+- In the English `wiki-en/` layer, every internal wikilink **must** use the explicit prefix `[[en/...]]`
 
 ### 4. Bilingual consistency & fidelity
 - For every page that exists in both languages, verify that core concepts, key facts, and conclusions are conceptually aligned (even if phrasing and emphasis differ for linguistic/cultural accuracy).
@@ -70,14 +132,6 @@ The agent must always perform a **complete pass** across both language layers in
 
 **Important**: Auto-fix **only** safe mechanical issues (missing frontmatter, incorrect Russian wikilink prefixes).  
 Never remove `wiki-ru/` prefixes from Russian pages. For content contradictions or Bitcoin-specific accuracy, flag for human review instead of editing.
-
----
-
-### Immediate action for you
-
-1. **Revert Claude’s destructive change** (easy with Git):
-   ```bash
-   git checkout HEAD~1 -- wiki-ru/
 
 ---
 

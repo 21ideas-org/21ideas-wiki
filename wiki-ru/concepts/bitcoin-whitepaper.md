@@ -1,43 +1,41 @@
 ---
 title: "Белая книга Биткоина"
-category: concepts
-quality: reference
+category: "concepts"
+quality: "reference"
 sources:
   - "https://21ideas.org/whitepaper"
-synthesized_date: "2026-04-09"
-completeness: medium
-language: ru
-tags: [bitcoin, wiki, whitepaper, satoshi, history, protocol, reference]
+synthesized_date: "2026-04-10"
+completeness: "medium"
+language: "ru"
+tags: [bitcoin, wiki, concept, history, protocol, whitepaper, reference]
+reviewed: "2026-04-10"
 ---
 
 # Белая книга Биткоина
 
-**Белая книга Биткоина** — короткий технический документ, опубликованный [[ru/entities/satoshi-nakamoto|Сатоши Накамото]] 31 октября 2008 года, в котором описана “одноранговая электронная наличность”. В материалах 21ideas он рассматривается как **исторический артефакт** и важная точка входа — но не как полная спецификация текущей реализации.
+**Белая книга Биткоина** — короткий технический документ, опубликованный [[ru/entities/satoshi-nakamoto|Сатоши Накамото]] 31 октября 2008 года, в котором описана "одноранговая электронная наличность". На [странице Whitepaper на 21ideas](https://21ideas.org/whitepaper) и в связанных материалах документ рассматривается как **исторический артефакт** и важная точка входа — но не как полная спецификация текущей реализации.
 
 ## Что это такое (и чем это не является)
 
-В трактовке 21ideas белая книга — это:
-
-- Сжатое изложение ключевой идеи, которая стала Биткоином.
+Белая книга — это:
+- Сжатое изложение ключевой идеи, которая стала [[ru/concepts/bitcoin|Биткоином]].
 - Документ, в котором намеренно отсутствуют многие детали и более поздняя терминология.
 
 И это **не**:
-
-- Полная “спецификация протокола”, исчерпывающе описывающая современное поведение Биткоина.
+- Полная "спецификация протокола", исчерпывающе описывающая современное поведение Биткоина.
 - Полный перечень всех свойств, которые система получила в реальности.
 
 ## Интересные факты, на которые указывают источники
 
-Источник `raw/Books/whitepaper.md` подчёркивает несколько моментов:
-
+В разборе на [странице Whitepaper](https://21ideas.org/whitepaper) подчёркиваются несколько моментов:
 - Документ короткий, но вызвал заметную дискуссию вскоре после публикации.
-- В тексте нет слова “blockchain”; вместо этого используется описание “сервера временных меток”.
-- Белая книга ссылается на предыдущие попытки цифровых денег, включая **b-money** и **Hashcash**.
+- В тексте нет слова "blockchain"; вместо этого используется описание [[ru/glossary#Временна́я метка (Timestamp)|сервера временных меток]].
+- Белая книга ссылается на предыдущие попытки запуска цифровых денег, включая [[ru/concepts/b-money|b-money]] и [[ru/concepts/hashcash|Hashcash]].
 
 Эти наблюдения помогают связать белую книгу с:
 
-- [[ru/concepts/blockchain]] — и почему в источниках важнее биткоин-специфический язык, чем “блокчейн”-маркетинг.
-- [[ru/concepts/b-money]] и [[ru/entities/adam-back|Адам Бэк]] (Hashcash) как предшественники.
+- [[ru/concepts/blockchain|Блокчейном]] — и почему в источниках важнее биткоин-специфический язык, чем "блокчейн"-маркетинг.
+- [[ru/entities/adam-back|Адамом Бэком]] и Hashcash как предшественниками наряду с b-money.
 
 ## Белая книга и реальная реализация
 
@@ -47,26 +45,27 @@ tags: [bitcoin, wiki, whitepaper, satoshi, history, protocol, reference]
 
 См. также:
 
-- [[ru/concepts/bitcoin-node]] — узлы проверяют правила.
-- [[ru/concepts/bitcoin-core]] — доминирующая реализация — это реализация, а не “протокол сам по себе”.
-- [[ru/concepts/governance]] — обновления происходят через принятие правил участниками сети.
+- [[ru/concepts/bitcoin-node|Биткоин-нода]] — узлы проверяют правила.
+- [[ru/concepts/bitcoin-core|Bitcoin Core]] — доминирующая реализация — это реализация, а не "протокол сам по себе".
+- [[ru/concepts/governance|Управление сетью]] — обновления происходят через принятие правил участниками сети.
 
 ---
 
-## Sources
+## Источники
 
 - [Whitepaper (страница 21ideas)](https://21ideas.org/whitepaper)
 
 ---
 
-## Related Terms
+## Дополнительные материалы
 
-[[ru/glossary|Глоссарий]] | [[ru/concepts/bitcoin|Биткоин]] | [[ru/entities/satoshi-nakamoto|Сатоши Накамото]] | [[ru/concepts/blockchain|блокчейн]] | [[ru/concepts/proof-of-work|Proof of Work]] | [[ru/concepts/b-money|b-money]] | [[ru/concepts/hashcash|Hashcash]]
-
-## Related Pages
-
-- [[ru/concepts/b-money]] — предшественник; “первый черновик” в трактовке Genesis Files
-- [[ru/concepts/bit-gold]] — почти-решение из предыстории Биткоина
-- [[ru/concepts/rpow]] — реализованный прототип-предшественник; проблема централизации
-- [[ru/entities/adam-back]] — Hashcash; упоминается в белой книге по источникам
-- [[ru/entities/david-chaum]] — eCash как приватная, но централизованная система до Биткоина
+- [[ru/glossary|Глоссарий]]
+- [[ru/concepts/bitcoin|Биткоин]]
+- [[ru/concepts/blockchain|Блокчейн и язык описания системы]]
+- [[ru/concepts/proof-of-work|Proof of work]]
+- [[ru/concepts/b-money|b-money как предшественник]]
+- [[ru/concepts/bit-gold|Bit gold в предыстории]]
+- [[ru/concepts/rpow|RPOW как прототип-предшественник и проблема централизации]]
+- [[ru/entities/adam-back|Адам Бэк: Hashcash в контексте белой книги]]
+- [[ru/entities/david-chaum|Дэвид Чаум: eCash до Биткоина]]
+- [[ru/entities/satoshi-nakamoto|Сатоши Накамото]]

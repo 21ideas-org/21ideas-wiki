@@ -18,5 +18,4 @@ Thumbs.db
 # Optional: if you want to keep some plugin data private
 # .obsidian/plugins/  # uncomment only if you want to exclude ALL plugins
 
-# LLM-specific logs if they grow large
-log.md  # you can commit it, but some people .gitignore large logs
+# Operational wiki changelog is committed at repo root: log.md

@@ -36,14 +36,15 @@ Both layers use trust markers and strict linking rules.
 
 ### Current page counts 
 
-- `wiki-en/`: **77** markdown pages total (**73** content pages excluding index/overview/log + glossary)
+- `wiki-en/`: **76** markdown pages total (**73** content pages excluding index/overview + glossary); operations log is repo root `log.md` (bilingual).
 - `wiki-ru/`: **76** markdown pages total (**73** content pages excluding index/overview/log + glossary)
 
 ### Trust markers and consistency (both languages)
 
 Every wiki page includes:
 - required YAML frontmatter fields (title, category, quality, sources, synthesized_date, completeness, language, tags)
-- a `## Sources` section (URLs when present, otherwise a clear note)
+- **Frontmatter style:** scalar fields (`title`, `category`, `quality`, `language`, `completeness`, dates) use **double-quoted** strings for consistent parsing (Obsidian, Quartz on GitHub Pages). `tags` are an unquoted flow list of allowlisted names (see `CLAUDE.md`).
+- a `## Sources` / `## Источники` section (URLs when present, otherwise a clear note)
 - rich internal linking
 
 ### Bilingual wikilink discipline 
@@ -60,7 +61,7 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 - `wiki-ru/` — Russian wiki pages
 - `lint-report.md` — lint summaries (typically updated during batch work)
 - `CLAUDE.md` — project rules: frontmatter schema + bilingual lint rules
-- `wiki-en/log.md` — append-only operational log of wiki work
+- `log.md` (repo root) — append-only operational log for **both** `wiki-en/` and `wiki-ru/`
 
 ## How maintenance works (high level)
 

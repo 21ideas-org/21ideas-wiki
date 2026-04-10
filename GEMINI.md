@@ -6,15 +6,19 @@ This file extends the general LLM Wiki pattern below for our specific Bitcoin ed
 
 - **Source of truth**: All content must be grounded in `raw/` files from 21ideas.org. Never hallucinate or add external knowledge.
 - **Frontmatter (mandatory on every wiki page)**:
+
+  Use **double-quoted** strings for scalar fields (`title`, `category`, `quality`, `language`, `completeness`, dates) for reliable parsing (Quartz, GitHub Pages). See `CLAUDE.md` for the full schema, tag allowlist, and `tags:` line.
+
   ```yaml
   ---
-  title: 
-  category: concepts | entities | books | series | history | philosophy | practice | topics
-  quality: canonical | reference | synthesized | stub
-  sources: ["https://21ideas.org/..."]   # full URLs when available, otherwise []
+  title: "Example page title"
+  category: "concepts"
+  quality: "reference"
+  sources: ["https://21ideas.org/..."]
   synthesized_date: "2026-04-XX"
-  completeness: high | medium | low
-  language: en   # or ru for wiki-ru/
+  completeness: "high"
+  language: "en"
+  tags: [bitcoin, wiki, concept]
   ```
 
 - Style & Tone: Clear, precise, neutral but firm on Bitcoin’s monetary sovereignty, censorship resistance, and first-principles thinking. Cite contradictions honestly. Use [[wikilinks]] liberally.

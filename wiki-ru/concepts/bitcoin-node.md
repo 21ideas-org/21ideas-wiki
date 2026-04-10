@@ -1,28 +1,23 @@
 ---
 title: "Биткоин-нода"
-category: concepts
-tags: [bitcoin, wiki, node, full-node, validation, privacy, sovereignty, p2p]
-quality: reference
+category: "concepts"
+quality: "reference"
 sources:
   - "https://21ideas.org/practice/bitcoin-node/"
   - "https://21ideas.org/izobretaem-bitkoin/glava-8"
   - "https://21ideas.org/izobretaem-bitkoin/glava-2"
 synthesized_date: "2026-04-09"
-completeness: high
-language: ru
+completeness: "high"
+language: "ru"
+tags: [bitcoin, wiki, concept, protocol, node, privacy, decentralization]
+reviewed: "2026-04-10"
 ---
 
 # Биткоин-нода
 
-*Теги: полная нода, валидация, ретрансляция, суверенитет*
-
----
-
 ## Что такое биткоин-нода
 
-**Биткоин-нода** — это компьютер с установленным биткоин-программным обеспечением, который участвует в P2P-сети: обменивается транзакциями и блоками и (в случае полной ноды) независимо проверяет их по правилам консенсуса.
-
-Источник: `raw/Practice/interact/bitcoin-node.md`
+**Биткоин-нода** — это компьютер с установленным биткоин-программным обеспечением, который участвует в P2P-сети: обменивается транзакциями и блоками и (в случае полной ноды) независимо проверяет их по правилам [[ru/glossary#Консенсус Накамото|консенсуса]].
 
 ---
 
@@ -33,9 +28,7 @@ language: ru
 - **Сетевая:** ноды ретранслируют транзакции и блоки, помогая сети синхронизироваться.
 - **Валидация:** полные ноды загружают блоки и проверяют каждую транзакцию; нарушения правил автоматически отклоняются.
 
-Отсюда смысл лозунга «не доверяй — проверяй» как практики: своя нода — это проверка реальности без посредника.
-
-Источник: `raw/Practice/interact/bitcoin-node.md`
+Отсюда смысл лозунга «не доверяй — проверяй» как практики: своя нода — это проверка реальности без [[ru/concepts/third-parties|посредника]].
 
 ---
 
@@ -44,45 +37,37 @@ language: ru
 Материал также сравнивает:
 
 - **Полная нода:** всё проверяет и хранит цепь; применяет правила локально.
-- **Лёгкий / SPV-клиент:** дешевле, но не проверяет всю историю и слабее по модели доверия.
-
-Источник: `raw/Practice/interact/bitcoin-node.md`
+- **Лёгкий / [[ru/glossary#Нода (Узел)|SPV]]-клиент:** дешевле, но не проверяет всю историю и слабее по модели доверия.
 
 ---
 
 ## Как нода уменьшает зависимость от третьих сторон
 
-В «Изобретаем Биткоин» традиционные системы описаны как централизованные реестры. Нода — это способ иметь собственную копию реестра и не зависеть от обозревателей, кастодианов и процессоров платежей при проверке баланса и правил.
-
-Источники: `raw/Books/izobretaem-bitkoin/glava-2.md`, `raw/Practice/interact/bitcoin-node.md`
+Во второй главе книги «[Изобретаем Биткоин](https://21ideas.org/izobretaem-bitkoin/glava-2)» традиционные системы описаны как централизованные [[ru/glossary#Реестр (Ledger)|реестры]]. Нода — это способ иметь собственную копию реестра и не зависеть от обозревателей, [[ru/glossary#Кастодиальное хранение|кастодианов]] и платёжных процессоров при проверке баланса и правил.
 
 ---
 
 ## Ноды, Bitcoin Core и изменение правил
 
-В «Изобретаем Биткоин» сказано: реализаций много, но наиболее распространённая — **Bitcoin Core**. При этом именно узлы являются слоем применения правил: майнеры производят блоки, а узлы решают, считать ли их валидными.
-
-См. [[ru/concepts/bitcoin-core]] и [[ru/concepts/governance]].
-
-Источник: `raw/Books/izobretaem-bitkoin/glava-8.md`
+[Восьмая глава](https://21ideas.org/izobretaem-bitkoin/glava-8) «Изобретаем Биткоин» также подчёркивает: реализаций много, но наиболее распространённая — **[[ru/concepts/bitcoin-core|Bitcoin Core]]**. При этом именно узлы являются слоем применения правил: [[ru/glossary#Майнер|майнеры]] производят блоки, а узлы решают, считать ли их валидными.
 
 ---
 
 ## Источники
 
 - [Каждому следует запустить собственную Биткоин-ноду!](https://21ideas.org/practice/bitcoin-node/)
-- [Изобретаем Биткоин — гл. 8](https://21ideas.org/izobretaem-bitkoin/glava-8)
-- [Изобретаем Биткоин — гл. 2](https://21ideas.org/izobretaem-bitkoin/glava-2)
+- [Изобретаем Биткоин — глава 8](https://21ideas.org/izobretaem-bitkoin/glava-8)
+- [Изобретаем Биткоин — глава 2](https://21ideas.org/izobretaem-bitkoin/glava-2)
 
 ---
 
-## Связанные термины
+## Дополнительные материалы
 
-[[ru/glossary|Глоссарий]] | [[ru/concepts/bitcoin-core|Bitcoin Core]] | [[ru/concepts/governance|управление]] | [[ru/concepts/decentralization|децентрализация]] | [[ru/concepts/third-parties|третьи стороны]] | [[ru/concepts/censorship-resistance|цензуроустойчивость]] | [[ru/concepts/proof-of-work|Proof of Work]]
-
-## Связанные страницы
-
-- [[ru/practice/running-a-node]] — практические шаги
-- [[ru/concepts/governance]] — кто и как применяет правила
-- [[ru/concepts/third-parties]] — почему аутсорс валидации = TTP
-- [[ru/concepts/censorship-resistance]] — почему важна распределённость узлов
+- [[ru/glossary|Глоссарий]]
+- [[ru/practice/running-a-node|Запуск своей ноды: практические шаги]]
+- [[ru/concepts/bitcoin-core|Bitcoin Core: эталонная реализация клиента]]
+- [[ru/concepts/governance|Управление: кто и как применяет правила]]
+- [[ru/concepts/third-parties|Третьи стороны и аутсорс валидации]]
+- [[ru/concepts/censorship-resistance|Цензуроустойчивость и роль узлов]]
+- [[ru/concepts/decentralization|Децентрализация]]
+- [[ru/concepts/proof-of-work|Proof of work и роль майнеров]]

@@ -1,12 +1,17 @@
 ---
-title: "Глоссарий"
+title: Глоссарий
 category: reference
-tags: [bitcoin, wiki, glossary, terms, bitcoin]
+tags:
+  - bitcoin
+  - wiki
+  - glossary
+  - terms
 language: ru
-sources: ["https://21ideas.org/glossary"]
-updated: "2026-04-08"
+sources:
+  - https://21ideas.org/glossary
+updated: 2026-04-08
 quality: canonical
-synthesized_date: "2026-04-08"
+synthesized_date: 2026-04-08
 completeness: high
 ---
 
@@ -508,6 +513,11 @@ Application-Specific Integrated Circuit — специализированная
 Подробнее: [[ru/concepts/governance]]
 
 ---
+
+## P
+
+### P2P (Пиринговый)
+Прямое взаимодействие или обмен между участниками без привлечения [[wiki-ru/concepts/third-parties|третьих сторон]]. [[wiki-ru/concepts/bitcoin|Биткоин]] – это р2р (пиринговая) система обмена ценностью.
 
 ## S
 
