@@ -21,7 +21,9 @@ You are editing a single page in the 21ideas Bitcoin Wiki.
 1. **Frontmatter Standardization**
    Ensure the frontmatter follows this exact order and includes all required fields:
 
-   **String quoting (Quartz / GitHub Pages):** Use **double-quoted** YAML strings for every scalar text field (`title`, `category`, `quality`, `language`, `completeness`, `synthesized_date`, and optional `reviewed` / `updated`). This avoids edge cases with colons, parentheses, or Unicode in titles and keeps parsing consistent across Obsidian, Quartz, and static generators. `tags` stay a flow sequence of bare identifiers: `tags: [bitcoin, wiki, concept]` (see CLAUDE.md Tags Policy). Each URL in `sources` must be a quoted string.
+   **String quoting (Quartz / GitHub Pages):** Use **double-quoted** YAML strings for every scalar text field (`title`, `category`, `quality`, `language`, `completeness`, `synthesized_date`, `updated`, `reviewed`). This avoids edge cases with colons, parentheses, or Unicode in titles and keeps parsing consistent across Obsidian, Quartz, and static generators. `tags` stay a flow sequence of bare identifiers: `tags: [bitcoin, wiki, concept]` (see CLAUDE.md Tags Policy). Each URL in `sources` must be a quoted string.
+
+   **Last frontmatter field:** After `tags`, optional workflow keys may include `updated: "YYYY-MM-DD"`. The **final** key in every enhanced page’s frontmatter **must** be **`reviewed: "YYYY-MM-DD"`** — the date of the last human (or explicit maintainer) review pass. If `updated` is present, order is `tags` → `updated` → `reviewed` (see `wiki-ru/entities/adam-back.md`).
 
    ```yaml
    ---
@@ -33,9 +35,8 @@ You are editing a single page in the 21ideas Bitcoin Wiki.
    completeness: "high"  # one of: high | medium | low
    language: "ru"        # or "en" for wiki-en/
    tags: [bitcoin, wiki, concept, protocol]   # STRICT allowlist: CLAUDE.md (never invent tags)
-   # optional workflow fields, also quoted when present:
-   # reviewed: "2026-04-10"
-   # updated: "2026-04-10"
+   updated: "2026-04-10"   # optional — last edit in this workflow
+   reviewed: "2026-04-10"  # required — MUST be the last field before the closing ---
    ---
    ```
 
@@ -82,7 +83,8 @@ You are editing a single page in the 21ideas Bitcoin Wiki.
 
 3. **Section Handling**
    - Completely remove any “terms” section if it exists (examples: `## Термины`, `## Terms`, `## Related Terms`, `## Связанные термины`).
-   - Keep exactly one top-level heading (`# ...`) in the page body for SEO. Do not start the page body with `## ...`.
+   - Do **not** add a `#` heading to the page body. Quartz uses the frontmatter `title` field as the page heading. Start the body directly with `##` sections. If a `# Title` heading already exists in the page, remove it.
+   - Do **not** use Markdown **horizontal rules** (`---` alone on a line) in the **page body**. The only `---` allowed is the YAML frontmatter delimiter at the very top of the file. In the body, `---` renders as an `<hr>` and adds noise in Obsidian/Quartz; separate blocks with `##` headings and blank lines instead.
    - Ensure there is a single bottom navigation section named:
      - For `wiki-ru/`: `## Дополнительные материалы`
      - For `wiki-en/`: `## Related pages`
@@ -116,6 +118,9 @@ After editing, output:
 - A short summary of changes: which wikilinks were added, tags updated, frontmatter standardized, sections modified, and (if applicable) how reader-facing `21ideas.org` citations replaced or complement `raw/` mentions.
 
 Pre-flight checklist (must pass before you finish):
+- Frontmatter ends with **`reviewed: "YYYY-MM-DD"`** as the **last** field (after `updated` if present).
+- No `#` heading anywhere in the page body (Quartz uses frontmatter `title`; body starts with `##`).
+- No standalone `---` horizontal rules anywhere in the page body (YAML opening/closing frontmatter excepted).
 - No `raw/...` citations in the page body (replace with reader-facing 21ideas.org links, or remove).
 - No `[[wiki-ru/...]]` or `[[wiki-en/...]]` links anywhere.
 - For wiki-ru pages: all internal links start with `[[ru/...]]`; for wiki-en pages: `[[en/...]]`.

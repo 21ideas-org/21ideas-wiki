@@ -1,212 +1,199 @@
-# 21ideas Bitcoin Wiki — Project-Specific Rules (April 2026)
+# 21ideas Bitcoin Wiki — Agent Rules
 
-This file extends the general LLM Wiki pattern below for our specific Bitcoin education use case.
-
-## Core Conventions (always follow these first)
-
-- **Source of truth**: All content must be grounded in `raw/` files from 21ideas.org. Never hallucinate or add external knowledge.
-- **Frontmatter (mandatory on every wiki page)**:
-
-  Use **double-quoted** strings for scalar fields (`title`, `category`, `quality`, `language`, `completeness`, dates) so titles with punctuation/Unicode and Quartz-style builds parse reliably. `tags` remain a YAML list of bare tag names from the allowlist below.
-
-  ```yaml
-  ---
-  title: "Example page title"
-  category: "concepts"   # concepts | entities | books | series | history | philosophy | practice | topics
-  quality: "reference"   # canonical | reference | synthesized | stub
-  sources: ["https://21ideas.org/..."]   # full URLs when available, otherwise []
-  synthesized_date: "2026-04-XX"
-  completeness: "high"   # high | medium | low
-  language: "en"         # or "ru" for wiki-ru/
-  tags: [bitcoin, wiki, concept, protocol, node, governance]
-  ```
-
-  ### Tags Policy (Strict — enforced on every page)
-
-  All pages must use **only** the tags listed below. Never invent new tags.
-
-  **Always include these two core tags:**
-  - `bitcoin`
-  - `wiki`
-
-  **Category tags** (choose the most relevant ones):
-  - `concept`
-  - `entity`
-  - `glossary`
-  - `protocol`
-  - `economics`
-  - `history`
-  - `philosophy`
-  - `security`
-  - `privacy`
-  - `governance`
-  - `scaling`
-  - `mining`
-
-  **Page type tags** (choose when applicable):
-  - `synthesized`
-  - `reference`
-  - `stub`
-
-  **Specific high-value tags** (use when relevant):
-  - `utxo`
-  - `lightning`
-  - `bip`
-  - `node`
-  - `fork`
-  - `censorship-resistance`
-  - `decentralization`
-  - `double-spend`
-  - `difficulty-adjustment`
-  - `third-party`
-  - `whitepaper`
-  - `aml`
-  - `addresses`
-  - `multisig`
-  - `taproot`
-  - `segwit`
-
-  **Rules:**
-  - Tags must be **lowercase** and **hyphenated** (never spaces or camelCase).
-  - Use 3–8 tags per page maximum.
-  - Every page must have at least `bitcoin` and `wiki`.
-  - Example of a good tags line:
-
-    ```yaml
-    tags: [bitcoin, wiki, concept, protocol, addresses, segwit, taproot, privacy]
-    ```
-
-  When in doubt, prefer fewer, high-value tags over many generic ones.
-
-
-- Style & Tone: Clear, precise, neutral but firm on Bitcoin’s monetary sovereignty, censorship resistance, and first-principles thinking. Cite contradictions honestly. Use [[wikilinks]] liberally.
-- Source linking: Always include a `## Sources` section for wiki-en/ at the bottom with links back to original 21ideas.org pages when available. For wiki-ru/ use `## Источники`
-- Quality & Trust: Be explicit about what is synthesized vs. direct reference. Flag any remaining gaps.
-- Russian mirror: When working in wiki-ru/, use the original files in `/raw` directory naturally while preserving technical accuracy and the same frontmatter structure.
-
-All general LLM Wiki rules below still apply. When in doubt, prioritize provenance, consistency, and compounding value.
+A bilingual (EN + RU) Bitcoin education wiki built from immutable source files in `raw/` — all from 21ideas.org, a Russian-language Bitcoin education site (~308 files). Content is grounded in `raw/` material only. Agents write and maintain `wiki-en/` and `wiki-ru/`; humans curate `raw/`. The wiki is read in Obsidian and published via Quartz.
 
 ---
 
-# 21ideas Bitcoin Wiki — Bilingual Lint Rules (April 2026)
+## What Agents Must NOT Do
 
-This section extends the general LLM Wiki pattern with a repeatable, bilingual-aware lint workflow.
-
-## How to run lint
-Tell the agent:  
-> "Run a full bilingual lint on the entire wiki (both wiki-en/ and wiki-ru/)"
-
-The agent must always perform a **complete pass** across both language layers in one session.
-
-## What the lint must check
-
-### 1. Structural health (both languages)
-- Broken or malformed [[wikilinks]]
-- Orphan pages (no incoming links)
-- Pages missing required frontmatter fields (`title`, `category`, `quality`, `sources`, `synthesized_date`, `completeness`, `language`, `tags`)
-- Missing or outdated entries in `index.md` / `overview.md`
-
-### 2. Trust & provenance
-- Every page must have valid `sources:` (real 21ideas.org URLs or the fallback note)
-- `synthesized_date` and `completeness:` must be present and reasonable
-
-### 3. Bilingual linking discipline (CRITICAL RULE)
-- In **all `wiki-ru/` pages**, every internal wikilink **must** use the explicit prefix `[[ru/...]]`.  
-  Examples: `[[ru/concepts/taproot|Taproot]]` or `[[ru/taproot|Taproot]]`.
-- **Never** remove the `ru/` prefix from any Russian page. Bare links (`[[concepts/taproot]]` or `[[taproot]]`) are **forbidden** inside `wiki-ru/` because they resolve to the English version in the shared vault.
-- In the English `wiki-en/` layer, every internal wikilink **must** use the explicit prefix `[[en/...]]`
-
-### 4. Bilingual consistency & fidelity
-- For every page that exists in both languages, verify that core concepts, key facts, and conclusions are conceptually aligned (even if phrasing and emphasis differ for linguistic/cultural accuracy).
-- Flag significant divergences that could confuse readers switching languages.
-
-### 5. Bitcoin education quality + Quartz readiness
-- Glossary terms are properly linked in both languages
-- High-importance pages have sufficient wikilinks
-- No raw Obsidian-only syntax that will break on Quartz
-- All frontmatter is clean and consistent
-
-## Output format
-1. Append a clear entry to `log.md`.
-2. Create or update `lint-report.md` in the root with a summary table, categorized issues, and suggested fixes.
-
-**Important**: Auto-fix **only** safe mechanical issues (missing frontmatter, incorrect Russian wikilink prefixes).  
-Never remove `wiki-ru/` prefixes from Russian pages. For content contradictions or Bitcoin-specific accuracy, flag for human review instead of editing.
+- **Never fabricate 21ideas.org URLs.** If no URL exists in `raw/` metadata, set `sources: []`.
+- **Never invent tags** outside the allowlist below.
+- **Never write bare wikilinks** (`[[taproot]]`, `[[concepts/taproot]]`) — always use `[[en/...]]` or `[[ru/...]]` prefixes.
+- **Never use `[[wiki-ru/...]]` or `[[wiki-en/...]]` prefixes** — they are invalid in this vault.
+- **Never modify `raw/` files.**
+- **Never cite `raw/...` paths in page body text** — only 21ideas.org URLs are reader-facing.
+- **Never treat `wiki-ru/` as a translation of `wiki-en/`.** Both are independent syntheses from the same sources.
+- **Never use `---` horizontal rules in the page body.** Only YAML frontmatter delimiters are permitted.
+- **Never open the page body with a `#` heading.** Quartz uses the frontmatter `title` field as the page title. Start the body directly with `##` sections.
 
 ---
 
-# LLM Wiki
+## Frontmatter Schema
 
-A pattern for building personal knowledge bases using LLMs.
+Every wiki page requires all fields below. Use **double-quoted** strings for every scalar field; `tags` is an unquoted flow list; `sources` is an inline array of quoted strings.
 
-This is an idea file, it is designed to be copy pasted to your own LLM Agent (e.g. OpenAI Codex, Claude Code, OpenCode / Pi, or etc.). Its goal is to communicate the high level idea, but your agent will build out the specifics in collaboration with you.
+```yaml
+---
+title: "Page title"
+category: "concepts"        # concepts | entities | books | series | history | philosophy | practice | topics
+quality: "reference"        # canonical | reference | synthesized | stub
+sources: ["https://21ideas.org/..."]  # real URLs only; [] if none exist in raw/ metadata
+synthesized_date: "2026-04-XX"
+completeness: "high"        # high | medium | low
+language: "ru"              # en | ru
+tags: [bitcoin, wiki, concept, protocol]
+updated: "2026-04-XX"       # optional: date of last edit pass
+reviewed: "2026-04-XX"      # required on enhanced pages; MUST be the last frontmatter field
+---
+```
 
-## The core idea
+**Field order enforced:** `tags` → `updated` (optional) → `reviewed` (last, required on enhanced pages).
 
-Most people's experience with LLMs and documents looks like RAG: you upload a collection of files, the LLM retrieves relevant chunks at query time, and generates an answer. This works, but the LLM is rediscovering knowledge from scratch on every question. There's no accumulation. Ask a subtle question that requires synthesizing five documents, and the LLM has to find and piece together the relevant fragments every time. Nothing is built up. NotebookLM, ChatGPT file uploads, and most RAG systems work this way.
+---
 
-The idea here is different. Instead of just retrieving from raw documents at query time, the LLM **incrementally builds and maintains a persistent wiki** — a structured, interlinked collection of markdown files that sits between you and the raw sources. When you add a new source, the LLM doesn't just index it for later retrieval. It reads it, extracts the key information, and integrates it into the existing wiki — updating entity pages, revising topic summaries, noting where new data contradicts old claims, strengthening or challenging the evolving synthesis. The knowledge is compiled once and then *kept current*, not re-derived on every query.
+## Tags — Strict Allowlist
 
-This is the key difference: **the wiki is a persistent, compounding artifact.** The cross-references are already there. The contradictions have already been flagged. The synthesis already reflects everything you've read. The wiki keeps getting richer with every source you add and every question you ask.
+Every page must include **at least** `bitcoin` and `wiki`. Total: 3–8 tags. Lowercase, hyphenated only.
 
-You never (or rarely) write the wiki yourself — the LLM writes and maintains all of it. You're in charge of sourcing, exploration, and asking the right questions. The LLM does all the grunt work — the summarizing, cross-referencing, filing, and bookkeeping that makes a knowledge base actually useful over time. In practice, I have the LLM agent open on one side and Obsidian open on the other. The LLM makes edits based on our conversation, and I browse the results in real time — following links, checking the graph view, reading the updated pages. Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase.
+**Core (always):** `bitcoin`, `wiki`
 
-This can apply to a lot of different contexts. A few examples:
+**Category (pick relevant):** `concept`, `entity`, `glossary`, `protocol`, `economics`, `history`, `philosophy`, `security`, `privacy`, `governance`, `scaling`, `mining`
 
-- **Personal**: tracking your own goals, health, psychology, self-improvement — filing journal entries, articles, podcast notes, and building up a structured picture of yourself over time.
-- **Research**: going deep on a topic over weeks or months — reading papers, articles, reports, and incrementally building a comprehensive wiki with an evolving thesis.
-- **Reading a book**: filing each chapter as you go, building out pages for characters, themes, plot threads, and how they connect. By the end you have a rich companion wiki. Think of fan wikis like [Tolkien Gateway](https://tolkiengateway.net/wiki/Main_Page) — thousands of interlinked pages covering characters, places, events, languages, built by a community of volunteers over years. You could build something like that personally as you read, with the LLM doing all the cross-referencing and maintenance.
-- **Business/team**: an internal wiki maintained by LLMs, fed by Slack threads, meeting transcripts, project documents, customer calls. Possibly with humans in the loop reviewing updates. The wiki stays current because the LLM does the maintenance that no one on the team wants to do.
-- **Competitive analysis, due diligence, trip planning, course notes, hobby deep-dives** — anything where you're accumulating knowledge over time and want it organized rather than scattered.
+**Page type (when applicable):** `synthesized`, `reference`, `stub`
 
-## Architecture
+**Specific (when relevant):** `utxo`, `lightning`, `bip`, `node`, `fork`, `censorship-resistance`, `decentralization`, `double-spend`, `difficulty-adjustment`, `third-party`, `whitepaper`, `aml`, `addresses`, `multisig`, `taproot`, `segwit`
 
-There are three layers:
+---
 
-**Raw sources** — your curated collection of source documents. Articles, papers, images, data files. These are immutable — the LLM reads from them but never modifies them. This is your source of truth.
+## Wikilink Discipline — CRITICAL
 
-**The wiki** — a directory of LLM-generated markdown files. Summaries, entity pages, concept pages, comparisons, an overview, a synthesis. The LLM owns this layer entirely. It creates pages, updates them when new sources arrive, maintains cross-references, and keeps everything consistent. You read it; the LLM writes it.
+| Layer | Required prefix | Example |
+|---|---|---|
+| `wiki-en/` | `[[en/...]]` | `[[en/concepts/taproot\|Taproot]]` |
+| `wiki-ru/` | `[[ru/...]]` | `[[ru/concepts/taproot\|Taproot]]` |
 
-**The schema** — a document (e.g. CLAUDE.md for Claude Code or AGENTS.md for Codex) that tells the LLM how the wiki is structured, what the conventions are, and what workflows to follow when ingesting sources, answering questions, or maintaining the wiki. This is the key configuration file — it's what makes the LLM a disciplined wiki maintainer rather than a generic chatbot. You and the LLM co-evolve this over time as you figure out what works for your domain.
+- Bare links (`[[taproot]]`) and `[[wiki-ru/...]]` / `[[wiki-en/...]]` are always wrong.
+- Before adding any link, verify the target page exists. Never link to a missing page or anchor.
+- For glossary anchors: verify the exact heading in `glossary.md` before linking (e.g. `[[ru/glossary#Нода (Узел)|нода]]`).
 
-## Operations
+---
 
-**Ingest.** You drop a new source into the raw collection and tell the LLM to process it. An example flow: the LLM reads the source, discusses key takeaways with you, writes a summary page in the wiki, updates the index, updates relevant entity and concept pages across the wiki, and appends an entry to the log. A single source might touch 10-15 wiki pages. Personally I prefer to ingest sources one at a time and stay involved — I read the summaries, check the updates, and guide the LLM on what to emphasize. But you could also batch-ingest many sources at once with less supervision. It's up to you to develop the workflow that fits your style and document it in the schema for future sessions.
+## Style & Sources
 
-**Query.** You ask questions against the wiki. The LLM searches for relevant pages, reads them, and synthesizes an answer with citations. Answers can take different forms depending on the question — a markdown page, a comparison table, a slide deck (Marp), a chart (matplotlib), a canvas. The important insight: **good answers can be filed back into the wiki as new pages.** A comparison you asked for, an analysis, a connection you discovered — these are valuable and shouldn't disappear into chat history. This way your explorations compound in the knowledge base just like ingested sources do.
+- **Tone:** Clear, precise, neutral but firm on Bitcoin's monetary sovereignty and censorship resistance.
+- **No `#` heading in the page body.** Quartz renders the frontmatter `title` as the page heading. Start the body with `##` sections.
+- **Sources section:** Every page must end with `## Sources` (wiki-en) or `## Источники` (wiki-ru) listing all 21ideas.org URLs used.
+- **Inline citations:** Use 21ideas.org URLs in text or as `Основа: [title](https://21ideas.org/...)` after paragraphs. No `raw/...` paths.
+- **Closing nav section:** Every page ends with `## Related pages` (EN) or `## Дополнительные материалы` (RU) using pipe-syntax wikilinks: `- [[ru/concepts/segwit|SegWit]]`.
+- **Remove `## Related Terms` sections** wherever found; replace with pipe-syntax wikilinks in the closing nav section.
+- **Trust marker:** Set `quality: "synthesized"` for synthesis pages. Flag remaining gaps explicitly.
 
-**Lint.** Periodically, ask the LLM to health-check the wiki. Look for: contradictions between pages, stale claims that newer sources have superseded, orphan pages with no inbound links, important concepts mentioned but lacking their own page, missing cross-references, data gaps that could be filled with a web search. The LLM is good at suggesting new questions to investigate and new sources to look for. This keeps the wiki healthy as it grows.
+---
 
-## Indexing and logging
+## Directory Map
 
-Two special files help the LLM (and you) navigate the wiki as it grows. They serve different purposes:
+```
+raw/                        ← IMMUTABLE source of truth — never edit
+  Books/                    ← Book chapters (one subfolder per book)
+  Theory/
+    economics/              ← Money, Cantillon, deflation, GTS series, Discovering Bitcoin
+    protocol/               ← UTXO, Taproot, SegWit, difficulty, governance
+    philosophy/             ← Culture, manifestos, What I Learned From Bitcoin
+    history/                ← Genesis Files, Silk Road
+    privacy/                ← AML, CoinJoin, OXT (oxt/ subfolder)
+    security/               ← Seeds, passphrase, MuSig2
+    lightning/              ← Lightning theory
+    future/                 ← Bitcoin Astronomy and long-horizon scenarios
+  Practice/
+    hodl/ lightning/ privacy/ buy/ security/ interact/
+  Start/                    ← Intro guides and glossary source
 
-**index.md** is content-oriented. It's a catalog of everything in the wiki — each page listed with a link, a one-line summary, and optionally metadata like date or source count. Organized by category (entities, concepts, sources, etc.). The LLM updates it on every ingest. When answering a query, the LLM reads the index first to find relevant pages, then drills into them. This works surprisingly well at moderate scale (~100 sources, ~hundreds of pages) and avoids the need for embedding-based RAG infrastructure.
+wiki-en/                    ← English wiki (synthesized from raw/)
+  concepts/ entities/ books/ series/ history/ philosophy/ practice/ topics/
+  index.md  overview.md  glossary.md
 
-**log.md** is chronological. It's an append-only record of what happened and when — ingests, queries, lint passes. A useful tip: if each entry starts with a consistent prefix (e.g. `## [2026-04-02] ingest | Article Title`), the log becomes parseable with simple unix tools — `grep "^## \[" log.md | tail -5` gives you the last 5 entries. The log gives you a timeline of the wiki's evolution and helps the LLM understand what's been done recently.
+wiki-ru/                    ← Russian wiki (independent synthesis from raw/)
+  concepts/ entities/ books/ series/ history/ philosophy/ practice/ topics/
+  index.md  overview.md  glossary.md
 
-## Optional: CLI tools
+docs/
+  log.md                    ← Append-only operations log; update after every operation
+  lint-report.md            ← Current lint pass results; overwrite on each lint run
+  PAGE-ENHANCEMENT-STANDARD.md  ← Full single-page enhancement prompt + checklist
+  WIKI-GUIDE.md             ← Human-facing guide
+  WIKI-BACKLOG.md           ← Short-lived backlog
+```
 
-At some point you may want to build small tools that help the LLM operate on the wiki more efficiently. A search engine over the wiki pages is the most obvious one — at small scale the index file is enough, but as the wiki grows you want proper search. [qmd](https://github.com/tobi/qmd) is a good option: it's a local search engine for markdown files with hybrid BM25/vector search and LLM re-ranking, all on-device. It has both a CLI (so the LLM can shell out to it) and an MCP server (so the LLM can use it as a native tool). You could also build something simpler yourself — the LLM can help you vibe-code a naive search script as the need arises.
+---
 
-## Tips and tricks
+## Recurring Operations
 
-- **Obsidian Web Clipper** is a browser extension that converts web articles to markdown. Very useful for quickly getting sources into your raw collection.
-- **Download images locally.** In Obsidian Settings → Files and links, set "Attachment folder path" to a fixed directory (e.g. `raw/assets/`). Then in Settings → Hotkeys, search for "Download" to find "Download attachments for current file" and bind it to a hotkey (e.g. Ctrl+Shift+D). After clipping an article, hit the hotkey and all images get downloaded to local disk. This is optional but useful — it lets the LLM view and reference images directly instead of relying on URLs that may break. Note that LLMs can't natively read markdown with inline images in one pass — the workaround is to have the LLM read the text first, then view some or all of the referenced images separately to gain additional context. It's a bit clunky but works well enough.
-- **Obsidian's graph view** is the best way to see the shape of your wiki — what's connected to what, which pages are hubs, which are orphans.
-- **Marp** is a markdown-based slide deck format. Obsidian has a plugin for it. Useful for generating presentations directly from wiki content.
-- **Dataview** is an Obsidian plugin that runs queries over page frontmatter. If your LLM adds YAML frontmatter to wiki pages (tags, dates, source counts), Dataview can generate dynamic tables and lists.
-- The wiki is just a git repo of markdown files. You get version history, branching, and collaboration for free.
+### Ingest (new raw/ source → wiki pages)
 
-## Why this works
+1. Read the new `raw/` file(s). Do not modify them.
+2. Check `wiki-en/index.md` and `wiki-ru/index.md` for pages to create or update.
+3. Write pages independently for each layer from the same `raw/` sources.
+4. Apply full frontmatter schema; populate `sources:` with real 21ideas.org URLs from raw/ metadata.
+5. Verify all wikilinks use the correct layer prefix.
+6. Update `wiki-en/index.md` and `wiki-ru/index.md`.
+7. Append to `docs/log.md`:
+   ```
+   ## [YYYY-MM-DD] ingest | <title or batch name>
+   **Layers:** Both | EN | RU
+   **Created/Updated:** list of slugs
+   **Lint:** brief result
+   ---
+   ```
 
-The tedious part of maintaining a knowledge base is not the reading or the thinking — it's the bookkeeping. Updating cross-references, keeping summaries current, noting when new data contradicts old claims, maintaining consistency across dozens of pages. Humans abandon wikis because the maintenance burden grows faster than the value. LLMs don't get bored, don't forget to update a cross-reference, and can touch 15 files in one pass. The wiki stays maintained because the cost of maintenance is near zero.
+### Enhance (single page)
 
-The human's job is to curate sources, direct the analysis, ask good questions, and think about what it all means. The LLM's job is everything else.
+Read `docs/PAGE-ENHANCEMENT-STANDARD.md` in full before starting. After applying the standard:
 
-The idea is related in spirit to Vannevar Bush's Memex (1945) — a personal, curated knowledge store with associative trails between documents. Bush's vision was closer to this than to what the web became: private, actively curated, with the connections between documents as valuable as the documents themselves. The part he couldn't solve was who does the maintenance. The LLM handles that.
+1. Confirm `reviewed: "YYYY-MM-DD"` is the **last** frontmatter field.
+2. Confirm: no `---` in body, no `#` heading in body, no `raw/...` in body, no `[[wiki-ru/...]]` / `[[wiki-en/...]]` prefixes.
+3. Do not update `index.md` unless the title or category changed.
+4. Append to `docs/log.md`:
+   ```
+   ## [YYYY-MM-DD] enhance | <page path>
+   Changes: <wikilinks added, frontmatter fixed, sections modified>
+   ---
+   ```
 
+### Lint (full bilingual pass)
 
-## Note
+Run a complete pass across **both** `wiki-en/` and `wiki-ru/` in one session.
 
-This document is intentionally abstract. It describes the idea, not a specific implementation. The exact directory structure, the schema conventions, the page formats, the tooling — all of that will depend on your domain, your preferences, and your LLM of choice. Everything mentioned above is optional and modular — pick what's useful, ignore what isn't. For example: your sources might be text-only, so you don't need image handling at all. Your wiki might be small enough that the index file is all you need, no search engine required. You might not care about slide decks and just want markdown pages. You might want a completely different set of output formats. The right way to use this is to share it with your LLM agent and work together to instantiate a version that fits your needs. The document's only job is to communicate the pattern. Your LLM can figure out the rest.
+**Mechanical checks — auto-fix allowed:**
+- [ ] All pages have every required frontmatter field
+- [ ] All `wiki-ru/` links use `[[ru/...]]`; all `wiki-en/` links use `[[en/...]]`
+- [ ] No `[[wiki-ru/...]]` or `[[wiki-en/...]]` anywhere
+- [ ] No tags outside the allowlist
+- [ ] All scalar frontmatter fields are double-quoted strings
+- [ ] `sources:` is an inline array (`sources: ["..."]`), not block YAML
+
+**Content checks — flag for human review only:**
+- [ ] Orphan pages (no incoming wikilinks)
+- [ ] Pages missing from their layer's `index.md`
+- [ ] `sources: []` pages — intentional?
+- [ ] Significant EN/RU content divergence for the same slug
+- [ ] `raw/...` paths in body text
+- [ ] `---` horizontal rules in body
+- [ ] `#` headings in body (should not exist — Quartz uses frontmatter title)
+- [ ] `## Related Terms` sections (should be `## Related pages` / `## Дополнительные материалы`)
+
+**Output:**
+1. Overwrite `docs/lint-report.md`: `_Last pass: YYYY-MM-DD (<scope>)_` + summary table + categorized issues + `## Suggested follow-ups`.
+2. Append to `docs/log.md`:
+   ```
+   ## [YYYY-MM-DD] lint | Full bilingual pass (or: targeted — <scope>)
+   Auto-fixed: <list>
+   Flagged for review: <list>
+   ---
+   ```
+
+### Query / Research
+
+1. Read the relevant layer's `index.md` first to find candidate pages.
+2. Drill into relevant pages; synthesize an answer with citations to 21ideas.org URLs.
+3. **File the answer back as a wiki page** if it synthesizes across 3+ pages, compares concepts, or fills a documented gap. Apply full frontmatter; update index; append log entry.
+4. If it is a one-off chat answer, no log entry needed.
+
+---
+
+## Bilingual Parity Rules
+
+- `wiki-en/` and `wiki-ru/` are **independent syntheses** — not translations of each other.
+- **Parity means:** same slug exists in both layers and core facts/conclusions are conceptually aligned.
+- **Current state:** `wiki-ru/concepts/` and `wiki-ru/entities/` are enhanced. `wiki-en/` has not been enhanced yet — expect missing `reviewed:`, old-style frontmatter, `raw/...` body citations, and `## Related Terms` sections.
+- **Gap handling:** If a slug exists in one layer only, flag it in `docs/lint-report.md` under "Suggested follow-ups". Create the missing page during the next ingest or lint pass.
+- **Do not assume** either layer is authoritative — both must be independently grounded in `raw/`.

@@ -1,57 +1,50 @@
 ---
 title: "Адам Бэк"
-category: entities
-quality: reference
+category: "entities"
+quality: "reference"
 sources:
   - "https://21ideas.org/gf/genesis-2"
   - "https://21ideas.org/whitepaper"
 synthesized_date: "2026-04-09"
-completeness: medium
-language: ru
-tags: [bitcoin, wiki, entity, cypherpunks, hashcash, proof-of-work, history]
+completeness: "medium"
+language: "ru"
+tags: [bitcoin, wiki, entity, history, protocol, whitepaper, philosophy]
+updated: "2026-04-10"
+reviewed: "2026-04-10"
 ---
 
-# Адам Бэк
-
-В источниках 21ideas **Адам Бэк** представлен как шифропанк и криптограф, чья система **Hashcash** дала важный предшествующий элемент, который затем напрямую появляется среди ссылок в белой книге Биткоина.
+В источниках 21ideas **Адам Бэк** представлен как [[ru/entities/cypherpunks|шифропанк]] и [[ru/glossary#Криптография|криптограф]], чья система **[[ru/concepts/hashcash|Hashcash]]** дала важный предшествующий элемент, который затем напрямую появляется среди ссылок в [[ru/concepts/bitcoin-whitepaper|белой книге]] [[ru/concepts/bitcoin|Биткоина]].
 
 ## Почему он важен для Биткоина (в трактовке источников)
 
-“Генезис-файлы. Часть II” (`raw/Theory/history/genesis-files/genesis-2.md`) объясняет Hashcash как механизм proof-of-work, предложенный для удорожания спама в электронной почте. Далее тот же источник связывает PoW с линией попыток изобрести цифровые деньги — и в итоге с Биткоином.
+[«Генезис-файлы. Часть II»](https://21ideas.org/gf/genesis-2) объясняет Hashcash как механизм [[ru/concepts/proof-of-work|proof-of-work]], предложенный для удорожания спама в электронной почте. Далее тот же источник связывает PoW с линией попыток изобрести цифровые деньги — и в итоге с [[ru/concepts/bitcoin|Биткоином]].
 
-Отдельно, страница белой книги на 21ideas подчёркивает, что Hashcash (и Бэк) упоминаются среди источников, на которые ссылается документ Сатоши.
+Отдельно, [страница белой книги на 21ideas](https://21ideas.org/whitepaper) подчёркивает, что Hashcash (и Бэк) упоминаются среди источников, на которые ссылается документ [[ru/entities/satoshi-nakamoto|Сатоши]].
 
 ## Hashcash и Proof of Work
 
-По объяснению Genesis Files:
-
+Как говорится во [ второй части «Генезис-файлов»](https://21ideas.org/gf/genesis-2):
 - создание валидного токена требует перебора и затрат ресурсов,
-- проверка валидности дешева и быстра,
-- именно это свойство становится мостом к “цифровой редкости” и к использованию PoW в Биткоине для упорядочивания блоков и защиты от двойной траты.
+- проверка валидности дёшева и быстра,
+- именно это свойство становится мостом к “цифровой редкости” и к использованию PoW в [[ru/concepts/bitcoin|Биткоине]] для упорядочивания [[ru/glossary#Блок|блоков]] и защиты от [[ru/concepts/double-spend|двойной траты]].
 
 ## Контекст шифропанков
 
-Genesis Files помещает Бэка в среду шифропанков: приватность, свобода слова, криптография и практический принцип “шифропанки пишут код”.
+Генезис-файлы помещают Бэка в среду [[ru/entities/cypherpunks|шифропанков]]: [[ru/concepts/privacy|приватность]], свобода слова, [[ru/glossary#Криптография|криптография]] и практический принцип *“шифропанки пишут код”*.
 
 ## Связь с белой книгой
 
-Источник `raw/Books/whitepaper.md` отмечает, что Hashcash — одна из немногих явных внешних ссылок, а Бэк — один из прямо упомянутых криптографов.
+[Материал белой книги на 21ideas](https://21ideas.org/whitepaper) отмечает, что [[ru/concepts/hashcash|Hashcash]] — одна из немногих явных внешних ссылок, а Бэк — один из прямо упомянутых криптографов.
 
----
+## Источники
 
-## Sources
+- [Генезис-файлы, часть II (Hashcash, Адам Бэк)](https://21ideas.org/gf/genesis-2)
+- [Белая книга Биткоина](https://21ideas.org/whitepaper)
 
-- [Генезис-файлы, часть II: Hashcash (Адам Бэк)](https://21ideas.org/gf/genesis-2)
-- [Белая книга Биткоина (страница 21ideas)](https://21ideas.org/whitepaper)
+## Дополнительные материалы
 
----
-
-## Related Terms
-
-[[ru/glossary|Глоссарий]] | [[ru/concepts/hashcash|Hashcash]] | [[ru/concepts/proof-of-work|Proof of Work]] | [[ru/entities/cypherpunks|шифропанки]] | [[ru/concepts/bitcoin-whitepaper|белая книга]]
-
-## Related Pages
-
-- [[ru/concepts/hashcash]] — Hashcash как предшественник Proof of Work
-- [[ru/concepts/proof-of-work]] — как PoW используется в Биткоине
-- [[ru/concepts/bitcoin-whitepaper]] — что источники выделяют в белой книге и её ссылках
+- [[ru/series/genesis-files|Серия «Генезис-файлы»]]
+- [[ru/concepts/hashcash|Hashcash как предшественник Proof of Work]]
+- [[ru/concepts/proof-of-work|Proof of Work в Биткоине]]
+- [[ru/concepts/bitcoin-whitepaper|Белая книга и ссылки на предшественников]]
+- [[ru/entities/cypherpunks|Шифропанки — контекст движения]]
