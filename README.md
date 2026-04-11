@@ -1,4 +1,4 @@
-# 21ideas Bitcoin Wiki
+# 21wiki – Bitcoin Wikipedia by 21ideas
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Release](https://img.shields.io/github/v/release/21ideas-org/21ideas-wiki)](https://github.com/21ideas-org/21ideas-wiki/releases/latest)
@@ -12,11 +12,22 @@ This repo contains two first-class wiki layers:
 
 Both layers follow strict conventions: required YAML frontmatter (trust markers), consistent tags, and bilingual wikilink discipline. Full schema and rules: **`CLAUDE.md`** (repo root).
 
+## Visual tour
+
+![Obsidian Graph View](images/graph-view.png)
+*Interlinked Bitcoin knowledge base in Obsidian Graph View*
+
+![YAML frontmatter + trust markers](images/frontmatter.png)
+*Every page includes strict YAML trust markers and provenance*
+
+![Page example](images/address-types.png)
+*Clean, navigable overview with bilingual discipline*
+
 ## What's inside (current)
 
 - **Source library**: `raw/` — immutable markdown sources from 21ideas.org (layout: **`raw/README.md`**)
 - **English wiki**: `wiki-en/` — **76** markdown pages total (**73** content pages excluding index/overview + glossary). Operational changelog: **`docs/log.md`** (covers EN + RU).
-- **Russian wiki**: `wiki-ru/` — **76** markdown pages total (**73** content pages excluding index/overview/log + glossary)
+- **Russian wiki**: `wiki-ru/` — **76** markdown pages total (**73** content pages excluding index, overview + glossary)
 
 Coverage includes core Bitcoin concepts (protocol + economics), key protocol elements (PoW, mining, difficulty, forks, mempool, BIPs, etc.), cypherpunk history (Genesis Files + manifestos), and key entities.
 

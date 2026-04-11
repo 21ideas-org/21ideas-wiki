@@ -1,6 +1,6 @@
 # 21ideas Bitcoin Wiki — Guide
 
-This repository is a bilingual Bitcoin wiki built from the 21ideas.org source library in `raw/`. See **`raw/README.md`** for how that tree is organized (books, theory, practice, start).
+This repository is a bilingual Bitcoin wiki built from the [21ideas.org](https://21ideas.org) source library in `raw/`. See **`raw/README.md`** for how that tree is organized (books, theory, practice, start).
 
 - **English layer**: `wiki-en/` 
 - **Russian layer**: `wiki-ru/` 
@@ -20,7 +20,7 @@ Both layers use trust markers and strict linking rules.
 ## What you can use the wiki for
 
 - **Learning Bitcoin end-to-end**
-  - Use the concept pages as a structured curriculum: money → PoW → mining → scarcity → governance → upgrades → privacy/security.
+  - Use the concept pages as a structured curriculum: money → PoW → mining → scarcity → governance → privacy → security.
 - **Fast lookups**
   - Each language layer contains a glossary page:
     - `wiki-en/glossary.md`
@@ -36,14 +36,14 @@ Both layers use trust markers and strict linking rules.
 
 ### Current page counts 
 
-- `wiki-en/`: **76** markdown pages total (**73** content pages excluding index/overview + glossary); operations log is **`docs/log.md`** (bilingual).
-- `wiki-ru/`: **76** markdown pages total (**73** content pages excluding index/overview/log + glossary)
+- `wiki-en/`: **76** markdown pages total (**73** content pages excluding index, overview + glossary); operations log is **`docs/log.md`** (bilingual).
+- `wiki-ru/`: **76** markdown pages total (**73** content pages excluding index, overview + glossary)
 
 ### Trust markers and consistency (both languages)
 
 Every wiki page includes:
-- Required YAML frontmatter fields: `title`, `category`, `quality`, `sources`, `synthesized_date`, `completeness`, `language`, `tags`. Enhanced pages also carry `updated` and `reviewed` (always the last field).
-- **Frontmatter style:** scalar fields use **double-quoted** strings; `tags` is an unquoted flow list; `sources` is an inline array of quoted URLs — e.g. `sources: ["https://21ideas.org/..."]`. Full schema in `CLAUDE.md`.
+- Required YAML frontmatter fields: `title`, `category`, `quality`, `sources`, `synthesized_date`, `completeness`, `language`, `tags`. Enhanced pages also carry `updated` and `reviewed`.
+- **Frontmatter style:** Full schema in `CLAUDE.md`.
 - A `## Sources` / `## Источники` section (URLs when present, otherwise a clear note).
 - Rich internal linking. No `#` title heading in the body — Quartz renders the frontmatter `title` as the page heading.
 
@@ -97,7 +97,7 @@ For **lint** passes, ask the agent explicitly; it should run **`tools/lint.py`**
 
 ## Releases
 
-Previous release: [v0.3.0 Agent Rulebook Overhaul + Docs Reorganisation](https://github.com/21ideas-org/21ideas-wiki/releases/tag/v0.3.0)
+Previous release: [v0.4.0](https://github.com/21ideas-org/21ideas-wiki/releases/tag/v0.4.0).
 
 ## Support
 

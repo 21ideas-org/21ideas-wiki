@@ -1,17 +1,17 @@
 ---
-title: "Индекс: Русскоязычная вики 21ideas"
-category: "topics"
+title: "Индекс 21wiki"
+category: "index"
 quality: "reference"
 sources: []
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"
-tags: [bitcoin, wiki, reference]
+tags: [bitcoin, wiki, index, navigation]
 updated: "2026-04-11"
 reviewed: "2026-04-11"
 ---
 
-Синтезированная база знаний на русском языке по материалам сайта 21ideas.org. Все страницы написаны на основе оригинальных русскоязычных источников с 21ideas.org.
+Синтезированная база знаний на русском языке по материалам сайта 21ideas.org. Все страницы написаны на основе оригинальных русскоязычных источников и курируются автором проекта [Тони](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7).
 
 ## Обзор
 
@@ -58,6 +58,10 @@ reviewed: "2026-04-11"
 | [[ru/concepts/b-money]] | b-money Вэя Дая (1998): “первый черновик” в Genesis Files |
 | [[ru/concepts/bit-gold]] | Bit Gold Ника Сабо: почти-решение цифрового золота |
 | [[ru/concepts/rpow]] | RPOW Хэла Финни (2004): многоразовые PoW-токены |
+| [[ru/concepts/bitcoin-core]] | Референсный клиент: реализация правил, роль в разработке |
+| [[ru/concepts/bitcoin-node]] | Узел в P2P-сети: обмен блоками и проверка консенсуса |
+| [[ru/concepts/censorship-resistance]] | Участие без разрешения; нет единой точки «выключения» |
+| [[ru/concepts/third-parties]] | Доверенные посредники как уязвимость; снижение доверия в протоколе |
 
 ## Сущности
 
@@ -140,3 +144,7 @@ reviewed: "2026-04-11"
 - [[ru/glossary]] — Словарь биткоин-терминов
 - [[ru/concepts/bitcoin]] — Основная концепция
 - [[ru/history/timeline]] — Хронология истории Биткоина
+
+---
+
+*⚡️ Проект оказался полезным? [Закиньте пару сат](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7) [автору](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)*
