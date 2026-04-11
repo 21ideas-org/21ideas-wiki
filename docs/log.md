@@ -17,43 +17,6 @@ Format: `## [YYYY-MM-DD] operation | description`
 
 ---
 
-## [2026-04-10] maintenance | Operational log moved to repository root
-
-**Scope:** Consolidate changelog into one file for bilingual maintenance.
-
-**Changes:**
-- **Moved:** `wiki-en/log.md` → `log.md` (repo root).
-- **Updated:** This file’s intro and historical notes clarify **EN-only** vs **bilingual** sessions.
-- **Docs:** `WIKI-GUIDE.md` now points to root `log.md`.
-- **Git:** Removed root-level `log.md` from `.gitignore` so the operational log stays commit-tracked.
-
-**Layers affected:** Meta (documentation + logging only).
-
----
-
-## [2026-04-10] ingest | wiki-ru/entities/satoshi-nakamoto — ранний майнинг и гипотеза «Патоши»
-
-**Layers:** Russian wiki (`wiki-ru/entities/`).
-
-**Changes:**
-- Расширена страница **`wiki-ru/entities/satoshi-nakamoto.md`**: новый раздел о раннем майнинге, эвристике «узора Патоши», троттлинге ~5 минут, доле хэшрейта и контраргументе к тезису «жадного майнера»; синтез по материалу `raw/Theory/protocol/was-satoshi-a-greedy-miner.md` и публикации [21ideas — «Был ли Сатоши жадным майнером?»](https://21ideas.org/byl-li-satoshi-zhadnym-majnerom). В теле страницы — только ссылки на 21ideas, без внешних URL из оригинала.
-- В frontmatter добавлен третий `sources` URL, тег `mining` (в пределах лимита тегов), обновлены `synthesized_date`, `updated`, `reviewed`.
-
----
-
-## [2026-04-10] maintenance | wiki-ru/concepts — full PAGE-ENHANCEMENT pass + meta docs
-
-**Layers:** Russian wiki (`wiki-ru/concepts/`), project documentation.
-
-**Changes:**
-- **All concept pages:** Completed a vault-wide polish of **`wiki-ru/concepts/*.md`** using `PAGE-ENHANCEMENT-STANDARD.md`: YAML frontmatter with double-quoted scalars, field order, and tags strictly from `CLAUDE.md`; `[[ru/...]]` wikilinks with backbone + glossary sweeps (verified anchors); reader-facing **`https://21ideas.org/...`** citations in bodies (no `raw/...` paths for readers); bottom navigation unified as **`## Дополнительные материалы`** (pipe links). Intended as mechanical/provenance hygiene, not substantive rewrites.
-- **Early batch (same pass):** Included among others `decentralization`, `deflation`, `difficulty-adjustment`; later tranches covered the remaining concepts (e.g. scarcity, security, segwit, taproot, third-parties, utxo) until the full `concepts/` tree was consistent.
-- **Standard doc:** `PAGE-ENHANCEMENT-STANDARD.md` — raised wikilinking expectations and pre-flight checklist for single-page edits.
-- **Repo docs:** `README.md` (structure, counts, pointers to `log.md` and the enhancement standard); `WIKI-BACKLOG.md` (backlog refresh).
-- **Review:** Maintainer manually reviewed updated RU concept pages.
-
-**Notes:** Operational changelog remains repo root `log.md` (see sibling entry same date).
-
 ## [2026-04-07] ingest | Initial bulk ingest — 308 source files across 4 categories
 
 **Layers:** English wiki only (`wiki-en/`; entries below use legacy path `wiki/` for the same tree).
@@ -214,3 +177,80 @@ Format: `## [YYYY-MM-DD] operation | description`
 - [[ru/overview|Russian overview]]
 - [[en/concepts/bitcoin|Bitcoin (EN)]]
 - [[en/glossary|English glossary]]
+
+---
+
+## [2026-04-10] maintenance | Operational log moved to repository root
+
+**Scope:** Consolidate changelog into one file for bilingual maintenance.
+
+**Changes:**
+- **Moved:** `wiki-en/log.md` → `log.md` (repo root).
+- **Updated:** This file’s intro and historical notes clarify **EN-only** vs **bilingual** sessions.
+- **Docs:** `WIKI-GUIDE.md` now points to root `log.md`.
+- **Git:** Removed root-level `log.md` from `.gitignore` so the operational log stays commit-tracked.
+
+**Layers affected:** Meta (documentation + logging only).
+
+---
+
+## [2026-04-10] ingest | wiki-ru/entities/satoshi-nakamoto — ранний майнинг и гипотеза «Патоши»
+
+**Layers:** Russian wiki (`wiki-ru/entities/`).
+
+**Changes:**
+- Расширена страница **`wiki-ru/entities/satoshi-nakamoto.md`**: новый раздел о раннем майнинге, эвристике «узора Патоши», троттлинге ~5 минут, доле хэшрейта и контраргументе к тезису «жадного майнера»; синтез по материалу `raw/Theory/protocol/was-satoshi-a-greedy-miner.md` и публикации [21ideas — «Был ли Сатоши жадным майнером?»](https://21ideas.org/byl-li-satoshi-zhadnym-majnerom). В теле страницы — только ссылки на 21ideas, без внешних URL из оригинала.
+- В frontmatter добавлен третий `sources` URL, тег `mining` (в пределах лимита тегов), обновлены `synthesized_date`, `updated`, `reviewed`.
+
+---
+
+## [2026-04-10] maintenance | wiki-ru/concepts — full PAGE-ENHANCEMENT pass + meta docs
+
+**Layers:** Russian wiki (`wiki-ru/concepts/`), project documentation.
+
+**Changes:**
+- **All concept pages:** Completed a vault-wide polish of **`wiki-ru/concepts/*.md`** using `PAGE-ENHANCEMENT-STANDARD.md`: YAML frontmatter with double-quoted scalars, field order, and tags strictly from `CLAUDE.md`; `[[ru/...]]` wikilinks with backbone + glossary sweeps (verified anchors); reader-facing **`https://21ideas.org/...`** citations in bodies (no `raw/...` paths for readers); bottom navigation unified as **`## Дополнительные материалы`** (pipe links). Intended as mechanical/provenance hygiene, not substantive rewrites.
+- **Early batch (same pass):** Included among others `decentralization`, `deflation`, `difficulty-adjustment`; later tranches covered the remaining concepts (e.g. scarcity, security, segwit, taproot, third-parties, utxo) until the full `concepts/` tree was consistent.
+- **Standard doc:** `PAGE-ENHANCEMENT-STANDARD.md` — raised wikilinking expectations and pre-flight checklist for single-page edits.
+- **Repo docs:** `README.md` (structure, counts, pointers to `log.md` and the enhancement standard); `WIKI-BACKLOG.md` (backlog refresh).
+- **Review:** Maintainer manually reviewed updated RU concept pages.
+
+**Notes:** Operational changelog remains repo root `log.md` (see sibling entry same date).
+
+---
+
+## [2026-04-11] enhance | docs/PAGE-ENHANCEMENT-STANDARD.md
+Changes: Made prompt fully language-neutral for EN and RU pages. Added Task 0 (pre-edit mechanical scan) listing all known wiki-en legacy antipatterns (source: field, block YAML sources, *Tags:* lines, # body heading, --- rules, raw/ citations, ## Related Terms, ]]] triple-bracket links, missing reviewed:, unquoted fields, field order). Reframed reference style examples to include EN context. Split glossary sweep checklist into separate RU and EN conditional sections; added EN anchor examples with caveat about bold-in-heading format. Made source citation label bilingual (Source: EN / Основа: RU). Expanded pre-flight checklist with EN-specific checks. Updated frontmatter example to show canonical field order and language: "en" note.
+---
+
+## [2026-04-11] enhance | wiki-en/concepts/address-types.md
+
+**Changes:** Canonical frontmatter (quoted scalars, field order, `reviewed: "2026-04-11"` last); tags set to `[bitcoin, wiki, concept, protocol, addresses, taproot, segwit]`. Removed body `#` title, `*Tags:*` line, and all `---` horizontal rules. Replaced `raw/...` provenance with reader-facing `Source:` link to existing 21ideas URL. Added/fixed wikilinks (`[[en/concepts/bitcoin|Bitcoin]]`, glossary `#address`, `#public-key`, `#transaction`, `#fee`, `[[en/concepts/bip|BIP11/BIP16]]`, `[[en/concepts/multisig|multisig]]`, `[[en/concepts/taproot|MuSig2]]`); removed redundant duplicate SegWit links in P2WPKH; fixed `]]]` triple-bracket links. Merged `## Related Terms` / broken `## Related Pages` into `## Related pages` with pipe-syntax bullets. Aligned `## Sources` with the same 21ideas link text.
+
+**Lint:** Not run (single-page enhance).
+
+---
+
+## [2026-04-11] maintenance | wiki-ru/index.md — раздел «Концепции»
+
+**Layers:** RU
+
+**Changes:** В таблицу `## Концепции` добавлены ссылки на четыре существовавшие страницы: `[[ru/concepts/bitcoin-core]]`, `[[ru/concepts/bitcoin-node]]`, `[[ru/concepts/censorship-resistance]]`, `[[ru/concepts/third-parties]]`. В frontmatter индекса обновлено поле `updated`.
+
+---
+
+## [2026-04-11] docs | README.md — счётчик страниц wiki-ru
+
+**Layers:** Meta
+
+**Changes:** В описании русского слоя убрано ошибочное «log» из списка исключений при подсчёте контентных страниц; формулировка приведена к той же схеме, что в `docs/WIKI-GUIDE.md` (исключаются только `index`, `overview` и `glossary` внутри `wiki-ru/`).
+
+---
+
+## [2026-04-11] maintenance | wiki-ru/overview.md — навигация и структура
+
+**Layers:** RU
+
+**Changes:** Проверены все `[[ru/...]]` — цели существуют. Обновлены счётчики в блоке «Структура вики» (35 концепций, 12 сущностей). Добавлены пути чтения: философия/темы (`philosophy/overview`, `books/21-ways`, оба `topics/*`); практика — `privacy-practice`, `running-a-node`; история — `blocksize-war`; техническая сторона — `lightning-network`. В «Связанные страницы» добавлены `philosophy/overview` и `history/timeline`. Обновлено поле `updated` во frontmatter.
+
+---
