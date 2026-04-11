@@ -1,21 +1,13 @@
 ---
-title: Задача византийских генералов
-category: concepts
-quality: reference
-sources:
-  - https://21ideas.org/suverenitet-posredstvom-matematiki/glava-8
-  - https://21ideas.org/gf/genesis-4
-synthesized_date: 2026-04-10
-completeness: medium
-language: ru
-tags:
-  - bitcoin
-  - wiki
-  - concept
-  - protocol
-  - governance
-  - decentralization
-reviewed: 2026-04-10
+title: "Задача византийских генералов"
+category: "concepts"
+quality: "reference"
+sources: ["https://21ideas.org/suverenitet-posredstvom-matematiki/glava-8", "https://21ideas.org/gf/genesis-4"]
+synthesized_date: "2026-04-10"
+completeness: "medium"
+language: "ru"
+tags: [bitcoin, wiki, concept, protocol, governance, decentralization]
+reviewed: "2026-04-10"
 ---
 
 ## Что такое задача византийских генералов 
@@ -27,8 +19,6 @@ reviewed: 2026-04-10
 Автор также предупреждает: само слово **«блокчейн»** не гарантирует [[ru/concepts/decentralization|децентрализацию]]; ключевое изобретение — **Биткоин**; к «универсальному блокчейну» без этого контекста стоит относиться скептически.
 
 Основа: [Суверенитет посредством математики](https://21ideas.org/suverenitet-posredstvom-matematiki/).
-
----
 
 ## Как это соотносится с Биткоином
 
@@ -42,14 +32,10 @@ reviewed: 2026-04-10
 
 Основа: [Genesis Files — часть IV (Bit Gold)](https://21ideas.org/gf/genesis-4).
 
----
-
 ## Источники
 
 - [Суверенитет посредством математики — гл. 8](https://21ideas.org/suverenitet-posredstvom-matematiki/glava-8)
 - [Генезис-файлы — часть IV (Bit Gold)](https://21ideas.org/gf/genesis-4)
-
----
 
 ## Дополнительные материалы
 

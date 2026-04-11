@@ -112,6 +112,9 @@ docs/
   PAGE-ENHANCEMENT-STANDARD.md  ← Full single-page enhancement prompt + checklist
   WIKI-GUIDE.md             ← Human-facing guide
   WIKI-BACKLOG.md           ← Short-lived backlog
+
+tools/
+  lint.py                   ← Mechanical lint (wikilinks, frontmatter shape, tags); stdlib only
 ```
 
 ---
@@ -153,6 +156,25 @@ Read `docs/PAGE-ENHANCEMENT-STANDARD.md` in full before starting. After applying
 
 Run a complete pass across **both** `wiki-en/` and `wiki-ru/` in one session.
 
+**Standardized runner (preferred):** from the repo root,
+
+```bash
+python3 tools/lint.py --layer both          # stdout summary; both trees
+python3 tools/lint.py --layer ru            # targeted: wiki-ru/ only
+python3 tools/lint.py --layer en            # targeted: wiki-en/ only
+python3 tools/lint.py --layer both --write-report   # also overwrite docs/lint-report.md
+python3 tools/lint.py --strict              # exit 1 if any mechanical issue exists (CI / gates)
+python3 tools/lint.py --strict-links        # exit 1 only on wrong wikilink prefix or broken target
+```
+
+The script implements the **mechanical** checks below (wikilink prefix, broken `[[en/...]]` / `[[ru/...]]` targets, block `sources:`, standalone `---` and `#` in body, `raw/` in body, required frontmatter keys, `reviewed`, tags vs allowlist). It does **not** check orphans, `index.md` coverage, or EN/RU content parity — those remain human review. **Keep `ALLOW_TAGS` in `tools/lint.py` in sync** with the **Tags — Strict Allowlist** section below when the allowlist changes.
+
+**Note:** `wiki-en/` is not yet fully enhanced; a full `--layer both` run will report many EN issues until that layer is brought up to the same standard as `wiki-ru/`.
+
+**Scope vs `docs/lint-report.md`:** `--write-report` overwrites the **single** report file. Match `--layer` to the task: use `--layer ru` for RU-only work, `--layer both` when you want one bilingual snapshot. The `_Last pass: … (scope)_` line records which layers were scanned.
+
+**Report language:** `docs/lint-report.md` MUST be **English** (headings, table column labels, section titles, suggested follow-ups). File paths stay as in the repo; when citing snippets from vault pages (e.g. a Russian `title` or heading), quote them **verbatim** inside English prose.
+
 **Mechanical checks — auto-fix allowed:**
 - [ ] All pages have every required frontmatter field
 - [ ] All `wiki-ru/` links use `[[ru/...]]`; all `wiki-en/` links use `[[en/...]]`
@@ -171,9 +193,14 @@ Run a complete pass across **both** `wiki-en/` and `wiki-ru/` in one session.
 - [ ] `#` headings in body (should not exist — Quartz uses frontmatter title)
 - [ ] `## Related Terms` sections (should be `## Related pages` / `## Дополнительные материалы`)
 
-**Output:**
-1. Overwrite `docs/lint-report.md`: `_Last pass: YYYY-MM-DD (<scope>)_` + summary table + categorized issues + `## Suggested follow-ups`.
-2. Append to `docs/log.md`:
+**Output (agents):**
+1. Prefer running the tool with `--write-report` so the report stays consistent:
+   ```bash
+   python3 tools/lint.py --layer ru --write-report      # targeted RU
+   python3 tools/lint.py --layer both --write-report    # full bilingual snapshot
+   ```
+2. Overwrite `docs/lint-report.md` with **English** prose (the script output is already English; if you hand-edit or supplement the file, keep the same language rule).
+3. Append to `docs/log.md`:
    ```
    ## [YYYY-MM-DD] lint | Full bilingual pass (or: targeted — <scope>)
    Auto-fixed: <list>

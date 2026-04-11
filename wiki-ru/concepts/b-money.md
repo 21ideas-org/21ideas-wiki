@@ -2,9 +2,7 @@
 title: "b-money"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/gf/genesis-3"
-  - "https://21ideas.org/whitepaper"
+sources: ["https://21ideas.org/gf/genesis-3", "https://21ideas.org/whitepaper"]
 synthesized_date: "2026-04-09"
 completeness: "high"
 language: "ru"
@@ -56,14 +54,10 @@ b-money не стала завершённой практической сист
 
 См. [[ru/concepts/double-spend]] и [[ru/concepts/byzantine-generals-problem]].
 
----
-
 ## Источники
 
 - [Генезис-файлы, часть III: b-money (Вэй Дай)](https://21ideas.org/gf/genesis-3)
 - [Белая книга Биткоина](https://21ideas.org/whitepaper)
-
----
 
 ## Дополнительные материалы
 

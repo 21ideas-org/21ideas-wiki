@@ -206,6 +206,190 @@ Format: `## [YYYY-MM-DD] operation | description`
 
 ---
 
+## [2026-04-11] enhance | wiki-ru/books/blocksize-war.md
+
+**Changes:** Стандартизирован frontmatter (кавычки, `sources` в одну строку, теги только из allowlist, `reviewed` последним); убраны `#` в теле и горизонтальные `---`; первый блок оформлен как `## О книге` с читательской ссылкой на 21ideas; исправлена грамматика («противостояний» → «противостоянии»); добавлены wikilink’и (история войны за блок, Биткоин, биржа, софтфорк, UASF/BIP, форки, Bitcoin Core, майнеры, полные узлы, децентрализация); `## Связанные страницы` заменён на `## Дополнительные материалы` с pipe-ссылками и доп. пунктами (forks, bip).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/history/pre-bitcoin-cypherpunks.md
+
+**Changes:** Frontmatter по стандарту (кавычки, inline `sources`, теги из allowlist вместо cypherpunks/ecash/b-money/bit-gold/rpow, `reviewed` последним); убраны `#` и `---` в теле; вводный блок — `## Введение` со ссылкой на серию и [genesis-intro](https://21ideas.org/gf/genesis-intro); backbone + глоссарий: криптография, ключи, Чаум, Тим Мэй, Хьюз, PGP/Зиммерманн, Адам Бэк, Hashcash, PoW, нонс, майнинг, корректировка сложности, b-money, реестр, публичные ключи, Bit Gold, метки, RPOW, двойная трата, узлы, вознаграждение, комиссии; удалён блок со стрелкой «→ Подробнее»; `## Связанные страницы` → `## Дополнительные материалы` (pipe + david-chaum, b-money, bit-gold, rpow, whitepaper).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/history/blocksize-war.md
+
+**Changes:** Frontmatter (кавычки, inline `sources`, теги allowlist вместо blocksize-war/bitcoin-cash, добавлен `fork`, `reviewed` последним); убраны `#` и `---`; ввод — `## Введение`; wikilink’и: биткоин, блок, транзакции, комиссии, Bitcoin Core, полные узлы, децентрализация, Lightning, SegWit, хардфорк, майнеры, UASF/BIP, софтфорк, биржи, governance; списки с пустыми строками по markdownlint; `## Связанные страницы` → `## Дополнительные материалы` (+ forks, bip).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/history/timeline.md
+
+**Changes:** Удалены поле `source:` и отсылка к `raw/`; `sources: []`, теги только из allowlist (убраны timeline/events/milestones, добавлены mining, protocol, scarcity); кавычки у скаляров, `reviewed` последним; убраны `#` и все `---`; таблицы дополнены wikilink’ами (предыстория → сущности и концепты; рождение → whitepaper, генезис, coinbase, транзакция, биржа; рост → Silk Road, халвинг, биткоин; 2017 → форки/BCH, BIP; параметры → генезис, scarcity, халвинг); в блоке «Современность» январь 2024 поставлен перед апрелём 2024; добавлены `## Источники` (пояснение при пустых URL) и `## Дополнительные материалы` с pipe-ссылками.
+
+---
+
+## [2026-04-11] enhance | wiki-ru/philosophy/overview.md
+
+**Changes:** Удалены `source:`/`raw/`; `sources: []`; теги allowlist (philosophy, economics, concept, third-party, decentralization вместо freedom/sovereignty/cypherpunks/money-as-technology); кавычки, `reviewed` последним; убраны `#` и `---`; `## Введение`; исправлена ссылка на глоссарий (было `[[ru/glossary|…]]` → `#Приватный ключ`); убран лишний пробел в `[[ru/concepts/scarcity|…]]`; wikilink’и: биткоин, деньги, инфляция, фиат, Тим Мэй, криптография, third-parties, биржа, транзакция, децентрализация, кошелёк; `## Источники` (пояснение); `## Связанные страницы` → `## Дополнительные материалы` (+ tim-may, third-parties, money, pipe-тексты).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/topics/bitcoin-dissidents.md
+
+**Changes:** Frontmatter (кавычки, inline `sources`, теги allowlist: убраны human-rights/activism, добавлены concept/privacy/security, `reviewed` последним); убраны `#` и `---`; `## Введение` + строка «Основа» с 21ideas URL; wikilink’и: bitcoin, censorship-resistance, money, инфляция, фиат, узлы, приватный ключ, транзакция, Сатоши; `## Связанные страницы` → `## Дополнительные материалы` (pipe + censorship-resistance, third-parties, security).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/topics/network-effects.md
+
+**Changes:** Frontmatter (кавычки, inline `sources`, теги allowlist вместо network-effects/adoption/lindy-effect/bitcoin-dominance: economics, mining, protocol, decentralization, concept; `reviewed` последним); убраны `#` и `---`; `## Введение` + «Основа» с 21ideas; wikilink’и: bitcoin, комиссии (глоссарий), privacy, mining, хешрейт, атака 51%, bitcoin-core, decentralization, scarcity, транзакция, forks; блок петли помечен как fenced code language `text` (MD040); `## Связанные страницы` → `## Дополнительные материалы` (+ decentralization, bitcoin-core, расширенные pipe для gradually-then-suddenly).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/practice/buying.md
+
+**Changes:** Frontmatter (кавычки, inline `sources`, теги allowlist вместо buying/exchange/p2p/kyc/robosats/hodl-hodl: privacy, security, aml, lightning, third-party, reference; `reviewed` последним); убраны `#` и `---`; `## Введение` + «Основа» с 21ideas; из тела убраны сторонние URL (`hodlhodl.com`, `robosats.com`) — только названия сервисов; wikilink’и: bitcoin, KYC, биржа, кошелёк, приватный ключ, privacy, Lightning, multisig, сид-фраза; пустые строки перед списками; `## Источники` с осмысленной подписью; `## Связанные страницы` → `## Дополнительные материалы` (+ third-party, lightning, aml).
+
+---
+
+## [2026-04-11] enhance | wiki-en/practice/lightning-tools.md
+
+**Changes:** Удалены `source:`/`raw/`, тело без `raw/...` путей и без `---`/`#`; `sources` заполнен URL с полей `url:` в `raw/Practice/lightning/*.md` + индекс `practice/lightning`; теги allowlist (убран `practice`, добавлены multisig/concept); `reviewed` последним; введение с 21ideas; у каждого инструмента — читательская ссылка на гид; wikilink’и `[[en/...]]`: bitcoin, lightning-network, keys (glossary Private key), security, bip, running-a-node, utxo, privacy, aml (KYC), multisig; исправлены битые `]]]` в Related; удалены `*Tags:*` и секция «Related Terms»; `## Related pages` с pipe-описаниями; таблица — выравнивание MD060.
+
+---
+
+## [2026-04-11] enhance | wiki-ru/practice/privacy-practice.md
+
+**Changes:** Удалены `source:`/`raw/` в метаданных и упоминание `raw/` в `## Источники`; `sources`: practice-privacy, privacy/coinjoin, privacy/ (пути из `raw/`); теги allowlist вместо coinjoin/coin-control/kyc/tor/practice; `reviewed` последним; убраны `#` и `---`; `## Введение` + «Основа» (2 строки, 21ideas); wikilink’и: bitcoin, транзакции, privacy, блокчейн, биржа, KYC, адреса, HD-кошелёк, майнинг, Lightning, bitcoin-node, utxo, lightning-tools; CoinJoin — ссылка на статью 21ideas в разделе; таблица P2P без сторонних URL (только названия); `## Связанные страницы` → `## Дополнительные материалы` (+ buying, aml, security); уровни угрозы оформлены с переносами строк.
+
+---
+
+## [2026-04-11] enhance | wiki-ru/practice/lightning-tools.md
+
+**Changes:** Frontmatter: кавычки, полный `sources` как у EN (индекс practice/lightning + гиды из `raw/Practice/lightning`); теги allowlist (убраны phoenix/alby/lnbits/mutiny/wallets/practice, добавлены privacy/security/multisig/concept); `quality` reference, `reviewed` последним; убраны `#` и `---`; `## Введение` + «Основа»; у каждого инструмента ссылка на 21ideas; добавлен блок Mutiny; раздел ликвидности со ссылкой на гид; краткий блок про ончейн-приватность + ochishchaem URL; исправлено «Lighting» → «Lightning» Labs; Alby: убран сторонний домен в примере адреса; wikilink’и: bitcoin, транзакции, комиссии, кошелёк, ключи, security, узел, running-a-node, биржа; `## Связанные страницы` → нижний `## Дополнительные материалы` (running-a-node, privacy-practice, multisig).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/practice/running-a-node.md
+
+**Changes:** `title` унифицирован с формулировкой в `wiki-ru/index.md` («узла» вместо «ноды» в YAML); frontmatter: кавычки, inline `sources`, теги allowlist (убраны bitcoin-core/full-node/sovereignty/umbrel, добавлены governance/protocol/decentralization); `reviewed` последним; убраны `#` и `---`; `## Введение` + «Основа» (21ideas); убрана гиперссылка на bitcoin.org — текст про загрузку с официального сайта без стороннего URL; требования к диску: ГБ→ТБ для SSD (согласовано с ~600 ГБ цепочки в тексте); исправлен двойной пробел в FAQ; wikilink’и: bitcoin-node, нода, bitcoin, блокчейн, транзакции, блок, кошелёк, scarcity, майнеры, governance, blocksize-war, децентрализация, генезис, utxo, bitcoin-core, lightning; `## Связанные страницы` → `## Дополнительные материалы` (+ bitcoin-node, bitcoin-core, lightning-tools, security).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/practice/storage.md
+
+**Changes:** Frontmatter: кавычки, расширенный `sources` (practice/hodl + electrum/blue/coldcard/seedsigner из `raw/Practice/hodl`); теги allowlist вместо storage/hardware-wallet/vendor-имён; `reviewed` последним; убраны `#` и `---`; `## Введение` + «Основа»; убраны сторонние URL (`bluewallet.io`, `coldcard.com`, `seedsigner.com`); у каждого кошелька — ссылка на гид 21ideas; wikilink’и: security, bitcoin, кошелёк, приватный ключ, горячий/аппаратный кошелёк, холодное хранение, lightning, адреса, utxo, комиссии, multisig, сид-фраза; `## Связанные страницы` → `## Дополнительные материалы` (+ lightning-tools, running-a-node).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/series/bitcoin-astronomy.md
+
+**Changes:** Frontmatter: порядок полей, inline `sources` (ba + ba/1–3 из `raw/Theory/future/bitcoin-astronomy`), кавычки; теги allowlist (убраны bitcoin-astronomy/future/hyperbitcoinization/speculation/druv-bansal); `quality: synthesized`, `reviewed` последним; убраны `#` в теле и горизонтальные `---`; «Основа» + ссылки на части; в таблице названия частей — ссылки на 21ideas; wikilink’и: bitcoin, money, glossary#Инфляция, lightning-network, blockchain, proof-of-work; `## Связанные страницы` → `## Дополнительные материалы` (pipe-описания); блок `## Источники` с четырьмя URL.
+
+---
+
+## [2026-04-11] enhance | wiki-ru/series/discovering-bitcoin.md
+
+**Changes:** `title` исправлен на автора по `raw` (Джакомо Зукко; убрана ошибочная «Ялда Хасрати» в YAML); frontmatter: порядок, inline `sources` (sb + stanovlenie-intro и 1–7 из `raw/Theory/economics/discovering-bitcoin`), кавычки; теги allowlist; `quality: synthesized`, `reviewed` последним; убраны `#` и `---`; «Основа» + компактные ссылки на вступление и части; таблица: только 21ideas в колонке «Название» (wikilink’и с `|` в ячейках не используются — ломают таблицу); в «Ключевых идеях»: money, инфляция, PoW, золотой стандарт; `## Связанные страницы` → `## Дополнительные материалы` (pipe); `## Источники` — полный список девяти URL.
+
+---
+
+## [2026-04-11] enhance | wiki-ru/series/genesis-files.md
+
+**Changes:** Frontmatter: порядок, inline `sources` (+ хаб `https://21ideas.org/gf` из `raw/Theory/history/genesis-files/_index.md`), кавычки; теги allowlist (убраны genesis-files/ecash/bit-gold/cypherpunks вне списка; добавлены decentralization, hashcash); `quality: synthesized`, `reviewed` последним; убраны `#` и `---`; «Основа»; таблица: колонка «Материал» — только ссылки 21ideas (текст темы без wikilink’ов из‑за `|`); обзор: bitcoin, криптография, ключи, chaum, adam-back, hashcash, satoshi, whitepaper, b-money, реестр, double-spend, bit-gold, szabo, hal-finney, rpow; блок «Значение»: satoshi, difficulty-adjustment, blockchain, PoW; убрана отдельная стрелка «→ hashcash»; `## Связанные страницы` → `## Дополнительные материалы` (pipe); `## Источники` — семь URL.
+
+---
+
+## [2026-04-11] enhance | wiki-ru/series/gradually-then-suddenly.md
+
+**Changes:** Frontmatter: порядок, inline `sources` (хаб `pzv` + 17 URL из `raw/Theory/economics/gradually-then-suddenly`, включая EN-эссе 16 по ссылке из `_index.md`); кавычки; теги allowlist (убраны gradually-then-suddenly/parker-lewis/bitcoin-is-money; добавлены philosophy, decentralization); `quality: synthesized`, `reviewed` последним; убраны `#` и `---`; «Основа» + пояснение про EN для эссе 16 (без `raw/` в теле); wikilink’и: parker-lewis, bitcoin, glossary#Фиат; в «Ключевых темах»: bitcoin, scarcity; таблица: колонка «Название» — ссылки на 21ideas, для 16 — пометка EN в колонке идеи; `## Связанные страницы` → `## Дополнительные материалы` (pipe); `## Источники` — 18 пунктов.
+
+---
+
+## [2026-04-11] enhance | wiki-ru/series/oxt-research.md
+
+**Changes:** Frontmatter: порядок, inline `sources` (+ хаб `https://21ideas.org/privacy/oxt` из `raw/Theory/privacy/oxt/_index.md`), кавычки; теги allowlist (убраны oxt-research/chain-analysis/samourai; добавлены concept, security); `quality: synthesized`, `reviewed` последним; убраны `#` и `---`; «Основа»; таблица: колонка «Название» — ссылки на oxt-1…4; wikilink’и: privacy, транзакция, bitcoin, blockchain, utxo, address-types, lightning-network, privacy-practice#CoinJoin / #Coin Control; `## Связанные страницы` → `## Дополнительные материалы` (pipe); `## Источники` — пять URL (старый одиночный хаб вынесен в полный список).
+
+---
+
+## [2026-04-11] enhance | wiki-ru/series/silk-road.md
+
+**Changes:** Frontmatter: порядок, inline `sources` (хаб `sr` + `silkroad-1`…`6` + доп. ссылки из `raw/Theory/history/silk-road/_index.md`: `bitcoin-svoboda`, `posts/ross`); кавычки; теги allowlist (убраны silk-road/ross-ulbricht/darknet/bitcoin-use-case); `quality: synthesized`, `reviewed` последним; убраны `#` и `---`; «Основа» + доп. 21ideas; таблица: колонка «Название» — ссылки на части; wikilink’и: bitcoin, privacy-practice#Tor/VPN, транзакция, oxt-research; `## Связанные страницы` → `## Дополнительные материалы` (pipe); `## Источники` — девять URL с заголовками по оглавлению `raw`.
+
+---
+
+## [2026-04-11] enhance | wiki-ru/series/what-i-learned-from-bitcoin.md
+
+**Changes:** Frontmatter: порядок, inline `sources` — только хаб и часть 1 (в `raw/Theory/philosophy/what-i-learned-from-bitcoin` нет отдельных `url` для частей 2–3; URL не придумывались); кавычки; теги allowlist (убраны what-i-learned/gigi/technology); `quality: synthesized`, `reviewed` последним; убраны `#` и `---`; «Основа» с двумя 21ideas; wikilink’и: gigi, bitcoin, консенсус, нода, money, governance, инфляция, scarcity, криптография, decentralization, PoW; книга в лиде — курсив без сторонних URL; `## Связанные страницы` → `## Дополнительные материалы` (pipe); `## Источники` — два URL.
+
+---
+
+## [2026-04-11] lint | Targeted — wiki-ru/
+
+**Scope:** Full tree `wiki-ru/` (76 `.md` files); checks per `CLAUDE.md` (frontmatter, `[[ru/...]]`, `sources:` shape, tags allowlist, `reviewed`, body `#` / `---`, `raw/` in body, broken link targets).
+
+**Auto-fixed:** none (report-only pass).
+
+**Flagged for review:** `[[wiki-ru/...]]` wikilinks (6 hits, 4 files); block `sources:` (37 files); off-allowlist tags (13 files); missing `reviewed:` (9 files); body `#` as first line (12 files); standalone `---` in body (31 files); `raw/` in body (`glossary.md`, `overview.md`).
+
+**Output:** `docs/lint-report.md` overwritten.
+
+---
+
+## [2026-04-11] lint | Targeted — wiki-ru/
+
+**Scope:** `python3 tools/lint.py --layer ru --write-report` (76 pages).
+
+**Auto-fixed:** none.
+
+**Result:** 0 flagged mechanical issues (no bad wikilink prefixes, no broken `[[ru/...]]` targets, block `sources:`, body `---` / `#`, `raw/` in body, missing keys, missing `reviewed`, or off-allowlist tags).
+
+**Output:** `docs/lint-report.md` overwritten (English; RU-only pass).
+
+---
+
+## [2026-04-11] maintenance | wiki-ru inline sources, tags, body `---`
+
+**Layers:** RU
+
+**Changes:** Converted block/list `sources:` to inline `sources: ["..."]` on 28 paths (books, concepts, entities from lint list). Normalized `wiki-ru/books/21-ways.md` and `wiki-ru/concepts/byzantine-generals-problem.md` frontmatter (quoted scalars, flow `tags`). Allowlist tags: `inventing-bitcoin` (`proof-of-work` → `mining`), `parker-lewis` (dropped `scarcity`), `pre-bitcoin-cypherpunks` (`hashcash` → `protocol`), `timeline` (`scarcity` → `economics`), `genesis-files` (`hashcash` → `protocol`). Removed standalone `---` from bodies of the 28-file batch plus eight remaining concept pages (`address-types`, `aml`, `decentralization`, `deflation`, `difficulty-adjustment`, `double-spend`, `forks`, `governance`). **`python3 tools/lint.py --layer ru`:** 0 flagged rows. Regenerated `docs/lint-report.md` (RU-only pass).
+
+---
+
+## [2026-04-11] docs | Lint workflow + English reports (CLAUDE, README, WIKI-GUIDE)
+
+**Changes:** `CLAUDE.md` — scope vs single `lint-report.md`, **report language = English**, agent output steps with `tools/lint.py --write-report`. `README.md` — `tools/lint.py` subsection, prompt table + health-check wording. `docs/WIKI-GUIDE.md` — `tools/` in tree, lint commands, targeted EN/RU rows, clarify log/report behavior. `tools/lint.py` — docstring note on English report output.
+
+---
+
+## [2026-04-11] meta | tools/lint.py + CLAUDE.md lint flow
+
+**Scope:** Add `tools/lint.py` (stdlib-only mechanical checks for `wiki-en/` and `wiki-ru/`); document runner flags and agent workflow under **Lint** in `CLAUDE.md` (directory map + note to sync allowlist with script).
+
+---
+
+## [2026-04-11] lint | Targeted — wiki-ru/ (repeat pass)
+
+**Scope:** Full `wiki-ru/` tree (76 files); same mechanical checks as prior lint.
+
+**Auto-fixed:** none.
+
+**Flagged:** block/multiline `sources:` (28 files, including regressed `books/21-ways.md`); standalone `---` in body (19 concept pages); missing `reviewed:` (`concepts/mining.md`); off-allowlist tags (5 rows: `proof-of-work`, `scarcity`×2, `hashcash`×2). Clean: no `[[wiki-ru/...]]`, no broken `[[ru/...]]`, no body `#`, no `raw/` in body.
+
+**Output:** `docs/lint-report.md` overwritten.
+
+---
+
+## [2026-04-11] maintenance | wiki-ru hub + books + wikilinks + body style
+
+**Layers:** RU
+
+**Changes:** Заменены все `[[wiki-ru/...]]` на `[[ru/...]]` (`hashcash`, `mempool`, `money`, `glossary`); у `money.md` убран лишний `---` перед `## Источники`. Семь книг в `wiki-ru/books/`: inline `sources`, теги по allowlist, кавычки в frontmatter, `reviewed: "2026-04-11"`, убраны `#` в теле, удалены горизонтальные `---` между секциями, `## Связанные страницы` → `## Дополнительные материалы`. Хабы `index.md`, `overview.md`, `glossary.md`: frontmatter по схеме (`sources: []` у индекса/обзора), теги allowlist, `reviewed`, без `#` в начале тела, без разделителей `---` в теле; у глоссария — `category: "topics"`, закрывающая секция переименована. `entities/satoshi-nakamoto.md`, `tim-may.md`: inline `sources`, убран дублирующий `#`. `overview`: формулировка про добавление источника без пути `raw/`; `index`: убрано `source:` с `raw/`. `concepts/hashcash.md`: правка wikilink + ранее снятые `---` в теле.
+
+---
+
 ## Related pages
 
 - [[en/index|English wiki index]]

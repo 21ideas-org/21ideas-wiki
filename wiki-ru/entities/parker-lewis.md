@@ -2,13 +2,11 @@
 title: "Паркер Льюис"
 category: "entities"
 quality: "synthesized"
-sources:
-  - "https://21ideas.org/pzv/"
-  - "https://21ideas.org/pzv/postepenno-zatem-vnezapno"
+sources: ["https://21ideas.org/pzv/", "https://21ideas.org/pzv/postepenno-zatem-vnezapno"]
 synthesized_date: "2026-04-08"
 completeness: "medium"
 language: "ru"
-tags: [bitcoin, wiki, entity, economics, synthesized, history, concept, scarcity]
+tags: [bitcoin, wiki, entity, economics, synthesized, history, concept]
 updated: "2026-04-10"
 reviewed: "2026-04-10"
 ---

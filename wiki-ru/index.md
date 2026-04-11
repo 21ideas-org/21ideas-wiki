@@ -1,32 +1,25 @@
 ---
 title: "Индекс: Русскоязычная вики 21ideas"
-category: index
-tags: [bitcoin, wiki, index, navigation]
-language: ru
-quality: reference
+category: "topics"
+quality: "reference"
+sources: []
 synthesized_date: "2026-04-08"
-completeness: high
-source: "Synthesized from raw/ sources"
-updated: "2026-04-08"
+completeness: "high"
+language: "ru"
+tags: [bitcoin, wiki, reference]
+updated: "2026-04-11"
+reviewed: "2026-04-11"
 ---
 
-# Русскоязычная вики 21ideas
-
-Синтезированная база знаний на русском языке по материалам сайта 21ideas.org. Все страницы написаны на основе оригинальных русскоязычных источников.
-
----
+Синтезированная база знаний на русском языке по материалам сайта 21ideas.org. Все страницы написаны на основе оригинальных русскоязычных источников с 21ideas.org.
 
 ## Обзор
 
 → [[ru/overview]] — введение в вики и рекомендации по навигации
 
----
-
 ## Глоссарий
 
 → [[ru/glossary]] — словарь биткоин-терминов от А до Я и латинских сокращений
-
----
 
 ## Концепции
 
@@ -66,8 +59,6 @@ updated: "2026-04-08"
 | [[ru/concepts/bit-gold]] | Bit Gold Ника Сабо: почти-решение цифрового золота |
 | [[ru/concepts/rpow]] | RPOW Хэла Финни (2004): многоразовые PoW-токены |
 
----
-
 ## Сущности
 
 *Ключевые люди и организации.*
@@ -87,8 +78,6 @@ updated: "2026-04-08"
 | [[ru/entities/parker-lewis]] | «Постепенно, затем внезапно» |
 | [[ru/entities/saifedean-ammous]] | «Краткая история денег», «Фиатный стандарт» |
 
----
-
 ## История
 
 | Страница | Описание |
@@ -97,15 +86,11 @@ updated: "2026-04-08"
 | [[ru/history/pre-bitcoin-cypherpunks]] | eCash, Hashcash, b-money, Bit Gold, RPOW |
 | [[ru/history/blocksize-war]] | Война за размер блока 2015–2017 |
 
----
-
 ## Философия
 
 | Страница | Описание |
 |---|---|
 | [[ru/philosophy/overview]] | Философские основы Биткоина |
-
----
 
 ## Книги
 
@@ -120,8 +105,6 @@ updated: "2026-04-08"
 | [[ru/books/price-of-tomorrow]] | Джефф Бут — дефляция и технологии |
 | [[ru/books/21-ways]] | Gigi — 21 способ понять Биткоин |
 
----
-
 ## Серии статей
 
 | Страница | Описание |
@@ -134,8 +117,6 @@ updated: "2026-04-08"
 | [[ru/series/oxt-research]] | OXT Research — приватность и анализ цепочки |
 | [[ru/series/what-i-learned-from-bitcoin]] | Gigi — философские, экономические и технические уроки |
 
----
-
 ## Практика
 
 | Страница | Описание |
@@ -146,8 +127,6 @@ updated: "2026-04-08"
 | [[ru/practice/privacy-practice]] | Coin control, CoinJoin, Tor |
 | [[ru/practice/running-a-node]] | Запуск биткоин-узла: Bitcoin Core, Umbrel |
 
----
-
 ## Темы
 
 | Страница | Описание |
@@ -155,9 +134,7 @@ updated: "2026-04-08"
 | [[ru/topics/bitcoin-dissidents]] | Биткоин как инструмент свободы |
 | [[ru/topics/network-effects]] | Семь сетевых эффектов Биткоина |
 
----
-
-## Связанные страницы
+## Дополнительные материалы
 
 - [[ru/overview]] — Обзор и введение в вики
 - [[ru/glossary]] — Словарь биткоин-терминов

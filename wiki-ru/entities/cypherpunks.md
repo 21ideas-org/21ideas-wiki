@@ -2,12 +2,7 @@
 title: "Шифропанки"
 category: "entities"
 quality: "synthesized"
-sources:
-  - "https://21ideas.org/gf/genesis-1"
-  - "https://21ideas.org/gf/genesis-2"
-  - "https://21ideas.org/gf/genesis-3"
-  - "https://21ideas.org/gf/genesis-4"
-  - "https://21ideas.org/gf/genesis-5"
+sources: ["https://21ideas.org/gf/genesis-1", "https://21ideas.org/gf/genesis-2", "https://21ideas.org/gf/genesis-3", "https://21ideas.org/gf/genesis-4", "https://21ideas.org/gf/genesis-5"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"

@@ -2,9 +2,7 @@
 title: "Адам Бэк"
 category: "entities"
 quality: "reference"
-sources:
-  - "https://21ideas.org/gf/genesis-2"
-  - "https://21ideas.org/whitepaper"
+sources: ["https://21ideas.org/gf/genesis-2", "https://21ideas.org/whitepaper"]
 synthesized_date: "2026-04-09"
 completeness: "medium"
 language: "ru"

@@ -2,8 +2,7 @@
 title: "Тимоти Мэй"
 category: "entities"
 quality: "reference"
-sources:
-  - "https://21ideas.org/manifest-kriptoanarhista"
+sources: ["https://21ideas.org/manifest-kriptoanarhista"]
 synthesized_date: "2026-04-10"
 completeness: "medium"
 language: "ru"
@@ -11,8 +10,6 @@ tags: [bitcoin, wiki, entity, history, philosophy, privacy, censorship-resistanc
 updated: "2026-04-10"
 reviewed: "2026-04-10"
 ---
-
-# Тимоти Мэй
 
 В материалах 21ideas **Тимоти С. Мэй (Тим Мэй)** — один из ключевых ранних участников движения [[ru/entities/cypherpunks|шифропанков]]. Его [«Манифест криптоанархиста»](https://21ideas.org/manifest-kriptoanarhista) формулирует видение, в котором [[ru/glossary#Криптография|криптография]] делает возможными анонимные взаимодействия, рынки и контракты вне контроля государства — и это заметно перекликается с мотивационными нарративами вокруг [[ru/concepts/bitcoin|Биткоина]].
 

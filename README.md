@@ -28,7 +28,12 @@ Coverage includes core Bitcoin concepts (protocol + economics), key protocol ele
 | [`docs/PAGE-ENHANCEMENT-STANDARD.md`](docs/PAGE-ENHANCEMENT-STANDARD.md) | Full prompt + checklist for polishing a single wiki page |
 | [`docs/WIKI-BACKLOG.md`](docs/WIKI-BACKLOG.md) | Short-lived backlog scratchpad |
 | [`docs/log.md`](docs/log.md) | Append-only bilingual operations log |
-| [`docs/lint-report.md`](docs/lint-report.md) | Lint summary from batch checks |
+| [`docs/lint-report.md`](docs/lint-report.md) | Mechanical lint summary (**English**); overwritten by the last `--write-report` run |
+| [`raw/README.md`](raw/README.md) | `raw` directory structure |
+
+### Mechanical lint (`tools/lint.py`)
+
+From the repo root, run **`python3 tools/lint.py`** (stdlib only). Common flags: `--layer en|ru|both`, `--write-report` (overwrites `docs/lint-report.md`), `--strict` / `--strict-links` (non-zero exit for CI). Full checklist and agent workflow: **`CLAUDE.md`** → **Lint**.
 
 ## How to use
 
@@ -47,7 +52,8 @@ Coverage includes core Bitcoin concepts (protocol + economics), key protocol ele
 |---|---|
 | Ingest a source | `"Ingest raw/Theory/protocol/musig2.md into both wiki layers"` |
 | Enhance a page | `"Enhance wiki-ru/concepts/mempool.md @docs/PAGE-ENHANCEMENT-STANDARD.md"` |
-| Full lint | `"Run a full bilingual lint on both wiki-en/ and wiki-ru/"` |
+| Full lint | `"Run a full bilingual lint on both wiki-en/ and wiki-ru/"` (agent runs `python3 tools/lint.py --layer both --write-report` and updates `docs/log.md`) |
+| Targeted lint (RU) | `"Run a targeted lint on wiki-ru/"` (e.g. `--layer ru --write-report`) |
 
 See **`docs/WIKI-GUIDE.md`** for the full prompt patterns table and notes on when to use each.
 
@@ -56,7 +62,7 @@ See **`docs/WIKI-GUIDE.md`** for the full prompt patterns table and notes on whe
 1. Add new source markdown under the right subtree in **`raw/`** (see **`raw/README.md`**). Treat `raw/` files as read-only — never edit them to patch the wiki.
 2. Run an **ingest** prompt (see above). The agent creates or updates pages in **`wiki-en/`** and **`wiki-ru/`**, refreshes both `index.md` files, and appends a dated entry to **`docs/log.md`**.
 
-For bilingual health checks, run a lint prompt. Results are recorded in **`docs/lint-report.md`** automatically.
+For bilingual health checks, run a lint prompt: the agent should execute **`python3 tools/lint.py`** with the right **`--layer`** and **`--write-report`**, then append **`docs/log.md`**. The report file is **English** (paths and quoted vault snippets may contain Russian).
 
 ## Contributing / maintaining
 

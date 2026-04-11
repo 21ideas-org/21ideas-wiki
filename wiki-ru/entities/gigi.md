@@ -2,9 +2,7 @@
 title: "Gigi (Der Gigi)"
 category: "entities"
 quality: "synthesized"
-sources:
-  - "https://21ideas.org/21-ways"
-  - "https://21ideas.org/chemu-ya-nauchilsya-u-bitcoina"
+sources: ["https://21ideas.org/21-ways", "https://21ideas.org/chemu-ya-nauchilsya-u-bitcoina"]
 synthesized_date: "2026-04-08"
 completeness: "medium"
 language: "ru"

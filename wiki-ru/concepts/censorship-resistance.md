@@ -2,11 +2,7 @@
 title: "Цензуроустойчивость"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/pzv/bitkoin-ne-mozhet-byt-zabanen"
-  - "https://21ideas.org/vyzhivaet-silnejshij/"
-  - "https://21ideas.org/ne-shitcoin/"
-  - "https://21ideas.org/21-sposob/glava-1-bitcoin-eto-ideya/"
+sources: ["https://21ideas.org/pzv/bitkoin-ne-mozhet-byt-zabanen", "https://21ideas.org/vyzhivaet-silnejshij/", "https://21ideas.org/ne-shitcoin/", "https://21ideas.org/21-sposob/glava-1-bitcoin-eto-ideya/"]
 synthesized_date: "2026-04-09"
 completeness: "high"
 language: "ru"
@@ -25,8 +21,6 @@ reviewed: "2026-04-10"
 
 В эссе «[Выживает сильнейший](https://21ideas.org/vyzhivaet-silnejshij/)» это напрямую связано с [[ru/concepts/proof-of-work|Proof of Work]] и [[ru/concepts/difficulty-adjustment|корректировкой сложности]] как конструкцией, позволяющей достигать распределённого [[ru/glossary#Консенсус Накамото|консенсуса]] и поддерживать [[ru/glossary#Реестр (Ledger)|реестр]], который трудно подчинить внешнему давлению.
 
----
-
 ## «Биткоин не может быть забанен» (механизм, а не лозунг)
 
 В статье [Биткоин не может быть забанен](https://21ideas.org/pzv/bitkoin-ne-mozhet-byt-zabanen) утверждается, что эффективный запрет потребовал бы, по сути:
@@ -37,21 +31,15 @@ reviewed: "2026-04-10"
 
 Ключевой тезис: у Биткоина нет единой точки отказа — узлы, [[ru/glossary#Майнер|майнеры]] и ключи распределены глобально. Попытки запрета, как правило, приводят к перемещению капитала и активности в более дружественные юрисдикции (юрисдикционная конкуренция).
 
----
-
 ## «Нет головы, которую можно отрубить»
 
 Идея «нечего отключать» повторяется в разных рамках: если у системы есть штаб, директор или рычаг управления, его можно принудить. У Биткоина устойчивость опирается на распределённость и возможность каждому запускать валидирующее ПО.
 
 См. также [[ru/concepts/bitcoin-core|Bitcoin Core]].
 
----
-
 ## Почему «Биткоин, не щиткоин» относится к теме
 
 В статье «[Биткоин, не щиткоин](https://21ideas.org/ne-shitcoin/)» цензуроустойчивость встроена в денежный тезис: возможность отправлять ценность «кому угодно и когда угодно» без разрешения рассматривается как неотделимая часть нейтральности и устойчивости к принуждению.
-
----
 
 ## Источники
 
@@ -59,8 +47,6 @@ reviewed: "2026-04-10"
 - [Выживает сильнейший](https://21ideas.org/vyzhivaet-silnejshij/)
 - [Биткоин, не щиткоин](https://21ideas.org/ne-shitcoin/)
 - [Биткоин – это идея](https://21ideas.org/21-sposob/glava-1-bitcoin-eto-ideya/)
-
----
 
 ## Дополнительные материалы
 

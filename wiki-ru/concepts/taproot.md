@@ -2,8 +2,7 @@
 title: "Taproot"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/taproot"
+sources: ["https://21ideas.org/taproot"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"

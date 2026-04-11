@@ -2,8 +2,7 @@
 title: "Эрик Хьюз"
 category: "entities"
 quality: "reference"
-sources:
-  - "https://21ideas.org/manifest-shifropanka"
+sources: ["https://21ideas.org/manifest-shifropanka"]
 synthesized_date: "2026-04-09"
 completeness: "medium"
 language: "ru"

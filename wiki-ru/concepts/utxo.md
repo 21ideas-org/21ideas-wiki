@@ -2,10 +2,7 @@
 title: "UTXO"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/protocol/utxo-1"
-  - "https://21ideas.org/protocol/utxo-2"
-  - "https://21ideas.org/protocol/utxo-3"
+sources: ["https://21ideas.org/protocol/utxo-1", "https://21ideas.org/protocol/utxo-2", "https://21ideas.org/protocol/utxo-3"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"

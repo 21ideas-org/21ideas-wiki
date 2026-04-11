@@ -2,9 +2,7 @@
 title: "Филип Циммерман"
 category: "entities"
 quality: "reference"
-sources:
-  - "https://21ideas.org/pgp-verify"
-  - "https://21ideas.org/gf/genesis-2"
+sources: ["https://21ideas.org/pgp-verify", "https://21ideas.org/gf/genesis-2"]
 synthesized_date: "2026-04-09"
 completeness: "medium"
 language: "ru"

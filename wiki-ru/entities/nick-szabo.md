@@ -2,10 +2,7 @@
 title: "Ник Сабо"
 category: "entities"
 quality: "synthesized"
-sources:
-  - "https://21ideas.org/gf/genesis-4"
-  - "https://21ideas.org/raskoshelivaemsya/"
-  - "https://21ideas.org/doverennye-tretyi-storony/"
+sources: ["https://21ideas.org/gf/genesis-4", "https://21ideas.org/raskoshelivaemsya/", "https://21ideas.org/doverennye-tretyi-storony/"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"

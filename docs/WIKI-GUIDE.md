@@ -2,8 +2,8 @@
 
 This repository is a bilingual Bitcoin wiki built from the 21ideas.org source library in `raw/`. See **`raw/README.md`** for how that tree is organized (books, theory, practice, start).
 
-- **English layer**: `wiki-en/` (synthesized from Russian sources into English)
-- **Russian layer**: `wiki-ru/` (parallel Russian wiki, grounded in the same source library; not a translation)
+- **English layer**: `wiki-en/` 
+- **Russian layer**: `wiki-ru/` 
 
 Both layers use trust markers and strict linking rules.
 
@@ -57,24 +57,23 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 ## Repository structure
 
 - `raw/` — immutable 21ideas.org source markdown files (source of truth); **`raw/README.md`** describes folders and conventions
+- `raw/README.md` — raw directory structure
 - `wiki-en/` — English wiki pages
 - `wiki-ru/` — Russian wiki pages
 - `docs/` — maintainer and process documentation
   - `WIKI-GUIDE.md` — this guide
   - `PAGE-ENHANCEMENT-STANDARD.md` — single-page polish checklist
   - `WIKI-BACKLOG.md` — short-lived backlog
-  - `lint-report.md` — lint summaries (typically updated during batch work)
+  - `lint-report.md` — mechanical lint output (**English**); last run wins (see `--layer` scope below)
   - `log.md` — append-only operational log for **both** `wiki-en/` and `wiki-ru/`
+- `tools/lint.py` — mechanical lint CLI (`--layer en|ru|both`, `--write-report`, `--strict`); stdlib only; details in `CLAUDE.md` → **Lint**
 - `CLAUDE.md` (repo root) — project rules: frontmatter schema + bilingual lint rules
 
 ## How maintenance works (high level)
 
 - New source files are added to `raw/` (never edited by the agent).
 - The agent updates wiki pages, indexes, and logs while preserving provenance.
-- Lint checks focus on:
-  - required frontmatter
-  - bilingual link prefixes
-  - broken links and structural issues
+- **Lint:** run `python3 tools/lint.py` from the repo root (see `CLAUDE.md` → **Lint**). Use `--write-report` to refresh `docs/lint-report.md` (English headings and labels; vault paths and quoted snippets may be Russian). Choose `--layer ru`, `--layer en`, or `--layer both` so the report matches the pass you intend.
 
 ## Working with the agent
 
@@ -89,15 +88,16 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 | **Ingest** | `"Ingest raw/Theory/protocol/musig2.md into both wiki layers"` | No |
 | **Enhance** | `"Enhance wiki-ru/concepts/mempool.md @docs/PAGE-ENHANCEMENT-STANDARD.md"` | Yes — include `@docs/PAGE-ENHANCEMENT-STANDARD.md` |
 | **Enhance batch** | `"Enhance all pages in wiki-ru/concepts/ that are missing the reviewed field @docs/PAGE-ENHANCEMENT-STANDARD.md"` | Yes |
-| **Lint** | `"Run a full bilingual lint on both wiki-en/ and wiki-ru/"` | No |
-| **Lint (targeted)** | `"Run a targeted lint on wiki-ru/entities/"` | No |
+| **Lint** | `"Run a full bilingual lint on both wiki-en/ and wiki-ru/"` — agent should run `python3 tools/lint.py --layer both --write-report` and append `docs/log.md` | No |
+| **Lint (targeted RU)** | `"Run a targeted lint on wiki-ru/"` — e.g. `python3 tools/lint.py --layer ru --write-report` + `docs/log.md` | No |
+| **Lint (targeted EN)** | `"Run a targeted lint on wiki-en/"` — e.g. `python3 tools/lint.py --layer en --write-report` + `docs/log.md` | No |
 | **Query** | `"What does 21ideas say about Lightning privacy? File it as a wiki page if worth keeping."` | No |
 
-The agent appends to `docs/log.md` and updates `docs/lint-report.md` automatically as part of every operation — you do not need to ask for it separately.
+For **lint** passes, ask the agent explicitly; it should run **`tools/lint.py`** with **`--write-report`** (and the right **`--layer`**) then append **`docs/log.md`**. For ingest/enhance, agents still append **`docs/log.md`** per `CLAUDE.md` even if you do not repeat that in the prompt.
 
 ## Releases
 
-Previous release: `v0.1.3` (bilingual wikilink architecture + lint rules).
+Previous release: [v0.3.0 Agent Rulebook Overhaul + Docs Reorganisation](https://github.com/21ideas-org/21ideas-wiki/releases/tag/v0.3.0)
 
 ## Support
 

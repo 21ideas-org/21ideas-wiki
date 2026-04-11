@@ -2,17 +2,13 @@
 title: "Безопасность и самостоятельное хранение"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/kak-hranit-kljuchi/"
-  - "https://21ideas.org/multisig/"
-  - "https://21ideas.org/hwws/"
-  - "https://21ideas.org/seed/"
+sources: ["https://21ideas.org/kak-hranit-kljuchi/", "https://21ideas.org/multisig/", "https://21ideas.org/hwws/", "https://21ideas.org/seed/"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"
 tags: [bitcoin, wiki, concept, security, privacy, third-party, multisig]
 updated: "2026-04-10"
-reviewed: "2026-04-10" 
+reviewed: "2026-04-10"
 ---
 
 > «Не твои ключи — не твои биткоины»  

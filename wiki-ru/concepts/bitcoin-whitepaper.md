@@ -2,8 +2,7 @@
 title: "Белая книга Биткоина"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/whitepaper"
+sources: ["https://21ideas.org/whitepaper"]
 synthesized_date: "2026-04-10"
 completeness: "medium"
 language: "ru"
@@ -47,13 +46,9 @@ reviewed: "2026-04-10"
 - [[ru/concepts/bitcoin-core|Bitcoin Core]] — доминирующая реализация — это реализация, а не "протокол сам по себе".
 - [[ru/concepts/governance|Управление сетью]] — обновления происходят через принятие правил участниками сети.
 
----
-
 ## Источники
 
 - [Whitepaper (страница 21ideas)](https://21ideas.org/whitepaper)
-
----
 
 ## Дополнительные материалы
 

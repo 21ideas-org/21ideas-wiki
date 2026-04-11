@@ -2,10 +2,7 @@
 title: "Доверенные третьи стороны"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/doverennye-tretyi-storony"
-  - "https://21ideas.org/izobretaem-bitkoin/glava-2"
-  - "https://21ideas.org/21-sposob/glava-1-bitcoin-eto-ideya"
+sources: ["https://21ideas.org/doverennye-tretyi-storony", "https://21ideas.org/izobretaem-bitkoin/glava-2", "https://21ideas.org/21-sposob/glava-1-bitcoin-eto-ideya"]
 synthesized_date: "2026-04-09"
 completeness: "high"
 language: "ru"

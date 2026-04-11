@@ -77,12 +77,6 @@ A recurring tension in the source material: the easiest Bitcoin experience (cust
 
 ---
 
-## Sources
-
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
-
----
-
 ## Related Terms
 
 [[en/glossary|Glossary]] | [[en/concepts/bitcoin|Bitcoin]] | [[en/concepts/money|sound money]] | [[en/concepts/proof-of-work|Proof of Work]] | [[en/concepts/scarcity|scarcity]] | [[en/concepts/privacy|privacy]] | [[en/concepts/security|self-custody]] | [[en/concepts/lightning-network|Lightning Network]] | [[en/entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[en/entities/cypherpunks|cypherpunks]]

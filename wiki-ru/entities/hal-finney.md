@@ -2,8 +2,7 @@
 title: "Хэл Финни"
 category: "entities"
 quality: "synthesized"
-sources:
-  - "https://21ideas.org/hal-finney"
+sources: ["https://21ideas.org/hal-finney"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"

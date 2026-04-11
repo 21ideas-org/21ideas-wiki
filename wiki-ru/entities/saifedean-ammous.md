@@ -2,8 +2,7 @@
 title: "Сейфедин Аммус"
 category: "entities"
 quality: "synthesized"
-sources:
-  - "https://21ideas.org/fiatniy-standart"
+sources: ["https://21ideas.org/fiatniy-standart"]
 synthesized_date: "2026-04-08"
 completeness: "medium"
 language: "ru"

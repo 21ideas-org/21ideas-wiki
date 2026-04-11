@@ -2,9 +2,7 @@
 title: "SegWit — Segregated Witness"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/segwit"
-  - "https://21ideas.org/vojna-za-razmer-bloka/"
+sources: ["https://21ideas.org/segwit", "https://21ideas.org/vojna-za-razmer-bloka/"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"

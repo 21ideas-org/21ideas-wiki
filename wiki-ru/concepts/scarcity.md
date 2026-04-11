@@ -2,9 +2,7 @@
 title: "Редкость и ограниченное предложение"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/21-million-ne-podlezhit-obsuzhdeniyu/"
-  - "https://21ideas.org/pochemu-21-million/"
+sources: ["https://21ideas.org/21-million-ne-podlezhit-obsuzhdeniyu/", "https://21ideas.org/pochemu-21-million/"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"

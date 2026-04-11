@@ -2,8 +2,7 @@
 title: "Bit Gold"
 category: "concepts"
 quality: "reference"
-sources:
-  - "https://21ideas.org/gf/genesis-4"
+sources: ["https://21ideas.org/gf/genesis-4"]
 synthesized_date: "2026-04-09"
 completeness: "high"
 language: "ru"
@@ -48,13 +47,9 @@ Proof-of-work в этой конструкции связывает цифров
 - но структурное сходство велико,
 - а ключевой прорыв Биткоина — в том, что proof-of-work одновременно стал и механизмом вознаграждения, и [[ru/concepts/byzantine-generals-problem|византийски устойчивым]] консенсусом, уменьшая зависимость от доверенных акторов.
 
----
-
 ## Источник
 
 - [Генезис-файлы, часть IV: Bit Gold (Ник Сабо)](https://21ideas.org/gf/genesis-4)
-
----
 
 ## Дополнительные материалы
 

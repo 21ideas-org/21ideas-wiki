@@ -2,10 +2,7 @@
 title: "Сатоши Накамото"
 category: "entities"
 quality: "synthesized"
-sources:
-  - "https://21ideas.org/whitepaper"
-  - "https://21ideas.org/gf/genesis-1"
-  - "https://21ideas.org/byl-li-satoshi-zhadnym-majnerom"
+sources: ["https://21ideas.org/whitepaper", "https://21ideas.org/gf/genesis-1", "https://21ideas.org/byl-li-satoshi-zhadnym-majnerom"]
 synthesized_date: "2026-04-10"
 completeness: "high"
 language: "ru"
@@ -13,8 +10,6 @@ tags: [bitcoin, wiki, entity, history, synthesized, whitepaper, protocol, mining
 updated: "2026-04-10"
 reviewed: "2026-04-10"
 ---
-
-# Сатоши Накамото
 
 Сатоши Накамото — псевдоним создателя [[ru/concepts/bitcoin|Биткоина]]. Настоящая личность или группа лиц, скрывающихся за этим именем, до сих пор неизвестны.
 
