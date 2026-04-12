@@ -1,9 +1,12 @@
 # 21wiki – Bitcoin Wikipedia by 21ideas
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Release](https://img.shields.io/github/v/release/21ideas-org/21ideas-wiki)](https://github.com/21ideas-org/21ideas-wiki/releases/latest)
+[![Website EN](https://img.shields.io/badge/Website-EN-1f6feb?style=flat-square)](https://wiki.21ideas.org/en)
+[![Вебсайт RU](https://img.shields.io/badge/Вебсайт-RU-ff8c00?style=flat-square)](https://wiki.21ideas.org/ru)
+[![Bitcoin Only](https://img.shields.io/badge/Bitcoin-Only-f7931a?style=flat-square)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-7f8c8d?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Release](https://img.shields.io/github/v/release/21ideas-org/21ideas-wiki?style=flat-square&color=2ea44f)](https://github.com/21ideas-org/21ideas-wiki/releases/latest)
 
-A living, AI-maintained and human-curated Bitcoin knowledge base built **strictly from 21ideas.org source material** in `raw/`.
+A bilingual, AI-assisted, human-curated Bitcoin knowledge base built **strictly from 21ideas.org source material**.
 
 This repo contains two first-class wiki layers:
 
@@ -23,7 +26,7 @@ Both layers follow strict conventions: required YAML frontmatter (trust markers)
 ![Page example](images/address-types.png)
 *Clean, navigable overview with bilingual discipline*
 
-## What's inside (current)
+## Repository Structure
 
 - **Source library**: `raw/` — immutable markdown sources from 21ideas.org (layout: **`raw/README.md`**)
 - **English wiki**: `wiki-en/` — **76** markdown pages total (**73** content pages excluding index/overview + glossary). Operational changelog: **`docs/log.md`** (covers EN + RU).
