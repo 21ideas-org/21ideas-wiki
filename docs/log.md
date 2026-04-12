@@ -454,3 +454,11 @@ Changes: Made prompt fully language-neutral for EN and RU pages. Added Task 0 (p
 **Lint:** Targeted check — no issues reported for this path in `tools/lint.py --layer en` categories (full EN tree still has legacy pages).
 
 ---
+
+## [2026-04-12] enhance | wiki-en/concepts/b-money.md
+
+**Changes:** Canonical frontmatter; `sources` collapsed to inline array (same two 21ideas URLs); `category` / scalars quoted; `tags` allowlist-only `[bitcoin, wiki, concept, history, protocol, security, whitepaper, double-spend]` (removed `b-money`, `cypherpunks`, `digital-cash`, `proof-of-work`); `updated` / `reviewed` last. Removed body `#` title, horizontal rules, and `raw/...` line — replaced with reader-facing links to Genesis III and whitepaper. Merged `## Related Terms` / `## Related Pages` into `## Related pages` (pipe bullets). Added backbone + glossary wikilinks: `money`, `bitcoin`, `third-parties`, `proof-of-work`, `bitcoin-whitepaper`, `decentralization`, `bit-gold`, `rpow`, `cypherpunks`, glossary `#smart-contract`, `#public-key`, `#ledger`, `#nakamoto-consensus`.
+
+**Lint:** Targeted check — no issues for this path in `tools/lint.py --layer en`.
+
+---
