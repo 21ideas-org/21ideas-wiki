@@ -34,7 +34,7 @@ The Genesis Files article places Back inside the cypherpunk milieu: discussions 
 
 ## Relationship to the whitepaper
 
-The whitepaper source emphasizes that Hashcash is one of the few explicit external references and that Back is one of the explicitly referenced cryptographers.
+The whitepaper source emphasizes that Hashcash is one of the few explicit external references and that Back is one of the explicitly referenced cryptographers. In widely cited accounts, Back is also **one of the few people** Satoshi contacted by private email **before** the public whitepaper post — not the sole correspondent; Wei Dai ([[en/concepts/b-money|b-money]]) is another name often mentioned alongside Back.
 
 ---
 

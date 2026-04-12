@@ -38,7 +38,7 @@ Source: `raw/Start/start.md`, `raw/Books/vojna-za-razmer-bloka/`, `raw/Theory/hi
 2. [[en/concepts/proof-of-work|Proof of Work]] consensus mechanism
 3. A network of [[en/concepts/governance|full nodes]] that independently validate and propagate transactions
 
-The whitepaper explicitly acknowledges predecessors: Adam Back's Hashcash, Wei Dai's b-money. See [[en/series/genesis-files]]] for the full prehistory.
+The whitepaper explicitly acknowledges predecessors: Adam Back's Hashcash, Wei Dai's b-money. Before the public announcement, Satoshi reportedly corresponded privately with **a few** people in that circle — **[[en/entities/adam-back|Adam Back]]** and **Wei Dai** are commonly named. See [[en/series/genesis-files]]] for the full prehistory.
 
 ---
 

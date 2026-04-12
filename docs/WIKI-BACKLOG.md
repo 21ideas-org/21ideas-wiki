@@ -132,7 +132,7 @@ Short-lived scratch list. Promote done items to `log.md` or delete them.
 
 ## Research / fact-check
 
-- [ ] Whitepaper contacts: was Adam Back the only living person Satoshi contacted before publishing?
+- [x] Whitepaper contacts (2026-04-12): corrected wording — Adam Back as **one of the few** in private pre-announcement correspondence; removed incorrect EN claim that only Hal Finney was emailed. Pages: `wiki-ru/entities/satoshi-nakamoto.md`, `wiki-ru/entities/adam-back.md`, `wiki-en/entities/satoshi-nakamoto.md`, `wiki-en/entities/adam-back.md`, `wiki-en/series/genesis-files.md`.
 
 ---
 

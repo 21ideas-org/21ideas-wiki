@@ -65,7 +65,7 @@ Beyond the technical analysis, the series traces the human story:
 - Back and Dai published proposals but didn't pursue them further
 - Szabo developed Bit Gold extensively but couldn't solve the timestamping problem
 - Finney was the most persistent — RPOW was the last thing he tried before Bitcoin
-- When Bitcoin was published, [[en/entities/hal-finney|Finney]] was the *only person [[en/entities/satoshi-nakamoto|Satoshi]] emailed* before releasing it publicly
+- Before the public mailing-list post, [[en/entities/satoshi-nakamoto|Satoshi]] reportedly exchanged private email with **a few** cryptographers — **[[en/entities/adam-back|Adam Back]]** was **one of them**, as was **Wei Dai** (author of [[en/concepts/b-money|b-money]]). When the whitepaper appeared, [[en/entities/hal-finney|Finney]] was among the **first** to respond
 
 The first Bitcoin transaction (Satoshi → Finney, 10 BTC, January 12, 2009) was not random — it was the passing of the torch.
 

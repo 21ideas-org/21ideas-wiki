@@ -462,3 +462,13 @@ Changes: Made prompt fully language-neutral for EN and RU pages. Added Task 0 (p
 **Lint:** Targeted check — no issues for this path in `tools/lint.py --layer en`.
 
 ---
+
+## [2026-04-12] fact-check | Satoshi pre-whitepaper correspondence (Adam Back / others)
+
+**Layers:** Both (`wiki-ru/`, `wiki-en/`)
+
+**Changes:** Removed incorrect framing that Adam Back was the sole (or sole surviving) pre-publication correspondent. **RU:** `wiki-ru/entities/satoshi-nakamoto.md` — Back as **one of the few** in private correspondence before the public whitepaper, with Wei Dai (b-money) named; `wiki-ru/entities/adam-back.md` — same clarification + related link to b-money. **EN:** `wiki-en/series/genesis-files.md` — replaced wrong claim that only Hal Finney was emailed before release; now Back as one of several, Dai named, Finney as among the first responders. `wiki-en/entities/satoshi-nakamoto.md` and `wiki-en/entities/adam-back.md` — aligned wording. **Meta:** `docs/WIKI-BACKLOG.md` research item marked resolved.
+
+**Lint:** Run `tools/lint.py --strict-links` on touched paths recommended after merge.
+
+---
