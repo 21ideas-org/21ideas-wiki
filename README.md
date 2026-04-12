@@ -1,8 +1,8 @@
 # 21wiki – Bitcoin Wikipedia by 21ideas
 
 [![Website EN](https://img.shields.io/badge/Website-EN-1f6feb?style=for-the-badge)](https://wiki.21ideas.org/en)
-[![Вебсайт RU](https://img.shields.io/badge/Вебсайт-RU-ff8c00?style=for-the-badge)](https://wiki.21ideas.org/ru)
-[![Bitcoin Only](https://img.shields.io/badge/Bitcoin-Only-f7931a?style=flat-square)](https://wiki.21ideas.org/en/concepts/bitcoin)
+[![Вебсайт RU](https://img.shields.io/badge/Вебсайт-RU-6f42c1?style=for-the-badge)](https://wiki.21ideas.org/ru)
+[![Bitcoin Only](https://img.shields.io/badge/Bitcoin-Only-f7931a?style=for-the-badge)](https://wiki.21ideas.org/en/concepts/bitcoin)
 [![License: MIT](https://img.shields.io/badge/License-MIT-7f8c8d?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Release](https://img.shields.io/github/v/release/21ideas-org/21ideas-wiki?style=for-the-badge&color=2ea44f)](https://github.com/21ideas-org/21ideas-wiki/releases/latest)
 
