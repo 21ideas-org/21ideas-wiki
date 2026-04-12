@@ -446,3 +446,11 @@ Changes: Made prompt fully language-neutral for EN and RU pages. Added Task 0 (p
 **Changes:** Ручное слияние после `git merge dev` на `main`. **README.md** — сохранён блок про `tools/lint.py` и расширенное описание `lint-report`. **docs/WIKI-GUIDE.md** — строка Releases: актуальная ссылка на **v0.4.0**. **wiki-ru/index.md** — канонический frontmatter (`sources: []`, `reviewed`, кавычки), `category: "index"`, заголовок «Индекс 21wiki», вступление с атрибуцией Тони, без лишнего `---` после вступления. **wiki-ru/overview.md** — то же для overview: заголовок «Введение в 21wiki», теги `overview`/`navigation`, текст с Тони (пробел перед ссылкой), правка «low` можно». **wiki-ru/books/21-ways.md** — вступление без `#` в теле, уточнение про книгу с `dev`, ссылка `[[ru/concepts/bitcoin|Биткоин]]` вместо битой склейки.
 
 ---
+
+## [2026-04-12] enhance | wiki-en/concepts/aml.md
+
+**Changes:** Canonical frontmatter (quoted scalars, field order, `sources: ["https://21ideas.org/posts/aml-is-a-scam/"]`, `updated` / `reviewed` last); tags aligned to allowlist: `[bitcoin, wiki, concept, aml, privacy, censorship-resistance, third-party, security]` (dropped `kyc`, `fungibility`, `censorship`, `third-parties`, `surveillance`). Removed body `#` title, horizontal rules, `raw/...` citations, and duplicate/broken bottom sections (`Related Terms`, `Related Pages`). Opening ties to 21ideas via inline markdown link; `## Sources` lists the same URL. Wikilinks: glossary `#aml-anti-money-laundering`, `#kyc-know-your-customer`, `#exchange`, `#p2p-peer-to-peer`; concepts `third-parties`, `utxo`, `privacy`, `censorship-resistance`, `security`. Single `## Related pages` with pipe-syntax bullets.
+
+**Lint:** Targeted check — no issues reported for this path in `tools/lint.py --layer en` categories (full EN tree still has legacy pages).
+
+---

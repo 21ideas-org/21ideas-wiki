@@ -1,0 +1,24 @@
+name: Trigger Quartz Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'wiki-en/**'
+      - 'wiki-ru/**'
+      - 'raw/**'
+      - 'docs/**'
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Quartz deploy workflow
+        run: |
+          curl -X POST https://api.github.com/repos/21ideas-org/21ideas-quartz/dispatches \
+            -H "Accept: application/vnd.github.v3+raw+json" \
+            -H "Authorization: token ${{ secrets.QUARTZ_DISPATCH_TOKEN }}" \
+            -d '{"event_type":"wiki-updated"}'
+        env:
+          QUARTZ_DISPATCH_TOKEN: ${{ secrets.QUARTZ_DISPATCH_TOKEN }}
