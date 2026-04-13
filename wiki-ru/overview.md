@@ -11,7 +11,7 @@ updated: "2026-04-11"
 reviewed: "2026-04-11"
 ---
 
-Эта вики — синтезированная база знаний по Биткоину на русском языке. Все страницы написаны на основе оригинальных русскоязычных источников сайта 21ideas.org и курируются автором проекта [Тони](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7).
+Эта вики — синтезированная база знаний по Биткоину на русском языке. Все страницы написаны на основе оригинальных русскоязычных источников сайта 21ideas.org и курируются автором проекта [Тони](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7). Проект планируется как открытая биткоин-википедия, развиваемая сообществом, хотите стать куратором или внести вклад? Пишите!
 
 ## О пректе
 
@@ -116,7 +116,3 @@ wiki-ru/
 - [[ru/concepts/bitcoin]] — с чего начать
 - [[ru/philosophy/overview]] — философия
 - [[ru/history/timeline]] — хронология
-
----
-
-*⚡️ Проект оказался полезным? [Закиньте пару сат](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7) [автору](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)*

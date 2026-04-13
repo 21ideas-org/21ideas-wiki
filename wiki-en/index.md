@@ -11,7 +11,7 @@ synthesized_date: "2026-04-07"
 completeness: high
 ---
 
-Bitcoin knowledge base built from [21ideas.org](https://21ideas.org) — a Bitcoin-only education site (~308 source files). All source material is in Russian; wiki synthesis is in English.
+Bitcoin knowledge base built from [21ideas.org](https://21ideas.org) — a Bitcoin-only education project (~308 source files). 
 
 ---
 

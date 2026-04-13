@@ -11,7 +11,7 @@ updated: "2026-04-11"
 reviewed: "2026-04-11"
 ---
 
-Синтезированная база знаний на русском языке по материалам сайта 21ideas.org. Все страницы написаны на основе оригинальных русскоязычных источников и курируются автором проекта [Тони](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7).
+Биткоин-вики основана на материалах сайта [21ideas.org](https://21ideas.org) и курируются автором проекта [Тони](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7). Проект планируется как открытая биткоин-википедия, развиваемая сообществом, хотите стать куратором или внести вклад? Пишите!
 
 ## Обзор
 
@@ -21,7 +21,7 @@ reviewed: "2026-04-11"
 
 ## Глоссарий
 
-→ [[ru/glossary]] — словарь биткоин-терминов от А до Я и латинских сокращений
+→ [[ru/glossary]] — словарь биткоин-терминов от А до Я
 
 ## Концепции
 
@@ -146,7 +146,3 @@ reviewed: "2026-04-11"
 - [[ru/glossary]] — Словарь биткоин-терминов
 - [[ru/concepts/bitcoin]] — Основная концепция
 - [[ru/history/timeline]] — Хронология истории Биткоина
-
----
-
-*⚡️ Проект оказался полезным? [Закиньте пару сат](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7) [автору](https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)*
