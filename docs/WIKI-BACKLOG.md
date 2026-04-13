@@ -43,9 +43,6 @@ Short-lived scratch list. Promote done items to `log.md` or delete them.
 
 ## Structural tasks (from CLAUDE.md rewrite audit — 2026-04-11)
 
-### wiki-en/index.md wikilink conversion
-`wiki-en/index.md` uses absolute Markdown paths (`[Bitcoin](wiki-en/concepts/bitcoin.md)`) instead of wikilinks. Convert all entries to `[[en/...]]` style to match `wiki-ru/index.md`.
-
 ### wiki-en/ enhancement pass (entire layer)
 `wiki-en/` has not been enhanced yet. Known issues across all pages:
 - Missing `reviewed:` field in frontmatter
@@ -125,7 +122,6 @@ Short-lived scratch list. Promote done items to `log.md` or delete them.
 ## EN/RU inconsistencies — flagged for human review (audit 2026-04-11)
 
 - **`wiki-en/concepts/taproot.md`** — significantly behind RU version: non-allowlist tags, `raw/...` inline citations, `## Related Terms` section, `source:` singular field, triple-bracket links, `---` in body, `#` heading in body.
-- **`wiki-en/index.md` vs `wiki-ru/index.md`** — EN uses absolute Markdown paths; RU uses wikilinks. Structural inconsistency.
 - **`wiki-en/` frontmatter generally** — unquoted scalar fields will fail strict Quartz parsing.
 
 ---
