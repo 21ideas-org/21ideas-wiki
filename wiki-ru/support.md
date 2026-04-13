@@ -12,7 +12,7 @@ language: "ru"
 
 ## Отправить саты
 
-⚡️ ⚡️ [Зап](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)
+⚡️ [Зап](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)
 
 Или откройте страницу донатов Coinos:
 

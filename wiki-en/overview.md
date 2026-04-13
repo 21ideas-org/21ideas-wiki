@@ -11,15 +11,13 @@ synthesized_date: "2026-04-10"
 completeness: high
 ---
 
-# Overview: Bitcoin Knowledge Synthesis
-
 *A synthesis of the 21ideas.org source library — ~308 articles, 8 books, multiple article series.*
 
 > This page describes the **English** wiki (`wiki-en/`). A parallel **Russian** wiki lives in `wiki-ru/`: same `raw/` sources and schema, but Russian pages are not word-for-word translations of the English text. 
 
 ---
 
-## What This Knowledge Base Is About
+## About the project
 
 21ideas.org is a Russian-language Bitcoin education platform. Its source library covers Bitcoin from every angle: philosophy, economics, technical protocol, history, and practical self-custody. The material skews toward Bitcoin maximalism (Bitcoin only, not crypto), Austrian economics, cypherpunk philosophy, and privacy-focused self-sovereignty.
 
@@ -99,15 +97,11 @@ In Obsidian, use **Graph view** for the link map, **Backlinks** to see inbound r
 
 ---
 
-## Maintaining the wiki
+## Get involved
 
-1. Add new immutable material under `raw/`.
-2. Run an LLM/agent ingest or edit pass grounded in those sources (see `CLAUDE.md` for frontmatter, tags, and `[[en/...]]` link rules).
-3. Update **`wiki-en/index.md`** when you add or retire pages (and the Russian **`wiki-ru/index.md`** when the Russian layer changes).
-4. Append a dated entry to **`log.md` at the repository root** — single changelog for **both** `wiki-en/` and `wiki-ru/`.
-5. After batch lint work, refresh **`lint-report.md`** in the root when applicable.
-
-Project layout, counts, and reader onboarding: **`README.md`**, **`WIKI-GUIDE.md`**. Per-page polish prompts: **`PAGE-ENHANCEMENT-STANDARD.md`**.
+- Start here: [Contribute to 21wiki](./contribute)
+- If the wiki helped you: [Support 21wiki](./support)
+- Suggest a topic or report an error: [open a GitHub Issue](https://github.com/21ideas-org/21ideas-wiki/issues/new/choose)
 
 ---
 

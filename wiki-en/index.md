@@ -11,11 +11,19 @@ synthesized_date: "2026-04-07"
 completeness: high
 ---
 
-# Wiki Index
-
 Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin education site (~308 source files). All source material is in Russian; wiki synthesis is in English.
 
 ---
+
+## Overview
+
+→ [[en/overview]] — introduction to the wiki and navigation guidance
+→ [[en/contribute|Contribute to 21wiki]] — how to propose changes and add material
+→ [[en/support|Support 21wiki]] — how to help the project with sats and more
+
+## Glossary
+
+→ [[en/glossary]] — Bitcoin terms A–Z and common abbreviations
 
 ## Concepts
 
@@ -109,24 +117,6 @@ Bitcoin knowledge base built from 21ideas.org — a Russian-language Bitcoin edu
 
 - [Bitcoin for Dissidents](wiki-en/topics/bitcoin-dissidents.md) — Belarus, Nigeria, Hong Kong, Russia: Bitcoin under authoritarianism
 - [Bitcoin's Seven Network Effects](wiki-en/topics/network-effects.md) — Trace Mayer's framework for Bitcoin's compounding adoption
-
-## Glossary
-
-- [Glossary](wiki-en/glossary.md) — All key Bitcoin terms: A–Z (Cyrillic) and Latin abbreviations (ASIC, BIP, HTLC, UTXO, etc.)
-
-## Overview
-
-- [[en/overview|Synthesis]] — Big-picture synthesis: what this knowledge base is about
-
----
-
-## Sources
-
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
-
----
-
-*This wiki contains 54 pages synthesized from 308 source files in the 21ideas.org raw/ library. It is fully interlinked and ready for public hosting via Quartz or Obsidian Publish. Last updated: 2026-04-07.*
 
 ---
 
