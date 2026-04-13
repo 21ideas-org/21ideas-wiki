@@ -97,7 +97,7 @@ For **lint** passes, ask the agent explicitly; it should run **`tools/lint.py`**
 
 ## Releases
 
-Previous release: [v0.4.0](https://github.com/21ideas-org/21ideas-wiki/releases/tag/v0.4.0).
+Previous release: [v1.0.0](https://github.com/21ideas-org/21ideas-wiki/releases/tag/v1.0.0).
 
 ## Support
 
