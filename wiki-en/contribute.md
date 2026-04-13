@@ -14,7 +14,7 @@ The simplest contribution. Open a GitHub Issue to:
 - **Report an error** — factual mistake, broken link, or outdated information
 - **Request a language parity fix** — a topic exists in English but not Russian, or vice versa
 
-👉 [Open an issue](https://github.com/21ideas-org/21ideas-wiki/issues/new/choose)
+[Open an issue](https://github.com/21ideas-org/21ideas-wiki/issues/new/choose)
 
 ## Track 2 — Add a source file
 
@@ -33,7 +33,7 @@ The full contributor path: fork the repo, use an AI coding agent (Claude Code, C
 
 This track requires a local setup. **The full workflow, rules, and agent prompt are in the contributing guide on GitHub:**
 
-👉 [docs/CONTRIBUTING.md](https://github.com/21ideas-org/21ideas-wiki/blob/main/docs/CONTRIBUTING.md)
+[docs/CONTRIBUTING.md](https://github.com/21ideas-org/21ideas-wiki/blob/main/docs/CONTRIBUTING.md)
 
 ## Questions?
 

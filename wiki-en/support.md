@@ -12,11 +12,11 @@ If the wiki has been useful to you, consider sending a few sats. It helps cover 
 
 ## Send sats
 
-⚡️ [Zap me a coffee](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)
+[Zap me a coffee](https://zapmeacoffee.com/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7)
 
 Or visit my Coinos donations page:
 
-👉 [coinos.io/Tony_Lightning/receive](https://coinos.io/Tony_Lightning/receive)
+[coinos.io/Tony_Lightning/receive](https://coinos.io/Tony_Lightning/receive)
 
 Any amount is appreciated.
 

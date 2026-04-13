@@ -14,7 +14,7 @@ language: "ru"
 - **Сообщить об ошибке** — неточный факт, сломанная ссылка или устаревшие сведения
 - **Запросить языковой паритет** — тема есть на английском, но не на русском (или наоборот)
 
-👉 [Открыть issue](https://github.com/21ideas-org/21ideas-wiki/issues/new/choose)
+[Открыть issue](https://github.com/21ideas-org/21ideas-wiki/issues/new/choose)
 
 ## Варинат 2 — Добавить исходный файл
 
@@ -33,7 +33,7 @@ language: "ru"
 
 Этот трек требует локальной среды. Рабочий процесс, правила и промпт для агента — на английском в гайде на GitHub:
 
-👉 [docs/CONTRIBUTING.md](https://github.com/21ideas-org/21ideas-wiki/blob/main/docs/CONTRIBUTING.md)
+[docs/CONTRIBUTING.md](https://github.com/21ideas-org/21ideas-wiki/blob/main/docs/CONTRIBUTING.md)
 
 ## Вопросы?
 
