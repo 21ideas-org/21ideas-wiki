@@ -39,6 +39,13 @@ docs/link-map-ru.md
 
 The link maps list every valid wikilink target in the vault. Scan them against your draft content before writing. Do not invent targets.
 
+Copy all wikilink syntax verbatim from the map — do not derive or reconstruct anchors manually.
+
+**Verbatim means:**
+- Copy the full `[[...]]` exactly (target, `#fragment`, and `|label`).
+- Do not “normalize” glossary fragments (e.g., do not convert `#Hardware wallet` → `#hardware-wallet`).
+- Do not shorten or rewrite link labels (e.g., keep `PSBT (Partially Signed Bitcoin Transaction)` if that is what the map provides).
+
 ---
 
 ## Wikilinking (applies to both modes, both layers)

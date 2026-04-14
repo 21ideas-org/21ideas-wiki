@@ -92,8 +92,12 @@ reviewed: "2026-04-XX"
 ## Step 3 — Wikilink Enrichment
 
 Read the link map for the page's language layer. Scan the full page and apply.
-Copy all wikilink syntax verbatim from the map — do not derive or reconstruct
-anchors manually. If a term is not in the map, do not link it.
+Copy all wikilink syntax verbatim from the map — do not derive or reconstruct anchors manually. If a term is not in the map, do not link it.
+
+**Verbatim means:**
+- Copy the full `[[...]]` exactly (target, `#fragment`, and `|label`).
+- Do not “normalize” glossary fragments (e.g., do not convert `#Hardware wallet` → `#hardware-wallet`).
+- Do not shorten or rewrite link labels (e.g., keep `PSBT (Partially Signed Bitcoin Transaction)` if that is what the map provides).
 
 **Pass A — Concept backbone:** primary subject on first introduction; named
 people and organizations; spine concepts the page depends on; explicitly

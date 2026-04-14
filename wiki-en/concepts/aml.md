@@ -11,13 +11,13 @@ updated: "2026-04-14"
 reviewed: "2026-04-14"
 ---
 
-[[en/glossary#aml-anti-money-laundering|AML]] (anti-money laundering) around Bitcoin is a **[[en/concepts/third-parties|third-party]] risk and surveillance pipeline**: it pushes users into [[en/glossary#kyc-know-your-customer|KYC]], funds chain-analysis firms, and enables custodians to block or confiscate under vague “risk score” narratives.
+[[en/glossary#AML (Anti-Money Laundering)|AML]] (anti-money laundering) around Bitcoin is a **[[en/concepts/third-parties|third-party]] risk and surveillance pipeline**: it pushes users into [[en/glossary#KYC — Know Your Customer|KYC]], funds chain-analysis firms, and enables custodians to block or confiscate under vague “risk score” narratives.
 
 ## What AML means in practice
 
-AML is a bundle of procedures (often paired with **[[en/glossary#kyc-know-your-customer|KYC]]**) justified as fighting money laundering. In practice, it shows up for Bitcoin users primarily through:
+AML is a bundle of procedures (often paired with **[[en/glossary#KYC — Know Your Customer|KYC]]**) justified as fighting money laundering. In practice, it shows up for Bitcoin users primarily through:
 
-- [[en/glossary#exchange|Exchange]] deposit screening
+- [[en/glossary#Exchange|Exchange]] deposit screening
 - “Risk scoring” of addresses/[[en/concepts/utxo|UTXOs]] by private analytics firms
 - Account freezes and demands for personal documents
 
@@ -50,7 +50,7 @@ These concerns connect to:
 Avoid the AML/KYC trap by:
 
 - avoiding services that use these procedures when possible,
-- using [[en/glossary#p2p-peer-to-peer|P2P]] / circular economy paths,
+- using [[en/glossary#P2P (Peer-to-Peer)|P2P]] / circular economy paths,
 - treating AML scoring as non-objective and not a legitimate basis for “freezing” funds.
 
 ## Sources

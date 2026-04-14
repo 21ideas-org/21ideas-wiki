@@ -1,5 +1,5 @@
 ---
-## title: "Philosophy Overview"
+title: "Philosophy Overview"
 category: "philosophy"
 quality: "synthesized"
 sources: []

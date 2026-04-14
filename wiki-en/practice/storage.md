@@ -19,7 +19,7 @@ Exchange   Hot Wallet   Hardware Wallet   Multisig
 (custodial) (software)   (single-sig)     (2-of-3+)
 ```
 
-The right setup depends on the amount you're holding and your threat model. For significant holdings, a [[en/glossary#hardware-wallet|hardware wallet]] plus [[en/concepts/multisig|multisig]] is a common recommendation.
+The right setup depends on the amount you're holding and your threat model. For significant holdings, a [[en/glossary#Hardware wallet|Hardware wallet]] plus [[en/concepts/multisig|multisig]] is a common recommendation.
 
 ## Option 1: Software Hot Wallet
 
@@ -38,7 +38,7 @@ Keeps private keys offline. Significantly better than software wallets for savin
 
 ### Coldcard
 - **Best security**: secure element, airgapped (microSD signing), open source firmware
-- Supports [[en/glossary#**PSBT (Partially Signed Bitcoin Transaction)**|PSBT]] (Partially Signed Bitcoin Transactions)
+- Supports [[en/glossary#PSBT (Partially Signed Bitcoin Transaction)|PSBT (Partially Signed Bitcoin Transaction)]]
 - Advanced features: duress PINs, brick-me PIN, passphrase support
 - Learning curve is steep; most powerful option
 
@@ -66,7 +66,7 @@ Multisig requires M-of-N keys to spend. Eliminates single point of failure.
 **2-of-3 setup** (most common):
 - Key 1: [Coldcard](https://21ideas.org/coldcard) (home safe)
 - Key 2: [SeedSigner](https://21ideas.org/seedsigner) (different location)
-- Key 3: Unchained Capital collaborative custody (or another [[en/glossary#hardware-wallet|hardware wallet]] with a trusted person)
+- Key 3: Unchained Capital collaborative custody (or another [[en/glossary#Hardware wallet|Hardware wallet]] with a trusted person)
 
 One key lost → still spendable (use remaining 2)
 One key stolen → still secure (thief needs 2 keys)

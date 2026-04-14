@@ -32,7 +32,7 @@ class Entry:
 
 
 FRONTMATTER_BOUNDARY = "---"
-EXCLUDE_FILENAMES = {"index.md", "overview.md", "glossary.md"}
+EXCLUDE_FILENAMES = {"index.md", "glossary.md"}
 
 
 def heading_to_anchor(heading_text: str) -> str:
@@ -102,6 +102,11 @@ def iter_dedicated_pages(layer_dir: str) -> Iterable[Tuple[str, str, str]]:
             full_path = os.path.join(root, filename)
             rel_path = os.path.relpath(full_path, layer_dir)
 
+            # Exclude only the layer-level overview page (wiki-<layer>/overview.md),
+            # but include category overviews like wiki-<layer>/philosophy/overview.md.
+            if rel_path == "overview.md":
+                continue
+
             parts = rel_path.split(os.sep)
             # Only include pages under a category directory: <category>/<slug>.md
             if len(parts) != 2:
@@ -153,7 +158,11 @@ def build_entries_for_layer(repo_root: str, layer: str) -> List[Entry]:
         entries.append(Entry(term=title, link=link))
 
     for heading in iter_glossary_h3_terms(glossary_path):
-        anchor = heading_to_anchor(heading)
+        # IMPORTANT: Use heading-text fragments (Obsidian/Quartz-style) rather than
+        # slugified HTML id fragments. In this vault, links like
+        # [[en/glossary#Hardware wallet|Hardware wallet]] resolve in both Obsidian
+        # and Quartz, while slug fragments like #hardware-wallet may not.
+        anchor = heading
         link = f"[[{prefix}/glossary#{anchor}|{heading}]]"
         entries.append(Entry(term=heading, link=link, label="glossary"))
 

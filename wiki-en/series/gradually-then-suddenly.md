@@ -1,19 +1,14 @@
 ---
 title: "Gradually, Then Suddenly"
-category: series
-tags: [bitcoin, wiki, series, economics, parker-lewis]
-language: en
-updated: "2026-04-07"
-quality: synthesized
+category: "series"
+quality: "synthesized"
 sources: ["https://21ideas.org/pzv"]
 synthesized_date: "2026-04-07"
-completeness: high
----
-
-# Gradually, Then Suddenly
-
-*Author: Parker Lewis | Platform: Unchained Capital blog | Parts: 17 | Source: `raw/Theory/economics/gradually-then-suddenly/` | Tags: series, monetary-theory, economics*
-
+completeness: "high"
+language: "en"
+tags: [bitcoin, wiki, economics, synthesized]
+updated: "2026-04-07"
+reviewed: "2026-04-14"
 ---
 
 ## Overview
@@ -21,8 +16,6 @@ completeness: high
 Parker Lewis's 17-part essay series is one of the most influential Bitcoin writing in this library. The title references Hemingway (*The Sun Also Rises*): Bitcoin adoption will happen "gradually, then suddenly" — slowly building until it can't be ignored, then cascading.
 
 The series systematically addresses every major Bitcoin criticism and inverts it: most critiques of Bitcoin are actually criticisms of fiat, or reflect a misunderstanding of what money is.
-
----
 
 ## The 17 Parts
 
@@ -47,8 +40,6 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 
 *(Note: Part 16 appears to not be in the library)*
 
----
-
 ## Key Themes
 
 **The inversion**: Every critique ("too volatile," "not backed by anything," "criminals use it") is inverted. The criticism is true of fiat, not Bitcoin. Fiat is volatile relative to real goods; fiat is backed by government promises (increasingly strained); fiat is the preferred currency for large-scale crime (wars, sanctions evasion, money laundering at scale).
@@ -59,8 +50,6 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 
 **Antifragility** (Part 15): Drawing on Taleb, Lewis argues Bitcoin gains from adversity. Failed exchange hacks → awareness of self-custody. Government crackdowns → geographic distribution. FUD → weak hands exit, strong hands accumulate. Each attack makes Bitcoin's survivors stronger.
 
----
-
 ## Best Parts to Start With
 
 - **Part 1** (Bitcoin is Money): the foundational argument
@@ -68,23 +57,18 @@ The series systematically addresses every major Bitcoin criticism and inverts it
 - **Part 15** (Antifragile): elegant synthesis of why attacks help
 - **Part 17** (Great Definancialization): the macro-economic conclusion
 
----
-
 ## Sources
 
 - [Original article on 21ideas.org](https://21ideas.org/pzv)
 
----
+## Related pages
 
-## Related Terms
-
-[[en/glossary|Glossary]] | [[en/concepts/money|sound money]] | [[en/concepts/bitcoin|Bitcoin]] | [[en/concepts/proof-of-work|Proof of Work]] | [[en/concepts/scarcity|scarcity]] | [[en/books/fiat-standard|The Fiat Standard]] | [[en/series/discovering-bitcoin|Discovering Bitcoin]] | [[en/topics/network-effects|network effects]]
-
-## Related Pages
-
-- [[en/concepts/money]]] — monetary theory underpinning the series
-- [[en/concepts/proof-of-work]]] — Part 4 (energy) and Part 8 (backing)
-- [[en/concepts/bitcoin]]] — Part 1's subject
-- [[en/books/fiat-standard]]] — shares the fiat critique
-- [[en/entities/parker-lewis]]] — author profile and argument structure
-- [[en/series/discovering-bitcoin]]] — complementary 7-part history of money
+- [[en/glossary|Glossary]]
+- [[en/entities/parker-lewis|Parker Lewis]]
+- [[en/concepts/money|Money]]
+- [[en/concepts/bitcoin|Bitcoin]]
+- [[en/concepts/proof-of-work|Proof of Work]]
+- [[en/concepts/scarcity|Scarcity]]
+- [[en/books/fiat-standard|The Fiat Standard]]
+- [[en/series/discovering-bitcoin|Discovering Bitcoin]]
+- [[en/topics/network-effects|Bitcoin's Seven Network Effects]]

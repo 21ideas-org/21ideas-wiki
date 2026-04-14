@@ -32,6 +32,7 @@ Short-lived scratch list. Promote done items to `log.md` or delete them.
 
 - [ ] **Proof of work** — expand with PoS contrast + tie-in to difficulty adjustment
 - [ ] **Lightning tools** — add more mobile wallets
+- [ ] **Bitcoin Timeline** — review fact-claims that likely require canonical raw/ URLs or a Mode B pass (e.g., MuSig2 dating/wording, specific allegations like “exposed as fraud”, and fine-grained scaling debate details) and either cite properly or soften/flag within the page.
 
 ---
 

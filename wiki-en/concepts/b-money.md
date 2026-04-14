@@ -11,11 +11,11 @@ updated: "2026-04-14"
 reviewed: "2026-04-14"
 ---
 
-**b-money** is Wei Dai’s 1998 proposal for cryptography-based [[en/concepts/money|money]] and [[en/glossary#smart-contract|contracts]] in the [[en/entities/cypherpunks|cypherpunk]] milieu. In the 21ideas framing ([*Genesis Files*, Part III](https://21ideas.org/gf/genesis-3)), it is one of the closest “first drafts” of [[en/concepts/bitcoin|Bitcoin]]’s basic pattern: pseudonymous [[en/glossary#public-key|keys]], signed messages, and a shared [[en/glossary#ledger|ledger]] — but with critical gaps in practicality and [[en/glossary#nakamoto-consensus|consensus]].
+**b-money** is Wei Dai’s 1998 proposal for cryptography-based [[en/concepts/money|money]] and [[en/glossary#Smart contract|contracts]] in the [[en/entities/cypherpunks|cypherpunk]] milieu. In the 21ideas framing ([*Genesis Files*, Part III](https://21ideas.org/gf/genesis-3)), it is one of the closest “first drafts” of [[en/concepts/bitcoin|Bitcoin]]’s basic pattern: pseudonymous [[en/glossary#Public key|keys]], signed messages, and a shared [[en/glossary#Ledger|ledger]] — but with critical gaps in practicality and [[en/glossary#Nakamoto Consensus|consensus]].
 
 ## What b-money tried to achieve
 
-[Genesis Files, Part III](https://21ideas.org/gf/genesis-3) emphasizes Dai’s motivation: enabling online cooperation ([[en/concepts/money|money]] + [[en/glossary#smart-contract|contracts]]) among pseudonymous participants, resistant to regulation-by-violence.
+[Genesis Files, Part III](https://21ideas.org/gf/genesis-3) emphasizes Dai’s motivation: enabling online cooperation ([[en/concepts/money|money]] + [[en/glossary#Smart contract|contracts]]) among pseudonymous participants, resistant to regulation-by-violence.
 
 This goal overlaps with Bitcoin’s later “don’t trust, verify” posture and the attempt to remove [[en/concepts/third-parties|privileged intermediaries]].
 
@@ -27,9 +27,9 @@ According to [Genesis Files, Part III](https://21ideas.org/gf/genesis-3), Dai de
 
 In the first proposal:
 
-- every participant keeps their own copy of the [[en/glossary#ledger|ledger]],
+- every participant keeps their own copy of the [[en/glossary#Ledger|ledger]],
 - transfers are broadcast as signed messages,
-- identities are [[en/glossary#public-key|public keys]] (not legal names).
+- identities are [[en/glossary#Public key|public keys]] (not legal names).
 
 The source notes why this sounds familiar: it resembles a key intuition behind Bitcoin’s public verification model.
 

@@ -1,32 +1,23 @@
 ---
 title: "OXT Research: Understanding Bitcoin Privacy"
-category: series
-tags: [bitcoin, wiki, series, privacy, blockchain-analysis]
-language: en
-updated: "2026-04-07"
-quality: synthesized
+category: "series"
+quality: "synthesized"
 sources: ["https://21ideas.org/privacy/oxt-1", "https://21ideas.org/privacy/oxt-2", "https://21ideas.org/privacy/oxt-3", "https://21ideas.org/privacy/oxt-4"]
 synthesized_date: "2026-04-07"
-completeness: high
----
-
-# OXT Research: Understanding Bitcoin Privacy
-
-*Authors: Samourai Wallet team (TDevD and others) | Parts: 4 | Source: `raw/Theory/privacy/oxt/` | Tags: series, privacy, blockchain-analysis, chain-surveillance*
-
+completeness: "high"
+language: "en"
+tags: [bitcoin, wiki, privacy, synthesized]
+updated: "2026-04-07"
+reviewed: "2026-04-14"
 ---
 
 ## Overview
 
-A 4-part series written by the developers of Samourai Wallet explaining [[en/series/oxt-research|blockchain analysis]] from the attacker's perspective — so that Bitcoin users can understand and defeat it. Also available as a video playlist.
+A 4-part series written by the developers of Samourai Wallet explaining blockchain analysis from the attacker's perspective — so that Bitcoin users can understand and defeat it. Also available as a video playlist.
 
 The series represents the deepest treatment of Bitcoin privacy in the 21ideas.org library. Understanding the attacker's view is the foundation of meaningful privacy practice.
 
 > "The reality of Bitcoin privacy... is somewhere between complete anonymity and complete traceability." — Part 1
-
-Source files: `oxt-1.md` through `oxt-4.md`
-
----
 
 ## Part 1: Blockchain Analysis and Transaction Privacy
 
@@ -45,13 +36,13 @@ Source files: `oxt-1.md` through `oxt-4.md`
 
 ### CIOH (Common Input Ownership Heuristic)
 
-The most powerful [[en/series/oxt-research|blockchain analysis]] heuristic: **if multiple [[en/concepts/utxo|UTXO]]s appear in the same transaction, they likely come from the same wallet.**
+The most powerful blockchain analysis heuristic: **if multiple [[en/concepts/utxo|UTXOs (Unspent Transaction Outputs)]] appear in the same transaction, they likely come from the same wallet.**
 
 Why: to spend multiple UTXOs, you must provide signatures for each — which requires controlling all the corresponding private keys. Standard wallets only have one user's keys.
 
 **Consequence:** An analyst seeing UTXOs A, B, C combined in one transaction infers A, B, C belong to the same entity. If A was identified (via KYC or other means), B and C are now also identified — even if they came from separate, previously unlinked sources.
 
-**[[en/concepts/privacy|CoinJoin]] defeats CIOH:** When 5 users combine inputs in a single transaction with equal outputs, the CIOH cannot determine which input belongs to which user.
+**CoinJoin defeats CIOH:** When 5 users combine inputs in a single transaction with equal outputs, the CIOH cannot determine which input belongs to which user.
 
 ### Change Detection
 
@@ -72,7 +63,7 @@ Following the flow of funds through multiple hops. Even after N transactions, if
 
 The third part provides the practical defensive toolkit:
 
-**[[en/concepts/privacy|CoinJoin]] ([[en/practice/privacy-practice|Whirlpool]]):**
+**CoinJoin (Whirlpool):**
 - Equal-output transactions break CIOH and make input-output linking impossible
 - 5 parties in, 5 equal outputs out → analyst cannot determine which input paid which output
 - "Toxic change" concept: the unequal pre-mix change retains prior history; treat separately from post-mix coins
@@ -113,11 +104,9 @@ This series establishes that:
 3. The tools to protect privacy (CoinJoin, coin control, self-hosted nodes, BIP47) are available but require effort
 4. Past transactions are permanent — remediation is possible but not retroactive
 
-The OXT Research series is the analytical foundation for the privacy practice guides in [[en/practice/privacy-practice]]].
+The OXT Research series is the analytical foundation for the privacy practice guides in [[en/practice/privacy-practice|Privacy in Practice]].
 
 *Note: Samourai Wallet developers (Keonne Rodriguez and William Hill) were arrested by the DOJ in April 2024. The OXT research and Whirlpool tools remain, though the ecosystem is under pressure.*
-
----
 
 ## Sources
 
@@ -126,15 +115,12 @@ The OXT Research series is the analytical foundation for the privacy practice gu
 - [Part 3 — Defenses Against Chain Analysis](https://21ideas.org/privacy/oxt-3)
 - [Part 4 — Applying Chain Analysis Concepts](https://21ideas.org/privacy/oxt-4)
 
----
+## Related pages
 
-## Related Terms
-
-[[en/glossary|Glossary]] | [[en/concepts/privacy|privacy]] | [[en/concepts/utxo|UTXO]] | [[en/practice/privacy-practice|privacy practice]] | [[en/practice/buying|no-KYC buying]] | [[en/entities/cypherpunks|cypherpunks]] | [[en/concepts/bitcoin|Bitcoin]]
-
-## Related Pages
-
-- [[en/concepts/privacy]]] — the privacy concept page
-- [[en/practice/privacy-practice]]] — practical implementation
-- [[en/concepts/utxo]]] — UTXO management for privacy
-- [[en/entities/cypherpunks]]] — why privacy matters
+- [[en/glossary|Glossary]]
+- [[en/concepts/privacy|Privacy]]
+- [[en/concepts/utxo|UTXOs (Unspent Transaction Outputs)]]
+- [[en/practice/privacy-practice|Privacy in Practice]]
+- [[en/practice/buying|Buying Bitcoin]]
+- [[en/entities/cypherpunks|Cypherpunks]]
+- [[en/concepts/bitcoin|Bitcoin]]

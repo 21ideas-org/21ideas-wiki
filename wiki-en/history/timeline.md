@@ -26,6 +26,8 @@ reviewed: "2026-04-14"
 | 1998–2005 | Nick Szabo develops Bit Gold concept |
 | 2004 | Hal Finney releases RPOW — transferable PoW tokens |
 
+Key precursor systems and proposals include [[en/concepts/hashcash|Hashcash]], [[en/concepts/b-money|b-money]], [[en/concepts/bit-gold|Bit Gold]], and [[en/concepts/rpow|RPOW (Reusable Proofs of Work)]].
+
 See [[en/history/pre-bitcoin-cypherpunks|Pre-Bitcoin Cypherpunks]] and [[en/series/genesis-files|Genesis Files]].
 
 ## Bitcoin's Creation and Early Years
@@ -42,6 +44,8 @@ See [[en/history/pre-bitcoin-cypherpunks|Pre-Bitcoin Cypherpunks]] and [[en/seri
 | Aug 15, 2010 | **Value overflow bug**: exploit creates 184 billion BTC; fixed in hours by community |
 | Jan 2011 | Silk Road launches — first major Bitcoin marketplace |
 | Apr 2011 | Satoshi's final known message (email to Gavin Andresen); disappears from public |
+
+See also [[en/concepts/bitcoin-whitepaper|Bitcoin Whitepaper]].
 
 ## Macro-Financial Context
 
@@ -103,7 +107,7 @@ See [[en/history/blocksize-war|Blocksize War]] and [[en/books/blocksize-war|The 
 
 ## Sources
 
-*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source article.*
+*Synthesized from multiple sources in the 21ideas.org library. No single canonical source article.*
 
 ## Related pages
 

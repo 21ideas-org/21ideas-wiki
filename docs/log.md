@@ -898,3 +898,87 @@ Changes: Made prompt fully language-neutral for EN and RU pages. Added Task 0 (p
 **Lint:** Page passes mechanical checks; EN layer still has known legacy issues elsewhere.
 
 ---
+
+## [2026-04-14] enhance | wiki-en/practice/storage.md (follow-up)
+
+**Changes:** Updated glossary wikilinks to match the regenerated link map format (heading-text fragments): `[[en/glossary#Hardware wallet|Hardware wallet]]` and `[[en/glossary#PSBT (Partially Signed Bitcoin Transaction)|PSBT (Partially Signed Bitcoin Transaction)]]`. Removed a non-verbatim PSBT label variant.
+**Lint:** Page not flagged in EN lint report; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/* (glossary anchor update)
+
+**Changes:** Converted slug-style glossary fragments to heading-text fragments (per regenerated `docs/link-map-en.md`) in `wiki-en/concepts/aml.md`, `wiki-en/concepts/address-types.md`, `wiki-en/concepts/b-money.md`. Examples: `#kyc-know-your-customer` → `#KYC — Know Your Customer`, `#public-key` → `#Public key`, `#smart-contract` → `#Smart contract`, `#nakamoto-consensus` → `#Nakamoto Consensus`.
+**Lint:** Files not flagged in EN lint report; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/topics/bitcoin-dissidents.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tags `human-rights`, `activism` (not in allowlist) → `[bitcoin, wiki, philosophy, censorship-resistance, privacy]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Bitcoin for Dissidents` H1; removed `*Tags: ...*` italic line; removed all standalone `---` horizontal rules; removed `raw/...` reference line and replaced with the public source link. Removed self-referential links in the overview. Removed wikilinks inside the table (hard rule). Removed `## Related Terms` and `## Related Pages`; rebuilt as a single `## Related pages` section with valid, map-backed links and fixed malformed `]]]` links.
+**Content audit:** Solid, high-level synthesis with concrete case studies. No Mode B work required.
+**Lint:** Page not flagged in EN lint report; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/topics/network-effects.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tags `adoption`, `network-effects` (not in allowlist) → `[bitcoin, wiki, economics, synthesized]`; added `reviewed: "2026-04-14"` as last field. Body: removed H1 and the italic `*Tags:*` line; removed all standalone `---` horizontal rules; replaced `raw/...` citation with the public 21ideas.org source link; fixed malformed `]]]` links; removed `## Related Terms` and `## Related Pages`; rebuilt as a single `## Related pages` section with valid, link-map-backed links.
+**Content audit:** Solid, high-completeness topic page; no Mode B update required.
+**Lint:** Page not flagged in EN lint report; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/history/timeline.md
+
+**Changes:** Body: removed `raw/` mention from `## Sources` (EN enhance rule); added link-map-backed `[[en/...]]` references outside tables for key precursors (Hashcash, b-money, Bit Gold, RPOW) and the whitepaper. No changes inside tables (hard rule).
+**Content audit:** Likely needs a Mode B fact/citation pass for some precise claims (e.g., “MuSig2 2023+”, fine-grained scaling debate details, and strong wording like “exposed as fraud”) because the page has `sources: []` and currently provides no canonical URLs.
+**Lint:** Ran `python3 tools/lint.py --layer en --write-report`; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/series/discovering-bitcoin.md
+
+**Changes:** Frontmatter: standardized canonical field order; quoted scalar values; replaced off-allowlist tags (`series`, `zucco`) with allowlist tags `[bitcoin, wiki, economics, philosophy, synthesized]`; added `reviewed: "2026-04-14"` as last field. Body: removed H1, removed `raw/...` metadata line, removed standalone `---` rules, removed `## Related Terms` and legacy `## Related Pages` (and fixed malformed `]]]` links) → rebuilt a single `## Related pages` list with link-map-backed targets. Wikilinks: fixed wrong targets (`Multisig`, `HTLC`) using `docs/link-map-en.md`; removed a non-map-backed “Time preference” wikilink.
+**Content audit:** Solid series overview; factual claims are high-level and do not depend on missing raw/ URLs beyond the canonical series URL in `sources:`.
+**Lint:** Ran `python3 tools/lint.py --layer en --write-report`; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/series/genesis-files.md
+
+**Changes:** Frontmatter: standardized canonical field order; quoted scalar values; replaced off-allowlist tags (`series`, `cypherpunks`) with allowlist tags `[bitcoin, wiki, history, synthesized]`; added `reviewed: "2026-04-14"` as last field. Body: removed H1, removed `raw/...` metadata line, removed standalone `---` rules, removed `## Related Terms` and legacy `## Related Pages` (and fixed malformed `]]]` links) → rebuilt a single `## Related pages` list with link-map-backed targets. Wikilinks: converted Part 3–5 system names to map-backed page links (`b-money`, `Bit Gold`, `RPOW`); fixed `Proof-of-work` label to `Proof of Work`; added `David Chaum` and `Hal Finney` entity links in headings (outside tables).
+**Content audit:** Solid series overview with concrete system summaries; the “private email” paragraph is already cautiously worded.
+**Lint:** Ran `python3 tools/lint.py --layer en --write-report`; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/series/gradually-then-suddenly.md
+
+**Changes:** Frontmatter: standardized canonical field order; quoted scalar values; replaced off-allowlist tags (`series`, `parker-lewis`) with allowlist tags `[bitcoin, wiki, economics, synthesized]`; added `reviewed: "2026-04-14"` as last field. Body: removed H1, removed `raw/...` metadata line, removed standalone `---` rules, removed `## Related Terms` and legacy `## Related Pages` (and fixed malformed `]]]` links) → rebuilt a single `## Related pages` list with link-map-backed targets and consistent labels.
+**Content audit:** Solid high-level series summary; the Part 16 note is preserved as-is.
+**Lint:** Ran `python3 tools/lint.py --layer en --write-report`; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/series/oxt-research.md
+
+**Changes:** Frontmatter: standardized canonical field order; quoted scalar values; replaced off-allowlist tags (`series`, `blockchain-analysis`) with allowlist tags `[bitcoin, wiki, privacy, synthesized]`; added `reviewed: "2026-04-14"` as last field. Body: removed H1, removed `raw/...` metadata line, removed standalone `---` rules, removed a self-referential “blockchain analysis” wikilink and an internal “Source files” line; fixed malformed `[[en/practice/privacy-practice]]].` link; removed `## Related Terms` and legacy `## Related Pages` (and fixed malformed `]]]` links) → rebuilt a single `## Related pages` list with link-map-backed targets. Avoided adding non-map-backed links for CoinJoin/Whirlpool/Dojo.
+**Content audit:** Solid, high-completeness series summary; Samourai arrest note preserved as-is.
+**Lint:** Ran `python3 tools/lint.py --layer en --write-report`; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/series/silk-road.md
+
+**Changes:** Frontmatter: standardized canonical field order; quoted scalar values; replaced off-allowlist tags (`series`, `adoption`) with allowlist tags `[bitcoin, wiki, history, synthesized]`; added `reviewed: "2026-04-14"` as last field. Body: removed H1, removed `raw/...` metadata line, removed standalone `---` rules, removed `raw/...` source line in the Ulbricht essay section; fixed malformed `[[en/concepts/privacy]]]` links; removed `## Related Terms` and legacy `## Related Pages` (and fixed malformed `]]]` links) → rebuilt a single `## Related pages` list with link-map-backed targets.
+**Content audit:** Kept all substantive claims unchanged; this pass was mechanical/style compliance only.
+**Lint:** Ran `python3 tools/lint.py --layer en --write-report`; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-14] enhance | wiki-en/series/what-i-learned-from-bitcoin.md
+
+**Changes:** Frontmatter: standardized canonical field order; quoted scalar values; replaced off-allowlist tags (`series`, `gigi`) with allowlist tags `[bitcoin, wiki, philosophy, synthesized]`; added `reviewed: "2026-04-14"` as last field. Body: removed H1, removed `raw/` mentions (including “raw/ library” phrasing and `Source: raw/...` lines), removed standalone `---` rules; fixed malformed `]]]` links; corrected `Philosophy Overview` link label; replaced incorrect “full node” link with the map-backed glossary entry `[[en/glossary#Node / Full node|Node / Full node]]`; removed legacy `## Related Terms` / `## Related Pages` → rebuilt a single `## Related pages` list with link-map-backed targets.
+**Content audit:** Kept substantive content unchanged; this pass was mechanical/style compliance only.
+**Lint:** Ran `python3 tools/lint.py --layer en --write-report`; EN layer still has known legacy issues elsewhere.

@@ -32,7 +32,7 @@ Source: [Bitcoin address types (21ideas)](https://21ideas.org/en/bitcoin-address
 
 ## P2PK (Pay-to-Public-Key)
 
-The original method [[en/entities/satoshi-nakamoto|Satoshi]] used. Bitcoin is sent directly to a [[en/glossary#public-key|public key]] (not an address). The first Bitcoin [[en/glossary#transaction|transaction]] ever (Satoshi → [[en/entities/hal-finney|Hal Finney]], block 170) used P2PK.
+The original method [[en/entities/satoshi-nakamoto|Satoshi]] used. Bitcoin is sent directly to a [[en/glossary#Public key|public key]] (not an address). The first Bitcoin [[en/glossary#Transaction|transaction]] ever (Satoshi → [[en/entities/hal-finney|Hal Finney]], block 170) used P2PK.
 
 **Problems:** Exposes the full public key; more expensive; less private. No checksum. Now obsolete.
 
@@ -65,7 +65,7 @@ Introduced April 2012 ([[en/concepts/bip|BIP16]]). Instead of paying to a key or
 First native [[en/concepts/segwit|SegWit]] address type, introduced with the SegWit [[en/concepts/forks|soft fork]] (August 2017). The SegWit equivalent of P2PKH.
 
 **Advantages over P2PKH:**
-- Witness data (signatures) gets a 75% discount in block weight → lower [[en/glossary#fee|fees]]
+- Witness data (signatures) gets a 75% discount in block weight → lower [[en/glossary#Fee|fees]]
 - Fixes transaction malleability
 - Better for [[en/concepts/lightning-network|Lightning Network]]
 

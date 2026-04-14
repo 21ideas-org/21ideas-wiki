@@ -1,19 +1,14 @@
 ---
 title: "What I Learned From Bitcoin"
-category: series
-tags: [bitcoin, wiki, series, philosophy, gigi]
-language: en
-updated: "2026-04-07"
-quality: synthesized
+category: "series"
+quality: "synthesized"
 sources: ["https://21ideas.org/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina"]
 synthesized_date: "2026-04-07"
-completeness: high
----
-
-# What I Learned From Bitcoin
-
-*Author: Gigi (dergigi) | Parts: 3 planned (1 available in library) | Source: `raw/Theory/philosophy/what-i-learned-from-bitcoin/` | Tags: series, philosophy, economics, technology*
-
+completeness: "high"
+language: "en"
+tags: [bitcoin, wiki, philosophy, synthesized]
+updated: "2026-04-07"
+reviewed: "2026-04-14"
 ---
 
 ## Overview
@@ -22,13 +17,9 @@ Gigi's series organizes the lessons he learned from deep Bitcoin study into thre
 
 > "Bitcoin is truly a rabbit hole. It is something like a trapdoor into another world. A much stranger world than I could have imagined. A world that takes your assumptions and smashes them into a thousand tiny pieces again and again."
 
-Only Part 1 (Philosophical Teachings) is in the raw/ library. The series exists in full on dergigi.com.
-
----
+Only Part 1 (Philosophical Teachings) is covered here. The series exists in full on dergigi.com.
 
 ## Part 1: Philosophical Teachings (in library)
-
-Source: `raw/Theory/philosophy/what-i-learned-from-bitcoin/1-philosophical-teachings.md`
 
 ### The Setup
 
@@ -46,11 +37,11 @@ The paradox: **You can't change Bitcoin, but Bitcoin will change you.**
 
 ### Lesson 2: Scarcity
 
-Digital files can be copied infinitely. Bitcoin introduced *absolute digital [[en/concepts/scarcity|scarcity]]* — a concept previously impossible. The [[en/concepts/scarcity|21M cap]] is not just a number in code; it is enforced by every [[en/concepts/governance|full node]] globally. This is as close to an unbreakable rule as humans have ever created.
+Digital files can be copied infinitely. Bitcoin introduced *absolute digital [[en/concepts/scarcity|scarcity]]* — a concept previously impossible. The 21M cap is not just a number in code; it is enforced by every [[en/glossary#Node / Full node|Node / Full node]] globally. This is as close to an unbreakable rule as humans have ever created.
 
 ### Lesson 3: Locality and Location
 
-Bitcoin has no physical location. It exists everywhere its network runs. This challenges traditional concepts of property (which depend on physical location) and jurisdiction (which depends on geography). See [[en/philosophy/overview]]] — "Inalienable Property Rights."
+Bitcoin has no physical location. It exists everywhere its network runs. This challenges traditional concepts of property (which depend on physical location) and jurisdiction (which depends on geography). See [[en/philosophy/overview|Philosophy Overview]] — "Inalienable Property Rights."
 
 ### Lesson 4: Identity Without Identification
 
@@ -68,42 +59,30 @@ Publishing a public key or a transaction is an act of speech — and cryptograph
 
 Bitcoin is so novel that even deeply technical people fail to understand it in the early stages. The hubris of experts — economists, cryptographers, entrepreneurs — who dismissed Bitcoin because it didn't fit their models is a lesson about the limits of expertise applied to truly novel phenomena.
 
----
-
 ## Part 2: Economic Teachings (not in library)
 
 Covers Bitcoin's economic lessons: [[en/concepts/money|sound money]], [[en/concepts/money|time preference]], savings, the problems of [[en/concepts/money|fiat]]. [[en/entities/gigi|Gigi]] draws from Austrian economics as revealed through deep Bitcoin study.
-
----
 
 ## Part 3: Technological Teachings (not in library)
 
 Covers the technical insights Bitcoin provides: cryptographic proofs, decentralization, trustless consensus, and how they interact.
 
----
-
 ## Why This Series Matters
 
 "What I Learned From Bitcoin" represents something rare: a serious thinker documenting the intellectual journey of being changed by Bitcoin. Most Bitcoin content is about Bitcoin; this series is about what Bitcoin reveals about reality — philosophy, economics, physics, sociology. It is the deepest single-author intellectual engagement with Bitcoin in the 21ideas.org library.
 
-See [[en/entities/gigi]]] for Gigi's other work.
-
----
+See [[en/entities/gigi|Gigi (dergigi)]] for Gigi's other work.
 
 ## Sources
 
 - [Original article on 21ideas.org](https://21ideas.org/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina)
 
----
+## Related pages
 
-## Related Terms
-
-[[en/glossary|Glossary]] | [[en/concepts/scarcity|scarcity]] | [[en/concepts/money|sound money]] | [[en/concepts/governance|governance]] | [[en/concepts/bitcoin|Bitcoin]] | [[en/entities/gigi|Gigi]] | [[en/books/21-ways|21 Ways]] | [[en/philosophy/overview|philosophy overview]]
-
-## Related Pages
-
-- [[en/entities/gigi]]] — the author
-- [[en/philosophy/overview]]] — many themes from Part 1 appear here
-- [[en/concepts/scarcity]]] — Lesson 2 (absolute digital scarcity)
-- [[en/concepts/governance]]] — Lesson 1 (immutability)
-- [[en/books/21-ways]]] — Gigi's other major work in this library
+- [[en/glossary|Glossary]]
+- [[en/entities/gigi|Gigi (dergigi)]]
+- [[en/philosophy/overview|Philosophy Overview]]
+- [[en/concepts/scarcity|Scarcity]]
+- [[en/concepts/money|Money]]
+- [[en/concepts/bitcoin|Bitcoin]]
+- [[en/books/21-ways|21 Ways]]

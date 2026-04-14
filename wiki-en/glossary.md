@@ -269,7 +269,7 @@ A random number field that miners vary when searching for a hash meeting the dif
 ## O
 
 ### **Off-chain** 
-Operations and transactions that occur outside the main blockchain, for scalability. The Lightning Network is the prime example. See [[en/concepts/lightning-network]]].
+Operations and transactions that occur outside the main blockchain, for scalability. The Lightning Network is the prime example. See [[en/concepts/lightning network]].
 
 ### **Orphaned block** 
 A block not included in the main chain because the majority of miners built on a competing block. The miner receives no reward; transactions go back to the mempool.
