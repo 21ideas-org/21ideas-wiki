@@ -32,6 +32,7 @@ docs/link-map-en.md   # for wiki-en/ pages
 docs/link-map-ru.md   # for wiki-ru/ pages
 ```
 
+
 ---
 
 ## Step 1 — Mechanical Scan (EN pages only)
@@ -90,7 +91,9 @@ reviewed: "2026-04-XX"
 
 ## Step 3 — Wikilink Enrichment
 
-Read the link map for the page's language layer. Scan the full page and apply:
+Read the link map for the page's language layer. Scan the full page and apply.
+Copy all wikilink syntax verbatim from the map — do not derive or reconstruct
+anchors manually. If a term is not in the map, do not link it.
 
 **Pass A — Concept backbone:** primary subject on first introduction; named
 people and organizations; spine concepts the page depends on; explicitly

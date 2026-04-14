@@ -6,7 +6,7 @@ Covers two operations on `raw/` files that already exist:
 - **Mode B — Update:** wiki page exists, `raw/` source changed or new `raw/` files added → revise without losing good content
 
 For getting source material into `raw/`, see `docs/INGEST-SKILL.md`.
-For polishing existing pages (frontmatter, body style, link hygiene), see `ENHANCE-SKILL.md`.
+For polishing existing pages (frontmatter, body style, link hygiene), see `docs/ENHANCE-SKILL.md`.
 
 ---
 
@@ -131,12 +131,14 @@ Fix any issues before writing the log. Append to `docs/log.md`:
 
 **1. Read before writing**
 Read the current wiki page(s) and the updated `raw/` source(s) in full. Write an explicit delta statement before touching any file:
+
 ```
 Delta — wiki-en/concepts/segwit.md
 Raw/ change: new section on v0 vs v1 addresses added
 Wiki impact: expand "Address types" section; new link [[en/concepts/taproot]]
 Unchanged: "Malleability fix", "Block weight" — preserve as-is
 ```
+
 If you cannot write the delta statement, you do not understand the change well enough to proceed.
 
 **2. Run script checks** (see above)
@@ -176,6 +178,6 @@ Append to `docs/log.md`:
 ## What This Skill Does Not Do
 
 - Add source material to `raw/` → `docs/INGEST-SKILL.md`
-- Polish existing pages (frontmatter, body style, link hygiene) → `ENHANCE-SKILL.md`
+- Polish existing pages (frontmatter, body style, link hygiene) → `docs/ENHANCE-SKILL.md`
 - Make Bitcoin accuracy judgments — claims are grounded in `raw/` only; accuracy review is human
 - Link to pages that do not exist — missing targets belong in `docs/WIKI-BACKLOG.md`

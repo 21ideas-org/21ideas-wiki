@@ -1,28 +1,21 @@
 ---
 title: "Cypherpunks"
-category: entities
-tags: [bitcoin, wiki, cypherpunks, history, philosophy]
-language: en
-updated: "2026-04-07"
-quality: synthesized
+category: "entities"
+quality: "synthesized"
 sources: ["https://21ideas.org/manifest-shifropanka/", "https://21ideas.org/manifest-kriptoanarhista/", "https://21ideas.org/libertaria/", "https://21ideas.org/pgp-verify/"]
 synthesized_date: "2026-04-07"
-completeness: medium
----
-
-# Cypherpunks
-
-*Tags: entity, movement, history, privacy, cryptography*
-
+completeness: "medium"
+language: "en"
+tags: [bitcoin, wiki, entity, history, philosophy]
+updated: "2026-04-14"
+reviewed: "2026-04-14"
 ---
 
 ## What the Cypherpunks Were
 
-The [[en/entities/cypherpunks|Cypherpunks]] were a loosely organized movement of cryptographers, programmers, and activists that formed in the early 1990s. Their thesis: cryptography could be used to protect individual [[en/concepts/privacy|privacy]] and freedom against state surveillance and control — and the best way to advance this was to *write code* rather than lobby politicians.
+The **Cypherpunks** were a loosely organized movement of cryptographers, programmers, and activists that formed in the early 1990s. Their thesis: cryptography could be used to protect individual [[en/concepts/privacy|privacy]] and freedom against state surveillance and control — and the best way to advance this was to *write code* rather than lobby politicians.
 
-The mailing list (founded 1992 by Eric Hughes, Timothy May, and John Gilmore) was the primary forum. At peak it had thousands of subscribers including [[en/entities/satoshi-nakamoto|Satoshi Nakamoto]].
-
----
+The mailing list (founded 1992 by [[en/entities/eric-hughes|Eric Hughes]], [[en/entities/tim-may|Timothy May]], and John Gilmore) was the primary forum. At peak it had thousands of subscribers including [[en/entities/satoshi-nakamoto|Satoshi Nakamoto]].
 
 ## Key Figures
 
@@ -33,13 +26,11 @@ The mailing list (founded 1992 by Eric Hughes, Timothy May, and John Gilmore) wa
 | John Gilmore | Co-founder; EFF co-founder |
 | Philip Zimmermann | Created PGP (1991); the first mass-market encryption tool |
 | David Chaum | eCash/DigiCash; blind signatures; the spiritual godfather |
-| Adam Back | [[en/concepts/hashcash|Hashcash]] (1997); Blockstream CEO |
+| Adam Back | Hashcash (1997); Blockstream CEO |
 | Wei Dai | b-money (1998) |
 | Nick Szabo | Bit Gold, smart contracts |
-| [[en/entities/hal-finney|Hal Finney]] | PGP dev; RPOW; first Bitcoin recipient |
-| [[en/entities/satoshi-nakamoto|Satoshi Nakamoto]] | Bitcoin (synthesized cypherpunk ideas into working system) |
-
----
+| Hal Finney | PGP dev; RPOW; first Bitcoin recipient |
+| Satoshi Nakamoto | Bitcoin (synthesized cypherpunk ideas into working system) |
 
 ## The Cypherpunks Manifesto (Eric Hughes, 1993)
 
@@ -48,9 +39,7 @@ Key lines:
 - "Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."
 - "Cypherpunks write code. We know that someone has to write software to defend privacy, and since we can't get privacy unless we all do, we're going to write it."
 
-Source: `raw/Theory/philosophy/cypherpunks-manifesto.md`
-
----
+Source: [Cypherpunk Manifesto](https://21ideas.org/manifest-shifropanka/)
 
 ## The Crypto Anarchist Manifesto (Timothy May, 1988/1992)
 
@@ -61,17 +50,13 @@ Written in 1988, distributed at "Crypto 88" conference, published on the mailing
 
 Bitcoin fulfilled this prediction. May died in 2018 — not long enough to see Bitcoin become a trillion-dollar asset, but long enough to see [[en/concepts/segwit|SegWit]].
 
-Source: `raw/Theory/philosophy/crypto-anarchist-manifesto.md`
-
----
+Source: [Crypto Anarchist Manifesto](https://21ideas.org/manifest-kriptoanarhista/)
 
 ## "Libertaria in Cyberspace" (Timothy May, 1992)
 
 Physical libertarian experiments (seasteading, special economic zones) fail because states can use physical force. Cyberspace is structurally different: no territory to invade, no bodies to coerce, cryptography enforces contracts. A libertarian polity in cyberspace is inherently more stable than any physical one.
 
-Source: `raw/Theory/philosophy/libertaria-in-cyberspace.md`
-
----
+Source: [Libertaria in Cyberspace](https://21ideas.org/libertaria/)
 
 ## The Progression to Bitcoin
 
@@ -80,44 +65,40 @@ The cypherpunks tried repeatedly to build digital cash:
 | Project | Year | Creator | Problem |
 |---------|------|---------|---------|
 | eCash / DigiCash | 1989 | David Chaum | Required trusted central mint; company went bankrupt |
-| [[en/concepts/hashcash|Hashcash]] | 1997 | Adam Back | Anti-spam [[en/concepts/proof-of-work|PoW]]; non-transferable |
+| Hashcash | 1997 | Adam Back | Anti-spam PoW; non-transferable |
 | b-money | 1998 | Wei Dai | Proposed but never implemented |
 | Bit Gold | 1998–2005 | Nick Szabo | Required trusted timestamping service |
 | RPOW | 2004 | Hal Finney | Transferable PoW tokens but required trusted server |
-| **Bitcoin** | **2008** | **[[en/entities/satoshi-nakamoto|Satoshi]]** | **Solved all prior problems** |
+| **Bitcoin** | **2008** | **Satoshi** | **Solved all prior problems** |
 
-[[en/entities/satoshi-nakamoto|Satoshi Nakamoto]] explicitly cited Hashcash (Back) and b-money (Dai) in the whitepaper.
-
----
+[[en/entities/satoshi-nakamoto|Satoshi Nakamoto]] explicitly cited [[en/concepts/hashcash|Hashcash]] ([[en/entities/adam-back|Back]]) and [[en/concepts/b-money|b-money]] (Dai) in the [[en/concepts/bitcoin-whitepaper|whitepaper]].
 
 ## PGP: The First Victory
 
-PGP (Pretty Good Privacy), created by Philip Zimmermann in 1991, was the first practical mass-market encryption tool. Zimmermann was investigated criminally by the US government for exporting cryptography (then regulated as a munition). The case was eventually dropped — a key cypherpunk victory establishing that encryption was speech, not a weapon.
+PGP (Pretty Good Privacy), created by [[en/entities/phil-zimmermann|Philip Zimmermann]] in 1991, was the first practical mass-market encryption tool. Zimmermann was investigated criminally by the US government for exporting cryptography (then regulated as a munition). The case was eventually dropped — a key cypherpunk victory establishing that encryption was speech, not a weapon.
 
 This fight over encryption policy is the direct ancestor of today's debates over Bitcoin and financial privacy.
 
-Source: `raw/Practice/security/pgp.md`
-
----
+Source: [PGP](https://21ideas.org/pgp-verify/)
 
 ## Sources
 
-- https://21ideas.org/manifest-shifropanka/  
-- https://21ideas.org/manifest-kriptoanarhista/  
-- https://21ideas.org/libertaria/  
-- https://21ideas.org/pgp-verify/ 
+- [Cypherpunk Manifesto](https://21ideas.org/manifest-shifropanka/)
+- [Crypto Anarchist Manifesto](https://21ideas.org/manifest-kriptoanarhista/)
+- [Libertaria in Cyberspace](https://21ideas.org/libertaria/)
+- [PGP](https://21ideas.org/pgp-verify/)
 
----
+## Related pages
 
-## Related Terms
-
-[[en/glossary|Glossary]] | [[en/concepts/privacy|privacy]] | [[en/concepts/proof-of-work|Proof of Work]] | [[en/concepts/bitcoin|Bitcoin]] | [[en/entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[en/entities/hal-finney|Hal Finney]] | [[en/entities/nick-szabo|Nick Szabo]] | [[en/history/pre-bitcoin-cypherpunks|pre-Bitcoin era]]
-
-## Related Pages
-
-- [[en/entities/satoshi-nakamoto]]] — the culmination of the movement
-- [[en/entities/hal-finney]]] — the bridge from cypherpunks to Bitcoin
-- [[en/entities/nick-szabo]]] — Bit Gold and theoretical foundations
-- [[en/series/genesis-files]]] — detailed history of each precursor
-- [[en/history/pre-bitcoin-cypherpunks]]] — the full prehistory
-- [[en/philosophy/overview]]] — cypherpunk ideas in the sources
+- [[en/entities/satoshi-nakamoto|Satoshi Nakamoto — the culmination of the movement]]
+- [[en/entities/hal-finney|Hal Finney — the bridge from cypherpunks to Bitcoin]]
+- [[en/entities/nick-szabo|Nick Szabo — Bit Gold and theoretical foundations]]
+- [[en/entities/eric-hughes|Eric Hughes — Cypherpunk Manifesto author and mailing list co-founder]]
+- [[en/entities/tim-may|Tim May — Crypto Anarchist Manifesto author]]
+- [[en/entities/adam-back|Adam Back — Hashcash inventor]]
+- [[en/entities/david-chaum|David Chaum — eCash/DigiCash and blind signatures]]
+- [[en/concepts/privacy|Privacy — the foundational cypherpunk value]]
+- [[en/concepts/bitcoin|Bitcoin — the culmination of cypherpunk digital cash efforts]]
+- [[en/series/genesis-files|Genesis Files — detailed history of each precursor]]
+- [[en/history/pre-bitcoin-cypherpunks|Pre-Bitcoin Cypherpunks — the full prehistory]]
+- [[en/philosophy/overview|Philosophy Overview — cypherpunk ideas in the sources]]

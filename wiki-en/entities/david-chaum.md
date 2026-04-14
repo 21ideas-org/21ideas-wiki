@@ -1,22 +1,21 @@
 ---
 title: "David Chaum"
-category: entities
-quality: reference
-sources:
-  - "https://21ideas.org/gf/genesis-1"
+category: "entities"
+quality: "reference"
+sources: ["https://21ideas.org/gf/genesis-1"]
 synthesized_date: "2026-04-09"
-completeness: medium
-language: en
-tags: [bitcoin, wiki, entity, ecash, digicash, privacy, history, cypherpunks]
+completeness: "medium"
+language: "en"
+tags: [bitcoin, wiki, entity, privacy, history]
+updated: "2026-04-14"
+reviewed: "2026-04-14"
 ---
 
-# David Chaum
+In the 21ideas sources, **David Chaum** is the "proto-[[en/entities/cypherpunks|cypherpunk]]" figure whose work on [[en/concepts/privacy|privacy]]-preserving digital cash (eCash) and early privacy cryptography helped set the stage for later cypherpunk attempts at digital money — and ultimately for Bitcoin.
 
-In the 21ideas sources, **David Chaum** is the “proto-cypherpunk” figure whose work on privacy-preserving digital cash (eCash) and early privacy cryptography helped set the stage for later cypherpunk attempts at digital money — and ultimately for Bitcoin.
+## eCash and the "privacy-first" digital money path
 
-## eCash and the “privacy-first” digital money path
-
-Genesis Files Part I (`raw/Theory/history/genesis-files/genesis-1.md`) presents eCash as:
+[Genesis Files, Part I](https://21ideas.org/gf/genesis-1) presents eCash as:
 
 - a system built on **blind signatures** to enable privacy-preserving electronic payments,
 - a design that still relies on a **central issuer/bank**, which becomes a single point of failure.
@@ -32,25 +31,20 @@ The same source describes DigiCash as the company created to commercialize eCash
 21ideas treats Chaum as a foundational reference for:
 
 - what privacy-focused payment design can look like,
-- why centralization undermines durability and censorship resistance,
+- why centralization undermines durability and [[en/concepts/censorship-resistance|censorship resistance]],
 - why the cypherpunk project later moved toward systems that do not require privileged operators.
 
-See [[en/concepts/third-parties]] and [[en/concepts/censorship-resistance]].
-
----
+See [[en/concepts/third-parties|third parties]] and censorship resistance.
 
 ## Sources
 
 - [Genesis Files, Part I: eCash (David Chaum)](https://21ideas.org/gf/genesis-1)
 
----
+## Related pages
 
-## Related Terms
-
-[[en/glossary|Glossary]] | [[en/entities/cypherpunks|cypherpunks]] | [[en/concepts/privacy|privacy]] | [[en/concepts/third-parties|third parties]] | [[en/concepts/censorship-resistance|censorship resistance]]
-
-## Related Pages
-
-- [[en/concepts/third-parties]] — how intermediaries become attack and coercion points
-- [[en/concepts/censorship-resistance]] — why removing single points of failure matters
-- [[en/concepts/bitcoin-whitepaper]] — Bitcoin framed as a new approach to digital money
+- [[en/entities/cypherpunks|Cypherpunks — the movement Chaum influenced]]
+- [[en/concepts/privacy|Privacy — Chaum's blind signatures as a privacy tool]]
+- [[en/concepts/third-parties|Third Parties — how intermediaries become attack and coercion points]]
+- [[en/concepts/censorship-resistance|Censorship Resistance — why removing single points of failure matters]]
+- [[en/concepts/bitcoin-whitepaper|Bitcoin Whitepaper — Bitcoin framed as a new approach to digital money]]
+- [[en/series/genesis-files|Genesis Files — Part I covers eCash and Chaum in detail]]

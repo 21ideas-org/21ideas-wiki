@@ -21,7 +21,7 @@ Practical tools for [[en/concepts/lightning-network|Lightning Network]] on [[en/
 
 Made by ACINQ (Lightning developer). The recommended starting point for most users. Guide: [Phoenix wallet](https://21ideas.org/phoenix).
 
-- **Self-custodial**: you hold your [[en/glossary#Private key|keys]]
+- **Self-custodial**: you hold your [[en/glossary#private key|keys]]
 - **Automatic channel management**: Phoenix opens and manages channels automatically via LSP (Lightning Service Provider)
 - **Splicing**: rebalances channels without closing/reopening (reduces on-chain fees)
 - **BOLT12**: newer invoice format with privacy improvements (see [[en/concepts/bip|BIPs]])
