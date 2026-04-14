@@ -51,6 +51,16 @@ Before touching content, fix all legacy antipatterns in `wiki-en/` pages:
 - Unquoted scalar frontmatter fields → add double quotes
 - Wrong frontmatter field order → reorder to canonical sequence (see Step 2)
 
+**Frontmatter integrity check (run before and after edits):**
+- Confirm the file opens with `---` on line 1
+- Confirm there is exactly one closing `---` after the frontmatter fields
+  and before the body begins
+- Confirm there are zero `---` lines anywhere in the body below that
+  closing delimiter
+- If any of these conditions fail, fix the delimiter issue before touching
+  anything else — a malformed frontmatter block will cause Quartz to fail
+  the entire build
+
 ---
 
 ## Step 2 — Frontmatter Standardization
@@ -164,5 +174,6 @@ If content gaps were found, also add to `docs/WIKI-BACKLOG.md`:
 - [ ] Pass A and Pass B wikilinks applied; all targets verified via link map
 - [ ] Content quality audit answered; gaps documented if found
 - [ ] Closing nav and sources sections correctly named and formatted
+- [ ] Frontmatter block is intact: opens with `---`, closes with exactly one `---`, zero `---` lines in body below it
 - [ ] `python3 tools/lint.py` → 0 issues
 - [ ] `docs/log.md` appended; `docs/WIKI-BACKLOG.md` updated if gaps found

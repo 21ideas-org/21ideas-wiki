@@ -1,5 +1,4 @@
 ---
-
 ## title: "Philosophy Overview"
 category: "philosophy"
 quality: "synthesized"
@@ -10,6 +9,7 @@ language: "en"
 tags: [bitcoin, wiki, philosophy, concept]
 updated: "2026-04-07"
 reviewed: "2026-04-14"
+---
 
 ## Overview
 
