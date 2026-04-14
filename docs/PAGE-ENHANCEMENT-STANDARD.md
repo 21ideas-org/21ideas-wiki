@@ -1,5 +1,7 @@
 # Page Enhancement Standard — 21ideas Bitcoin Wiki
 
+> Superseded by docs/ENHANCE-SKILL.md — kept for historical reference.
+
 This document defines the exact rules and prompt used to polish individual pages in the wiki.
 
 ## How to use
