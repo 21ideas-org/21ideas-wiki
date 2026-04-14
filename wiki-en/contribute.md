@@ -27,6 +27,8 @@ Source acceptance rules (full list: [docs/CONTRIBUTING.md](https://github.com/21
 
 **Using the ingest skill (recommended):** open Cursor or Claude Code in the repo root and run:
 
+> Don't have an AI coding agent? [Cursor](https://cursor.com/) and [Gemini CLI](https://geminicli.com/) both offer free tiers.
+
 ```
 Use docs/INGEST-SKILL.md to add the following article to raw/.
 
@@ -49,9 +51,11 @@ This track requires a local setup. **The full workflow, rules, and agent prompt 
 
 [docs/CONTRIBUTING.md](https://github.com/21ideas-org/21ideas-wiki/blob/main/docs/CONTRIBUTING.md)
 
+> PRs are reviewed by the maintainer. Wiki synthesis from accepted sources is handled automatically using the wiki skills.
+
 ## Questions?
 
-Open a GitHub Issue with the label `question` or join 21ideas contributors [Telegram chat](https://t.me/+DVlyZlInKfBkY2M0).
+Open a [GitHub Issue](https://github.com/21ideas-org/21ideas-wiki/issues/new/choose) with the label `question` or join 21ideas contributors [Telegram chat](https://t.me/+DVlyZlInKfBkY2M0).
 
 ## Related pages
 
