@@ -1,6 +1,6 @@
 # 21ideas Bitcoin Wiki — Agent Rules
 
-A bilingual (EN + RU) Bitcoin education wiki built from immutable source files in `raw/` — anchored in 21ideas.org (a Bitcoin-only education site, ~308 files) and other Bitcoin-only sources. Content is grounded in `raw/` material only. Agents write and maintain `wiki-en/` and `wiki-ru/`; humans curate `raw/`. The wiki is read in Obsidian and published via Quartz.
+A bilingual (EN + RU) Bitcoin education wiki built from immutable source files in `raw/` — anchored in 21ideas.org (a Bitcoin-only education site) and other Bitcoin-only sources. Content is grounded in `raw/` material only. Agents write and maintain `wiki-en/` and `wiki-ru/`; humans curate `raw/`. The wiki is read in Obsidian and published via Quartz.
 
 ---
 
@@ -107,15 +107,21 @@ wiki-ru/                    ← Russian wiki (independent synthesis from raw/)
   index.md  overview.md  glossary.md
 
 docs/
-  log.md                    ← Append-only operations log; update after every operation
-  lint-report.md            ← Current lint pass results; overwrite on each lint run
-  PAGE-ENHANCEMENT-STANDARD.md  ← Full single-page enhancement prompt + checklist
-  WIKI-GUIDE.md             ← Human-facing guide
-  WIKI-BACKLOG.md           ← Short-lived backlog
+log.md                    ← Append-only operations log; update after every operation
+lint-report.md            ← Current lint pass results; overwrite on each lint run
+INGEST-SKILL.md           ← Raw source ingestion workflow (agent prompt + contributor template)
+PAGE-ENHANCEMENT-STANDARD.md  ← Full single-page enhancement prompt + checklist
+WIKI-GUIDE.md             ← Human-facing guide
+WIKI-BACKLOG.md           ← Short-lived backlog
 
 tools/
-  lint.py                   ← Mechanical lint (wikilinks, frontmatter shape, tags); stdlib only
+lint.py               ← Mechanical lint (wikilinks, frontmatter shape, tags); stdlib only
+check_duplicate.py    ← Duplicate URL and slug check before raw/ ingest
+derive_slug.py        ← Normalize filename slug from a URL
+check_series.py       ← Detect series membership for a raw/ file
 ```
+
+To add new raw/ source files, see docs/INGEST-SKILL.md — that workflow is separate from the wiki ingest operation below.
 
 ---
 

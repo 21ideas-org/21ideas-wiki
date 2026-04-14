@@ -22,39 +22,55 @@ Use the issue templates in the repo. A maintainer will triage and queue it.
 
 ### Track 2 — Add a source file (intermediate)
 
-The wiki is grounded in immutable source files in `raw/`. If you have a 21ideas.org article or a relevant primary Bitcoin source (a BIP, a research paper, a Satoshi writing) that isn't in the repo yet, you can add it.
+The wiki is grounded in immutable source files in `raw/`. If you have a relevant article or source that isn't in the repo yet, you can add it.
 
 **Source acceptance policy:**
-- **Tier 1 — always accepted:** Material from 21ideas.org.
-- **Tier 2 — always accepted:** Primary Bitcoin sources: BIPs (bitcoin.org/en/bips), Satoshi's writings (nakamotoinstitute.org), the Bitcoin whitepaper, official protocol documentation.
-- **Tier 3 — accepted:** Bitcoin-only educational content from established authors and publications: Jameson Lopp, Bitcoin Optech, River Financial guides, Unchained educational content, Bitcoin Magazine (technical articles only), Shinobi, Paul Sztorc.
-- **Tier 4 — maintainer approval required:** Academic papers, non-English primary sources outside 21ideas.org, any source not clearly fitting Tiers 1–3. Open an issue before adding.
-- **Always rejected:** Exchange content, altcoin or multi-coin material, price speculation, content promoting non-Bitcoin assets, third-party blogs without clear Bitcoin-only editorial focus.
+- **Always accepted:** Material from 21ideas.org; primary Bitcoin sources (BIPs at bitcoin.org/en/bips, Satoshi's writings at nakamotoinstitute.org, the Bitcoin whitepaper, official protocol documentation); Bitcoin-only educational content from established authors and publications: Jameson Lopp, Bitcoin Optech, River Financial, Unchained, Bitcoin Magazine (technical articles only), Shinobi, Paul Sztorc.
+- **Maintainer approval required:** Academic papers, non-English primary sources outside 21ideas.org, anything not clearly fitting the above. Open an issue before adding.
+- **Not accepted for the main repo:** Exchange content, altcoin or multi-coin material, price speculation, third-party blogs without a clear Bitcoin-only editorial focus.
 - `raw/` files are **immutable once added** — they are source of truth, never edited.
 
-**How to add a source file:**
+#### Using the ingest skill (recommended)
 
-1. Fork the repo and create a branch.
-2. Place the markdown file in the correct `raw/` subtree:
+Open Cursor or Claude Code in the repo root and paste this prompt with your details filled in:
 
-   ```
-   raw/Books/           ← book chapters
-   raw/Theory/
-     economics/         ← monetary theory, Bitcoin economics
-     protocol/          ← technical protocol (UTXOs, SegWit, Taproot, etc.)
-     philosophy/        ← culture, manifestos, cypherpunk thought
-     history/           ← Genesis Files, Silk Road, etc.
-     privacy/           ← privacy tools, CoinJoin, AML
-     security/          ← seeds, hardware wallets, MuSig2
-     lightning/         ← Lightning Network theory
-     future/            ← long-horizon scenarios
-   raw/Practice/
-     hodl/ lightning/ privacy/ buy/ security/ interact/
-   raw/Start/           ← intro guides
-   ```
+```
+Use docs/INGEST-SKILL.md to add the following article to raw/.
 
-3. If the source has a canonical 21ideas.org URL, add it as metadata in the file's frontmatter (field: `url`). This is what the wiki uses to populate `sources:` — **never fabricate URLs**.
-4. Open a PR with just the `raw/` addition. A maintainer will handle the wiki synthesis, or you can continue with Track 3.
+URL:       <paste the full URL here>
+Author:    <author's name — omit if you're not sure>
+Published: <YYYY-MM-DD — omit if unknown>
+Series:    <series name and part number if applicable, e.g. "Gradually Then Suddenly, Part 4" — omit if not a series>
+Notes:     <anything unusual about this article — omit if nothing to flag>
+```
+
+The agent will fetch or ask you to paste the content, determine the correct subdirectory, clean the article, build the frontmatter, run duplicate checks, and report what it created. You do not need to know the `raw/` structure.
+
+**URL is always required.** Everything else improves results but is optional.
+
+#### Manual placement
+
+If you prefer to place the file yourself, put it in the correct `raw/` subtree:
+
+```
+raw/Books/           ← book chapters
+raw/Theory/
+  economics/         ← monetary theory, Bitcoin economics
+  protocol/          ← technical protocol (UTXOs, SegWit, Taproot, etc.)
+  philosophy/        ← culture, manifestos, cypherpunk thought
+  history/           ← events, legal cases, entity/biographical articles
+  privacy/           ← privacy tools, CoinJoin, AML
+  security/          ← seeds, hardware wallets, MuSig2
+  lightning/         ← Lightning Network theory
+  future/            ← long-horizon scenarios
+raw/Practice/
+  hodl/ lightning/ privacy/ buy/ security/ interact/
+raw/Start/           ← intro guides
+```
+
+Add a `url:` field to the frontmatter with the canonical source URL — this is what populates `sources:` in wiki pages. **Never fabricate URLs.** If no canonical URL exists, omit the field.
+
+Open a PR with just the `raw/` addition. A maintainer will handle wiki synthesis, or continue to Track 3.
 
 ---
 

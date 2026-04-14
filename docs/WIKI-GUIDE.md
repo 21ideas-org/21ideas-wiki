@@ -63,6 +63,7 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 - `docs/` — maintainer and process documentation
   - `WIKI-GUIDE.md` — this guide
   - `PAGE-ENHANCEMENT-STANDARD.md` — single-page polish checklist
+  - `INGEST-SKILL.md` — raw source ingestion workflow; use before the wiki ingest step
   - `WIKI-BACKLOG.md` — short-lived backlog
   - `lint-report.md` — mechanical lint output (**English**); last run wins (see `--layer` scope below)
   - `log.md` — append-only operational log for **both** `wiki-en/` and `wiki-ru/`
@@ -71,7 +72,7 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 
 ## How maintenance works (high level)
 
-- New source files are added to `raw/` (never edited by the agent). Accepted sources: 21ideas.org articles, primary Bitcoin sources (BIPs, Satoshi writings), and established Bitcoin-only educational content — see CONTRIBUTING.md for the full acceptance policy.
+- New source files are added to `raw/` (never edited by the agent) using the workflow in docs/INGEST-SKILL.md. See CONTRIBUTING.md for the full source acceptance policy.
 - The agent updates wiki pages, indexes, and logs while preserving provenance.
 - **Lint:** run `python3 tools/lint.py` from the repo root (see `CLAUDE.md` → **Lint**). Use `--write-report` to refresh `docs/lint-report.md` (English headings and labels; vault paths and quoted snippets may be Russian). Choose `--layer ru`, `--layer en`, or `--layer both` so the report matches the pass you intend.
 
@@ -85,6 +86,7 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 
 | Task | Example prompt | Extra @mention needed? |
 |---|---|---|
+| **Raw ingest** | `"Use docs/INGEST-SKILL.md to add the following article to raw/. URL: https://..."` | No — skill is self-contained |
 | **Ingest** | `"Ingest raw/Theory/protocol/musig2.md into both wiki layers"` | No |
 | **Enhance** | `"Enhance wiki-ru/concepts/mempool.md @docs/PAGE-ENHANCEMENT-STANDARD.md"` | Yes — include `@docs/PAGE-ENHANCEMENT-STANDARD.md` |
 | **Enhance batch** | `"Enhance all pages in wiki-ru/concepts/ that are missing the reviewed field @docs/PAGE-ENHANCEMENT-STANDARD.md"` | Yes |

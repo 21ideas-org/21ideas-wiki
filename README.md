@@ -29,7 +29,7 @@ Both layers follow strict conventions: required YAML frontmatter (trust markers)
 
 ## Repository Structure
 
-- **Source library**: `raw/` — immutable markdown sources from 21ideas.org (layout: **`raw/README.md`**)
+- **Source library**: `raw/` — immutable markdown sources from 21ideas.org and other Bitcoin-only sources (layout: **`raw/README.md`**)
 - **English wiki**: `wiki-en/` — **76** markdown pages total (**73** content pages excluding index/overview + glossary). Operational changelog: **`docs/log.md`** (covers EN + RU).
 - **Russian wiki**: `wiki-ru/` — **76** markdown pages total (**73** content pages excluding index, overview + glossary)
 
@@ -41,6 +41,7 @@ Coverage includes core Bitcoin concepts (protocol + economics), key protocol ele
 |------|------|
 | [`docs/WIKI-GUIDE.md`](docs/WIKI-GUIDE.md) | Reader and maintainer guide — includes agent prompt patterns |
 | [`docs/PAGE-ENHANCEMENT-STANDARD.md`](docs/PAGE-ENHANCEMENT-STANDARD.md) | Full prompt + checklist for polishing a single wiki page |
+| [`docs/INGEST-SKILL.md`](docs/INGEST-SKILL.md) | Raw source ingestion workflow — agent prompt + contributor template |
 | [`docs/WIKI-BACKLOG.md`](docs/WIKI-BACKLOG.md) | Short-lived backlog scratchpad |
 | [`docs/log.md`](docs/log.md) | Append-only bilingual operations log |
 | [`docs/lint-report.md`](docs/lint-report.md) | Mechanical lint summary (**English**); overwritten by the last `--write-report` run |
@@ -48,7 +49,7 @@ Coverage includes core Bitcoin concepts (protocol + economics), key protocol ele
 
 ### Mechanical lint (`tools/lint.py`)
 
-From the repo root, run **`python3 tools/lint.py`** (stdlib only). Common flags: `--layer en|ru|both`, `--write-report` (overwrites `docs/lint-report.md`), `--strict` / `--strict-links` (non-zero exit for CI). Full checklist and agent workflow: **`CLAUDE.md`** → **Lint**.
+From the repo root, run **`python3 tools/lint.py`** (stdlib only). Common flags: `--layer en|ru|both`, `--write-report` (overwrites `docs/lint-report.md`), `--strict` / `--strict-links` (non-zero exit for CI). Full checklist and agent workflow: **`CLAUDE.md`** → **Lint**. For raw source ingestion, see **`docs/INGEST-SKILL.md`** and the helper scripts in `tools/` (`check_duplicate.py`, `derive_slug.py`, `check_series.py`).
 
 ## How to use
 
