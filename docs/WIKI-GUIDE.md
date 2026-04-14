@@ -71,7 +71,7 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 
 ## How maintenance works (high level)
 
-- New source files are added to `raw/` (never edited by the agent).
+- New source files are added to `raw/` (never edited by the agent). Accepted sources: 21ideas.org articles, primary Bitcoin sources (BIPs, Satoshi writings), and established Bitcoin-only educational content — see CONTRIBUTING.md for the full acceptance policy.
 - The agent updates wiki pages, indexes, and logs while preserving provenance.
 - **Lint:** run `python3 tools/lint.py` from the repo root (see `CLAUDE.md` → **Lint**). Use `--write-report` to refresh `docs/lint-report.md` (English headings and labels; vault paths and quoted snippets may be Russian). Choose `--layer ru`, `--layer en`, or `--layer both` so the report matches the pass you intend.
 

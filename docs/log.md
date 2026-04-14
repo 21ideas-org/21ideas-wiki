@@ -472,3 +472,261 @@ Changes: Made prompt fully language-neutral for EN and RU pages. Added Task 0 (p
 **Lint:** Run `tools/lint.py --strict-links` on touched paths recommended after merge.
 
 ---
+
+## [2026-04-14] enhance | wiki-en/concepts/b-money.md
+
+**Changes:** Added `[[en/concepts/governance|governance]]` wikilink in version 2 section. Fixed Related pages: reformatted all entries from long link-text pattern (`[[link|Name — description]]`) to `[[link|Name]] — description` format; added `[[en/concepts/hashcash|Hashcash]]`, `[[en/series/genesis-files|Genesis Files]]`, and `[[en/entities/cypherpunks|Cypherpunks]]` entries. Updated `reviewed` to 2026-04-14.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/aml.md
+
+**Changes:** Page already fully compliant from previous pass — correct frontmatter order, valid tags, no legacy antipatterns. Updated `reviewed` to 2026-04-14. Note: source URL `https://21ideas.org/posts/aml-is-a-scam/` uses a non-standard `/posts/` path — may warrant verification.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/address-types.md
+
+**Changes:** Frontmatter: corrected fabricated source URL `https://21ideas.org/en/bitcoin-address-types/` → `https://21ideas.org/sravnenie-tipov-bitcoin-adresov` (matching the URL already used in the body ×2); updated `updated` and `reviewed` to 2026-04-14. Wikilink corrected: `[[en/concepts/governance|soft fork]]` → `[[en/concepts/forks|soft fork]]` (dedicated page exists). No other changes needed — page already had correct structure, no `#` heading, no `---` rules, valid tags, canonical frontmatter order.
+
+---
+
+## [2026-04-14] enhance | wiki-en/books/sovereignty-through-mathematics.md
+
+**Changes:** Frontmatter: removed `author` field; reordered to canonical sequence; quoted all scalars; removed invalid tags `books`/`cryptography`, kept `philosophy`, added `economics`; removed spurious glossary URL and normalized trailing slash on source URL; added `reviewed: "2026-04-14"`. Body: removed `# Sovereignty Through Mathematics` heading; removed italic `*Author... | Source: raw/...*` line; removed all six `---` horizontal rules. Wikilinks corrected: `[[en/concepts/governance|full node]]` → `[[en/concepts/bitcoin-node|full node]]` (Absolute Scarcity argument). New wikilinks: `[[en/concepts/proof-of-work|Proof of Work]]` (ch. 5 structure), `[[en/concepts/scarcity|Scarcity]]` (ch. 6 structure), `[[en/concepts/governance|governance]]` (ch. 8 structure), `[[en/entities/satoshi-nakamoto|Satoshi]]` (Immaculate Conception), `[[en/concepts/money|store of value]]` (HODL argument). Sources section: replaced `raw/` prose with reader-facing 21ideas.org link. Fixed all five `]]]` triple-bracket links. Merged `## Related Terms` + `## Related Pages` into `## Related pages` with pipe-syntax wikilinks; added `proof-of-work` and `satoshi-nakamoto` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/books/sovereign-individual.md
+
+**Changes:** Frontmatter: removed `author` field; reordered to canonical sequence; quoted all scalars; removed invalid tag `books`, kept `philosophy`/`history`; removed spurious glossary URL; added `reviewed: "2026-04-14"`. Body: removed `# The Sovereign Individual` heading; removed italic `*Authors... | Source: raw/...*` line; removed all eight `---` horizontal rules. New wikilinks: `[[en/concepts/bitcoin|Bitcoin]]` (Summary — first mention unlinked), `[[en/concepts/censorship-resistance|confiscate]]` (Why Bitcoin section). Sources section: replaced `raw/` prose with reader-facing 21ideas.org link. Fixed all four `]]]` triple-bracket links. Merged `## Related Terms` + `## Related Pages` into `## Related pages` with pipe-syntax wikilinks; added `censorship-resistance` and `cypherpunks` entries.
+
+---
+
+## [2026-04-13] enhance | wiki-en/books/price-of-tomorrow.md
+
+**Changes:** Frontmatter: removed `author` field; reordered to canonical sequence; quoted all scalars; removed invalid tags `books`/`deflation`, kept `economics`, added `philosophy`; removed spurious glossary URL; added `reviewed: "2026-04-13"`. Body: removed `# The Price of Tomorrow` heading; removed italic `*Author... | Source: raw/...*` line; removed all seven `---` horizontal rules. New wikilinks: `[[en/concepts/deflation|deflationary]]` (Summary + Core Argument ×2), `[[en/concepts/scarcity|fixed supply]]` (Core Argument exit), `[[en/entities/saifedean-ammous|Saifedean Ammous]]` (Complementary section). Sources section: replaced `raw/` prose with reader-facing 21ideas.org link. Fixed all four `]]]` triple-bracket links. Merged `## Related Terms` + `## Related Pages` into `## Related pages` with pipe-syntax wikilinks; added `deflation` and `saifedean-ammous` entries.
+
+---
+
+## [2026-04-13] enhance | wiki-en/books/inventing-bitcoin.md
+
+**Changes:** Frontmatter: removed `author` field; reordered to canonical sequence; quoted all scalars; removed invalid tags `books`/`technical`/`primer`, replaced with `concept`/`protocol`; removed spurious glossary URL and normalized trailing slash on real source URL; added `reviewed: "2026-04-13"`. Body: removed `# Inventing Bitcoin` heading; removed italic `*Author... | Source: raw/...*` line; removed all six `---` horizontal rules. Wikilinks corrected: `[[en/concepts/governance|full nodes]]` → `[[en/concepts/bitcoin-node|full nodes]]` (×1 in Argument). New wikilinks: `[[en/concepts/double-spend|digital cash problem]]` (Summary), `[[en/concepts/blockchain|blockchain]]` (Argument pt.1 + Key Insights), `[[en/concepts/proof-of-work|Proof of Work]]` (ch.3 + Key Insights), `[[en/concepts/mining|Mining]]`/`[[en/concepts/mining|miners]]` (ch.4 + Key Insights), `[[en/concepts/forks|Forks]]` (ch.6), `[[en/concepts/lightning-network|Lightning Network]]` (ch.9), `[[en/concepts/bitcoin-node|Full nodes]]` (Key Insights), `[[en/concepts/double-spend|double-spend]]` (Key Insights). Fixed all four `]]]` triple-bracket links. Merged `## Related Terms` + `## Related Pages` into `## Related pages` with pipe-syntax wikilinks.
+
+---
+
+## [2026-04-13] enhance | wiki-en/books/fiat-standard.md
+
+**Changes:** Frontmatter: removed `author` field; reordered to canonical sequence; quoted all scalars; removed invalid tags `books`/`austrian-school`, kept `economics`, added `history`; removed spurious `https://21ideas.org/glossary/` from sources; added `reviewed: "2026-04-13"`. Body: removed `# The Fiat Standard` heading; removed italic `*Author... | Source: raw/...*` line; removed all six `---` horizontal rules. New wikilinks: `[[en/entities/saifedean-ammous|Saifedean Ammous]]` (Summary), `[[en/concepts/cantillon-effect|Cantillon Effect]]` (ch. 7 structure list), `[[en/concepts/mining|mining]]` (ch. 17 structure list). Fixed `[[en/concepts/money]]]` triple bracket in Key Arguments. Fixed all six `]]]` triple-bracket links in Related Pages. Merged `## Related Terms` + `## Related Pages` into `## Related pages` with pipe-syntax wikilinks.
+
+---
+
+## [2026-04-13] enhance | wiki-en/books/bullish-case.md
+
+**Changes:** Frontmatter: removed `author` field; reordered to canonical sequence; quoted all scalars; removed invalid tags `books`/`monetary-theory`, added `philosophy`; removed spurious `https://21ideas.org/glossary/` from sources; added `reviewed: "2026-04-13"`. Body: removed `# The Bullish Case for Bitcoin` heading; removed italic `*Author... | Source: raw/...*` line; removed all five `---` horizontal rules. New wikilinks: `[[en/entities/nick-szabo|Szabo]]` (ch. 1 structure), `[[en/concepts/decentralization|Decentralization]]` (Core Argument), `[[en/concepts/bitcoin-node|nodes]]` (durability point), `[[en/concepts/privacy|privacy tools]]` (fungibility note). Sources section: replaced `raw/` prose with reader-facing 21ideas.org link. Fixed all five `]]]` triple-bracket links. Merged `## Related Terms` + `## Related Pages` into `## Related pages` with pipe-syntax wikilinks.
+
+---
+
+## [2026-04-13] enhance | wiki-en/books/blocksize-war.md
+
+**Changes:** Frontmatter: removed `author` field; reordered to canonical sequence; quoted all scalars; removed invalid tag `books`, kept `history`/`governance`; removed spurious `https://21ideas.org/glossary/` from sources; added `reviewed: "2026-04-13"`. Body: removed `# The Blocksize War` heading; removed italic `*Author... | Source: raw/...*` line; removed all five `---` horizontal rules. Wikilinks corrected: `[[en/concepts/governance|full node]]` → `[[en/concepts/bitcoin-node|full node]]` (×4); `[[en/concepts/governance|hard fork]]` → `[[en/concepts/forks|hard fork]]`. New wikilinks added: `[[en/concepts/forks|soft fork]]` (ch. 5 + "Why It Matters"), `[[en/concepts/forks|hard forks/soft forks]]` ("Why It Matters"), `[[en/concepts/bitcoin-core|Bitcoin Core]]` (Key Takeaways), `[[en/concepts/segwit|SegWit2x]]`, `[[en/concepts/scarcity|21M cap]]`. Fixed all four `]]]` triple-bracket links. Sources section: replaced `raw/` prose with reader-facing 21ideas.org link. Merged `## Related Terms` + `## Related Pages` into `## Related pages` with pipe-syntax wikilinks; added forks and bitcoin-core entries.
+
+---
+
+## [2026-04-13] enhance | wiki-en/books/21-ways.md
+
+**Changes:** Frontmatter: removed non-standard `author` field; reordered to canonical sequence; quoted all scalars; replaced invalid tags `books`/`gigi` with `philosophy`/`economics`; added `reviewed: "2026-04-13"` as last field. Body: removed `# 21 Ways` heading; removed italic `*Author: Gigi... | Source: raw/...` tag line; removed all three `---` horizontal rules. Wikilinks added in table: `[[en/concepts/governance|consensus]]` (frame 2), `[[en/concepts/blockchain|blockchain]]` (frame 8), `[[en/concepts/decentralization|Decentralized]]` (frame 10), `[[en/concepts/lightning-network|Lightning]]` (frame 12), `[[en/concepts/mining|mining]]` (frame 16), `[[en/concepts/censorship-resistance|Financial censorship resistance]]` (frame 19). Fixed triple-bracket `]]]` links throughout. Merged `## Related Terms` and `## Related Pages` into single `## Related pages` with pipe-syntax wikilinks. Added `## Sources` section.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/bip.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; replaced invalid tag `upgrades` with `bip`; added `updated: "2026-04-14"` and `reviewed: "2026-04-14"` (last field). Body: removed `# BIP (Bitcoin Improvement Proposal)` H1 heading; removed `*Tags: standards process, soft fork activation*` italic line; removed all four `---` horizontal rules; removed `Source: raw/...` and `Sources: raw/...` citations — replaced with reader-facing 21ideas.org inline links; removed duplicate/garbled paragraph in "Activation in practice" section. New wikilinks: `[[en/concepts/bitcoin-core|Bitcoin Core]]`, `[[en/books/inventing-bitcoin|Inventing Bitcoin]]`, `[[en/concepts/bitcoin-node|nodes]]`, `[[en/concepts/forks|soft forks]]` (×2), `[[en/concepts/segwit|SegWit]]`, `[[en/concepts/mining|miners]]`, `[[en/concepts/governance|governance]]` (with display text). Removed `## Related Terms` section; renamed `## Related Pages` → `## Related pages`; converted all bullets to pipe-syntax with descriptive display text.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/bit-gold.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; replaced invalid tags `bit-gold`/`cypherpunks`/`proof-of-work`/`digital-scarcity` → `concept`/`history`/`protocol`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Bit Gold` H1 heading; removed `raw/...` inline path — replaced with reader-facing 21ideas.org link; removed two `---` horizontal rules. New wikilinks: `[[en/entities/nick-szabo|Nick Szabo]]`, `[[en/concepts/scarcity|scarce]]`, `[[en/concepts/proof-of-work|Proof-of-work]]` (×2), `[[en/concepts/third-parties|Trusted third parties]]`, `[[en/concepts/bitcoin-whitepaper|Bitcoin whitepaper]]`, `[[en/concepts/b-money|b-money]]`, `[[en/concepts/hashcash|Hashcash]]`, `[[en/concepts/byzantine-generals-problem|Byzantine-fault-resistant consensus]]`. Fixed bare wikilinks in "Relationship to Bitcoin" section. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets converted to pipe-syntax with descriptive display text; added hashcash, genesis-files entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/bitcoin-core.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; replaced invalid tags `bitcoin-core`/`full-node`/`software`/`open-source`/`upgrades` → `concept`/`protocol`/`node`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Bitcoin Core` H1; removed `*Tags: ...*` italic line; removed all five `---` horizontal rules; removed five `raw/...` inline citations — replaced with reader-facing 21ideas.org links. Wikilinks: fixed bare `[[en/concepts/governance]]` and `[[en/concepts/bip]]` and `[[en/concepts/forks]]` to pipe-syntax; added `[[en/concepts/bitcoin-node|nodes]]`, `[[en/books/inventing-bitcoin|Inventing Bitcoin]]`, `[[en/concepts/decentralization|centralization]]`. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `running-a-node` entry.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/bitcoin-node.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; replaced invalid tags `full-node`/`validation`/`sovereignty`/`p2p` → `concept`/`protocol`/`decentralization`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Bitcoin Node` H1; removed `*Tags: ...*` italic line; removed all five `---` horizontal rules; removed five `raw/...` inline citations — one replaced with reader-facing 21ideas.org Source line, others removed (covered by bottom `## Sources` section). New wikilinks: `[[en/concepts/governance|consensus rules]]`, `[[en/books/inventing-bitcoin|Inventing Bitcoin]]`, `[[en/concepts/third-parties|third parties]]`, `[[en/concepts/bitcoin-core|Bitcoin Core]]`, `[[en/concepts/mining|miners]]`, `[[en/concepts/governance|governance]]` (with display text). Fixed bare `[[en/concepts/bitcoin-core]]` and `[[en/concepts/governance]]`. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `decentralization` entry.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/bitcoin-whitepaper.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; quoted all scalars; removed invalid tags `satoshi`/`reference`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Bitcoin Whitepaper` H1; removed `raw/Books/whitepaper.md` inline path — replaced with reader-facing 21ideas.org link; removed two `---` horizontal rules. New/fixed wikilinks: `[[en/concepts/b-money|b-money]]` and `[[en/concepts/hashcash|Hashcash]]` (Notable facts); `[[en/concepts/blockchain|Blockchain]]` (bare → display text); `[[en/concepts/bitcoin-node|Bitcoin node]]`, `[[en/concepts/bitcoin-core|Bitcoin Core]]`, `[[en/concepts/governance|governance]]` (bare → display text, inline See list collapsed to prose). Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `satoshi-nakamoto`, `hashcash`, `proof-of-work` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/bitcoin.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalars; removed invalid tags `fundamentals`/`money` → added `concept`/`economics`; added `reviewed: "2026-04-14"` (last). Body: removed `# Bitcoin` H1; removed `*Tags: fundamentals, protocol, money*` italic line; removed all eight `---` horizontal rules; removed `Sources: raw/...` citation (bottom `## Sources` section covers it). Wikilink fixes: `[[en/concepts/governance|Full nodes]]` → `[[en/concepts/bitcoin-node|Full nodes]]` (wrong target); `[[en/concepts/security|multisig]]` → `[[en/concepts/multisig|multisig]]` (dedicated page); `[[en/glossary|mempool]]` → `[[en/concepts/mempool|mempool]]` (dedicated page). New wikilinks: `[[en/concepts/double-spend|double-spend problem]]`, `[[en/concepts/third-parties|trusted third party]]`, `[[en/concepts/blockchain|blockchain]]`, `[[en/concepts/censorship-resistance|Censorship-resistant]]`, `[[en/concepts/difficulty-adjustment|Difficulty adjustment]]`. Fixed 8× `]]]` triple-bracket links in Related Pages. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/blockchain.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; removed invalid tag `ledger`, added `concept`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Blockchain (Bitcoin)` H1; removed `*Tags: ...*` italic line; removed all four `---` horizontal rules; removed three `raw/...` inline citations — replaced book mentions with proper wikilinks instead. New wikilinks: `[[en/concepts/proof-of-work|PoW]]`, `[[en/books/inventing-bitcoin|Inventing Bitcoin]]`, `[[en/books/sovereignty-through-mathematics|Sovereignty Through Mathematics]]`, `[[en/concepts/byzantine-generals-problem|Byzantine generals problem]]` (bare → display text). Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; corrected `[[en/concepts/governance]]` ("who validates blocks") → `[[en/concepts/bitcoin-node|Bitcoin node — who validates blocks]]`; added `proof-of-work` and `utxo` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/byzantine-generals-problem.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; removed invalid tags `distributed-systems`/`consensus` → added `concept`/`protocol`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Byzantine Generals Problem` H1; removed `*Tags: ...*` italic line; removed all three `---` horizontal rules; removed `Source: raw/...` citation — replaced book mention with wikilink instead. New wikilinks: `[[en/books/sovereignty-through-mathematics|Sovereignty Through Mathematics]]`, `[[en/concepts/blockchain|Bitcoin blockchain]]`, `[[en/concepts/bitcoin-node|full node]]`, `[[en/concepts/proof-of-work|Proof of Work]]` (in body); fixed bare `[[en/concepts/proof-of-work]]`, `[[en/concepts/governance]]`, `[[en/concepts/double-spend]]` to pipe-syntax. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `blockchain` and `governance` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/cantillon-effect.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalars; removed invalid tags `monetary-theory`/`fiat` → added `concept`; added `reviewed: "2026-04-14"` (last). Body: removed `# Cantillon Effect` H1; removed `*Tags: ...*` italic line; removed all six `---` horizontal rules; removed `Source: raw/...` citation — replaced with reader-facing 21ideas.org link. New wikilinks: `[[en/entities/saifedean-ammous|Saifedean Ammous]]` (×2 — in "Fiat Era" and synthesis section); converted bare inline URL `https://21ideas.org/hozyaeva-i-raby-deneg` in synthesis section to `[Masters and Slaves of Money](url)` markdown link. Fixed 4× `]]]` triple-bracket links in Related Pages. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `mining`, `proof-of-work`, `gradually-then-suddenly` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/censorship-resistance.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; removed invalid tags `permissionless`/`nodes`/`proof-of-work` → added `concept`/`protocol`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Censorship Resistance` H1; removed `*Tags: ...*` italic line; removed all five `---` horizontal rules; removed four `raw/...` inline citations — replaced with reader-facing 21ideas.org links inline or removed (raw/Books/21-sposob had no corresponding frontmatter URL). New wikilinks: `[[en/concepts/proof-of-work|PoW]]`, `[[en/concepts/difficulty-adjustment|difficulty]]` (first section); `[[en/concepts/bitcoin-node|nodes]]` (×2 in "cannot be banned" section), `[[en/concepts/mining|miners]]`; fixed bare `[[en/concepts/bitcoin-node]]` and `[[en/concepts/bitcoin-core]]` to display text. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `difficulty-adjustment` and `mining` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/decentralization.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; added tags `concept`/`decentralization` (all existing tags valid); added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Decentralization` H1; removed `*Tags: ...*` italic line; removed all four `---` horizontal rules; removed four `raw/...` inline citations — two replaced with reader-facing 21ideas.org Source lines, others removed (covered by bottom `## Sources`). New wikilinks: `[[en/entities/satoshi-nakamoto|Satoshi]]`, `[[en/books/sovereignty-through-mathematics|Sovereignty Through Mathematics]]`, `[[en/concepts/difficulty-adjustment|difficulty adjustment]]`, `[[en/concepts/proof-of-work|Proof of Work]]`, `[[en/concepts/bip|BIP9]]`, `[[en/history/blocksize-war|blocksize-war]]`, `[[en/concepts/bitcoin-node|fully validating nodes]]`, `[[en/concepts/blockchain|blockchain]]`. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `bitcoin-node`, `censorship-resistance`, `satoshi-nakamoto` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/deflation.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; removed invalid tags `money`/`scarcity` → added `concept`; updated third source URL to chapter-specific `/glava-10` path; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Deflation (and Bitcoin)` H1; removed `*Tags: ...*` italic line; removed all three `---` horizontal rules; removed inline `raw/...` paths from mixed Sources sentence — replaced with wikilinks integrated into prose. New wikilinks: `[[en/concepts/scarcity|fixed supply]]`, `[[en/books/sovereignty-through-mathematics|Sovereignty Through Mathematics]]`, `[[en/concepts/money|money]]`, `[[en/concepts/scarcity|scarcity and the halving schedule]]`; fixed bare `[[en/concepts/cantillon-effect]]` → display text. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `cantillon-effect` and `fiat-standard` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/difficulty-adjustment.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; removed invalid tag `consensus` → added `concept`/`difficulty-adjustment`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Difficulty Adjustment` H1; removed `*Tags: ...*` italic line; removed all four `---` horizontal rules; removed two `raw/...` inline citations — one replaced with reader-facing inline link, other removed (covered by bottom `## Sources`). New wikilinks: `[[en/concepts/mining|miners]]`, `[[en/concepts/bitcoin-node|nodes]]`, `[[en/concepts/proof-of-work|PoW]]` (×2); fixed bare `[[en/concepts/mining]]` and `[[en/concepts/scarcity]]` to display text. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `bitcoin-node` entry.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/double-spend.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; removed invalid tag `consensus` → added `concept`/`double-spend`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Double Spend` H1; removed `*Tags: ...*` italic line; removed all four `---` horizontal rules; removed two `raw/...` inline citations. New wikilinks: `[[en/concepts/third-parties|trusted ledger keeper]]`, `[[en/concepts/proof-of-work|Proof of Work]]`, `[[en/concepts/bitcoin-node|full-node validation]]`, `[[en/entities/satoshi-nakamoto|Satoshi]]`, `[[en/books/inventing-bitcoin|Inventing Bitcoin]]`, `[[en/concepts/blockchain|chain]]`, `[[en/concepts/mining|miners]]`, `[[en/concepts/mempool|mempool]]`. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `proof-of-work`, `mempool`, `blockchain` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/forks.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalars; removed invalid tag `consensus` → added `concept`/`fork`; added `updated`/`reviewed: "2026-04-14"` (last). Body: removed `# Forks (Bitcoin)` H1; removed `*Tags: ...*` italic line; removed all four `---` horizontal rules; removed three `raw/...` inline citations — one replaced with reader-facing Source line, others removed. New wikilinks: `[[en/concepts/mining|miners]]`, `[[en/concepts/bitcoin-node|nodes]]`, `[[en/concepts/proof-of-work|Proof of Work]]`, `[[en/concepts/mempool|mempool]]`, `[[en/concepts/scarcity|21M cap]]`. Removed `## Related Terms`; merged with `## Related Pages` → `## Related pages`; all bullets pipe-syntax with descriptive text; added `proof-of-work`, `mempool` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/utxo.md
+
+**Changes:** Frontmatter: removed spurious `source:` (singular) field; reordered to canonical sequence; quoted all scalar fields; removed invalid tag `accounting` (not in allowlist) → kept `[bitcoin, wiki, concept, protocol, utxo]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# UTXOs` H1; removed `*Tags: ...*` italic line; removed 6 `---` horizontal rules; removed 1 `raw/...` citation → replaced with 3 reader-facing Source lines distributed across relevant sections. Fixed `[[en/concepts/governance|full node]]` ×2 → `[[en/concepts/bitcoin-node|full node]]`. Fixed `[[en/concepts/privacy|KYC]]` → `[[en/concepts/aml|KYC]]`. Fixed `[[en/concepts/privacy]]]` triple bracket → `[[en/concepts/privacy|privacy countermeasures]]`. New wikilinks: `[[en/concepts/multisig|multisig]]` in Lightning Channels section. Reformatted Sources section from bare URLs to named markdown links. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format, fixed all `]]]` triple brackets; added `multisig`, `segwit`, `address-types`, `bitcoin-node`, `oxt-research` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/third-parties.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalar fields; removed invalid tags `trust`, `intermediaries` (not in allowlist); corrected `third-parties` → `third-party` (allowlist form); kept `[bitcoin, wiki, concept, security, censorship-resistance, third-party, decentralization]`; added `reviewed: "2026-04-14"` as last field (no `updated`). Body: removed `# Third Parties` H1; removed `*Tags: ...*` italic line; removed 4 `---` horizontal rules; removed 3 `raw/...` citations — all replaced with reader-facing Source lines using matching frontmatter URLs. New wikilinks: `[[en/entities/nick-szabo|Nick Szabo]]` in first section; `[[en/concepts/aml|KYC]]` in Why Intermediaries section; `[[en/concepts/double-spend|double spending]]`; `[[en/concepts/blockchain|blockchain]]`; `[[en/concepts/bitcoin-node|node]]` in conclusion. Fixed bare wikilinks `[[en/concepts/governance]]`, `[[en/practice/running-a-node]]` → pipe-syntax. Removed `## Related Terms` pipe-list; converted `## Related Pages` bare-link bullets → `## Related pages` with description-inside-pipe format; added `blockchain`, `bitcoin-core`, `censorship-resistance` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/taproot.md
+
+**Changes:** Frontmatter: removed spurious `source:` (singular) field; reordered to canonical sequence; quoted all scalar fields; removed invalid tags `upgrade` and `schnorr` (not in allowlist) → kept `[bitcoin, wiki, concept, protocol, taproot, privacy]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Taproot` H1; removed `*Tags: ...*` italic line; removed 8 `---` horizontal rules; removed 1 `raw/...` citation → replaced with `Source: [Taproot](https://21ideas.org/taproot)`. Fixed 3 self-referential `[[en/concepts/taproot|...]]` links → plain text (`Schnorr`, `MuSig2`, `MAST`). Fixed `[[en/concepts/security|multisig]]` ×3 → `[[en/concepts/multisig|multisig]]`. Fixed `[[en/concepts/governance|soft fork]]` → `[[en/concepts/forks|soft fork]]`. Fixed `[[en/concepts/segwit|malleability]]` → plain text (coverage in SegWit page is implicit). Fixed 6 `]]]` triple brackets in body (security refs + Related Pages). New wikilinks: `[[en/concepts/bip|BIPs]]` in What It Is; `[[en/concepts/address-types|address types]]` inline in Address Type section. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format; added `forks`, `utxo`, `bip` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/segwit.md
+
+**Changes:** Frontmatter: removed spurious `source:` (singular) field; reordered to canonical sequence; quoted all scalar fields; removed invalid tag `upgrade` (not in allowlist) → kept `[bitcoin, wiki, concept, protocol, segwit]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# SegWit` H1; removed `*Tags: ...*` italic line; removed 6 `---` horizontal rules; removed 1 `raw/...` citation (with third-party learnmeabitcoin.com ref) → replaced with `Source: [SegWit](https://21ideas.org/segwit)`. Fixed 5 self-referential `[[en/concepts/segwit|...]]` links → plain text (`TXID` ×2, `malleability`, `block weight`, `Bech32`). Fixed `[[en/concepts/governance|hard fork]]` and `[[en/concepts/governance|soft fork]]` ×2 → `[[en/concepts/forks|...]]`. Fixed `[[en/history/blocksize-war]]]` and `[[en/concepts/lightning-network]]]` triple brackets in body. Added `[[en/concepts/bitcoin-core|Bitcoin Core]]` in Blocksize War section; `[[en/concepts/address-types|address types]]` inline in Bech32 paragraph. Moved Blocksize War chapter Source lines inline. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format, fixed all `]]]` triple brackets; added `forks`, `bitcoin-core`, `books/blocksize-war` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/security.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tag `custody` (not in allowlist) → kept `[bitcoin, wiki, concept, security, multisig]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Security` H1; removed `*Tags: ...*` italic line; removed 9 `---` horizontal rules; removed 7 `raw/...` citations — 6 replaced with reader-facing Source lines using matching frontmatter URLs, 1 dropped (PGP, no matching URL) with prose rephrased. Fixed 3 self-referential `[[en/concepts/security|...]]` links → plain text `seed phrase`, `Hardware wallets`, `[[en/concepts/multisig|Multisig]]`. Fixed `[[en/concepts/governance|BIP]]` → `[[en/concepts/bip|BIP]]`. Removed unverifiable `[[en/glossary|PSBT]]` anchor link → plain text `PSBT`. Reformatted Sources section from bare URLs to named markdown links. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format, fixed all `]]]` triple brackets; added `taproot`, `cypherpunks` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/scarcity.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tags `supply` and `halving` (not in allowlist) → kept `[bitcoin, wiki, concept, economics]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Scarcity` H1; removed `*Tags: ...*` italic line; removed 6 `---` horizontal rules; removed 3 `raw/...` citations — 2 replaced with reader-facing Source lines using matching frontmatter URLs, 1 inline reference reworded to Source line. Fixed 4 self-referential `[[en/concepts/scarcity|...]]` links → `[[en/concepts/mining|Block rewards]]`, plain text `halve`, plain text `21M cap`, plain text `scarcity`. Fixed `[[en/concepts/governance|full node]]` ×2 → `[[en/concepts/bitcoin-node|full node]]`. Added `[[en/concepts/difficulty-adjustment|difficulty adjusts]]` in Halvings myths section. Reformatted Sources section from bare URLs to named markdown links. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format, fixed all `]]]` triple brackets; added `difficulty-adjustment`, `governance` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/rpow.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalar fields; removed 5 invalid tags (`rpow`, `proof-of-work`, `hal-finney`, `digital-cash` not in allowlist; `history` kept) → `[bitcoin, wiki, concept, history, protocol]`; added `reviewed: "2026-04-14"` as last field (no `updated`). Body: removed `# RPOW` H1; removed 2 `---` horizontal rules; removed inline `raw/...` path citation in "How the system works" section — rephrased to reference [[en/series/genesis-files|Genesis Files Part V]]. New wikilinks: `[[en/series/genesis-files|Genesis Files Part V]]` in Problem section; `[[en/concepts/hashcash|Hashcash]]`; `[[en/concepts/proof-of-work|PoW]]`. Converted bare wikilink `See:` block in "Relationship to Bitcoin" to inline prose with pipe-syntax links. Removed `## Related Terms` pipe-list; converted `## Related Pages` bare-link bullets → `## Related pages` with description-inside-pipe format; added `hashcash`, `proof-of-work`, `double-spend`, `third-parties`, `series/genesis-files` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/protocol-stack.md
+
+**Changes:** Frontmatter: removed spurious `source:` (singular) field; reordered to canonical sequence; quoted all scalar fields; removed invalid tags `architecture` and `layers` (not in allowlist) → kept `[bitcoin, wiki, concept, protocol, lightning, scaling]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Bitcoin Protocol Stack` H1; removed `*Tags: ...*` italic line; removed 9 `---` horizontal rules; removed raw/ mention from Sources section; removed `See also:` navigation block from intro (covered by Related pages). Fixed 14+ `]]]` triple-bracket links throughout body and Related Pages. New wikilinks: `[[en/concepts/bitcoin-node|nodes]]` in Layer 0; `[[en/concepts/blockchain|blockchain]]` in Layer 1; `[[en/concepts/multisig|multisig]]` in Layer 2. Removed `## Related Terms` glossary-list (HTLC, BOLT, MAST, Witness, Gossip protocol — all defined in body text); converted `## Related Pages` → `## Related pages` with description-inside-pipe format; added `blockchain` and `multisig` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/proof-of-work.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tag `consensus` (not in allowlist) → kept `[bitcoin, wiki, concept, protocol, mining]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Proof of Work` H1; removed `*Tags: ...*` italic line; removed 7 `---` horizontal rules; removed 5 `raw/...` citations — 1 replaced with reader-facing Source line, 1 converted to wikilink Source, 3 removed (no matching URLs in frontmatter). Fixed 5 `]]]` triple-bracket links in Related Pages; fixed `[[en/series/genesis-files]]]` in Hashcash Source line. Fixed `[[en/concepts/mining|difficulty adjustment]]` → `[[en/concepts/difficulty-adjustment|difficulty adjustment]]`. New wikilinks: `[[en/concepts/bitcoin-node|nodes]]` in What It Is section; `[[en/entities/adam-back|Adam Back]]` in Hashcash section (was unlinked); added `[[en/series/gradually-then-suddenly|Gradually, Then Suddenly]]` reference in Energy section. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format; added `difficulty-adjustment`, `adam-back` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/privacy.md
+
+**Changes:** Frontmatter: fixed unquoted URL in `sources:` array; reordered to canonical sequence; quoted all scalar fields; removed invalid tag `coinjoin` (not in allowlist) → kept `[bitcoin, wiki, concept, privacy, security]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Privacy` H1; removed `*Tags: ...*` italic line; removed ~9 `---` horizontal rules; removed 11 `raw/...` citations — all dropped (only one 21ideas.org URL in frontmatter; no per-section URLs available to fabricate). Fixed 2 self-referential `[[en/concepts/privacy|...]]` links → `[[en/concepts/aml|KYC]]` (×2; aml.md covers KYC) and plain text `CoinJoin`. Fixed 5 `]]]` triple-bracket links in Related Pages. New wikilinks: `[[en/concepts/utxo|UTXO]]` in Whirlpool section; `[[en/concepts/lightning-network|Lightning]]` in Lightning section; `[[en/concepts/bitcoin-core|Bitcoin Core]]` in tools table; `[[en/series/oxt-research|OXT Research]]` inline in Blockchain Analysis section. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format; added `aml`, `utxo`, `bitcoin-core`, `buying` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/multisig.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tag `custody` (not in allowlist) → kept `[bitcoin, wiki, concept, security, multisig, taproot]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Multisig (Multisignature)` H1; removed `*Tags: ...*` italic line; removed 9 `---` horizontal rules; removed intro-level `See also:` navigation block (covered by Related pages); removed raw/ mention from Sources section. Fixed 11+ `]]]` triple-bracket links throughout body and Related Pages. Replaced Sources section prose with markdown links. Removed `## Related Terms` glossary-style list (PSBT, Output Descriptor, Quorum, Air-gapped, MuSig2 definitions); converted `## Related Pages` → `## Related pages` with description-inside-pipe format; added `segwit` entry.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/money.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tags `monetary-theory` and `austrian-school` (not in allowlist) → kept `[bitcoin, wiki, concept, economics, philosophy]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Money` H1; removed `*Tags: ...*` italic line; removed ~8 `---` horizontal rules; removed 6 `raw/...` citations — all replaced with reader-facing 21ideas.org Source lines using matching URLs from frontmatter. Fixed `[[en/history/timeline]]]` triple bracket; removed raw/ portion of that line → replaced with markdown link. Fixed 2 self-referential `[[en/concepts/money|...]]` links → plain text (`Sound money`, `time preference`). Added new wikilink `[[en/concepts/deflation|deflation]]` in Deflation section. Reformatted Sources section from bare URLs to named markdown links. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format, fixed all `]]]` triple brackets; added `cantillon-effect`, `deflation`, `proof-of-work` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/mining.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tags `sha256` and `pow` (not in allowlist) → kept `[bitcoin, wiki, concept, mining, protocol]`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Mining` H1; removed `*Tags: ...*` italic line; removed ~10 `---` horizontal rules; removed 2 `raw/...` citations — 1 replaced with reader-facing Source line, 1 removed with wikilink preserved. Fixed 4 self-referential `[[en/concepts/mining|...]]` links → plain text (`mining`, `SHA-256` ×2, `ASIC`). Fixed `[[en/glossary|mempool]]` → `[[en/concepts/mempool|mempool]]`. Fixed `[[en/concepts/scarcity]]]` and `[[en/series/gradually-then-suddenly]]]` triple brackets. New wikilinks: `[[en/concepts/difficulty-adjustment|difficulty target]]` (×2), `[[en/concepts/bitcoin-node|nodes]]` in Difficulty section, `[[en/concepts/proof-of-work|PoW]]` in Energy section. Removed `## Related Terms` pipe-list; converted `## Related Pages` → `## Related pages` with description-inside-pipe format; added `difficulty-adjustment`, `mempool`, `bitcoin-node`, `network-effects` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/mempool.md
+
+**Changes:** Frontmatter: collapsed block `sources:` to inline array; reordered to canonical sequence; quoted all scalar fields (`category`, `quality`, `language`, `completeness`); removed invalid tag `transactions` → replaced with `concept`; added `reviewed: "2026-04-14"` as last field (no `updated` field, so `reviewed` follows `tags` directly). Body: removed `# Mempool` H1; removed `*Tags: ...*` italic line; removed 4 `---` horizontal rules; removed 2 `raw/...` citations — both replaced with reader-facing 21ideas.org Source lines. New wikilinks: `[[en/concepts/bitcoin-node|nodes]]`, `[[en/concepts/mining|Miners]]`, `[[en/concepts/scarcity|block space]]`, `[[en/concepts/forks|orphaned]]`, `[[en/concepts/proof-of-work|PoW]]`. Removed `## Related Terms` pipe-list; replaced bare-link `## Related Pages` with `## Related pages` using description-inside-pipe format; added `difficulty-adjustment` entry.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/lightning-network.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields; removed invalid tags `layer-2` and `payments` (not in allowlist) → replaced with `concept`, `scaling`; added `reviewed: "2026-04-14"` as last field. Body: removed `# Lightning Network` H1; removed `*Tags: ...*` italic line; removed 8 `---` horizontal rules; removed 5 `raw/...` citations — 4 replaced with reader-facing 21ideas.org Source lines, 1 removed (no matching URL). Fixed 2 self-referential `[[en/concepts/lightning-network|...]]` links → plain text (`payment channel`, `HTLC`). Fixed `[[en/concepts/security|multisig]]` → `[[en/concepts/multisig|multisig]]` (2 instances). Fixed `[[en/practice/lightning-tools]]]` triple bracket. Reformatted Sources section from plain URLs to markdown links. Removed `## Related Terms` pipe-list and `## Related Pages` with triple-bracket links; merged into single `## Related pages` with description-inside-pipe format; added `segwit`, `multisig`, `taproot` entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/hashcash.md
+
+**Changes:** Frontmatter: added `reviewed: "2026-04-14"` as last field (was missing). Body: removed `# Hashcash` H1; removed five `---` horizontal rules. New wikilinks: `[[en/concepts/bitcoin-whitepaper|Bitcoin whitepaper]]` in Satoshi's Adaptation section; `[[en/concepts/bit-gold|Bit Gold]]` in Why It Matters section. Related pages: descriptions moved inside pipe syntax; added `[[en/concepts/bit-gold|Bit Gold — Nick Szabo's successor concept]]` entry; added descriptive text to all entity entries.
+
+---
+
+## [2026-04-14] enhance | wiki-en/concepts/governance.md
+
+**Changes:** Frontmatter: reordered to canonical sequence; quoted all scalar fields (`category`, `quality`, `language`, `completeness`); added `reviewed: "2026-04-14"` as last field. Body: removed `*Tags: governance, decentralization, protocol, consensus*` italic line; removed `# Bitcoin Governance` H1; removed all `---` horizontal rules; removed four `raw/...` citations — two replaced with reader-facing 21ideas.org Source lines, two removed. Fixed four self-referential `[[en/concepts/governance|...]]` links → `[[en/concepts/bip|BIP]]`, `[[en/concepts/forks|Soft fork]]`, `[[en/concepts/forks|Hard fork]]`, `[[en/concepts/bitcoin-node|full node]]`. Fixed two `]]]` triple-bracket links. New wikilinks: `[[en/concepts/bitcoin-node|Full nodes]]` and `[[en/concepts/mining|Miners]]` in table; `[[en/concepts/bitcoin-core|Bitcoin Core]]` (two instances); `[[en/concepts/bip|BIPs]]` in table. Renamed `## Related Terms` → `## Related pages`; converted inline pipe-list to bullet format with descriptive text; added `[[en/concepts/forks|Forks]]` entry. Added `## Sources` section.
+
+---

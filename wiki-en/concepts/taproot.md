@@ -1,25 +1,19 @@
 ---
 title: "Taproot"
-category: concepts
-tags: [bitcoin, wiki, protocol, upgrade, taproot, schnorr]
-language: en
-source: "Synthesized from raw/ sources + glossary"
-updated: "2026-04-07"
-quality: reference
+category: "concepts"
+quality: "reference"
 sources: ["https://21ideas.org/taproot", "https://21ideas.org/glossary/"]
 synthesized_date: "2026-04-07"
-completeness: high
----
-
-# Taproot
-
-*Tags: protocol, upgrade, soft-fork, 2021, Schnorr, privacy, smart-contracts*
-
+completeness: "high"
+language: "en"
+tags: [bitcoin, wiki, concept, protocol, taproot, privacy]
+updated: "2026-04-07"
+reviewed: "2026-04-14"
 ---
 
 ## What It Is
 
-Taproot is a soft fork protocol upgrade activated on Bitcoin on **November 14, 2021** (block 709,632). It consists of three BIPs implemented together:
+Taproot is a [[en/concepts/forks|soft fork]] protocol upgrade activated on Bitcoin on **November 14, 2021** (block 709,632). It consists of three [[en/concepts/bip|BIPs]] implemented together:
 
 - **BIP 340** — Schnorr Signatures
 - **BIP 341** — Taproot (the MAST + P2TR output type)
@@ -27,31 +21,27 @@ Taproot is a soft fork protocol upgrade activated on Bitcoin on **November 14, 2
 
 Together they introduce new, more efficient, flexible, and private ways to send bitcoin.
 
-Source: `raw/Theory/protocol/taproot.md`, `raw/Start/glossary.md`
-
----
+Source: [Taproot](https://21ideas.org/taproot)
 
 ## Schnorr Signatures (BIP 340)
 
-Bitcoin previously used **ECDSA** (Elliptic Curve Digital Signature Algorithm) for signing transactions. Taproot adds **[[en/concepts/taproot|Schnorr]] signatures**, which are:
+Bitcoin previously used **ECDSA** (Elliptic Curve Digital Signature Algorithm) for signing transactions. Taproot adds **Schnorr signatures**, which are:
 
 **More efficient:**
 - 32-byte public keys vs. 33-byte ECDSA
 - 65-byte signatures vs. 71-72-byte ECDSA
 - Smaller size → lower fees
 
-**Key aggregation ([[en/concepts/taproot|MuSig2]]):**
+**Key aggregation (MuSig2):**
 - Multiple signers can aggregate their public keys and signatures into a single key/signature that looks identical to a single-sig transaction on-chain
-- 3-of-5 [[en/concepts/security|multisig]] looks like a simple payment → massive privacy improvement + fee reduction
-- See [[en/concepts/security]]] (multisig section)
+- 3-of-5 [[en/concepts/multisig|multisig]] looks like a simple payment → massive privacy improvement + fee reduction
+- See [[en/concepts/multisig|Multisig]] for the full MuSig2 workflow
 
 **Linear:** Schnorr signatures are linear, enabling more efficient batch verification and protocol composition.
 
----
-
 ## Taproot / MAST (BIP 341)
 
-Taproot introduces the **[[en/concepts/address-types|P2TR]] (Pay-to-Taproot)** output type and integrates **[[en/concepts/taproot|MAST]] (Merklized Abstract Syntax Trees)**.
+Taproot introduces the **[[en/concepts/address-types|P2TR]] (Pay-to-Taproot)** output type and integrates **MAST (Merklized Abstract Syntax Trees)**.
 
 **How P2TR works:**
 1. Funds are sent to a single public key `Q`
@@ -64,8 +54,6 @@ Taproot introduces the **[[en/concepts/address-types|P2TR]] (Pay-to-Taproot)** o
 
 **Flexibility:** Conditions (e.g., "3-of-5 OR timelock after 6 months OR 2-of-2 emergency") are encoded in the Merkle tree; only the executed condition is revealed on-chain.
 
----
-
 ## Tapscript (BIP 342)
 
 An update to Bitcoin's scripting language to:
@@ -74,8 +62,6 @@ An update to Bitcoin's scripting language to:
 - Enable future upgrades via new OP codes without hard forks (using `OP_SUCCESS`)
 
 Tapscript is designed for maximum future extensibility.
-
----
 
 ## Practical Impacts
 
@@ -87,46 +73,35 @@ Tapscript is designed for maximum future extensibility.
 | Multisig fees | Pay for all keys/sigs | Pay for one aggregated sig |
 | Smart contract privacy | Script visible on-chain | Hidden in Merkle tree |
 
----
-
 ## Address Type
 
 **P2TR addresses** start with `bc1p` and use Bech32m encoding (a slightly improved Bech32 variant). They are 62 characters long.
 
-Taproot adoption has been growing since 2022, accelerating with hardware wallet support.
-
----
+Taproot adoption has been growing since 2022, accelerating with hardware wallet support. See [[en/concepts/address-types|address types]] for the full comparison.
 
 ## Relationship to SegWit
 
 Taproot builds on [[en/concepts/segwit|SegWit]]'s foundation:
 - Uses SegWit's [[en/concepts/segwit|block weight]] system for cheaper witness data
-- Required SegWit's [[en/concepts/segwit|malleability]] fix (same principle extended further)
+- Required SegWit's malleability fix (same principle extended further)
 - [[en/concepts/address-types|P2TR]] is a native SegWit v1 output type
-
----
 
 ## MuSig2
 
-MuSig2 (standardized 2023+) is the Schnorr multi-party key aggregation protocol enabled by Taproot. N-of-N participants cooperatively generate a single key and signature — indistinguishable from a regular single-sig on-chain. See [[en/concepts/security]]].
-
----
+MuSig2 (standardized 2023+) is the Schnorr multi-party key aggregation protocol enabled by Taproot. N-of-N participants cooperatively generate a single key and signature — indistinguishable from a regular single-sig on-chain. See [[en/concepts/multisig|Multisig]] for setup details.
 
 ## Sources
 
-- [Original article on 21ideas.org](https://21ideas.org/taproot)
+- [Taproot](https://21ideas.org/taproot)
+- [21ideas Glossary](https://21ideas.org/glossary/)
 
----
+## Related pages
 
-## Related Terms
-
-[[en/glossary|Glossary]] | [[en/concepts/segwit|SegWit]] | [[en/concepts/address-types|address types]] | [[en/concepts/security|multisig]] | [[en/concepts/privacy|privacy]] | [[en/concepts/lightning-network|Lightning Network]] | [[en/concepts/governance|soft fork]] | [[en/concepts/utxo|UTXO]]
-
-## Related Pages
-
-- [[en/concepts/segwit]]] — the prerequisite upgrade
-- [[en/concepts/address-types]]] — P2TR address type
-- [[en/concepts/security]]] — multisig using Schnorr/MuSig2
-- [[en/concepts/privacy]]] — Taproot's privacy improvements
-- [[en/concepts/lightning-network]]] — Lightning channels benefit from Taproot
-- [[en/glossary]]] — Taproot, Schnorr, MuSig2 defined
+- [[en/concepts/segwit|SegWit — the prerequisite upgrade Taproot builds on]]
+- [[en/concepts/address-types|Address Types — the bc1p P2TR address format]]
+- [[en/concepts/multisig|Multisig — MuSig2 for N-of-N multisig with on-chain privacy]]
+- [[en/concepts/forks|Forks — Taproot as a soft fork]]
+- [[en/concepts/privacy|Privacy — Taproot's key privacy improvements]]
+- [[en/concepts/lightning-network|Lightning Network — Lightning channel closes benefit from Taproot]]
+- [[en/concepts/utxo|UTXO — P2TR is a native SegWit v1 output type]]
+- [[en/concepts/bip|BIP — Taproot defined by BIPs 340, 341, 342]]

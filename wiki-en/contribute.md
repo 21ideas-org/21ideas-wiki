@@ -18,12 +18,12 @@ The simplest contribution. Open a GitHub Issue to:
 
 ## Track 2 — Add a source file
 
-The wiki is built from immutable source files in `raw/` — all from [21ideas.org](https://21ideas.org). If you have a reputable material you think will benefit the wiki, you can add it to the source library.
+The wiki is built from immutable source files in `raw/` — anchored in [21ideas.org](https://21ideas.org) and other **Bitcoin-only** sources. If you have material you think will benefit the wiki, you can add it to the source library.
 
-Source acceptance rules:
-- Only **21ideas.org** material is accepted without explicit maintainer approval
-- Primary Bitcoin sources (BIPs, reputable materials, Satoshi writings) may be accepted case-by-case — open an issue first
-- No third-party blogs, exchange content, or altcoin material
+Source acceptance rules (full tier list: [docs/CONTRIBUTING.md](https://github.com/21ideas-org/21ideas-wiki/blob/main/docs/CONTRIBUTING.md)):
+- **21ideas.org**, **primary Bitcoin sources** (BIPs, Satoshi writings, whitepaper, official protocol docs), and **reputable Bitcoin-only educational** content from established authors and publications are accepted.
+- Sources that need a decision (e.g. academic papers, non-English primaries outside 21ideas.org) — open an issue before adding.
+- **Not accepted:** exchange content, altcoin or multi-coin material, price speculation, or third-party blogs without a clear Bitcoin-only editorial focus.
 
 Once you've added a source file, a maintainer will handle the wiki synthesis — or you can continue to Track 3.
 

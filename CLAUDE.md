@@ -1,12 +1,12 @@
 # 21ideas Bitcoin Wiki — Agent Rules
 
-A bilingual (EN + RU) Bitcoin education wiki built from immutable source files in `raw/` — all from 21ideas.org, a Russian-language Bitcoin education site (~308 files). Content is grounded in `raw/` material only. Agents write and maintain `wiki-en/` and `wiki-ru/`; humans curate `raw/`. The wiki is read in Obsidian and published via Quartz.
+A bilingual (EN + RU) Bitcoin education wiki built from immutable source files in `raw/` — anchored in 21ideas.org (a Bitcoin-only education site, ~308 files) and other Bitcoin-only sources. Content is grounded in `raw/` material only. Agents write and maintain `wiki-en/` and `wiki-ru/`; humans curate `raw/`. The wiki is read in Obsidian and published via Quartz.
 
 ---
 
 ## What Agents Must NOT Do
 
-- **Never fabricate 21ideas.org URLs.** If no URL exists in `raw/` metadata, set `sources: []`.
+- **Never fabricate source URLs. Only use URLs that appear verbatim in the raw/ file's url: frontmatter field.** If no URL exists in `raw/` metadata, set `sources: []`.
 - **Never invent tags** outside the allowlist below.
 - **Never write bare wikilinks** (`[[taproot]]`, `[[concepts/taproot]]`) — always use `[[en/...]]` or `[[ru/...]]` prefixes.
 - **Never use `[[wiki-ru/...]]` or `[[wiki-en/...]]` prefixes** — they are invalid in this vault.
@@ -27,7 +27,7 @@ Every wiki page requires all fields below. Use **double-quoted** strings for eve
 title: "Page title"
 category: "concepts"        # concepts | entities | books | series | history | philosophy | practice | topics
 quality: "reference"        # canonical | reference | synthesized | stub
-sources: ["https://21ideas.org/..."]  # real URLs only; [] if none exist in raw/ metadata
+sources: ["https://21ideas.org/..."]  # canonical URLs from raw/ url: field only; [] if none exists; never fabricate
 synthesized_date: "2026-04-XX"
 completeness: "high"        # high | medium | low
 language: "ru"              # en | ru
@@ -72,8 +72,8 @@ Every page must include **at least** `bitcoin` and `wiki`. Total: 3–8 tags. Lo
 
 - **Tone:** Clear, precise, neutral but firm on Bitcoin's monetary sovereignty and censorship resistance.
 - **No `#` heading in the page body.** Quartz renders the frontmatter `title` as the page heading. Start the body with `##` sections.
-- **Sources section:** Every page must end with `## Sources` (wiki-en) or `## Источники` (wiki-ru) listing all 21ideas.org URLs used.
-- **Inline citations:** Use 21ideas.org URLs in text or as `Основа: [title](https://21ideas.org/...)` after paragraphs. No `raw/...` paths.
+- **Sources section:** Every page must end with `## Sources` (wiki-en) or `## Источники` (wiki-ru) listing all canonical source URLs used (21ideas.org or other accepted domains).
+- **Inline citations:** Use the canonical source URL from the raw/ file's url: field in text or as Source: [title](https://...) (EN) / Основа: [название](https://...) (RU) after paragraphs. No `raw/...` paths.
 - **Closing nav section:** Every page ends with `## Related pages` (EN) or `## Дополнительные материалы` (RU) using pipe-syntax wikilinks: `- [[ru/concepts/segwit|SegWit]]`.
 - **Remove `## Related Terms` sections** wherever found; replace with pipe-syntax wikilinks in the closing nav section.
 - **Trust marker:** Set `quality: "synthesized"` for synthesis pages. Flag remaining gaps explicitly.

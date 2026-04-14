@@ -1,20 +1,14 @@
 ---
 title: "UTXOs (Unspent Transaction Outputs)"
-category: concepts
-tags: [bitcoin, wiki, protocol, accounting, utxo]
-language: en
-source: "Synthesized from raw/ sources + glossary"
-updated: "2026-04-07"
-quality: reference
+category: "concepts"
+quality: "reference"
 sources: ["https://21ideas.org/protocol/utxo-1/", "https://21ideas.org/protocol/utxo-2/", "https://21ideas.org/protocol/utxo-3/"]
 synthesized_date: "2026-04-07"
-completeness: high
----
-
-# UTXOs (Unspent Transaction Outputs)
-
-*Tags: protocol, accounting, privacy*
-
+completeness: "high"
+language: "en"
+tags: [bitcoin, wiki, concept, protocol, utxo]
+updated: "2026-04-07"
+reviewed: "2026-04-14"
 ---
 
 ## What a UTXO Is
@@ -23,9 +17,7 @@ Bitcoin has no accounts and no balances in the traditional sense. Instead, the l
 
 Your "balance" is simply the sum of all UTXOs that your private keys can spend.
 
-Source: `raw/Theory/protocol/utxo/`
-
----
+Source: [UTXO — Part 1](https://21ideas.org/protocol/utxo-1/)
 
 ## How Transactions Work
 
@@ -37,9 +29,9 @@ Example: Alice has a 0.5 BTC UTXO and wants to send 0.3 BTC to Bob.
 3. Output 2: 0.19999 BTC → Alice's change address (she gets back the remainder, minus fee)
 4. The 0.5 BTC UTXO is consumed; two new UTXOs (0.3 and 0.19999) are created
 
-The UTXO set = all currently unspent outputs. Every [[en/concepts/governance|full node]] maintains this set to validate new transactions.
+The UTXO set = all currently unspent outputs. Every [[en/concepts/bitcoin-node|full node]] maintains this set to validate new transactions.
 
----
+Source: [UTXO — Part 2](https://21ideas.org/protocol/utxo-2/)
 
 ## Why UTXOs Matter for Privacy
 
@@ -53,55 +45,47 @@ The UTXO model has important privacy implications:
 
 **UTXO management:** Thoughtfully combining (or not combining) UTXOs affects [[en/concepts/privacy|privacy]]. Poor UTXO management can link previously separate coin histories.
 
-See [[en/concepts/privacy]]] for countermeasures.
-
----
+See [[en/concepts/privacy|privacy countermeasures]] for how to address these risks.
 
 ## Coin Control
 
 Coin control is the ability to manually select which UTXOs to use as inputs in a transaction. Important for:
-- Avoiding mixing [[en/concepts/privacy|KYC]] and no-KYC coins (which reveals the no-KYC address to the KYC cluster)
+- Avoiding mixing [[en/concepts/aml|KYC]] and no-KYC coins (which reveals the no-KYC address to the KYC cluster)
 - Preserving [[en/concepts/privacy|privacy]] by not combining outputs from unrelated origins
 - Managing UTXO sizes (avoid dust)
 
 Wallets with coin control: Electrum, Sparrow Wallet, Samourai.
 
----
-
 ## UTXO Set and Full Node Validation
 
-Every Bitcoin full node maintains the complete UTXO set (~5-6 GB as of 2024). When validating a new transaction, the node checks:
+Every Bitcoin [[en/concepts/bitcoin-node|full node]] maintains the complete UTXO set (~5–6 GB as of 2024). When validating a new transaction, the node checks:
 - The input UTXOs exist in the UTXO set
 - The signatures are valid for those UTXOs
 - The total output ≤ total input (no new coins created)
 
 This is Bitcoin's trustless validation — no need to trust anyone, the math checks out.
 
----
+Source: [UTXO — Part 3](https://21ideas.org/protocol/utxo-3/)
 
 ## Lightning Channels as UTXOs
 
-A Lightning channel is a single 2-of-2 multisig UTXO on-chain. The entire channel balance lives in one UTXO; off-chain commitment transactions determine the split between parties. Closing a channel creates one or two UTXOs (one per party).
+A Lightning channel is a single 2-of-2 [[en/concepts/multisig|multisig]] UTXO on-chain. The entire channel balance lives in one UTXO; off-chain commitment transactions determine the split between parties. Closing a channel creates one or two UTXOs (one per party).
 
 This is why [[en/concepts/lightning-network|Lightning]] is efficient: thousands of off-chain payments settle to a single on-chain UTXO pair.
 
----
-
 ## Sources
 
-- https://21ideas.org/protocol/utxo-1/  
-- https://21ideas.org/protocol/utxo-2/  
-- https://21ideas.org/protocol/utxo-3/  
+- [UTXO — Part 1](https://21ideas.org/protocol/utxo-1/)
+- [UTXO — Part 2](https://21ideas.org/protocol/utxo-2/)
+- [UTXO — Part 3](https://21ideas.org/protocol/utxo-3/)
 
----
+## Related pages
 
-## Related Terms
-
-[[en/glossary|Glossary]] | [[en/concepts/bitcoin|Bitcoin]] | [[en/concepts/privacy|privacy]] | [[en/concepts/security|self-custody]] | [[en/concepts/lightning-network|Lightning Network]] | [[en/concepts/segwit|SegWit]] | [[en/concepts/address-types|address types]] | [[en/series/oxt-research|blockchain analysis]]
-
-## Related Pages
-
-- [[en/concepts/bitcoin]]] — the system using UTXOs
-- [[en/concepts/privacy]]] — UTXO management for privacy
-- [[en/concepts/lightning-network]]] — channels as UTXOs
-- [[en/concepts/security]]] — coin control in security wallets
+- [[en/concepts/bitcoin|Bitcoin — the system built on UTXOs]]
+- [[en/concepts/privacy|Privacy — UTXO management and privacy countermeasures]]
+- [[en/concepts/lightning-network|Lightning Network — channels are single on-chain UTXOs]]
+- [[en/concepts/multisig|Multisig — Lightning channels use 2-of-2 multisig UTXOs]]
+- [[en/concepts/segwit|SegWit — changes how UTXOs store witness data]]
+- [[en/concepts/address-types|Address Types — address types link to UTXO spending conditions]]
+- [[en/concepts/bitcoin-node|Bitcoin Node — full nodes maintain the complete UTXO set]]
+- [[en/series/oxt-research|OXT Research — blockchain analysis using UTXO heuristics]]

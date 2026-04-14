@@ -7,7 +7,7 @@
 [![Release](https://img.shields.io/github/v/release/21ideas-org/21ideas-wiki?style=for-the-badge&color=2ea44f)](https://github.com/21ideas-org/21ideas-wiki/releases/latest)
 [![GitHub Stars](https://img.shields.io/github/stars/21ideas-org/21ideas-wiki?style=for-the-badge&color=f9e231)](https://github.com/21ideas-org/21ideas-wiki)
 
-A bilingual, AI-assisted, human-curated Bitcoin knowledge base built **strictly from 21ideas.org source material**.
+A bilingual, AI-assisted, human-curated Bitcoin knowledge base built from **Bitcoin-only source material**, anchored in 21ideas.org.
 
 This repo contains two first-class wiki layers:
 

@@ -7,8 +7,8 @@ synthesized_date: "2026-04-09"
 completeness: "high"
 language: "en"
 tags: [bitcoin, wiki, concept, aml, privacy, censorship-resistance, third-party, security]
-updated: "2026-04-12"
-reviewed: "2026-04-12"
+updated: "2026-04-14"
+reviewed: "2026-04-14"
 ---
 
 [[en/glossary#aml-anti-money-laundering|AML]] (anti-money laundering) around Bitcoin is a **[[en/concepts/third-parties|third-party]] risk and surveillance pipeline**: it pushes users into [[en/glossary#kyc-know-your-customer|KYC]], funds chain-analysis firms, and enables custodians to block or confiscate under vague “risk score” narratives.

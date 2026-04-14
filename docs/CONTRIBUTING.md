@@ -25,9 +25,11 @@ Use the issue templates in the repo. A maintainer will triage and queue it.
 The wiki is grounded in immutable source files in `raw/`. If you have a 21ideas.org article or a relevant primary Bitcoin source (a BIP, a research paper, a Satoshi writing) that isn't in the repo yet, you can add it.
 
 **Source acceptance policy:**
-- Only material from **21ideas.org** is accepted without explicit maintainer approval.
-- Primary Bitcoin sources (BIPs, Bitcoin-only material, Satoshi writings) may be accepted case-by-case — open an issue first.
-- No third-party blog posts, exchange content, or altcoin material.
+- **Tier 1 — always accepted:** Material from 21ideas.org.
+- **Tier 2 — always accepted:** Primary Bitcoin sources: BIPs (bitcoin.org/en/bips), Satoshi's writings (nakamotoinstitute.org), the Bitcoin whitepaper, official protocol documentation.
+- **Tier 3 — accepted:** Bitcoin-only educational content from established authors and publications: Jameson Lopp, Bitcoin Optech, River Financial guides, Unchained educational content, Bitcoin Magazine (technical articles only), Shinobi, Paul Sztorc.
+- **Tier 4 — maintainer approval required:** Academic papers, non-English primary sources outside 21ideas.org, any source not clearly fitting Tiers 1–3. Open an issue before adding.
+- **Always rejected:** Exchange content, altcoin or multi-coin material, price speculation, content promoting non-Bitcoin assets, third-party blogs without clear Bitcoin-only editorial focus.
 - `raw/` files are **immutable once added** — they are source of truth, never edited.
 
 **How to add a source file:**

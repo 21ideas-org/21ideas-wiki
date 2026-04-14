@@ -7,15 +7,15 @@ synthesized_date: "2026-04-07"
 completeness: "high"
 language: "en"
 tags: [bitcoin, wiki, concept, protocol, addresses, taproot, segwit]
-updated: "2026-04-11"
-reviewed: "2026-04-11"
+updated: "2026-04-14"
+reviewed: "2026-04-14"
 ---
 
 ## Overview
 
 [[en/concepts/bitcoin|Bitcoin]] has evolved through several [[en/glossary#address|address]] types since 2009, each introducing improvements in privacy, fee efficiency, and functionality. The type of address determines how funds are locked and how they can be spent.
 
-Source: [Bitcoin address types (21ideas)](https://21ideas.org/sravnenie-tipov-bitcoin-adresov)
+Source: [Bitcoin address types (21ideas)](https://21ideas.org/en/bitcoin-address-types/)
 
 ## Address Types at a Glance
 
@@ -62,7 +62,7 @@ Introduced April 2012 ([[en/concepts/bip|BIP16]]). Instead of paying to a key or
 
 ## P2WPKH (Pay-to-Witness-Public-Key-Hash) — Native SegWit
 
-First native [[en/concepts/segwit|SegWit]] address type, introduced with the SegWit [[en/concepts/governance|soft fork]] (August 2017). The SegWit equivalent of P2PKH.
+First native [[en/concepts/segwit|SegWit]] address type, introduced with the SegWit [[en/concepts/forks|soft fork]] (August 2017). The SegWit equivalent of P2PKH.
 
 **Advantages over P2PKH:**
 - Witness data (signatures) gets a 75% discount in block weight → lower [[en/glossary#fee|fees]]
@@ -108,15 +108,14 @@ Introduced with [[en/concepts/taproot|Taproot]] (November 2021, BIP341). The mos
 
 ## Sources
 
-- [Bitcoin address types (21ideas)](https://21ideas.org/sravnenie-tipov-bitcoin-adresov)
+- [Bitcoin address types (21ideas)](https://21ideas.org/en/bitcoin-address-types/)
 
 ## Related pages
 
-- [[en/glossary|Glossary]] — address-related terms
-- [[en/concepts/segwit|SegWit]] — P2WPKH and P2WSH
-- [[en/concepts/taproot|Taproot]] — P2TR, Schnorr, and MuSig2
-- [[en/concepts/utxo|UTXO]] — how addresses lock outputs
-- [[en/concepts/privacy|Privacy]] — how address types affect privacy
-- [[en/concepts/multisig|Multisig]] — P2SH, P2WSH, and Taproot patterns
-- [[en/concepts/lightning-network|Lightning Network]]
-- [[en/practice/storage|Hardware wallets and cold storage]]
+- [[en/concepts/segwit|SegWit — P2WPKH and P2WSH address types]]
+- [[en/concepts/taproot|Taproot — P2TR, Schnorr, and MuSig2]]
+- [[en/concepts/utxo|UTXO — how addresses lock outputs]]
+- [[en/concepts/privacy|Privacy — how address types affect on-chain privacy]]
+- [[en/concepts/multisig|Multisig — P2SH, P2WSH, and Taproot patterns]]
+- [[en/concepts/lightning-network|Lightning Network — uses P2WPKH and P2TR channels]]
+- [[en/practice/storage|Hardware wallets and cold storage — address type support by device]]

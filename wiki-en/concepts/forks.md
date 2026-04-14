@@ -1,32 +1,21 @@
 ---
 title: "Forks (Bitcoin)"
-category: concepts
-tags: [bitcoin, wiki, protocol, consensus, governance]
-language: en
-quality: reference
-sources:
-  - "https://21ideas.org/izobretaem-bitkoin/glava-5"
-  - "https://21ideas.org/izobretaem-bitkoin/glava-8"
-  - "https://21ideas.org/vojna-za-razmer-bloka/"
+category: "concepts"
+quality: "reference"
+sources: ["https://21ideas.org/izobretaem-bitkoin/glava-5", "https://21ideas.org/izobretaem-bitkoin/glava-8", "https://21ideas.org/vojna-za-razmer-bloka/"]
 synthesized_date: "2026-04-09"
-completeness: high
----
-
-# Forks (Bitcoin)
-
-*Tags: consensus, soft fork, hard fork, chain split*
-
+completeness: "high"
+language: "en"
+tags: [bitcoin, wiki, concept, protocol, governance, fork]
+updated: "2026-04-14"
+reviewed: "2026-04-14"
 ---
 
 ## Accidental forks (chain splits)
 
-When two miners find valid blocks close together, different parts of the network may see different tips briefly. Bitcoin resolves this with **Nakamoto consensus**: nodes follow the valid chain with the **most accumulated Proof of Work** (often called the “longest” or “heaviest” chain). The losing block becomes **stale**; its transactions return to the **mempool** if they do not conflict with the winning chain.
+When two [[en/concepts/mining|miners]] find valid blocks close together, different parts of the network may see different tips briefly. Bitcoin resolves this with **Nakamoto consensus**: [[en/concepts/bitcoin-node|nodes]] follow the valid chain with the **most accumulated [[en/concepts/proof-of-work|Proof of Work]]** (often called the "longest" or "heaviest" chain). The losing block becomes **stale**; its transactions return to the [[en/concepts/mempool|mempool]] if they do not conflict with the winning chain.
 
 This kind of fork is a normal network event, not a change to protocol rules.
-
-Source: `raw/Books/izobretaem-bitkoin/glava-5.md`
-
----
 
 ## Soft forks vs hard forks (rule changes)
 
@@ -36,17 +25,11 @@ Source: `raw/Books/izobretaem-bitkoin/glava-5.md`
 
 The sources give **Bitcoin Cash (August 2017)** as a hard fork driven by disagreement over block space and fees: proponents of larger blocks forked; the majority of validating nodes and economic activity remained on the chain that kept the 1 MB (weight-based) constraint, which the wiki treats as **Bitcoin**.
 
-Source: `raw/Books/izobretaem-bitkoin/glava-8.md`
-
----
+Source: [Inventing Bitcoin — Ch. 8](https://21ideas.org/izobretaem-bitkoin/glava-8)
 
 ## Governance reality
 
-Forks illustrate that **“Bitcoin” is what users, merchants, and node operators run and accept** — not what any single author, miner, or company declares. Hard forks without broad consensus produce **altcoins** that share history up to the split; they do not change the 21M cap on the chain that enforces it.
-
-Sources: `raw/Books/izobretaem-bitkoin/glava-8.md`, `raw/Books/vojna-za-razmer-bloka/` (blocksize war narrative)
-
----
+Forks illustrate that **"Bitcoin" is what users, merchants, and node operators run and accept** — not what any single author, miner, or company declares. Hard forks without broad consensus produce **altcoins** that share history up to the split; they do not change the [[en/concepts/scarcity|21M cap]] on the chain that enforces it.
 
 ## Sources
 
@@ -54,16 +37,12 @@ Sources: `raw/Books/izobretaem-bitkoin/glava-8.md`, `raw/Books/vojna-za-razmer-b
 - [Inventing Bitcoin — Ch. 8 (who sets rules, soft/hard forks)](https://21ideas.org/izobretaem-bitkoin/glava-8)
 - [The Blocksize War (book on 21ideas)](https://21ideas.org/vojna-za-razmer-bloka/)
 
----
+## Related pages
 
-## Related Terms
-
-[[en/glossary|Glossary]] | [[en/concepts/governance|governance]] | [[en/concepts/proof-of-work|Proof of Work]] | [[en/concepts/bip|BIP]] | [[en/concepts/blockchain|blockchain]] | [[en/concepts/mempool|mempool]]
-
-## Related Pages
-
-- [[en/concepts/governance]] — nodes, miners, developers, users
-- [[en/concepts/bip]] — how upgrades are proposed and activated
-- [[en/history/blocksize-war]] — 2015–2017 conflict in outline
-- [[en/books/blocksize-war]] — Jonathan Bier’s account
-- [[en/concepts/segwit]] — major soft fork in that era
+- [[en/concepts/governance|Governance — nodes, miners, developers, users and who controls the rules]]
+- [[en/concepts/proof-of-work|Proof of Work — the accumulated work that determines the valid chain]]
+- [[en/concepts/mempool|Mempool — where stale-block transactions return after a reorg]]
+- [[en/concepts/bip|BIP — how upgrades are proposed and activated]]
+- [[en/concepts/segwit|SegWit — major soft fork activated in 2017]]
+- [[en/history/blocksize-war|Blocksize War — the 2015–2017 conflict that produced Bitcoin Cash]]
+- [[en/books/blocksize-war|The Blocksize War (book) — Jonathan Bier's full account]]
