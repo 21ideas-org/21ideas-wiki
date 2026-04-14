@@ -40,8 +40,12 @@ Coverage includes core Bitcoin concepts (protocol + economics), key protocol ele
 | File | Role |
 |------|------|
 | [`docs/WIKI-GUIDE.md`](docs/WIKI-GUIDE.md) | Reader and maintainer guide — includes agent prompt patterns |
-| [`docs/PAGE-ENHANCEMENT-STANDARD.md`](docs/PAGE-ENHANCEMENT-STANDARD.md) | Full prompt + checklist for polishing a single wiki page |
+| [`docs/PAGE-ENHANCEMENT-STANDARD.md`](docs/PAGE-ENHANCEMENT-STANDARD.md) | Superseded by ENHANCE-SKILL.md — kept for historical reference |
 | [`docs/INGEST-SKILL.md`](docs/INGEST-SKILL.md) | Raw source ingestion workflow — agent prompt + contributor template |
+| [`docs/WIKI-SKILL.md`](docs/WIKI-SKILL.md) | Wiki page generation — new ingest (Mode A) and update (Mode B) |
+| [`docs/ENHANCE-SKILL.md`](docs/ENHANCE-SKILL.md) | Single-page polish skill — replaces PAGE-ENHANCEMENT-STANDARD.md |
+| [`docs/link-map-en.md`](docs/link-map-en.md) | Generated wikilink map for wiki-en/ — do not edit manually |
+| [`docs/link-map-ru.md`](docs/link-map-ru.md) | Generated wikilink map for wiki-ru/ — do not edit manually |
 | [`docs/WIKI-BACKLOG.md`](docs/WIKI-BACKLOG.md) | Short-lived backlog scratchpad |
 | [`docs/log.md`](docs/log.md) | Append-only bilingual operations log |
 | [`docs/lint-report.md`](docs/lint-report.md) | Mechanical lint summary (**English**); overwritten by the last `--write-report` run |
@@ -49,7 +53,7 @@ Coverage includes core Bitcoin concepts (protocol + economics), key protocol ele
 
 ### Mechanical lint (`tools/lint.py`)
 
-From the repo root, run **`python3 tools/lint.py`** (stdlib only). Common flags: `--layer en|ru|both`, `--write-report` (overwrites `docs/lint-report.md`), `--strict` / `--strict-links` (non-zero exit for CI). Full checklist and agent workflow: **`CLAUDE.md`** → **Lint**. For raw source ingestion, see **`docs/INGEST-SKILL.md`** and the helper scripts in `tools/` (`check_duplicate.py`, `derive_slug.py`, `check_series.py`).
+From the repo root, run **`python3 tools/lint.py`** (stdlib only). Common flags: `--layer en|ru|both`, `--write-report` (overwrites `docs/lint-report.md`), `--strict` / `--strict-links` (non-zero exit for CI). Full checklist and agent workflow: **`CLAUDE.md`** → **Lint**. For raw source ingestion, see **`docs/INGEST-SKILL.md`** and the helper scripts in `tools/` (`check_duplicate.py`, `derive_slug.py`, `check_series.py`, `build_link_map.py`, `check_parity.py`).
 
 ## How to use
 
@@ -67,7 +71,7 @@ From the repo root, run **`python3 tools/lint.py`** (stdlib only). Common flags:
 | Task | Prompt |
 |---|---|
 | Ingest a source | `"Ingest raw/Theory/protocol/musig2.md into both wiki layers"` |
-| Enhance a page | `"Enhance wiki-ru/concepts/mempool.md @docs/PAGE-ENHANCEMENT-STANDARD.md"` |
+| Enhance a page | `"Enhance wiki-ru/concepts/mempool.md @docs/ENHANCE-SKILL.md"` |
 | Full lint | `"Run a full bilingual lint on both wiki-en/ and wiki-ru/"` (agent runs `python3 tools/lint.py --layer both --write-report` and updates `docs/log.md`) |
 | Targeted lint (RU) | `"Run a targeted lint on wiki-ru/"` (e.g. `--layer ru --write-report`) |
 

@@ -62,17 +62,22 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 - `wiki-ru/` — Russian wiki pages
 - `docs/` — maintainer and process documentation
   - `WIKI-GUIDE.md` — this guide
-  - `PAGE-ENHANCEMENT-STANDARD.md` — single-page polish checklist
+  - `PAGE-ENHANCEMENT-STANDARD.md` — superseded by `ENHANCE-SKILL.md`; kept for reference
+  - `WIKI-SKILL.md` — wiki page generation skill (new ingest + update modes)
+  - `ENHANCE-SKILL.md` — single-page polish skill; use instead of PAGE-ENHANCEMENT-STANDARD.md
+  - `link-map-en.md` — generated wikilink map for wiki-en/ (do not edit manually)
+  - `link-map-ru.md` — generated wikilink map for wiki-ru/ (do not edit manually)
   - `INGEST-SKILL.md` — raw source ingestion workflow; use before the wiki ingest step
   - `WIKI-BACKLOG.md` — short-lived backlog
   - `lint-report.md` — mechanical lint output (**English**); last run wins (see `--layer` scope below)
   - `log.md` — append-only operational log for **both** `wiki-en/` and `wiki-ru/`
-- `tools/lint.py` — mechanical lint CLI (`--layer en|ru|both`, `--write-report`, `--strict`); stdlib only; details in `CLAUDE.md` → **Lint**
+- `tools/` — lint.py (mechanical lint), check_duplicate.py, derive_slug.py, check_series.py, build_link_map.py, check_parity.py. See `tools/README.md` for interface reference.
 - `CLAUDE.md` (repo root) — project rules: frontmatter schema + bilingual lint rules
 
 ## How maintenance works (high level)
 
 - New source files are added to `raw/` (never edited by the agent) using the workflow in docs/INGEST-SKILL.md. See CONTRIBUTING.md for the full source acceptance policy.
+- **Link maps:** run `python3 tools/build_link_map.py` from the repo root to regenerate `docs/link-map-en.md` and `docs/link-map-ru.md` after adding or renaming wiki pages. Agents read these maps before wikilinking — never scan the directory tree directly.
 - The agent updates wiki pages, indexes, and logs while preserving provenance.
 - **Lint:** run `python3 tools/lint.py` from the repo root (see `CLAUDE.md` → **Lint**). Use `--write-report` to refresh `docs/lint-report.md` (English headings and labels; vault paths and quoted snippets may be Russian). Choose `--layer ru`, `--layer en`, or `--layer both` so the report matches the pass you intend.
 
@@ -80,7 +85,7 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 
 `CLAUDE.md` is loaded automatically in every Cursor session — you never need to @mention it. The agent follows its operation checklists (Ingest, Enhance, Lint, Query) without prompting.
 
-`docs/PAGE-ENHANCEMENT-STANDARD.md` is **not** auto-loaded. Always include `@docs/PAGE-ENHANCEMENT-STANDARD.md` in enhance prompts so the agent has the full standard in context from the start.
+`docs/PAGE-ENHANCEMENT-STANDARD.md` is **not** auto-loaded. Always include `@docs/ENHANCE-SKILL.md` in enhance prompts so the agent has the full standard in context from the start.
 
 ### Prompt patterns
 
@@ -88,8 +93,8 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 |---|---|---|
 | **Raw ingest** | `"Use docs/INGEST-SKILL.md to add the following article to raw/. URL: https://..."` | No — skill is self-contained |
 | **Ingest** | `"Ingest raw/Theory/protocol/musig2.md into both wiki layers"` | No |
-| **Enhance** | `"Enhance wiki-ru/concepts/mempool.md @docs/PAGE-ENHANCEMENT-STANDARD.md"` | Yes — include `@docs/PAGE-ENHANCEMENT-STANDARD.md` |
-| **Enhance batch** | `"Enhance all pages in wiki-ru/concepts/ that are missing the reviewed field @docs/PAGE-ENHANCEMENT-STANDARD.md"` | Yes |
+| **Enhance** | `"Enhance wiki-ru/concepts/mempool.md @docs/ENHANCE-SKILL.md"` | Yes — include `@docs/ENHANCE-SKILL.md` |
+| **Enhance batch** | `"Enhance all pages in wiki-ru/concepts/ that are missing the reviewed field @docs/ENHANCE-SKILL.md"` | Yes |
 | **Lint** | `"Run a full bilingual lint on both wiki-en/ and wiki-ru/"` — agent should run `python3 tools/lint.py --layer both --write-report` and append `docs/log.md` | No |
 | **Lint (targeted RU)** | `"Run a targeted lint on wiki-ru/"` — e.g. `python3 tools/lint.py --layer ru --write-report` + `docs/log.md` | No |
 | **Lint (targeted EN)** | `"Run a targeted lint on wiki-en/"` — e.g. `python3 tools/lint.py --layer en --write-report` + `docs/log.md` | No |

@@ -1,6 +1,6 @@
 # INGEST-SKILL — Raw Source Ingestion for 21wiki
 
-This skill turns an article URL or pasted content into a properly formatted `raw/` file in the correct subdirectory. It covers one task only: getting source material into `raw/`. Wiki page generation from `raw/` is a separate step — see `WIKI-SKILL.md` when that exists, or the ingest workflow in `CLAUDE.md` in the meantime.
+This skill turns an article URL or pasted content into a properly formatted `raw/` file in the correct subdirectory. It covers one task only: getting source material into `raw/`. Wiki page generation from `raw/` is a separate step — see `docs/WIKI-SKILL.md`.
 
 **Tools required:** Cursor or Claude Code with file-write access to the repo. **Scripts used:** `tools/check_duplicate.py`, `tools/derive_slug.py`, `tools/check_series.py` — see `tools/README.md` for interface reference.
 
@@ -201,7 +201,7 @@ Output this block after writing the file. Do not skip it.
 
 Next step:
   To generate wiki pages from this file, run the wiki ingest workflow:
-  → See CLAUDE.md "Ingest" section, or WIKI-SKILL.md when available
+  → See CLAUDE.md "Ingest" section, or docs/WIKI-SKILL.md
   → File path to use: raw/<subdir>/<slug>.md
 ```
 

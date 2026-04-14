@@ -1,3 +1,7 @@
+> **⚠ Superseded.** This document has been replaced by `docs/ENHANCE-SKILL.md`.
+> It is kept here for historical reference only. Use `ENHANCE-SKILL.md` for all
+> new enhancement work.
+
 # Page Enhancement Standard — 21ideas Bitcoin Wiki
 
 > Superseded by docs/ENHANCE-SKILL.md — kept for historical reference.

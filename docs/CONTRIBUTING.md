@@ -85,7 +85,7 @@ The agent needs to read `CLAUDE.md`, `docs/PAGE-ENHANCEMENT-STANDARD.md`, existi
 
 **Before you start — read these two files in the repo:**
 - `CLAUDE.md` (repo root) — the non-negotiable rules for every wiki page
-- `docs/PAGE-ENHANCEMENT-STANDARD.md` — the full single-page polish checklist
+- `docs/ENHANCE-SKILL.md` — the full single-page polish checklist (replaces PAGE-ENHANCEMENT-STANDARD.md)
 
 **The short version of the rules:**
 - Every page needs complete YAML frontmatter (see schema below)
@@ -131,7 +131,7 @@ Pick an unprocessed file from `raw/` — check `docs/WIKI-BACKLOG.md` for a cura
 With your agent session open at the repo root, use this prompt:
 
 ```
-Read CLAUDE.md and docs/PAGE-ENHANCEMENT-STANDARD.md in full first.
+Read CLAUDE.md and docs/ENHANCE-SKILL.md in full first.
 
 Then ingest raw/[PATH TO FILE] into both wiki layers:
 - wiki-en/[CATEGORY]/[SLUG].md
