@@ -1,19 +1,19 @@
 # Lint report — 21ideas Bitcoin Wiki
 
-_Last pass: 2026-04-14 (targeted: wiki-en/ only)_
+_Last pass: 2026-04-24 (full bilingual)_
 
 ## Summary
 
 | Layer | Pages | Bad wikilink prefix | Broken targets | Block `sources:` | Body `---` | Body `#` | `raw/` in body | Missing FM keys | Missing `reviewed` | Off-allowlist tags |
 |-------|------:|--------------------:|---------------:|-----------------:|----------:|---------:|---------------:|----------------:|-------------------:|-------------------:|
-| wiki-en | 78 | 3 | 7 | 1 | 4 | 1 | 12 | 2 | 3 | 0 |
+| wiki-en | 78 | 2 | 7 | 1 | 3 | 1 | 8 | 0 | 1 | 0 |
+| wiki-ru | 86 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Detail (by layer)
 
 ### `wiki-en/`
 
-- **Invalid cross-prefix / layer wikilinks** (3):
-  - `('wiki-en/overview.md', '[[ru/...]]')`
+- **Invalid cross-prefix / layer wikilinks** (2):
   - `('wiki-en/overview.md', '[[ru/overview|Russian wiki overview]]')`
   - `('wiki-en/overview.md', '[[ru/index|Russian wiki index]]')`
 
@@ -26,24 +26,19 @@ _Last pass: 2026-04-14 (targeted: wiki-en/ only)_
   - `('wiki-en/concepts/security.md', '[[en/concepts/multisig\\|multisig]]', 'concepts/multisig\\.md')`
   - `('wiki-en/glossary.md', '[[en/concepts/lightning network]]', 'concepts/lightning network.md')`
 
-- **`raw/` in body** (12):
-  - `('wiki-en/contribute.md', 'The wiki is built from immutable source files in `raw/` — anchored in [21ideas.org](https://21ideas.')`
-  - `('wiki-en/contribute.md', 'Use docs/INGEST-SKILL.md to add the following article to raw/.')`
-  - `('wiki-en/contribute.md', 'URL is always required. Everything else improves results but is optional. The agent handles subdirec')`
+- **`raw/` in body** (8):
   - `('wiki-en/entities/gigi.md', '*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source artic')`
   - `('wiki-en/entities/parker-lewis.md', '*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source artic')`
   - `('wiki-en/entities/saifedean-ammous.md', '*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source artic')`
   - `('wiki-en/glossary.md', '*Source: `raw/Start/glossary.md` — the master Bitcoin term reference for 21ideas.org. All terms defi')`
   - `('wiki-en/history/pre-bitcoin-cypherpunks.md', '*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source artic')`
-  - `('wiki-en/overview.md', '> This page describes the **English** wiki (`wiki-en/`). A parallel **Russian** wiki lives in `wiki-')`
   - `('wiki-en/practice/buying.md', '*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source artic')`
   - `('wiki-en/practice/privacy-practice.md', '*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source artic')`
   - `('wiki-en/practice/running-a-node.md', '*Synthesized from multiple sources in the 21ideas.org raw/ library. No single canonical source artic')`
 
-- **Standalone `---` in body** (4):
+- **Standalone `---` in body** (3):
   - `wiki-en/glossary.md`
   - `wiki-en/index.md`
-  - `wiki-en/overview.md`
   - `wiki-en/series/oxt-research.md`
 
 - **`#` as first body heading** (1):
@@ -52,14 +47,10 @@ _Last pass: 2026-04-14 (targeted: wiki-en/ only)_
 - **Block / list `sources:`** (1):
   - `wiki-en/glossary.md`
 
-- **Missing required YAML keys** (2):
-  - `('wiki-en/contribute.md', ['completeness', 'quality', 'sources', 'synthesized_date', 'tags'])`
-  - `('wiki-en/support.md', ['completeness', 'quality', 'sources', 'synthesized_date', 'tags'])`
-
-- **Missing `reviewed`** (3):
-  - `wiki-en/contribute.md`
+- **Missing `reviewed`** (1):
   - `wiki-en/glossary.md`
-  - `wiki-en/support.md`
+
+### `wiki-ru/`
 
 ## Suggested follow-ups
 

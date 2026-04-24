@@ -16,6 +16,7 @@ These apply before anything else. No exceptions.
 4. **Never summarize or paraphrase** the article body. Clean it, preserve it.
 5. **Never ingest the same URL twice.** Run `check_duplicate.py` before writing.
 6. **Never add wiki-layer content here.** `raw/` files are source material only — no `[[wikilinks]]`, no `## Related pages`, no Quartz-specific formatting.
+7. **Never fetch or reconstruct article body content independently.** The body must come from the contributor's paste only. If no paste has been provided, ask for it — do not proceed.
 
 ---
 
@@ -25,19 +26,38 @@ The contributor provides:
 
 |Field|Required|Notes|
 |---|---|---|
-|URL|**Yes**|Always required, even when pasting content|
-|Content|Situational|Required if agent has no web fetch access|
+|Content (pasted article text, preferably markdown)|**Yes**|Paste the full article text from the title to the last line, including tables, footnotes, and closing notes. Markdown format preferred (e.g. copied from reader mode or a markdown-rendered view).|
+|URL|**Yes**|Always required, even when pasting content — cannot be inferred from pasted text reliably.|
 |Author|No|Agent infers from article if not provided. If the contributor provided an author name in their prompt, use it as-is — do not override with what the agent infers from the article.|
 |Series context|No| Agent detects automatically via `check_series.py`. If the contributor specified series name and part number, use it as-is — do not override. |
 | Published | No | Publication date as YYYY-MM-DD. If the contributor supplied it, use it as-is. If not provided and not visible in the article, omit the `date:` field entirely — do not guess. |
 
-If the agent has web fetch capability, attempt to fetch the URL first. If fetch fails or is unavailable, ask the contributor to paste the full article content. The URL must still be provided separately — it cannot be inferred from pasted text reliably.
+If the contributor has not pasted content, ask for it before proceeding. Do not attempt to fetch or reconstruct the article body independently.
 
 ---
 
 ## Step-by-step execution
 
-### Step 1 — Duplicate check (script)
+### Step 1 — Build source inventory from pasted content
+
+Before writing anything, read the pasted content and produce a structural inventory:
+
+```
+Pre-heading content: [YES/NO] — if YES, first sentence: "..."
+Headings (in order):
+  ## Heading one
+    ### Sub-heading
+  ## Heading two
+  ...
+Post-heading content: [YES/NO] — if YES, first sentence: "..."
+Tables: [count] — list first-row content of each
+Blockquotes: [count] — list first 8 words of each
+Approximate word count: [N]
+```
+
+This inventory is the ground truth. Every item must appear in the written `raw/` file. Any item missing from the file is a hard stop — do not proceed to wiki ingest.
+
+### Step 2 — Duplicate check (script)
 
 ```bash
 python3 tools/check_duplicate.py --url "<URL>"
@@ -47,7 +67,7 @@ python3 tools/check_duplicate.py --url "<URL>"
 - `DUPLICATE: raw/path/to/file.md` → stop, report the existing file to the contributor, do not proceed
 - `SLUG_CONFLICT` → proceed but note the conflict; the filename will need manual adjustment in Step 5
 
-### Step 2 — Classify the source
+### Step 3 — Classify the source
 
 Read the article content and determine the primary subdirectory using this lookup table. When content spans two categories, pick the primary one and record the secondary in `tags`.
 
@@ -73,7 +93,7 @@ Read the article content and determine the primary subdirectory using this looku
 
 **Ambiguous cases:** If genuinely unclear between two categories, prefer `Theory/` over `Practice/` for conceptual articles, and `protocol/` over `economics/` for articles that explain a mechanism (even if they discuss economic implications).
 
-### Step 3 — Derive the filename (script)
+### Step 4 — Derive the filename (script)
 
 ```bash
 python3 tools/derive_slug.py "<URL>"
@@ -84,7 +104,7 @@ Use the output as the filename base. Append `.md`.
 **Exceptions — use a manual filename when:**
 - The article is a book chapter → use `chapter-N-book-name.md` with a shortened book name if applicable 
 - The script returns an empty slug (non-ASCII path segment) → derive from the article title manually: lowercase, hyphenated, ASCII only
-- A `SLUG_CONFLICT` was reported in Step 1 → append `-2` or a disambiguating word
+- A `SLUG_CONFLICT` was reported in Step 2 → append `-2` or a disambiguating word
 
 Run the duplicate check again with the slug and subdir to confirm no path conflict before writing:
 
@@ -92,7 +112,7 @@ Run the duplicate check again with the slug and subdir to confirm no path confli
 python3 tools/check_duplicate.py --url "<URL>" --slug "<slug>" --subdir "<Theory/protocol>"
 ```
 
-### Step 4 — Clean the content
+### Step 5 — Clean the content
 
 **Strip all of the following** from the pasted or fetched content:
 
@@ -114,13 +134,15 @@ python3 tools/check_duplicate.py --url "<URL>" --slug "<slug>" --subdir "<Theory
 - The author's original formatting and paragraph structure
 - All original hyperlinks in the body (these are source material)
 
+**VERBATIM RULE:** The body of the `raw/` file must be a character-level faithful copy of the pasted content after chrome removal. Do not rewrite sentences. Do not compress or merge paragraphs. Do not omit sections that seem redundant or off-topic — curation happens at the wiki layer, not during `raw/` ingest. The only permitted changes are: stripping site chrome (as listed above), converting HTML entities to Unicode, and normalizing heading levels if inconsistent.
+
 **Normalization:**
 
 - Convert HTML entities to proper Unicode characters (`&amp;` → `&`, etc.)
 - Normalize heading levels if the article uses inconsistent jumps (e.g. `##` directly to `####`) — but do not change the author's intended hierarchy
 - Preserve original language throughout — do not translate any word, phrase, heading, or caption
 
-### Step 5 — Build the frontmatter
+### Step 6 — Build the frontmatter
 
 ```yaml
 ---
@@ -145,20 +167,20 @@ date: "<YYYY-MM-DD publication date if known, else omit>"
 - `language` — the language the article is written in, not the language the wiki page will be written in. `en` or `ru` for the vast majority of cases.
 - `tags` — free-form descriptive tags for this raw file. These are NOT the wiki allowlist tags. Use whatever is useful for search and classification. Examples: `[taproot, schnorr, protocol-upgrade, bip340]`
 - `date` — publication date if visible on the article. Omit the field entirely if unknown rather than guessing.
-- `series` and `part` — add only if Step 6 confirms a series. See below.
+- `series` and `part` — add only if Step 7 confirms a series. See below.
 
-### Step 6 — Series check (script)
+### Step 7 — Series check (script)
 
-Write the file first (Step 7), then run:
+Write the file first (Step 8), then run:
 
 ```bash
 python3 tools/check_series.py raw/<subdir>/<filename>.md
 ```
 
 - `NO_SERIES` → nothing to do
-- `SERIES_DETECTED` → include the full output block in your verification report to the contributor (see Step 8). Do not block or branch — just report. If confirmed as a series, add `series:` and `part:` to the frontmatter as a follow-up edit.
+- `SERIES_DETECTED` → include the full output block in your verification report to the contributor (see Step 9). Do not block or branch — just report. If confirmed as a series, add `series:` and `part:` to the frontmatter as a follow-up edit.
 
-### Step 7 — Write the file
+### Step 8 — Write the file
 
 Write the cleaned content with the frontmatter to the target path:
 
@@ -180,7 +202,7 @@ The file structure is:
 
 Do not add anything after the body. No wiki navigation, no wikilinks, no `## Sources` section — those belong in wiki pages, not raw/ files.
 
-### Step 8 — Verification report
+### Step 9 — Verification report
 
 Output this block after writing the file. Do not skip it.
 
@@ -196,6 +218,16 @@ Output this block after writing the file. Do not skip it.
 
   Duplicate check: CLEAR
   Slug conflict:   <CLEAR or note>
+
+  Section & content inventory:
+    [PRE-HEADING]  in source: YES/NO → in file: [x]/[ ]
+    [## Heading]   blocks in source: N → in file: N  [x]/[ ]
+    ... (one row per heading)
+    [POST-HEADING] in source: YES/NO → in file: [x]/[ ]
+    Tables: source N / file N  [x]/[ ]
+    Blockquotes: source N / file N  [x]/[ ]
+
+  Any [ ] item is a blocking issue — rewrite the file before proceeding.
 
   <If SERIES_DETECTED — paste full check_series.py output here>
 

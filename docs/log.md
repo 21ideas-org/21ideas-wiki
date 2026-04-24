@@ -982,3 +982,31 @@ Changes: Made prompt fully language-neutral for EN and RU pages. Added Task 0 (p
 **Changes:** Frontmatter: standardized canonical field order; quoted scalar values; replaced off-allowlist tags (`series`, `gigi`) with allowlist tags `[bitcoin, wiki, philosophy, synthesized]`; added `reviewed: "2026-04-14"` as last field. Body: removed H1, removed `raw/` mentions (including “raw/ library” phrasing and `Source: raw/...` lines), removed standalone `---` rules; fixed malformed `]]]` links; corrected `Philosophy Overview` link label; replaced incorrect “full node” link with the map-backed glossary entry `[[en/glossary#Node / Full node|Node / Full node]]`; removed legacy `## Related Terms` / `## Related Pages` → rebuilt a single `## Related pages` list with link-map-backed targets.
 **Content audit:** Kept substantive content unchanged; this pass was mechanical/style compliance only.
 **Lint:** Ran `python3 tools/lint.py --layer en --write-report`; EN layer still has known legacy issues elsewhere.
+
+---
+
+## [2026-04-24] process | tighten raw/ ingest — paste-first + verbatim rule
+
+Changes: INGEST-SKILL.md (paste-first flow, verbatim rule, inventory check, new zero-tolerance rule 7); CONTRIBUTING.md (contributor prompt template updated — Content field first, URL second, copy instructions and JS-pages note added); WIKI-GUIDE.md (prompt pattern updated); README.md (ingest step 1 note added).
+
+---
+
+---
+
+## [2026-04-24] process | clarify source URL policy in CLAUDE.md
+
+Changes: CLAUDE.md — three lines updated to replace "21ideas.org URLs" with "canonical source URL from the raw/ file's url: field". The rule was never 21ideas.org-only; other accepted domains (nakamotoinstitute.org, bitcoin.org, etc.) are valid. No behaviour change — wording only.
+
+---
+
+---
+
+## [2026-04-24] lint | fix wiki-ru/ issues + lint tool improvements
+
+wiki-ru/ flagged rows: 7 → 0.
+Changes:
+- tools/lint.py: added META_FILES exemption (contribute.md, support.md) — skips missing_keys, missing_reviewed, bad_tags, raw_in_body for meta/utility pages in both layers. Added code-fence-aware raw_in_body check (skips lines inside ``` blocks for all other files).
+- wiki-ru/contribute.md: updated ingest prompt template to paste-first (Content field added as first required field, URL second); added JS-rendered pages note.
+Lint: python3 tools/lint.py --layer both --write-report; wiki-ru/ 0 issues; wiki-en/ 23 (pre-existing, unrelated to this pass).
+
+---

@@ -91,7 +91,7 @@ This prevents accidental cross-language resolution in shared Obsidian vaults.
 
 | Task | Example prompt | Extra @mention needed? |
 |---|---|---|
-| **Raw ingest** | `"Use docs/INGEST-SKILL.md to add the following article to raw/. URL: https://..."` | No — skill is self-contained |
+| **Raw ingest** | `"Use docs/INGEST-SKILL.md to add the following article to raw/.` `URL: <paste URL here>` `Content: <paste full article text here>"` | No — skill is self-contained |
 | **Ingest** | `"Ingest raw/Theory/protocol/musig2.md into both wiki layers"` | No |
 | **Enhance** | `"Enhance wiki-ru/concepts/mempool.md @docs/ENHANCE-SKILL.md"` | Yes — include `@docs/ENHANCE-SKILL.md` |
 | **Enhance batch** | `"Enhance all pages in wiki-ru/concepts/ that are missing the reviewed field @docs/ENHANCE-SKILL.md"` | Yes |

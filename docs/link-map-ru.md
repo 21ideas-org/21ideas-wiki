@@ -76,6 +76,7 @@ UTXO (Unspent Transaction Output) → [[ru/glossary#UTXO (Unspent Transaction Ou
 Инвойс (Lightning Invoice) → [[ru/glossary#Инвойс (Lightning Invoice)|Инвойс (Lightning Invoice)]] [glossary]
 Инфляция → [[ru/glossary#Инфляция|Инфляция]] [glossary]
 Кастодиальное хранение → [[ru/glossary#Кастодиальное хранение|Кастодиальное хранение]] [glossary]
+Квантовые компьютеры и криптографический риск для Биткоина (AMA Ааронсона) → [[ru/topics/scott-aaronson-quantum-ama-distilled|Квантовые компьютеры и криптографический риск для Биткоина (AMA Ааронсона)]]
 Ключ (приватный / публичный) → [[ru/glossary#Ключ (приватный / публичный)|Ключ (приватный / публичный)]] [glossary]
 Коинбэйс (Coinbase-транзакция) → [[ru/glossary#Коинбэйс (Coinbase-транзакция)|Коинбэйс (Coinbase-транзакция)]] [glossary]
 Комиссия (Transaction Fee) → [[ru/glossary#Комиссия (Transaction Fee)|Комиссия (Transaction Fee)]] [glossary]

@@ -79,7 +79,7 @@ See **`docs/WIKI-GUIDE.md`** for the full prompt patterns table and notes on whe
 
 ## How to ingest (manual)
 
-1. Add new source markdown under the right subtree in **`raw/`** (see **`raw/README.md`**). Treat `raw/` files as read-only — never edit them to patch the wiki.
+1. Add new source markdown under the right subtree in **`raw/`** (see **`raw/README.md`**). When using the ingest skill, paste the full article text alongside the URL in your prompt — the agent requires the pasted content and will not fetch it independently. Treat `raw/` files as read-only — never edit them to patch the wiki.
 2. Run an **ingest** prompt (see above). The agent creates or updates pages in **`wiki-en/`** and **`wiki-ru/`**, refreshes both `index.md` files, and appends a dated entry to **`docs/log.md`**.
 
 For bilingual health checks, run a lint prompt: the agent should execute **`python3 tools/lint.py`** with the right **`--layer`** and **`--write-report`**, then append **`docs/log.md`**. The report file is **English** (paths and quoted vault snippets may contain Russian).

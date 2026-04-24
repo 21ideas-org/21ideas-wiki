@@ -29,17 +29,20 @@ Source acceptance rules (full list: [docs/CONTRIBUTING.md](https://github.com/21
 
 > Don't have an AI coding agent? [Cursor](https://cursor.com/) and [Gemini CLI](https://geminicli.com/) both offer free tiers.
 
+Before pasting the prompt, copy the full article text from the page — from the title to the last line, including any tables, footnotes, and closing notes. Markdown format is preferred (e.g. copied from reader mode). Do not summarize or abbreviate. For pages that require JavaScript to render (e.g. Stacker News, Twitter/X), use your browser's reader mode — not "View Source".
+
 ```
 Use docs/INGEST-SKILL.md to add the following article to raw/.
 
-URL:       <paste the full URL here>
+Content:   <paste full article text here — from title to last line, including tables, footnotes, and closing notes>
+URL:       <paste the full URL here — required even when pasting content>
 Author:    <author's name — omit if unsure>
 Published: <YYYY-MM-DD — omit if unknown>
 Series:    <series name and part number if applicable — omit if not a series>
 Notes:     <anything unusual — omit if nothing to flag>
 ```
 
-URL is always required. Everything else improves results but is optional. The agent handles subdirectory placement, duplicate checking, and frontmatter — you don't need to know the `raw/` structure.
+Both Content and URL are required. Everything else improves results but is optional. The agent handles subdirectory placement, duplicate checking, and frontmatter — you don't need to know the repository structure.
 
 Once you've added a source file, a maintainer will handle wiki synthesis — or continue to Track 3.
 

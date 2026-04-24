@@ -139,6 +139,7 @@ reviewed: "2026-04-11"
 |---|---|
 | [[ru/topics/bitcoin-dissidents]] | Биткоин как инструмент свободы |
 | [[ru/topics/network-effects]] | Семь сетевых эффектов Биткоина |
+| [[ru/topics/scott-aaronson-quantum-ama-distilled]] | Квантовые вычисления, Шор/Гровер и криптографический риск для Биткоина |
 
 ## Дополнительные материалы
 

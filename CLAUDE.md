@@ -11,7 +11,7 @@ A bilingual (EN + RU) Bitcoin education wiki built from immutable source files i
 - **Never write bare wikilinks** (`[[taproot]]`, `[[concepts/taproot]]`) — always use `[[en/...]]` or `[[ru/...]]` prefixes.
 - **Never use `[[wiki-ru/...]]` or `[[wiki-en/...]]` prefixes** — they are invalid in this vault.
 - **Never modify `raw/` files.**
-- **Never cite `raw/...` paths in page body text** — only 21ideas.org URLs are reader-facing.
+- **Never cite `raw/...` paths in page body text** — only canonical source URLs from the raw/ file's `url:` field are reader-facing.
 - **Never treat `wiki-ru/` as a translation of `wiki-en/`.** Both are independent syntheses from the same sources.
 - **Never use `---` horizontal rules in the page body.** Only YAML frontmatter delimiters are permitted.
 - **Never open the page body with a `#` heading.** Quartz uses the frontmatter `title` field as the page title. Start the body directly with `##` sections.
@@ -141,7 +141,7 @@ For single-page polish, see docs/ENHANCE-SKILL.md.
 1. Read the new `raw/` file(s). Do not modify them.
 2. Check `wiki-en/index.md` and `wiki-ru/index.md` for pages to create or update.
 3. Write pages independently for each layer from the same `raw/` sources.
-4. Apply full frontmatter schema; populate `sources:` with real 21ideas.org URLs from raw/ metadata.
+4. Apply full frontmatter schema; populate `sources:` with the canonical URL from the raw/ file's `url:` field — whatever domain that is. Never fabricate.
 5. Verify all wikilinks use the correct layer prefix.
 6. Update `wiki-en/index.md` and `wiki-ru/index.md`.
 7. Append to `docs/log.md`:
@@ -226,7 +226,7 @@ The script implements the **mechanical** checks below (wikilink prefix, broken `
 ### Query / Research
 
 1. Read the relevant layer's `index.md` first to find candidate pages.
-2. Drill into relevant pages; synthesize an answer with citations to 21ideas.org URLs.
+2. Drill into relevant pages; synthesize an answer with citations to canonical source URLs (from the raw/ file's `url:` field).
 3. **File the answer back as a wiki page** if it synthesizes across 3+ pages, compares concepts, or fills a documented gap. Apply full frontmatter; update index; append log entry.
 4. If it is a one-off chat answer, no log entry needed.
 

@@ -32,21 +32,26 @@ The wiki is grounded in immutable source files in `raw/`. If you have a relevant
 
 #### Using the ingest skill (recommended)
 
+**Before pasting the prompt:** Copy the full article text from the page — from the title to the last line, including any tables, footnotes, and closing notes. Markdown format is preferred (e.g. copied from a reader mode or markdown-rendered view). Do not summarize or abbreviate. The agent will preserve the text exactly as pasted.
+
+**For pages that require JavaScript to render** (e.g. Stacker News, Twitter/X), use your browser's reader mode or copy from the rendered page — not from "View Source".
+
 Open Cursor or Claude Code in the repo root and paste this prompt with your details filled in:
 
 ```
 Use docs/INGEST-SKILL.md to add the following article to raw/.
 
-URL:       <paste the full URL here>
+Content:   <paste full article text here — from title to last line, including tables, footnotes, and closing notes>
+URL:       <paste the full URL here — required even when pasting content>
 Author:    <author's name — omit if you're not sure>
 Published: <YYYY-MM-DD — omit if unknown>
 Series:    <series name and part number if applicable, e.g. "Gradually Then Suddenly, Part 4" — omit if not a series>
 Notes:     <anything unusual about this article — omit if nothing to flag>
 ```
 
-The agent will fetch or ask you to paste the content, determine the correct subdirectory, clean the article, build the frontmatter, run duplicate checks, and report what it created. You do not need to know the `raw/` structure.
+The agent will determine the correct subdirectory, clean the article, build the frontmatter, run duplicate checks, and report what it created. You do not need to know the `raw/` structure.
 
-**URL is always required.** Everything else improves results but is optional.
+**Both Content and URL are required.** Everything else improves results but is optional.
 
 #### Manual placement
 

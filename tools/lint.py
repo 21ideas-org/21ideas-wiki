@@ -81,6 +81,10 @@ REQUIRED_FM_KEYS = frozenset(
 
 HUB_FILES = frozenset({"index.md", "overview.md"})
 
+# Meta/utility pages that are part of the vault but are not wiki content pages.
+# Exempt from: missing required FM keys, missing reviewed, bad tags, raw_in_body.
+META_FILES = frozenset({"contribute.md", "support.md"})
+
 
 def split_frontmatter(text: str) -> tuple[str | None, str]:
     """Return (frontmatter_inner, body) or (None, full_text) if no FM."""
@@ -201,9 +205,13 @@ def lint_layer(layer: str) -> dict:
             for m in re.finditer(pattern, body):
                 results["bad_links"].append((rel, m.group(0)))
 
-        for line in body.splitlines():
-            if "raw/" in line:
-                results["raw_in_body"].append((rel, line.strip()[:100]))
+        if path.name not in META_FILES:
+            in_fence = False
+            for line in body.splitlines():
+                if line.strip().startswith("```"):
+                    in_fence = not in_fence
+                if not in_fence and "raw/" in line:
+                    results["raw_in_body"].append((rel, line.strip()[:100]))
 
         if any(re.match(r"^---\s*$", ln) for ln in body.splitlines()):
             results["body_hr"].append(rel)
@@ -217,7 +225,7 @@ def lint_layer(layer: str) -> dict:
         if is_block_sources(fm_raw):
             results["sources_block"].append(rel)
 
-        if path.name in HUB_FILES:
+        if path.name in HUB_FILES | META_FILES:
             continue
 
         keys = fm_keys(fm_raw)
