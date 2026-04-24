@@ -1,101 +1,107 @@
 ---
-title: "Overview: Bitcoin Knowledge Synthesis"
-category: overview
-tags: [bitcoin, wiki, synthesized]
-language: en
-source: "Synthesized from raw/ sources + glossary"
-updated: "2026-04-10"
-quality: canonical
+title: "Introduction to 21wiki"
+category: "overview"
+quality: "synthesized"
 sources: []
 synthesized_date: "2026-04-10"
-completeness: high
+completeness: "high"
+language: "en"
+tags: [bitcoin, wiki, overview, navigation]
+updated: "2026-04-14"
+reviewed: "2026-04-14"
 ---
 
-*A synthesis of the 21ideas.org source library — ~308 articles, 8 books, multiple article series.*
-
-> This page describes the **English** wiki (`wiki-en/`). A parallel **Russian** wiki lives in `wiki-ru/`: same `raw/` sources and schema, but Russian pages are not word-for-word translations of the English text. 
-
----
+21wiki is a Bitcoin knowledge base grounded in the immutable 21ideas.org source library (articles, books, and series) and fundamental Bitcoin-only materials organized into a navigable map.
 
 ## About the project
 
-21ideas.org is a Russian-language Bitcoin education platform. Its source library covers Bitcoin from every angle: philosophy, economics, technical protocol, history, and practical self-custody. The material skews toward Bitcoin maximalism (Bitcoin only, not crypto), Austrian economics, cypherpunk philosophy, and privacy-focused self-sovereignty.
+21ideas.org is a Bitcoin-only education project. Over time it accumulated a large source library: books, long-form series, practical guides, and conceptual explainers across economics, protocol, history, privacy, and security.
 
----
+This wiki does not replace the original materials. It is a structured map and entry point: if a topic clicks, follow the links and read the primary sources referenced by each page.
 
-## The Core Argument (Synthesized)
+## How to read
 
-**Bitcoin is the first money in history that no one can inflate, confiscate, or censor — and this matters more than most people realize.**
+### If you are just getting started
 
-The argument builds in layers:
+1. Read [[en/concepts/bitcoin|Bitcoin]] — a baseline understanding of the protocol
+2. Use [[en/glossary|Glossary]] — definitions for common terms
+3. Read [[en/concepts/money|Money]] — why the concept of money matters
+4. Continue with [[en/books/inventing-bitcoin|Inventing Bitcoin]] or [[en/books/sovereignty-through-mathematics|Sovereignty Through Mathematics]] — both compress the essentials into a short book
 
-**1. Fiat money is broken by design.**
-Central banks create [[en/concepts/money|fiat]] money by decree. This inflates away savings, enables wars, subsidizes bad banks, and distorts economic signals. The fiat system is not a neutral technology — it is a political tool. See: [[en/books/fiat-standard|The Fiat Standard]], [[en/concepts/money|Money]], [[en/history/timeline|Timeline]].
+### If you care about history
 
-**2. Bitcoin solves the double-spend problem without trusted intermediaries.**
-Before Bitcoin, digital money required banks to track who owns what. Bitcoin uses [[en/concepts/proof-of-work|Proof of Work]] and a public ledger so that anyone can verify ownership without trusting anyone. This is [[en/entities/satoshi-nakamoto|Satoshi]]'s breakthrough. See: [[en/entities/satoshi-nakamoto|Satoshi Nakamoto]], [[en/books/inventing-bitcoin|Inventing Bitcoin]].
+1. [[en/history/pre-bitcoin-cypherpunks|Pre-Bitcoin: The Cypherpunk Era]] — where Bitcoin came from
+2. [[en/entities/cypherpunks|Cypherpunks]] — people and ideas that shaped Bitcoin
+3. [[en/series/genesis-files|Genesis Files]] — deep dives into every major precursor
+4. [[en/history/timeline|Bitcoin Timeline]] — key events in chronological order
+5. [[en/history/blocksize-war|The Blocksize War (2015-2017)]] — the scaling conflict that defined Bitcoin governance in practice
 
-**3. 21 million is not negotiable.**
-The hard cap is enforced by math and network consensus, not by any company or government. [[en/concepts/scarcity|Scarcity]] — unlike gold, oil, or fiat — is *absolute* in Bitcoin. The [[en/concepts/scarcity|21M cap]] is enforced by every [[en/concepts/governance|full node]]. See: [[en/concepts/scarcity|Scarcity]], [[en/concepts/governance|Governance]].
+### If you care about economics
 
-**4. Bitcoin is the culmination of cypherpunk ideas developed over 20 years.**
-eCash → Hashcash → b-money → Bit Gold → RPOW → Bitcoin. Each precursor solved some problems, left others. [[en/entities/satoshi-nakamoto|Satoshi]] read all of them and synthesized them into a working system. See: [[en/entities/cypherpunks|Cypherpunks]], [[en/series/genesis-files|Genesis Files]], [[en/history/pre-bitcoin-cypherpunks|Pre-Bitcoin cypherpunks]].
+1. [[en/concepts/money|Money]] — what money is and how it evolves
+2. [[en/concepts/cantillon-effect|Cantillon Effect]] — how inflation redistributes wealth
+3. [[en/concepts/scarcity|Scarcity]] — why \(21\,000\,000\) matters
+4. [[en/series/gradually-then-suddenly|Gradually, Then Suddenly]] — Parker Lewis’s essay series
 
-**5. Privacy and self-custody are not optional extras — they are the point.**
-If you trust a third party with your bitcoin, you do not have Bitcoin — you have an IOU. If your transactions are tracked, financial freedom is an illusion. See: [[en/concepts/privacy|Privacy]], [[en/concepts/security|Security]], [[en/practice/storage|Storage]], [[en/practice/privacy-practice|Privacy practice]].
+### If you care about philosophy and culture
 
-**6. Lightning Network extends Bitcoin to everyday payments.**
-On-chain Bitcoin is slow and expensive for small payments. The [[en/concepts/lightning-network|Lightning Network]] adds instant, near-free micropayments as a second layer, without changing Bitcoin's base rules. [[en/concepts/segwit|SegWit]] (2017) was the prerequisite that enabled it.
+1. [[en/philosophy/overview|Philosophy Overview]] — philosophical foundations of Bitcoin
+2. [[en/books/21-ways|21 Ways]] — 21 frames for understanding Bitcoin
+3. [[en/topics/bitcoin-dissidents|Bitcoin for Dissidents]] — Bitcoin as an escape from coercion
+4. [[en/topics/network-effects|Bitcoin's Seven Network Effects]] — why the network hardens over time
 
-**7. Altcoins are not alternatives — they are distractions.**
-Proof-of-Stake systems cannot actually achieve consensus (the "validator cartel" problem). Every altcoin reintroduces centralization, trusted parties, or inflation. The sources are explicit: Bitcoin, not crypto. See: [[en/philosophy/overview|Philosophy overview]], [[en/concepts/proof-of-work|Proof of Work]].
+### If you want to start using Bitcoin
 
----
+1. [[en/practice/buying|Buying Bitcoin]] — acquiring bitcoin
+2. [[en/practice/storage|Storage & Self-Custody]] — holding your own keys safely
+3. [[en/practice/lightning-tools|Lightning Tools]] — everyday Lightning payments
+4. [[en/concepts/security|Security]] — the threat model of self-sovereignty
+5. [[en/practice/privacy-practice|Privacy in Practice]] — coin control, CoinJoin, Tor
+6. [[en/practice/running-a-node|Running a Bitcoin Node]] — independently verifying the rules
 
-## Key Tension: Accessibility vs. Sovereignty
+### If you care about the technical side
 
-A recurring tension in the source material: the easiest Bitcoin experience (custodial exchanges, KYC, custodial Lightning wallets) is antithetical to Bitcoin's purpose. The site pushes hard toward self-custody, no-KYC acquisition, and running your own node — while acknowledging this is harder than just buying on an exchange.
+1. [[en/concepts/proof-of-work|Proof of Work]] — the consensus mechanism
+2. [[en/concepts/mining|Mining]] — how blocks are produced
+3. [[en/concepts/utxo|UTXOs (Unspent Transaction Outputs)]] — Bitcoin’s balance model
+4. [[en/concepts/segwit|SegWit (Segregated Witness)]] and [[en/concepts/taproot|Taproot]] — major protocol upgrades
+5. [[en/concepts/protocol-stack|Bitcoin Protocol Stack]] — layered architecture
+6. [[en/concepts/lightning-network|Lightning Network]] — payment channels on top of the base layer
 
----
+## Wiki structure
 
-## Strongest Original Sources (by influence across the library)
+```
+wiki-en/
+├── index.md                    ← directory of all pages
+├── overview.md                 ← this file
+├── glossary.md                 ← term definitions
+├── concepts/                   ← 35 conceptual pages
+├── entities/                   ← 12 people / groups
+├── history/                    ← 3 history pages
+├── philosophy/                 ← 1 philosophy page
+├── books/                      ← 8 books
+├── series/                     ← 7 article series
+├── practice/                   ← 5 practical guides
+└── topics/                     ← 2 topic pages
+```
 
-| Source | Theme | Key Insight |
-|--------|-------|-------------|
-| Parker Lewis — *Gradually, Then Suddenly* | Monetary theory | Bitcoin critiques are backwards; Bitcoin IS money |
-| Giacomo Zucco — *Discovering Bitcoin* | History of money | 7-step logical derivation from barter to Lightning |
-| Aaron van Wirdum — *Genesis Files* | Cypherpunk history | Bitcoin's intellectual lineage: 20 years of failed predecessors |
-| Nick Szabo — *Shelling Out* | Monetary anthropology | Money emerged spontaneously; unforgeable costliness is the key |
-| Nick Szabo — *Social Scalability* | Protocol design | Bitcoin is computationally wasteful but socially efficient |
-| Gigi — *21 Ways* | Philosophy | 21 frames for understanding Bitcoin |
-| Saifedean Ammous — *Fiat Standard* | Macroeconomics | Fiat money analyzed as an engineering failure |
-| Alex Gladstein — *Petrodollar / Structural Adjustment* | Geopolitics | USD hegemony harms the Global South; Bitcoin as exit |
-| Eric Hughes — *Cypherpunks Manifesto* | Privacy | "Cypherpunks write code"; privacy as social good |
-| Robert Breedlove — *Masters and Slaves of Money* | Philosophy of money | All money is a claim on human time; inflation steals time |
+## About quality
 
----
+Each page includes YAML frontmatter metadata:
 
-## Related Terms
+- `quality: "synthesized"` — a topic distilled from multiple sources
+- `quality: "reference"` — a description of a specific source (book, series)
+- `completeness: "high"` / `"medium"` / `"low"` — how fully the topic is covered
 
-[[en/glossary|Glossary]] | [[en/concepts/bitcoin|Bitcoin]] | [[en/concepts/money|sound money]] | [[en/concepts/proof-of-work|Proof of Work]] | [[en/concepts/scarcity|scarcity]] | [[en/concepts/privacy|privacy]] | [[en/concepts/security|self-custody]] | [[en/concepts/lightning-network|Lightning Network]] | [[en/entities/satoshi-nakamoto|Satoshi Nakamoto]] | [[en/entities/cypherpunks|cypherpunks]]
-
----
-
-## What's Not Well Covered
-
-- Technical cryptography (elliptic curves, SHA-256 internals) — mentioned but not deep-dived
-- Mining economics / hardware specifics
-- Regulatory landscape (mentioned but not systematically tracked)
-- Non-Russian Bitcoin communities / non-Western perspectives (except Gladstein's HRF work)
-- DeFi / altcoins / Web3 — intentionally covered only when context requires
-
----
+Pages marked `completeness: "medium"` or `"low"` can be expanded as more sources are ingested.
 
 ## Navigation in Obsidian
 
-In Obsidian, use **Graph view** for the link map, **Backlinks** to see inbound references, and **wikilinks** to move between articles. The [Dataview](obsidian://show-plugin?id=dataview) plugin can query pages by frontmatter tags and categories.
-
----
+In Obsidian, use:
+- **Graph view** — a visual map of connections between pages
+- **Backlinks** — what links to the current page
+- **wikilinks** — navigation between articles
+- **Dataview** ([plugin](obsidian://show-plugin?id=dataview)) — query pages by tags and metadata
 
 ## Get involved
 
@@ -103,25 +109,18 @@ In Obsidian, use **Graph view** for the link map, **Backlinks** to see inbound r
 - If the wiki helped you: [Support 21wiki](./support)
 - Suggest a topic or report an error: [open a GitHub Issue](https://github.com/21ideas-org/21ideas-wiki/issues/new/choose)
 
----
-
-## Wiki status (2026-04-10)
-
-The English layer (`wiki-en/`) has **76** markdown files (**73** content pages if you exclude `index.md`, this overview, and `glossary.md`). Approximate breakdown:
-
-- **Concepts (35)**: Core Bitcoin protocol, economics, privacy, security, upgrades (e.g. SegWit, Taproot), mempool, forks, BIPs, precursors (b-money, Bit Gold, RPOW), and related topics
-- **Entities (12)**: Including Satoshi, Hal Finney, Nick Szabo, cypherpunks, Adam Back, Tim May, Eric Hughes, David Chaum, Phil Zimmermann, and others
-- **Books (8)**, **Series (7)**, **History (3)**, **Philosophy (1)**, **Practice (5)**, **Topics (2)**, plus **Glossary (1)**
-
-The Russian layer (`wiki-ru/`) is built to the same conventions with **`[[ru/...]]`** links. YAML frontmatter on every page supports tooling such as Dataview; cross-links are dense by design.
-
-*"Publish via Quartz or browse in Obsidian — see README."*
-
----
-
 ## Related pages
 
 - [[en/index|English wiki index]]
 - [[en/glossary|Glossary]]
+- [[en/concepts/bitcoin|Bitcoin]]
+- [[en/concepts/money|Money]]
+- [[en/concepts/proof-of-work|Proof of Work]]
+- [[en/concepts/scarcity|Scarcity]]
+- [[en/concepts/security|Security]]
+- [[en/concepts/lightning-network|Lightning Network]]
+- [[en/history/timeline|Bitcoin Timeline]]
+- [[en/series/genesis-files|Genesis Files]]
+- [[en/philosophy/overview|Philosophy Overview]]
 - [[ru/overview|Russian wiki overview]]
 - [[ru/index|Russian wiki index]]

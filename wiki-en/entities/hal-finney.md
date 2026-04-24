@@ -32,7 +32,7 @@ Satoshi read RPOW. Bitcoin solved the trusted server problem with the [[en/conce
 
 ## "Bitcoin and Me"
 
-Hal's final known forum post (March 2013), written from bed with his disease advanced but his mind intact. He described running Bitcoin from the beginning, his email exchanges with [[en/entities/satoshi-nakamoto|Satoshi]], losing interest after Bitcoin's early struggles, then returning to find the price had risen dramatically. He mentioned transferring most of his coins to [[en/glossary#cold-storage|cold storage]] and encrypting his laptop — a practical security guide in the final lines.
+Hal's final known forum post (March 2013), written from bed with his disease advanced but his mind intact. He described running Bitcoin from the beginning, his email exchanges with [[en/entities/satoshi-nakamoto|Satoshi]], losing interest after Bitcoin's early struggles, then returning to find the price had risen dramatically. He mentioned transferring most of his coins to [[en/glossary#cold storage|cold storage]] and encrypting his laptop — a practical security guide in the final lines.
 
 Source: [Bitcoin and Me](https://21ideas.org/bitcoin-and-me/)
 

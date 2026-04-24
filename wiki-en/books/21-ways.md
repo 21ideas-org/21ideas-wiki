@@ -13,7 +13,7 @@ reviewed: "2026-04-13"
 
 ## Summary
 
-21 short essays, each presenting a different frame for understanding [[en/concepts/bitcoin|Bitcoin]]. The book is deliberately non-linear — each chapter is independent, offering a different lens. Some are philosophical, some technical, some sociological, some economic. Together they build a rich multi-dimensional picture.
+21 Ways was planned as 21 essays, each presenting a different frame for understanding [[en/concepts/bitcoin|Bitcoin]]. Unfortunately, the work on the project stalled, but a number of beautiful essays were delivered. The book is deliberately non-linear — each chapter is independent, offering a different lens. Some are philosophical, some technical, some sociological, some economic. Together they build a rich multi-dimensional picture.
 
 [[en/entities/gigi|Gigi]] is the most prolific Bitcoin philosopher in this library.
 

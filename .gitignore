@@ -19,3 +19,6 @@ Thumbs.db
 # .obsidian/plugins/  # uncomment only if you want to exclude ALL plugins
 
 # Operational wiki changelog is committed at repo root: log.md
+
+# Claude/Cursor agent worktrees (ephemeral)
+.claude/worktrees/

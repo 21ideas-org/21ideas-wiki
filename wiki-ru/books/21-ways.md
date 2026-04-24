@@ -2,7 +2,7 @@
 title: "21 способ — Gigi"
 category: "books"
 quality: "reference"
-sources: ["https://21ideas.org/21-ways"]
+sources: ["https://21ideas.org/21-sposob"]
 synthesized_date: "2026-04-08"
 completeness: "medium"
 language: "ru"
@@ -45,7 +45,7 @@ Gigi пишет без технического жаргона, но с точн
 
 ## Источники
 
-- [https://21ideas.org/21-ways](https://21ideas.org/21-ways)
+- [https://21ideas.org/21-sposob](https://21ideas.org/21-sposob)
 
 ## Дополнительные материалы
 
