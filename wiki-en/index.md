@@ -117,6 +117,7 @@ Bitcoin wiki base built from [21ideas.org](https://21ideas.org) — a Bitcoin-on
 
 - [[en/topics/bitcoin-dissidents|Bitcoin for Dissidents]] — Belarus, Nigeria, Hong Kong, Russia: Bitcoin under authoritarianism
 - [[en/topics/network-effects|Bitcoin's Seven Network Effects]] — Trace Mayer's framework for Bitcoin's compounding adoption
+- [[en/topics/quantum-computing-ama|Quantum computing and Bitcoin security]] — What quantum computers can (and can’t) speed up; implications for signatures and cryptography
 
 ---
 

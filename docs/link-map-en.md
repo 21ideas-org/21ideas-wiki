@@ -132,7 +132,7 @@ Private/Public Key → [[en/glossary#Private/Public Key|Private/Public Key]] [gl
 Proof of Work → [[en/concepts/proof-of-work|Proof of Work]]
 PSBT (Partially Signed Bitcoin Transaction) → [[en/glossary#PSBT (Partially Signed Bitcoin Transaction)|PSBT (Partially Signed Bitcoin Transaction)]] [glossary]
 Public key → [[en/glossary#Public key|Public key]] [glossary]
-Quantum computing and the Bitcoin cryptography threat (Aaronson AMA) → [[en/topics/scott-aaronson-quantum-ama-distilled|Quantum computing and the Bitcoin cryptography threat (Aaronson AMA)]]
+Quantum computing and Bitcoin security (Scott Aaronson AMA) → [[en/topics/quantum-computing-ama|Quantum computing and Bitcoin security (Scott Aaronson AMA)]]
 RPOW (Reusable Proofs of Work) → [[en/concepts/rpow|RPOW (Reusable Proofs of Work)]]
 Running a Bitcoin Node → [[en/practice/running-a-node|Running a Bitcoin Node]]
 Saifedean Ammous → [[en/entities/saifedean-ammous|Saifedean Ammous]]

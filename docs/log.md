@@ -1010,3 +1010,23 @@ Changes:
 Lint: python3 tools/lint.py --layer both --write-report; wiki-ru/ 0 issues; wiki-en/ 23 (pre-existing, unrelated to this pass).
 
 ---
+
+## [2026-04-24] ingest | quantum-computing-ama (both layers)
+
+**Raw source:** raw/Theory/security/quantum-computing-ama.md
+**URL in raw/:** https://stacker.news/items/1477913/
+**Created:** wiki-en/topics/quantum-computing-ama.md, wiki-ru/topics/quantum-computing-ama.md
+**Indexes:** wiki-en/index.md (Topics); wiki-ru/index.md (Topics — replaced missing `scott-aaronson-quantum-ama-distilled` with `quantum-computing-ama`)
+**Wikilinks:** EN — [[en/concepts/security|Security]], [[en/glossary#Cryptography|Cryptography]], [[en/glossary#Encryption|Encryption]]; RU — [[ru/concepts/security|Безопасность и самостоятельное хранение]], [[ru/glossary#Криптография|Криптография]], [[ru/glossary#Шифрование|Шифрование]]
+**Content audit:** No gaps noted (page is a faithful synthesis of the raw distillation).
+**Lint:** Ran `python3 tools/lint.py --layer both --write-report`; wiki-ru/ 0 issues; wiki-en/ has pre-existing legacy issues elsewhere.
+
+---
+
+## [2026-04-24] enhance | wiki-ru/topics/quantum-computing-ama.md
+
+**Changes:** Added link-map-backed glossary links for private/public key terms; made the PQC section two sentences (no substantive change).
+**Content audit:** Solid — no gaps found requiring Mode B.
+**Lint:** Ran `python3 tools/lint.py --layer ru --write-report`; 0 issues.
+
+---
