@@ -18,6 +18,8 @@ For polishing existing pages (frontmatter, body style, link hygiene), see `docs/
 4. **Never modify `raw/` files.**
 5. **Never use `raw/...` paths in the page body.** Reader-facing citations use `https://21ideas.org/...` only.
 6. **Never open the body with a `#` heading. Never use `---` in the body.**
+7. **Never fetch external info.** Do not open or retrieve content from any URL (including the `raw/` file's `url:`) and do not use web search/browsing. The `url:` field exists only to populate `sources:` and the Sources section.
+8. **Wiki pages are not evidence.** Existing wiki pages may be used to discover *what to check* and *what to link*, but they are not valid support for factual claims. If a claim is not supported by the current `raw/` source(s) for this page, omit it and log the gap.
 
 ---
 
@@ -77,7 +79,7 @@ Answer before writing any section. If you cannot answer a question, do not write
 
 1. **Coverage** — What claims or mechanisms exist in `raw/` that the page does not cover? List them or state "none."
 2. **Thin sections** — Would any `##` section have fewer than two substantive sentences? Expand or fold it.
-3. **Unsupported claims** — Can every factual assertion be traced to `raw/` or an existing wiki page? Flag anything that cannot.
+3. **Unsupported claims** — Can every factual assertion be traced to the current page's `raw/` source material? Existing wiki pages may suggest what to check, but they do not justify facts. If you cannot trace a claim to `raw/`, do not write it; record it as a gap for follow-up.
 4. **Concept completeness** — Does the page explain the concept (mechanism, significance, implications), or only name it?
 
 ---
@@ -87,7 +89,7 @@ Answer before writing any section. If you cannot answer a question, do not write
 ### Steps
 
 **1. Orient**
-Read the `raw/` source in full. Note the `url:` field (your only permitted `sources:` value), the source language, and the target category. Confirm target paths:
+Read the `raw/` source in full. Note the `url:` field (your only permitted `sources:` value) but do not open it or fetch anything from it; it is citation metadata only. Note the source language and the target category. Confirm target paths:
 ```
 wiki-en/<category>/<slug>.md
 wiki-ru/<category>/<slug>.md

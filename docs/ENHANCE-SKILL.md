@@ -18,6 +18,8 @@ For adding source material to `raw/`, see `docs/INGEST-SKILL.md`.
 3. **Never link to pages or anchors not in the link map.**
 4. **Never use `raw/...` paths in the page body.**
 5. **Never open the body with a `#` heading. Never use `---` in the body.**
+6. **Never fetch external info.** Do not open or retrieve content from any URL and do not use web search/browsing while enhancing pages. URLs exist only for reader-facing citation (`sources:` and the Sources section), not as input material.
+7. **Do not use model knowledge as a source.** Do not use the model's prior/training knowledge to add or justify facts. Existing project wiki pages may be used to discover what to check and what to link, but only `raw/` supports factual claims.
 
 ---
 
@@ -128,8 +130,7 @@ Answer all four questions. If a gap is found, add a named item to
    sections present in source missing or thin here?
 2. **Thin sections** — Does any `##` section have fewer than two substantive
    sentences? Expand with `raw/` material or fold it.
-3. **Unsupported claims** — Can every factual assertion be traced to `raw/` or
-   an existing wiki page? Flag anything that cannot.
+3. **Unsupported claims** — Can every factual assertion be traced to the relevant `raw/` source material? Existing project wiki pages may suggest what to check, but they do not justify facts. Flag anything that cannot be traced to `raw/` (and do not expand it).
 4. **Concept completeness** — Does the page explain the concept (mechanism,
    significance, implications) or only name it?
 

@@ -7,6 +7,8 @@ A bilingual (EN + RU) Bitcoin education wiki built from immutable source files i
 ## What Agents Must NOT Do
 
 - **Never fabricate source URLs. Only use URLs that appear verbatim in the raw/ file's url: frontmatter field.** If no URL exists in `raw/` metadata, set `sources: []`.
+- **Never fetch or browse external sources for wiki generation.** Do not open or retrieve content from any URL (including the `raw/` file's `url:`); that field is citation metadata only.
+- **Never generate or update wiki pages without following `docs/WIKI-SKILL.md`.** Any wiki page creation/update request must use that workflow (Mode A/B), including link-map checks, lint, and logging.
 - **Never invent tags** outside the allowlist below.
 - **Never write bare wikilinks** (`[[taproot]]`, `[[concepts/taproot]]`) — always use `[[en/...]]` or `[[ru/...]]` prefixes.
 - **Never use `[[wiki-ru/...]]` or `[[wiki-en/...]]` prefixes** — they are invalid in this vault.
