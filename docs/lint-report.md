@@ -1,13 +1,13 @@
 # Lint report — 21ideas Bitcoin Wiki
 
-_Last pass: 2026-08-01 (full bilingual)_
+_Last pass: 2026-08-02 (full bilingual)_
 
 ## Summary
 
-| Layer | Pages | Bad wikilink prefix | Broken targets | Block `sources:` | Body `---` | Body `#` | `raw/` in body | Missing FM keys | Missing `reviewed` | Off-allowlist tags |
-|-------|------:|--------------------:|---------------:|-----------------:|----------:|---------:|---------------:|----------------:|-------------------:|-------------------:|
-| wiki-en | 79 | 2 | 7 | 1 | 3 | 1 | 8 | 0 | 1 | 0 |
-| wiki-ru | 87 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Layer | Pages | Bad wikilink prefix | Broken targets | Block `sources:` | Body `---` | Body `#` | `raw/` in body | Unescaped `$` | Missing FM keys | Missing `reviewed` | Off-allowlist tags |
+|-------|------:|--------------------:|---------------:|-----------------:|----------:|---------:|---------------:|--------------:|----------------:|-------------------:|-------------------:|
+| wiki-en | 79 | 2 | 7 | 1 | 3 | 1 | 8 | 0 | 0 | 1 | 0 |
+| wiki-ru | 94 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Detail (by layer)
 
