@@ -2,13 +2,13 @@
 title: "Типы биткоин-адресов"
 category: "concepts"
 quality: "reference"
-sources: ["https://21ideas.org/sravnenie-tipov-bitcoin-adresov"]
+sources: ["https://21ideas.org/sravnenie-tipov-bitcoin-adresov", "https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki", "https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki", "https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki", "https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki"]
 synthesized_date: "2026-04-08"
 completeness: "high"
 language: "ru"
 tags: [bitcoin, wiki, concept, addresses, segwit, taproot, privacy]
-updated: "2026-04-09"
-reviewed: "2026-04-09"
+updated: "2026-08-01"
+reviewed: "2026-08-01"
 ---
 
 Биткоин прошёл через несколько поколений форматов [[ru/glossary#Адрес|адресов]]. Каждый новый тип улучшает [[ru/concepts/privacy|приватность]], снижает комиссии или добавляет новые функции.
@@ -67,6 +67,21 @@ reviewed: "2026-04-09"
 - Поддержка подписей Шнорра и MAST
 - Самый дешёвый формат при расходовании
 
+## Тип адреса и путь деривации
+
+Тип адреса не выбирается кошельком произвольно — он закодирован в **пути деривации**, по которому выведен ключ. Стандарты BIP-49, BIP-84 и BIP-86 отличаются от BIP-44 ровно одним значением — уровнем `purpose'`:
+
+| Стандарт | `purpose'` | Тип скрипта | Префикс адреса |
+| --- | --- | --- | --- |
+| BIP-44 | `44'` | P2PKH | `1…` |
+| BIP-49 | `49'` | P2WPKH в P2SH | `3…` |
+| BIP-84 | `84'` | P2WPKH | `bc1q` |
+| BIP-86 | `86'` | P2TR с одним ключом | `bc1p` |
+
+Практическое следствие: одна и та же сид-фраза, открытая с разными значениями `purpose'`, даёт четыре независимых набора адресов. Если после восстановления кошелька баланс оказался нулевым, первое, что стоит проверить, — совпадает ли выбранный тип скрипта с тем, которым вы пользовались. Разбор устройства пути — на странице [[ru/concepts/hd-wallets|HD-кошельки: BIP-32 и пути деривации]].
+
+Несовместимость здесь сделана намеренной: несовместимый кошелёк не обнаружит счёт вовсе, вместо того чтобы показать его частично и незаметно потерять часть [[ru/concepts/utxo|UTXO]].
+
 ## Какой адрес использовать сегодня
 
 **Для обычных платежей** (включая Lightning):  
@@ -83,9 +98,11 @@ P2PKH (`1`) или P2SH (`3`).
 ## Источники
 
 - [Сравнение типов биткоин-адресов](https://21ideas.org/sravnenie-tipov-bitcoin-adresov/)
+- [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), [BIP-49](https://github.com/bitcoin/bips/blob/master/bip-0049.mediawiki), [BIP-84](https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki), [BIP-86](https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki) — схемы деривации
 
 ## Дополнительные материалы
 
+- [[ru/concepts/hd-wallets|HD-кошельки и пути деривации]]
 - [[ru/concepts/segwit|SegWit и новые типы адресов]]
 - [[ru/concepts/taproot|Taproot и P2TR]]
 - [[ru/concepts/multisig|Мультиподпись]]

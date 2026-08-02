@@ -39,7 +39,12 @@ reviewed: "2026-04-11"
 | [[ru/concepts/lightning-network]] | Платёжные каналы, HTLC, маршрутизация |
 | [[ru/concepts/protocol-stack]] | Уровни 0–3: P2P, блокчейн, Lightning, приложения |
 | [[ru/concepts/address-types]] | P2PK, P2PKH, P2SH, P2WPKH, P2TR |
-| [[ru/concepts/multisig]] | m-из-n схемы, PSBT, инструменты |
+| [[ru/concepts/multisig]] | m-из-n схемы, PSBT, инструменты, границы защиты |
+| [[ru/concepts/entropy]] | Энтропия и случайность: биты, стоимость перебора, источники |
+| [[ru/concepts/seed-phrase]] | Сид-фраза и BIP-39: 2048 слов, контрольная сумма, XFP |
+| [[ru/concepts/hd-wallets]] | HD-кошельки: BIP-32, пути деривации, xpub/ypub/zpub, закалённая деривация |
+| [[ru/concepts/passphrase]] | Парольная фраза BIP-39: Diceware, стоимость взлома, компромиссы |
+| [[ru/concepts/hardware-wallets]] | Модель угроз: доверие вендору, цепочка поставок, воздушный зазор |
 | [[ru/concepts/hashcash]] | Proof of Work Адама Бэка (1997) |
 | [[ru/concepts/money]] | Денежная теория, S2F, функции денег |
 | [[ru/concepts/cantillon-effect]] | Неравномерное распределение инфляции |
@@ -132,6 +137,7 @@ reviewed: "2026-04-11"
 | [[ru/practice/lightning-tools]] | Phoenix, Alby, LNbits |
 | [[ru/practice/privacy-practice]] | Coin control, CoinJoin, Tor |
 | [[ru/practice/running-a-node]] | Запуск биткоин-узла: Bitcoin Core, Umbrel |
+| [[ru/practice/verifying-software]] | Проверка ПО: PGP, sha256sum, воспроизводимые сборки |
 
 ## Темы
 
@@ -140,6 +146,7 @@ reviewed: "2026-04-11"
 | [[ru/topics/bitcoin-dissidents]] | Биткоин как инструмент свободы |
 | [[ru/topics/network-effects]] | Семь сетевых эффектов Биткоина |
 | [[ru/topics/quantum-computing-ama]] | Квантовые вычисления: ускорения, Шор/Гровер и криптографический риск для Биткоина |
+| [[ru/topics/coldcard-rng-incident]] | Инцидент 2026: подмена ГСЧ в прошивке, невидимый отказ, границы защиты мультисига |
 
 ## Дополнительные материалы
 
