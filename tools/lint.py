@@ -9,6 +9,11 @@ Usage:
   python3 tools/lint.py --write-report   # overwrite docs/lint-report.md
   python3 tools/lint.py --strict         # exit 1 if any issue is found
 
+Checks: wikilink prefix discipline, broken [[en/...]] / [[ru/...]] targets, block
+`sources:`, standalone `---` and leading `#` in body, `raw/` in body, unescaped `$`
+(Quartz renders it as LaTeX), required frontmatter keys, `language`, `reviewed`,
+tags against ALLOW_TAGS.
+
 Keep checks aligned with CLAUDE.md → Lint (mechanical checks).
 Requires Python 3.9+ (stdlib only).
 
@@ -81,6 +86,16 @@ REQUIRED_FM_KEYS = frozenset(
 
 HUB_FILES = frozenset({"index.md", "overview.md"})
 
+# Quartz enables remark-math: an unescaped `$` opens an inline math span and the
+# next one closes it, swallowing everything between into KaTeX. Currency amounts
+# ("$77 million") are the usual culprit and must be written `\$`.
+#
+# Note this flags ANY unescaped `$` outside code, not just odd counts. A pair of
+# currency values on one line is even-numbered yet still broken — checking only
+# for "unpaired" would miss the exact bug this check was added for.
+INLINE_CODE_RE = re.compile(r"`+[^`]*`+")
+UNESCAPED_DOLLAR_RE = re.compile(r"(?<!\\)\$")
+
 # Meta/utility pages that are part of the vault but are not wiki content pages.
 # Exempt from: missing required FM keys, missing reviewed, bad tags, raw_in_body.
 META_FILES = frozenset({"contribute.md", "support.md"})
@@ -151,6 +166,26 @@ def bad_tags_for_fm(fm_raw: str) -> list[str]:
     return [t for t in tags if t not in ALLOW_TAGS]
 
 
+def unescaped_dollars(body: str) -> list[tuple[int, int, str]]:
+    """Find unescaped `$` outside fenced blocks and inline code.
+
+    Returns (line_number, count_on_line, trimmed_line) per offending line.
+    """
+    hits: list[tuple[int, int, str]] = []
+    in_fence = False
+    for i, line in enumerate(body.splitlines(), start=1):
+        if line.strip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        stripped = INLINE_CODE_RE.sub("", line)
+        n = len(UNESCAPED_DOLLAR_RE.findall(stripped))
+        if n:
+            hits.append((i, n, line.strip()[:100]))
+    return hits
+
+
 def lint_layer(layer: str) -> dict:
     """layer is 'wiki-en' or 'wiki-ru'. Returns structured results."""
     wiki_root = ROOT / layer
@@ -188,6 +223,7 @@ def lint_layer(layer: str) -> dict:
         "bad_tag_rows": [],
         "missing_reviewed": [],
         "wrong_lang": [],
+        "unescaped_dollar": [],
     }
 
     for path in sorted(wiki_root.rglob("*.md")):
@@ -212,6 +248,11 @@ def lint_layer(layer: str) -> dict:
                     in_fence = not in_fence
                 if not in_fence and "raw/" in line:
                     results["raw_in_body"].append((rel, line.strip()[:100]))
+
+        # Line numbers reported relative to the file, not to the body slice.
+        offset = text.count("\n", 0, len(text) - len(body))
+        for lineno, count, snippet in unescaped_dollars(body):
+            results["unescaped_dollar"].append((rel, lineno + offset, count, snippet))
 
         if any(re.match(r"^---\s*$", ln) for ln in body.splitlines()):
             results["body_hr"].append(rel)
@@ -279,12 +320,12 @@ def format_report_md(results: list[dict], scope: str) -> str:
         "",
         "## Summary",
         "",
-        "| Layer | Pages | Bad wikilink prefix | Broken targets | Block `sources:` | Body `---` | Body `#` | `raw/` in body | Missing FM keys | Missing `reviewed` | Off-allowlist tags |",
-        "|-------|------:|--------------------:|---------------:|-----------------:|----------:|---------:|---------------:|----------------:|-------------------:|-------------------:|",
+        "| Layer | Pages | Bad wikilink prefix | Broken targets | Block `sources:` | Body `---` | Body `#` | `raw/` in body | Unescaped `$` | Missing FM keys | Missing `reviewed` | Off-allowlist tags |",
+        "|-------|------:|--------------------:|---------------:|-----------------:|----------:|---------:|---------------:|--------------:|----------------:|-------------------:|-------------------:|",
     ]
     for r in results:
         lines.append(
-            "| {layer} | {pages} | {bad} | {brk} | {src} | {hr} | {h1} | {raw} | {mk} | {rev} | {tags} |".format(
+            "| {layer} | {pages} | {bad} | {brk} | {src} | {hr} | {h1} | {raw} | {usd} | {mk} | {rev} | {tags} |".format(
                 layer=r["layer"],
                 pages=r["pages"],
                 bad=len(r["bad_links"]),
@@ -293,6 +334,7 @@ def format_report_md(results: list[dict], scope: str) -> str:
                 hr=len(r["body_hr"]),
                 h1=len(r["body_h1"]),
                 raw=len(r["raw_in_body"]),
+                usd=len(r["unescaped_dollar"]),
                 mk=len(r["missing_keys"]),
                 rev=len(r["missing_reviewed"]),
                 tags=len(r["bad_tag_rows"]),
@@ -312,6 +354,7 @@ def format_report_md(results: list[dict], scope: str) -> str:
             ("Invalid cross-prefix / layer wikilinks", "bad_links"),
             ("Broken wikilink targets", "broken_targets"),
             ("`raw/` in body", "raw_in_body"),
+            ("Unescaped `$` in body (Quartz renders it as LaTeX — write `\\$`)", "unescaped_dollar"),
             ("Standalone `---` in body", "body_hr"),
             ("`#` as first body heading", "body_h1"),
             ("Block / list `sources:`", "sources_block"),
@@ -366,6 +409,8 @@ def print_stdout(results: list[dict]) -> None:
             print("  body_h1:", len(r["body_h1"]))
         if r["raw_in_body"]:
             print("  raw_in_body:", len(r["raw_in_body"]))
+        if r["unescaped_dollar"]:
+            print("  unescaped_dollar:", len(r["unescaped_dollar"]))
         if r["missing_fm"]:
             print("  missing_fm:", len(r["missing_fm"]))
         if r["missing_keys"]:
