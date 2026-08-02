@@ -39,7 +39,7 @@ See [[en/history/pre-bitcoin-cypherpunks|Pre-Bitcoin Cypherpunks]] and [[en/seri
 | Jan 3, 2009 | Genesis block mined by Satoshi Nakamoto; embedded headline: "Chancellor on brink of second bailout for banks" |
 | Jan 9, 2009 | Bitcoin v0.1 released on SourceForge |
 | Jan 12, 2009 | First Bitcoin transaction: Satoshi → Hal Finney (10 BTC) |
-| Oct 5, 2009 | First Bitcoin exchange rate: $1 = 1,309 BTC (New Liberty Standard) |
+| Oct 5, 2009 | First Bitcoin exchange rate: \$1 = 1,309 BTC (New Liberty Standard) |
 | May 22, 2010 | **Bitcoin Pizza Day**: Laszlo Hanyecz pays 10,000 BTC for 2 pizzas — first real-world commerce |
 | Aug 15, 2010 | **Value overflow bug**: exploit creates 184 billion BTC; fixed in hours by community |
 | Jan 2011 | Silk Road launches — first major Bitcoin marketplace |

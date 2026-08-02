@@ -39,21 +39,21 @@ The pattern repeats across cases: **fiat payment channels fail first; Bitcoin re
 
 **Context:** Following the disputed August 2020 presidential election, Belarusians protested Alexander Lukashenko's re-election. The regime responded with mass arrests, police violence, and systematic firing of protest participants from state jobs.
 
-**BYSOL** (Belarusian Solidarity Foundation) was created by tech entrepreneurs to provide financial assistance to people fired for political activity. They distributed over €1.9 million (~$2.3M) in Bitcoin donations to thousands of Belarusians.
+**BYSOL** (Belarusian Solidarity Foundation) was created by tech entrepreneurs to provide financial assistance to people fired for political activity. They distributed over €1.9 million (~\$2.3M) in Bitcoin donations to thousands of Belarusians.
 
 **Why Bitcoin:** BYSOL initially raised funds via Facebook in fiat, but distributed via Bitcoin — because the founders' bank accounts were immediately blocked by authorities. Donors' bank accounts were also being subpoenaed. Bitcoin was the only channel the regime could not shut down.
 
 **Key quote (Yaroslav Likhachevsky, BYSOL co-founder):**
 > *"I was rather far from the crypto world before, but this thing turned out to be useful."*
 
-**Outcome:** Maria Koltsyna, fired from a city hall job for supporting an opposition candidate, received $1,500 in Bitcoin via mobile wallet. She used it to buy a laptop, got an SEO certification, and started a new career: *"I feel like I've been morally liberated."*
+**Outcome:** Maria Koltsyna, fired from a city hall job for supporting an opposition candidate, received \$1,500 in Bitcoin via mobile wallet. She used it to buy a laptop, got an SEO certification, and started a new career: *"I feel like I've been morally liberated."*
  
 
 ### Nigeria: Feminist Coalition and #EndSARS (2020)
 
 **Context:** The Feminist Coalition supported protesters demanding abolition of SARS (Special Anti-Robbery Squad), a Nigerian police unit notorious for violence and extortion.
 
-**Adoption path:** The Coalition initially used a local payment platform, which cut off their account. They switched to Bitcoin donations. By October 22, 2020, they had raised ~12 BTC (~$155,000 at the time).
+**Adoption path:** The Coalition initially used a local payment platform, which cut off their account. They switched to Bitcoin donations. By October 22, 2020, they had raised ~12 BTC (~\$155,000 at the time).
 
 **Scale of support:** Alex Gladstein set up a BTCPay Server for them; Jack Dorsey (Twitter CEO) publicly called on his 5 million followers to donate.
 

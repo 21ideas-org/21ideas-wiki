@@ -1030,3 +1030,348 @@ Lint: python3 tools/lint.py --layer both --write-report; wiki-ru/ 0 issues; wiki
 **Lint:** Ran `python3 tools/lint.py --layer ru --write-report`; 0 issues.
 
 ---
+
+## [2026-08-01] ingest | entropy, seed-phrase, passphrase, hardware-wallets (RU only)
+
+**Context:** Post-incident cluster for the COLDCARD RNG story. The gap audit found ~9000 words of unused `raw/` material (`hwws.md`, `passphrase.md`, `seed.md`, `seed-security.md`) and zero RU coverage of "where does a key come from".
+
+**Layers:** RU only — deliberate. EN counterparts deferred to a separate Mode A pass and recorded in `docs/lint-report.md` under Suggested follow-ups per the gap-handling rule.
+
+**Raw sources used (no external fetching, no new raw/ files):**
+- raw/Theory/protocol/bitcoins-eternal-struggle.md — url: vechnaja-borba
+- raw/Theory/security/passphrase.md — url: passphrase
+- raw/Theory/security/seed.md — url: seed
+- raw/Theory/security/seed-security.md — url: seed-security
+- raw/Theory/security/hwws.md — url: hwws
+- raw/Theory/security/what-is-multisig.md — url: multisig
+- raw/Practice/hodl/coldcard.md — url: coldcard
+- raw/Practice/hodl/seedsigner.md — url: seedsigner
+- raw/Books/izobretaem-bitkoin/glava-3.md, glava-7.md
+
+**Created:**
+- wiki-ru/concepts/entropy.md — entropy as a measure, bits and 2^N, why a key cannot be guessed, "a hash does not create entropy", device RNG vs user-supplied entropy, Diceware, cost-of-brute-force method
+- wiki-ru/concepts/seed-phrase.md — BIP-32/BIP-39 origin, 2048-word list, seed-to-address chain, 12 vs 24, checksum, compatibility, XFP, storage models, BIP-85, SSSS
+- wiki-ru/concepts/passphrase.md — three generation methods, Diceware 6^5/6^4, $-denominated attack cost, Moore's law, trade-offs, passphrase vs multisig
+- wiki-ru/concepts/hardware-wallets.md — threat model: RNG, secure element, open source, vendor survival, supply chain, duress mechanisms, air gap, wireless, Bitcoin-only firmware, 8-step checklist
+
+**Updated (Mode B):**
+- wiki-ru/concepts/multisig.md — new section "Чего мультиподпись не защищает": 1-of-n / n-of-n quorum limits, independence of key failures (geographic + provenance), wallet configuration as part of the backup, device/seed co-location, complexity as a threat. `sources:` extended with seed-security, seed, hwws.
+- wiki-ru/glossary.md — added Генератор случайных чисел (ГСЧ), Контрольная сумма (Checksum), Парольная фраза (Passphrase), Энтропия, BIP-32, BIP-39, SHA-256. Extended Атака перебором with the "nominal vs actual entropy" caveat. Merged the duplicate `### Узел (Нода)` into `### Нода (Узел)` (SPV detail preserved; the removed anchor had no inbound links) and removed the duplicate `### UTXO` under `## U` (the `## У` entry `### UTXO (Unspent Transaction Output)` is the one actually linked).
+- wiki-ru/index.md — 4 new rows in the Concepts table; multisig description updated.
+
+**Content audit — gaps recorded on-page under «Пробелы» (not written, not invented):**
+- TRNG vs PRNG/CSPRNG: absent from all `raw/` material. Pages state only "the generator inside a closed box cannot be verified".
+- Derivation paths (BIP-44/49/84/86): the term appears in `raw/` but is nowhere explained.
+- BIP-39 internals: entropy-to-word bit accounting, checksum computation, PBKDF2-HMAC-SHA512.
+- Reproducible builds: zero mentions across the whole corpus.
+- Device diversity in a multisig quorum: no `raw/` source states it directly. Written as a derived consequence of two grounded claims — "keys must be stored in geographically separate locations so several cannot be compromised at once" (multisig) and "a hardware manufacturer can always make a mistake that compromises your funds" (seed) — and framed as such rather than as reported fact. The July 2026 COLDCARD incident is **not** cited anywhere: `raw/` has no such source yet.
+
+**Not done (blocked):** the incident page itself (`topics/coldcard-rng-incident`) and `practice/dice-seed`. Both require ingesting the "Сид на костях" guide into `raw/` first via docs/INGEST-SKILL.md.
+
+**Lint:** `python3 tools/build_link_map.py`; `python3 tools/lint.py --layer ru --write-report` → wiki-ru/ 91 pages, 0 issues. Parity checked: all 4 new slugs RU_ONLY.
+
+---
+
+## [2026-08-01] ingest | dice-seed → raw/ + coldcard-rng-incident, dice-seed (RU)
+
+### Part 1 — raw/ ingest (docs/INGEST-SKILL.md)
+
+**Created:** raw/Practice/security/dice-seed.md
+**Source:** local 21ideas.org content repo, content.ru/docs/Practice/security/dice-seed.md — provided by the maintainer, not fetched
+**URL in raw/:** dice-seed → https://21ideas.org/dice-seed/
+**Title:** "Создаём ключ, не доверяя генератору" (h1: "Сид на костях: как создать ключ, не доверяя генератору")
+**Classification:** Practice/security — "practical guides, operational security" per the Step 3 lookup table
+**Checks:** check_duplicate.py CLEAR · derive_slug.py → dice-seed · check_series.py NO_SERIES
+**Verbatim:** `diff` against source = identical. Original Hugo frontmatter preserved, matching the convention of every other raw/ file (pgp.md, seed.md, coldcard.md).
+**Inventory verified:** 22 headings · 2 tables · 4 blockquotes · 6 code blocks · pre-heading content present · 3637 words — all present in file.
+
+### Part 2 — wiki ingest (Mode A, RU only)
+
+**Created:**
+- wiki-ru/topics/coldcard-rng-incident.md — what happened (594.48 BTC, 1324 UTXO, three-block window), the `#ifndef` root cause and why review missed it, entropy loss table (Coinkite ~40/~72 bits vs Block's 2^40.7 / <2^73.3 upper bounds), affected/fixed firmware versions, why a firmware update does not fix an existing seed, the invisible-failure lesson, what actually saved people (Add Dice Rolls; multisig only half-true), five threat-model conclusions
+- wiki-ru/practice/dice-seed.md — the procedure: 2.585 bits per roll, 50/99 thresholds, rolls → SHA-256 → BIP-39, offline environment, the iancoleman `Dice` mode trap, the red-warning explanation (1.67 vs 3 vs 2.585 bits/roll), three cross-checks, transfer + XFP verification, cleanup, alternatives (coin, on-device dice, hybrid, multisig), who should skip this, what never to do
+
+**Updated (Mode B) — this source closes previously logged gaps:**
+- concepts/entropy.md — TRNG vs software-fallback distinction now grounded (was an open gap); new subsection "Сколько бросков нужно" with the 2.585-bit figure and 50/99 table; «Пробелы» narrowed to reproducible builds and TRNG internals
+- concepts/seed-phrase.md — new section "Сколько бит в сид-фразе" with the exact 128+4 / 256+8 accounting (was an open gap); checksum section rewritten to state that the last word carries it; «Пробелы» narrowed — `m/84'/0'/0'/0/0` is now at least identified as the native-SegWit default, path anatomy still missing
+- concepts/multisig.md — the device-diversity claim was written on 2026-08-01 as a *derived consequence* because no raw/ source stated it; it is now grounded directly by the Block engineers' quote from this article and rewritten as reported fact with the quote inline
+- concepts/hardware-wallets.md — RNG section and "Само существование производителя" now cite the incident as a concrete precedent alongside the Ledger 2023 case
+- glossary.md — Генератор случайных чисел entry extended with the TRNG/software distinction
+- index.md — rows added to Practice and Topics tables
+
+**Content audit — remaining gaps (recorded on-page and in lint-report.md):**
+- Derivation paths: `m/84'/0'/0'/0/0` appears but path anatomy and BIP-44/49/84/86 roles remain unexplained anywhere in raw/. Now the highest-value remaining gap.
+- BIP-39 internals: checksum computation, PBKDF2-HMAC-SHA512 mnemonic-to-seed.
+- Reproducible builds: still zero mentions in raw/.
+- TRNG internals: covered at the level of failure consequences, not construction.
+
+**External URLs:** the article body links to CoinDesk, blog.coinkite.com, engineering.block.xyz and others. None were fetched, and none were carried into `sources:` or body citations — only the canonical https://21ideas.org/dice-seed/ is reader-facing, per CLAUDE.md. Organizations (Coinkite, Block, AnchorWatch, LLFOURN) are named in prose without links.
+
+**Layers:** RU only. EN counterparts for all six new slugs flagged in docs/lint-report.md → Suggested follow-ups.
+
+**Lint:** `python3 tools/build_link_map.py`; `python3 tools/lint.py --layer ru --write-report` → wiki-ru/ 93 pages, 0 issues. Parity: both new slugs RU_ONLY.
+
+---
+
+## [2026-08-01] ingest | Mastering Bitcoin ch05 + BIP-44/49/84/86 → raw/ + hd-wallets (RU)
+
+### Part 1 — raw/ ingest (docs/INGEST-SKILL.md)
+
+**Created:**
+- raw/Books/mastering-bitcoin/chapter-5-wallets.md — url: github.com/bitcoinbook/bitcoinbook/blob/develop/ch05_wallets.adoc — CC BY-SA 4.0 — 10,613 words
+- raw/Theory/protocol/bip-44.md — url: github.com/bitcoin/bips/blob/master/bip-0044.mediawiki — license not stated in document
+- raw/Theory/protocol/bip-49.md — bip-0049.mediawiki — Public domain
+- raw/Theory/protocol/bip-84.md — bip-0084.mediawiki — CC0-1.0
+- raw/Theory/protocol/bip-86.md — bip-0086.mediawiki — BSD-2-Clause
+
+**Source acquisition:** the maintainer ran `curl` themselves into the session scratchpad and supplied the paths. Per INGEST-SKILL rule 7 and the CLAUDE.md no-fetch rule, the agent did not retrieve any URL.
+
+**Classification:** book chapter → `Books/<book-name>/` with the `chapter-N-<name>.md` exception; BIP specifications → `Theory/protocol/` per the Quick-reference table.
+
+**Format handling — deviation from the usual raw/ shape, recorded deliberately.** These are the first non-Markdown and first English sources in `raw/`. Conversion was done with throwaway scripts in the scratchpad (`clean_adoc.py`, `clean_bip.py`) rather than by hand, so prose stays character-identical. Transformations applied:
+- AsciiDoc: removed O'Reilly index macros `((("...")))` (invisible build tooling, treated as chrome), `[[anchors]]`, `[role=...]` hints and `//` editorial comments; normalized `=`-headings to `#`; converted `----` literal blocks to fenced code; converted the `++++` HTML passthrough blocks (9 tables, several `<p>`, one `<ol start="7">`) to Markdown, preserving every cell; rendered the MathML equation as `K + (123 × G) == (k + 123) × G`; replaced `image::` with `[image: alt]`.
+- MediaWiki: `==X==` → `## X`, `<pre>` → fenced code, `{| … |}` tables → Markdown tables, `<code>/<tt>` → backticks.
+- **`[[link|text]]` was flattened to plain text or Markdown links in all five files.** This is not cosmetic: `raw/` sits inside the Obsidian vault, where `[[...]]` would render as broken wikilinks. Verified: 0 occurrences of `[[` remain in the ingested files.
+- The BIP preamble blocks were re-spliced verbatim from the originals after an early pass stripped author `<email>` addresses along with HTML tags.
+
+### Part 2 — wiki ingest (Mode A, RU only)
+
+**Created:** wiki-ru/concepts/hd-wallets.md — why HD wallets exist (per-key backup, ~32 bytes each), root seed → HMAC-SHA512 → master key + chain code, the CKD function and the 512-bit split, extended keys (xprv/xpub), public child key derivation and the key-tweak arithmetic, hardened derivation and the leaked-chain-code attack it prevents, index ranges 0…2^31−1 vs 2^31…2^32−1, path notation (`m` vs `M`, right-to-left ancestry), the five BIP-44 levels one by one, the `purpose'` table 44/49/84/86, extended-key prefixes with version bytes, why a wallet looks "empty", account discovery and the gap limit of 20, implicit vs explicit paths and descriptors, what a seed phrase cannot restore, and the entropy-sufficiency argument (128-bit security strength).
+
+**Judgment call recorded:** the `purpose'` table lists **mainnet** paths (`m/49'/0'/0'` etc.), composed from BIP-49/84/86 (`purpose'` only) plus BIP-44 (`coin_type'` = `0'` for Bitcoin). Mastering Bitcoin's implicit-paths table shows `m/49'/1'/0'` for BIP-49 — a testnet path, matching that BIP's testnet-only test vectors. The discrepancy is called out in the page body rather than silently smoothed over.
+
+**Updated (Mode B) — these sources closed previously logged gaps:**
+- concepts/seed-phrase.md — replaced the two-row bit table with the full BIP-39 table (128/160/192/224/256); added the 11-bit arithmetic and the note that 12/24 are not the only valid lengths; added a new section "Как мнемоника превращается в сид" with all nine BIP-39 steps, the `"mnemonic"` salt, 2048 rounds of HMAC-SHA512, and why key-stretching helps only partially; «Пробелы» narrowed to wordlist design and SeedQR
+- concepts/passphrase.md — «Пробелы» rewritten: the PBKDF2-salt mechanic is now covered and cross-linked; open question narrowed to how BIP-39 alternatives authenticate the passphrase
+- concepts/address-types.md — new section "Тип адреса и путь деривации" with the purpose ↔ prefix table and the deliberate-incompatibility rationale
+- concepts/bip.md — was the thinnest page in the layer (264 words, entirely governance). Added "Стандарты кошельков" separating compatibility BIPs from consensus BIPs, with a table of BIP-32/39/43/44/49/84/86/174/380-389
+- glossary.md — added Дескриптор выходного скрипта, Путь деривации, Расширенный ключ (xpub/xprv); expanded Детерминированный кошелёк with the tree structure and the "seed alone is not enough" caveat
+- index.md — hd-wallets added to the Concepts table
+
+**Content audit — remaining gaps (on-page and in lint-report.md):** reproducible builds; how the master fingerprint (XFP) is computed; normative address encoding (BIP-141/173/341); TRNG internals; BIP-39 wordlist design.
+
+**Licensing note for the maintainer:** Mastering Bitcoin is CC BY-SA 4.0, so Russian text synthesized from it inherits share-alike. Attribution is in `sources:` and in the Sources section of every derived page. The four BIPs are permissive (PD / CC0 / BSD-2) except BIP-44, which states no license in the document itself.
+
+**Layers:** RU only. EN counterpart for `concepts/hd-wallets` flagged in docs/lint-report.md alongside the other six RU-only slugs.
+
+**Lint:** `python3 tools/build_link_map.py`; `python3 tools/lint.py --layer ru --write-report` → wiki-ru/ 94 pages, 0 issues. Parity: `concepts/hd-wallets` RU_ONLY.
+
+---
+
+## [2026-08-02] ingest | BIP-32/39/43/174 + Bitcoin Core build docs → raw/ + verifying-software (RU)
+
+### Part 1 — raw/ ingest (docs/INGEST-SKILL.md)
+
+**Created:**
+- raw/Theory/protocol/bip-32.md — Hierarchical Deterministic Wallets (Pieter Wuille) — BSD-2-Clause — 3,460 words
+- raw/Theory/protocol/bip-39.md — Mnemonic code for generating deterministic keys — MIT — 1,112 words
+- raw/Theory/protocol/bip-43.md — Purpose Field for Deterministic Wallets — no license stated — 395 words
+- raw/Theory/protocol/bip-174.md — Partially Signed Bitcoin Transaction Format — BSD-2-Clause — 6,049 words
+- raw/Practice/security/reproducible-builds-guix.md — contrib/guix/README.md from bitcoin/bitcoin — MIT
+- raw/Practice/security/bitcoin-core-release-process.md — doc/release-process.md from bitcoin/bitcoin — MIT
+
+**Source acquisition:** maintainer ran `curl` (all six returned 200) into the session scratchpad and supplied the paths. Agent retrieved no URL, per INGEST-SKILL rule 7 and the CLAUDE.md no-fetch rule.
+
+**Classification:** BIP specifications → `Theory/protocol/` per the Quick-reference table. The two Bitcoin Core documents → `Practice/security/` (operational security / verification); neither is a perfect fit for the lookup table, and this was a judgment call.
+
+**Format handling:** BIPs converted with the same `clean_bip.py` used on 2026-08-01 (mediawiki headings, `<pre>` → fenced code, `{|` tables → Markdown, `[[link|text]]` flattened so the Obsidian vault does not render broken wikilinks — verified 0 occurrences of `[[`). Preamble blocks re-spliced verbatim to preserve author email addresses. The two Bitcoin Core files are already Markdown and were copied **verbatim** with only frontmatter prepended.
+
+**check_series.py:** reports `SERIES_DETECTED` for `raw/Theory/protocol/bip-32.md` — base `bip`, parts 32/39/43/44/49/84/86/174, and suggests a hub file. **Recorded as a false positive:** BIP numbers are identifiers, not sequence positions, and the "missing parts 33…173" list is meaningless. No `series:`/`part:` frontmatter added. Reported here per the skill's instruction to report and not branch.
+
+### Part 2 — wiki ingest (Mode A, RU only)
+
+**Created:** wiki-ru/practice/verifying-software.md — the three questions verification answers (integrity / authorship / correspondence to source) and one tool each; PGP vs GPG terminology; why the signature covers `SHA256SUMS` rather than the binary and why both verification steps are mandatory; console procedure (`gpg --recv-keys`, `gpg --verify`, `sha256sum` / `shasum -a 256`); the caveat that a valid signature proves only which key signed, not whose key it is, plus Web of Trust and `gpg --edit-key trust`; reproducible builds — bit-for-bit determinism, `SOURCE_DATE_EPOCH`, the `guix.sigs` attestation repo, `guix-attest` / `guix-verify`, publication only after six or more builders match, noncodesigned vs all SHA256SUMS; what this buys the reader (a quorum, not a single signature); the substitutes trade-off; a five-step checklist.
+
+**Updated (Mode B) — these sources closed previously logged gaps:**
+- concepts/hd-wallets.md — new section "Отпечаток ключа (XFP)": HASH160 of the serialized public key, first 32 bits = fingerprint, the spec's own warning that collisions are possible and software must handle them, plus the 78-byte serialization layout and the 111-character Base58 result. Master key generation now cites the `"Bitcoin seed"` HMAC key and the 128–512 bit range. Hardened derivation now quotes BIP-32's explicit non-property (parent xpub + non-hardened child private key ⇒ parent extended private key). BIP-43's motivation added, plus the historical note that `m/0'/*` was taken by BIP-32 itself. Sources extended with BIP-32 and BIP-43. **The XFP gap logged on 2026-08-01 is now closed.**
+- concepts/seed-phrase.md — wordlist section rewritten from the spec: the three design criteria, UTF-8 NFKD, and the standard's own strong discouragement of non-English wordlists. Added "Признанные недостатки" from the Shortcomings section (seed depends on wordlist, one-way conversion, short checksum missing ~1-in-256 errors, no versioning) and the spec's framing of plausible deniability. Sources extended with BIP-39.
+- concepts/hardware-wallets.md — verification checklist item now links to the new page; «Пробелы» narrowed to TRNG internals and firmware reproducibility
+- concepts/entropy.md — «Пробелы» narrowed; reproducible builds now cross-linked rather than listed as missing
+- glossary.md — added Отпечаток кошелька (XFP / Master Fingerprint) and PSBT. **The PSBT anchor gap — the term was used in two RU pages with no glossary entry, while the EN glossary had one — is now closed.**
+- index.md — verifying-software added to the Practice table
+
+**Content audit — remaining gaps (on-page and in lint-report.md):** address encoding (BIP-141/173/350/341); secp256k1 arithmetic; TRNG internals; BIP-39 wordlist provenance; firmware reproducibility for hardware wallets; `contrib/verify-binaries`.
+
+**Layers:** RU only. EN counterpart for `practice/verifying-software` flagged in docs/lint-report.md alongside the other seven RU-only slugs.
+
+**Lint:** `python3 tools/build_link_map.py`; `python3 tools/lint.py --layer ru --write-report` → wiki-ru/ 95 pages, 0 issues.
+
+---
+
+## [2026-08-02] fix | escape currency `$` that KaTeX was parsing as math
+
+**Found by:** local Quartz preview (`node ./quartz/bootstrap-cli.mjs build --serve`), not by `tools/lint.py`.
+
+**Problem:** Quartz enables remark-math. Two unescaped `$` on the same line open and close an inline math span, so text between them was swallowed into KaTeX and rendered garbled. Visible example on `wiki-ru/concepts/passphrase.md`: "те же $77 миллионов превращаются в $750 000" rendered as "те же 77миллионо…". The build also emitted dozens of `unicodeTextInMathMode` warnings for Cyrillic characters.
+
+**Fixed:** escaped `$` before a digit as `\$` outside code fences.
+- wiki-ru: passphrase.md (5), entropy.md (2), history/timeline.md (2), practice/storage.md (2) — the last two pre-existing
+- wiki-en: glossary.md (2), series/silk-road.md (3), concepts/security.md (1), history/timeline.md (1), practice/storage.md (2), practice/running-a-node.md (2), topics/bitcoin-dissidents.md (3) — all pre-existing
+
+**Verified:** rebuilt; the paragraph renders correctly and `katex-html` no longer appears on the page. Build: 175 files parsed, 234 emitted, no broken-link warnings.
+
+**Follow-up worth considering:** `tools/lint.py` cannot catch this — it is a rendering-layer issue, not a wikilink or frontmatter issue. A check for an even number of unescaped `$` per line (outside fences) would be cheap to add.
+
+---
+
+## [2026-08-02] tooling | add unescaped-`$` check to tools/lint.py
+
+**Why:** the KaTeX bug fixed earlier today was found by the local Quartz preview, not by lint. Adding a mechanical check so it cannot recur.
+
+**Design note — deliberately broader than "unpaired `$`".** The obvious rule (flag an odd number of `$` per line) would **not** have caught the bug that motivated it: `те же $77 миллионов превращаются в $750 000` has exactly two dollar signs — an even, "paired" count — and that pair is precisely what opened and closed the math span. The check therefore flags **any** unescaped `$` outside code, since this vault contains no legitimate LaTeX. If real math is ever added, this check needs revisiting.
+
+**Implementation:**
+- `unescaped_dollars(body)` — skips fenced blocks and inline code spans (`INLINE_CODE_RE`), matches `(?<!\\)\$`, returns (line, count, snippet) per offending line.
+- Reported line numbers are offset back to file coordinates, since `split_frontmatter()` returns only the body slice. Verified against `sed -n '75p'`.
+- New result key `unescaped_dollar`; new column in the report Summary table; new row in Detail; new line in stdout output. Counts toward `--strict` (exit 1) via the existing `count_issues()`.
+
+**Tested:**
+1. Clean tree → `wiki-ru` 0 rows, `wiki-en` 0 rows for this check.
+2. Regression: reintroduced the bug in `wiki-ru/concepts/passphrase.md` → caught, 1 row at the correct line 75, `--strict` exits 1.
+3. Rolled back → clean again.
+
+**Docs updated:** `tools/lint.py` module docstring now lists all checks; `CLAUDE.md` → Lint section adds the check to the script's list and to the mechanical auto-fix checklist with the reason (Quartz enables remark-math).
+
+**Baseline note:** a `--layer both` run shows 23 pre-existing flagged rows in `wiki-en/` (bad links, broken targets, `raw/` in body, body `---`/`#`). Unrelated to this change — that layer has not had an enhance pass.
+
+---
+
+## [2026-08-02] tooling | add .claude/skills/preview — local Quartz build and render checks
+
+**Why:** the KaTeX/`$` defect was invisible in source and invisible to `tools/lint.py`; only a real Quartz build surfaced it. Capturing the build procedure and the render-level checks so future sessions do not have to rediscover the pipeline.
+
+**Added:**
+- `.claude/skills/preview/SKILL.md` — how the production pipeline works (push → repository_dispatch → `cp -r wiki-ru/. content/ru/` → build), what to check after a build, the `$`/remark-math trap, and the gotchas below
+- `.claude/skills/preview/preview.sh` — `serve` | `build` | `sync` | `clean`
+
+**Design decisions:**
+- Content is assembled into a temp tree and passed with `-d`; the quartz checkout is never written to, so its `git status` stays clean.
+- Calls `node ./quartz/bootstrap-cli.mjs` directly. `npx quartz` does **not** resolve the local checkout (quartz *is* the package, not a dependency) — npm silently downloads the published package into the npx cache and runs that instead.
+- `QUARTZ_DIR` is honoured or fails; it is never silently fallen back from. An early version fell through to auto-discovery when the override was wrong, which hid the mistake.
+- Auto-discovery order: `../quartz`, `../21ideas-quartz`, `~/code/21ideas/quartz`.
+
+**Documented gotchas (each hit during this session):**
+- Do not pipe a backgrounded `--serve` through `tail`/`head` — they buffer until the pipeline ends, so the log looks empty while the server is actually fine. Poll the port instead.
+- The server watches the preview tree, not `wiki-ru/` — re-run `sync` after edits.
+- Never build into `quartz/content/`.
+
+**Tested:** build; serve (port opens, `/`, `/ru/concepts/hd-wallets`, `/ru/practice/verifying-software` all 200, `katex-html` count 0); sync round-trip; clean; invalid `QUARTZ_DIR` → exit 1 with a clear message; explicit valid `QUARTZ_DIR`; auto-discovery; invalid mode → usage, exit 2; `bash -n` clean.
+
+**CLAUDE.md updated:** skill added to the Directory Map, plus a "Rendering checks" note in the Lint section pointing at it and stating that `lint.py` validates structure, not output.
+
+---
+
+## [2026-08-02] remove | wiki-ru/practice/dice-seed
+**Layers:** RU
+**Removed:** `wiki-ru/practice/dice-seed.md` — the page was a step-by-step how-to guide, not encyclopedic wiki material. Maintainer decision.
+**Reference cleanup:** dropped the `[[ru/practice/dice-seed]]` row from `wiki-ru/index.md`; removed the nav-section link from `concepts/entropy`, `concepts/hardware-wallets`, `concepts/seed-phrase`, `concepts/hd-wallets`, `practice/verifying-software`, `topics/coldcard-rng-incident`; removed the two in-prose pointers (`practice/verifying-software`, `topics/coldcard-rng-incident`).
+**Kept:** `https://21ideas.org/dice-seed/` remains in `sources:` on pages that genuinely synthesized from it — `raw/Practice/security/dice-seed.md` is untouched and still the citable origin.
+**Lint:** `--layer ru` clean, 94 pages, 0 flagged rows. Link map regenerated.
+---
+
+## [2026-08-02] rules | CLAUDE.md — Primary-Source Test
+**Change:** `sources:` and body citations may now use a primary-source URL that appears **verbatim in the body of a raw/ file**, not only the raw/ `url:` field. Three conditions required: verbatim in raw/, primary (vendor docs about the vendor's own product, vendor advisory about its own defect, project repo/license, protocol or standards document), and load-bearing for a technical claim.
+**Explicitly excluded:** news outlets and crypto press, aggregators, social media, community trackers, unaffiliated blogs, and third-party commentary about a vendor. A vendor documenting its own product is primary; a vendor commenting on a competitor is not.
+**Also added:** when a raw/ file is older than the facts it reports, do not restate its volatile figures as current — prefer mechanism, affected versions and vendor documentation over headline numbers.
+**No-fetch rule unchanged:** a URL is citable because it appears in `raw/`, never because it was read.
+---
+
+## [2026-08-02] enhance | wiki-ru/concepts/hardware-wallets.md
+Changes:
+- **RNG section reframed.** Replaced the "DIY entropy exists on some models" framing with the operative axis: is there any randomness source outside the manufacturer's silicon, and can the result be reproduced independently. Three groups described generically (all-internal / user entropy addable or substitutable / device does not generate at all), deliberately without naming vendors in the all-internal group — the page states a **class of failure**, not an accusation. Added the mix-vs-replace distinction (insuring the result vs making it reproducible). Dropped the "~40 bits on one generation" figure: it understated scope and is a volatile number per the new CLAUDE.md rule.
+- **Openness section corrected.** Removed the false binary claim ("у COLDCARD открыты обе"). Replaced with three independent questions — firmware and its licence, board schematics, secure-element code — plus the point that answers do not coincide and must be checked per vendor. Added "readable is not the same as read correctly".
+- **Vendor-failure taxonomy.** "Прецедентов два" replaced by four categories distinguished by what can be done afterwards: unintentional code defect, product decision changing the security model, hardware defect not fixable by update, supply-chain tampering — each with the corresponding response.
+- **De-centred COLDCARD as exhibit.** Reseller-avoidance paragraph and tamper-evident packaging bullet rewritten as general mechanisms with Coinkite/COLDCARD as one illustration rather than the subject.
+**New sources (Primary-Source Test):** `coldcard.com/docs/master-seed/`, `github.com/coldcard/firmware`, `github.com/Coldcard/firmware/tree/master/hardware`, `github.com/SeedSigner/seedsigner`, `github.com/Foundation-Devices`, `ledger.com/academy/security/our-custom-operating-system-bolos` — all verbatim in `raw/Theory/security/hwws.md` or `raw/Practice/security/dice-seed.md`, all vendor/project primary. No secondary source used; reseller and third-party comparison links present in raw/ were excluded.
+**Deliberately not asserted** (not supported by `raw/`): COLDCARD's exact licence terms, Block's ≤32-bit estimate, dice-roll enforcement behaviour in hybrid mode.
+**Lint:** `--layer ru` clean, 94 pages, 0 flagged rows.
+---
+
+## [2026-08-02] enhance | wiki-ru/concepts/hardware-wallets.md — editorial callout
+Changes: added an editorial notice at the top of the page using an Obsidian/Quartz callout (`> [!warning] Позиция редакции`) — the first callout used anywhere in the vault. It states that the page was reworked after the July 2026 COLDCARD RNG incident, that the vendor's devices should not be trusted pending an independent audit report, and that COLDCARD appears on the page as an engineering example rather than a purchase recommendation — the page recommends no device at all.
+**Rendering:** verified by local Quartz build (v4.5.2, `callouts: true` by default) — emits `<blockquote class="callout warning">` with its own icon, no emoji needed; the inner wikilink resolves. Callout types available: note, abstract, info, todo, tip, success, question, warning, failure, danger, bug, example, quote.
+**Note:** this is an explicit maintainer editorial position, marked as such in the block's title, not a claim sourced from `raw/`.
+**Lint:** `--layer ru` clean, 94 pages, 0 flagged rows.
+---
+
+## [2026-08-02] enhance | wiki-ru/concepts/hardware-wallets.md — PSBT cross-links
+Changes: the air-gap section previously named "BIP-174: частично подписанные транзакции (PSBT)" as bare text. Now linked to three existing targets — `[[ru/concepts/bip]]` (BIP-174 listed in its table), the glossary entry `[[ru/glossary#PSBT (Partially Signed Bitcoin Transaction)]]`, and the workflow section `[[ru/concepts/multisig#PSBT — Partially Signed Bitcoin Transaction]]`. Added a sentence tying the air-gap and multisig uses of the same format together.
+**Source added:** `https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki` (BSD-2-Clause) — the `url:` field of `raw/Theory/protocol/bip-174.md`, load-bearing for the claim that BIP-174 defines the PSBT format. Same treatment as BIP-39 on `concepts/seed-phrase`.
+**Rendering verified:** local Quartz build resolves all three; anchor ids confirmed present in the emitted HTML (`psbt-partially-signed-bitcoin-transaction` in glossary, `psbt--partially-signed-bitcoin-transaction` in multisig — the double hyphen comes from the em dash in that heading).
+**Still unlinked elsewhere (follow-up):** PSBT is mentioned as plain text in `concepts/multisig` (lead), `concepts/security:66` and `practice/storage`; `concepts/bip` has no per-BIP anchors, only a table.
+**Lint:** `--layer ru --strict-links` clean, exit 0.
+---
+
+## [2026-08-02] enhance | wiki-ru/concepts/security.md — rebuilt as a hub
+**Why:** 20 inbound links from 15 pages, listed as step 4 of the reading path in `overview.md` — the vault already treated this page as the security hub, but it was written as a standalone survey (April, `quality: reference`, never enhanced) and duplicated four pages at lower quality with no links out to any of them.
+Changes:
+- **Removed the `### Coldcard` section** ("один из наиболее безопасных аппаратных кошельков" + "Открытый исходный код прошивки" — the same over-simplification corrected on `hardware-wallets` earlier today). No device model is named or recommended anywhere on the page now.
+- **Replaced the «Уровни безопасности» ladder.** The old table indexed protection by amount held ("Средний | Аппаратный кошелёк (Coldcard, Trezor) | Основные сбережения"), which tells the reader that one named device closes their main savings. New table is indexed by **threat**, names no vendors, and ends on the point the ladder omitted: the qualitative jump is a quorum of devices from **different** manufacturers on different codebases, not a pricier device — the last row is the only threat a single device cannot close by construction.
+- **Four duplicated sections folded** into one paragraph + link each (hardware wallets → `concepts/hardware-wallets`, seed phrase → `concepts/seed-phrase`, multisig → `concepts/multisig`, passphrase → `concepts/passphrase`).
+- **Added the page's own territory** from `raw/Theory/security/how-to-hold-private-keys.md`, previously unused: bearer-asset framing, the security/convenience spectrum, the two sizing questions (share of capital, access frequency), hot vs cold, and the source's own warning against over-complicating a scheme until you lock yourself out.
+- **Added the missing half of seed security:** the seed has two vulnerable moments, creation and storage; the page previously covered only storage. Creation links to `concepts/entropy`.
+- **Passphrase corrected:** previously sold only the decoy-wallet upside; now states that any passphrase including a typo yields a valid wallet, and that fingerprint verification is required before funding.
+- **Navigation fixed:** hardware-wallets, seed-phrase, entropy, passphrase added to the closing nav — none were linked before.
+- `quality` `reference` → `synthesized`; `updated`/`reviewed` → 2026-08-02.
+**No editorial callout added** — after the rework the page discusses no specific device, so there is nothing to warn about.
+**Verification:** `--layer ru --strict-links` clean, exit 0. Local Quartz build resolves all 18 links; all nine glossary anchor ids confirmed present in the emitted `glossary.html`.
+---
+
+## [2026-08-02] enhance | wiki-ru/concepts/security.md — link pass
+Changes: linked «приватный ключ» → `[[ru/glossary#Приватный ключ]]` and «публичные ключи» → `[[ru/glossary#Публичный ключ]]` in the bearer-asset section; linked FTX to `https://21ideas.org/posts/krah-ftx/` and added it to `sources:` and the Источники list.
+⚠️ **Provenance note:** `https://21ideas.org/posts/krah-ftx/` does **not** appear in any `raw/` file — it was supplied directly by the maintainer. It is therefore not covered by the Primary-Source Test in CLAUDE.md, which recognises only (a) a raw/ `url:` field and (b) a primary URL verbatim in a raw/ body. The rule exists to prevent agents fabricating URLs; a maintainer-supplied URL on the wiki's own anchor domain is not that case, but the gap should be closed — either by ingesting the article into `raw/` or by adding an explicit maintainer-supplied clause to the rule.
+**Verification:** `--layer ru --strict-links` clean; rendered page resolves both glossary anchors (`приватный-ключ`, `публичный-ключ` — both ids confirmed in `glossary.html`) and the external FTX link.
+---
+
+## [2026-08-02] enhance | wiki-ru/practice/storage.md
+Changes:
+- **Removed the purchase instruction.** Step 2 of «С чего начать» read «При накоплении от ~\$1000 — купите **Coldcard** или соберите **SeedSigner**» — a named-vendor buy order tied to a round threshold. Replaced with an approach-based step: the threshold is personal ("how much would it hurt to lose"), and device choice routes to `concepts/hardware-wallets` rather than being made for the reader.
+- **Superlatives removed.** «Самый безопасный аппаратный кошелёк» and «Рекомендован для опытных пользователей и крупных сумм» (COLDCARD) replaced with factual capability lines plus an explicit caveat pointing at the RNG incident. SeedSigner's «Оптимальный баланс» reworded; added the substantive point that it has no key generator of its own.
+- **Editorial callout added** at the top, matching `concepts/hardware-wallets` — the page is purchase-adjacent and names devices.
+- **Level 3 (multisig)** no longer indexed by amount alone; added that protection comes from key *independence*, and a quorum built from one manufacturer's devices does not protect against that manufacturer's defect.
+- **Seed creation gap closed:** the four seed rules covered storage only; added the second vulnerable moment (creation) with links to `concepts/entropy` and `concepts/seed-phrase`.
+- **Passphrase section** renamed to Russian and given the missing warning: any passphrase including a typo yields a valid wallet; verify the fingerprint before funding.
+- **Common mistakes** extended with the post-incident scam vector (sites offering to "check your wallet for a vulnerability") and unverified software installs.
+- Nav extended with hardware-wallets, seed-phrase, entropy, passphrase, verifying-software; `quality` → `synthesized`; dates bumped.
+**Verification:** `--layer ru` clean, 0 flagged rows. Rendered page confirms the callout, the removal of «Самый безопасный»/«купите», and that the escaped `~\$500` still renders as text (not a LaTeX span).
+---
+
+## [2026-08-02] enhance | wiki-en/concepts/security.md
+First substantive pass on this page since April; the EN layer has no counterparts to the new RU pages, so everything is fixed in place with no outbound links to non-existent targets.
+Changes:
+- **Removed «Recommended: Coldcard for advanced users; SeedSigner for DIY…; Trezor/Foundation Passport for accessibility»** — the bluntest device recommendation in the repository. Replaced with an explicit statement that the wiki does not rank devices, plus the point that "open source" is three separate questions (firmware licence, schematics, secure-element code) that rarely have the same answer.
+- **«Best-in-class cold storage»** (Coldcard row of the wallet table) replaced with a factual description referring to the trust caveats.
+- **Comparison table corrected:** "open firmware" → "published firmware source"; Ledger "closed source" → "closed operating system"; SeedSigner row now states it has no key generator of its own.
+- **New subsection "What you are trusting"** — the page previously had no notion of the RNG trust point at all. Covers the three things taken on faith, the comparison axis (entropy outside the vendor's silicon + replay verifiability), and the July 2026 incident framed as a **class of failure** rather than a verdict on one vendor, including why a secure element is irrelevant to it.
+- **Editorial callout** added at the top, mirroring the RU position.
+- **Seed creation gap closed** in the Seed Phrases section (rules covered storage only).
+- **Multisig:** added that independence, not key count, is what protects — a single-vendor quorum falls the way one key would.
+- **Common Attacks table:** phishing row extended to cover fake "vulnerability checkers"; new row for weak key generation.
+- `quality` `reference` → `synthesized`; `sources` and Sources list gain `https://21ideas.org/dice-seed/`; dates bumped.
+**Verification:** `--layer en` reports **no findings for this file** (the 23 flagged rows in wiki-en/ are pre-existing issues on other unenhanced pages). Rendered page confirms the callout and the removal of both recommendation strings.
+---
+
+## [2026-08-02] enhance | wiki-ru/topics/coldcard-rng-incident.md — on-chain figures refreshed
+**Why:** the page carried the day-two figures from `raw/Practice/security/dice-seed.md` (594.48 BTC, ~$38M, "примерно пятьсот адресов", 1324 UTXO in a three-block window, 562 BTC consolidated to three addresses). Those were an early partial estimate of the first wave and understated the incident by more than half.
+Changes:
+- **`## Что произошло` replaced by `## Ончейн-картина`,** carrying maintainer-supplied figures as of 2026-08-02: three waves, **4 585 addresses, 1 367,05 BTC** (Galaxy Research breakdown), consolidated into **eight thief hoards totalling 1 159,55 BTC**, none of them spent — itemised in a table (562.02 · 398.48 · 89.62 · 45.90 · 32.45 · 30.18 · 0.61 · 0.33).
+- **Arithmetic discrepancy stated explicitly:** the eight listed balances sum to 1 159,59, four hundredths above the stated 1 159,55. That is exactly within rounding of eight two-decimal balances (8 × 0.005), and the page says so rather than leaving a reader who adds the column to suspect an error.
+- **The two totals are distinguished** instead of being conflated: 1 367,05 BTC is what left victims' wallets, 1 159,55 BTC is what sits in the known hoards; no publicly reconciled balance exists between them. No explanation for the ~207 BTC gap was invented.
+- **Dated-snapshot callout** (`> [!info] Данные на 2 августа 2026 года`) added above the figures, stating that estimates were revised several times during the incident and the thief's funds may move at any time — so the page does not have to be re-edited on every change and the reader can judge currency. First use of the `info` callout type in the vault.
+- Dollar figures dropped entirely — they age fastest and add nothing to the argument.
+- Attribution split into `## Кто разбирал` (AnchorWatch / Galaxy Research / Coinkite / Block / LLFOURN), named in prose without links, as before.
+- `выводы` section: "ценой в 594 биткоина" → "ценой более чем в тысячу биткоинов". `wiki-ru/index.md` row description no longer cites 594 BTC.
+**Provenance:** the on-chain figures and the Galaxy Research attribution were supplied directly by the maintainer; they are not in `raw/`, and no URL was fabricated for them — organisations are named in prose only, matching the page's existing convention. Same open gap as the FTX link (see 2026-08-02 link-pass entry): the Primary-Source Test has no clause for maintainer-supplied data.
+**Verification:** `--layer ru --strict-links` clean, 0 flagged rows. Rendered page shows the info callout and all three figures; no occurrence of "594" remains anywhere in `wiki-ru/` or `wiki-en/`.
+---
+
+## [2026-08-02] enhance | wiki-ru/concepts/seed-phrase.md — «12 или 24 слова»
+Changes: the section closed on "компромисс, который каждый решает сам", presenting the choice as a neutral coin flip. Replaced with the argument for why the margin matters in practice:
+- word count sets the **capacity** of the encoding, not the guarantee that it is filled with real randomness (ties back to the existing rule further down the page);
+- a real entropy source is almost always slightly below ideal — an unbalanced die, rounded edges, a limp throw — so a nominal 256 bits can land at, say, 230, while the phrase looks identical from outside;
+- 230 bits still exceeds a flawless 12-word seed's 128 bits by a factor on the order of 10³⁰, so 24 words on imperfect dice beat 12 words on perfect ones;
+- conclusion: do not economise on the effort — one-off inconvenience buys a permanent reserve.
+**Honesty caveat added:** the argument holds for imperfection, not gross bias. A die that systematically lands on one face is a different problem, and phrase length does not fix it — without this the reasoning would over-promise (entropy per roll would have to halve, to ~1.29 bits, for 99 rolls to fall to 128 bits).
+**Provenance:** the SeedSigner guide citation is unchanged and still carries the "24 words are more reliable but more work to back up" claim. The numerical illustration is derived arithmetic from figures already established on this page and on `concepts/entropy` (2.585 bits per fair roll, 128/256-bit levels, hashing adds no entropy) — presented as an example ("скажем, 230"), not as a measured value, so it does not imply anyone benchmarked biased dice.
+**Verification:** `--layer ru --strict-links` clean; rendered page shows the new text and the superscript 10³⁰.
+---

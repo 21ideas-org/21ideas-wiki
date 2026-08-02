@@ -51,7 +51,7 @@ Running a node does not require specialized hardware. The main constraint is sto
 
 The most popular beginner setup:
 - **Hardware**: Raspberry Pi 4 (4GB or 8GB RAM) + 1TB or 2TB SSD (external USB)
-- **Cost**: ~$100–150
+- **Cost**: ~\$100–150
 - **Pros**: Low power (~5W), quiet, can run 24/7, dedicated device
 - **Cons**: ARM processor is slower for initial sync; USB SSD is a potential bottleneck
 
@@ -69,7 +69,7 @@ Often the easiest path if you have spare hardware:
 Intel NUC, Beelink, or similar mini PCs:
 - Faster than Raspberry Pi
 - Still low power
-- Cost: $150–300 for a complete unit
+- Cost: \$150–300 for a complete unit
 - This is the recommended option for new dedicated node builds
 
 ## Software Options

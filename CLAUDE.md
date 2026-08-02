@@ -6,14 +6,15 @@ A bilingual (EN + RU) Bitcoin education wiki built from immutable source files i
 
 ## What Agents Must NOT Do
 
-- **Never fabricate source URLs. Only use URLs that appear verbatim in the raw/ file's url: frontmatter field.** If no URL exists in `raw/` metadata, set `sources: []`.
-- **Never fetch or browse external sources for wiki generation.** Do not open or retrieve content from any URL (including the `raw/` file's `url:`); that field is citation metadata only.
+- **Never fabricate source URLs.** Only two kinds of URL may be cited: (a) the canonical URL in the raw/ file's `url:` frontmatter field, and (b) a **primary-source URL that appears verbatim in the body of a raw/ file** and passes the primary-source test below. If neither exists, set `sources: []`.
+- **Never cite a secondary source.** News outlets, aggregators, press coverage, social media, community trackers and unaffiliated blogs are forbidden in `sources:` and in body citations — even when a raw/ file links to them. See **Primary-Source Test** below.
+- **Never fetch or browse external sources for wiki generation.** Do not open or retrieve content from any URL (including the `raw/` file's `url:`); those fields are citation metadata only. A URL is citable because it appears verbatim in `raw/`, never because you read it.
 - **Never generate or update wiki pages without following `docs/WIKI-SKILL.md`.** Any wiki page creation/update request must use that workflow (Mode A/B), including link-map checks, lint, and logging.
 - **Never invent tags** outside the allowlist below.
 - **Never write bare wikilinks** (`[[taproot]]`, `[[concepts/taproot]]`) — always use `[[en/...]]` or `[[ru/...]]` prefixes.
 - **Never use `[[wiki-ru/...]]` or `[[wiki-en/...]]` prefixes** — they are invalid in this vault.
 - **Never modify `raw/` files.**
-- **Never cite `raw/...` paths in page body text** — only canonical source URLs from the raw/ file's `url:` field are reader-facing.
+- **Never cite `raw/...` paths in page body text** — only canonical source URLs from the raw/ file's `url:` field, or approved primary-source URLs lifted verbatim from a raw/ file body, are reader-facing.
 - **Never treat `wiki-ru/` as a translation of `wiki-en/`.** Both are independent syntheses from the same sources.
 - **Never use `---` horizontal rules in the page body.** Only YAML frontmatter delimiters are permitted.
 - **Never open the page body with a `#` heading.** Quartz uses the frontmatter `title` field as the page title. Start the body directly with `##` sections.
@@ -30,7 +31,7 @@ Every wiki page requires all fields below. Use **double-quoted** strings for eve
 title: "Page title"
 category: "concepts"        # concepts | entities | books | series | history | philosophy | practice | topics
 quality: "reference"        # canonical | reference | synthesized | stub
-sources: ["https://21ideas.org/..."]  # canonical URLs from raw/ url: field only; [] if none exists; never fabricate
+sources: ["https://21ideas.org/..."]  # raw/ url: field + approved primary sources lifted verbatim from raw/ body; [] if none; never fabricate
 synthesized_date: "2026-04-XX"
 completeness: "high"        # high | medium | low
 language: "ru"              # en | ru
@@ -81,6 +82,24 @@ Every page must include **at least** `bitcoin` and `wiki`. Total: 3–8 tags. Lo
 - **Remove `## Related Terms` sections** wherever found; replace with pipe-syntax wikilinks in the closing nav section.
 - **Trust marker:** Set `quality: "synthesized"` for synthesis pages. Flag remaining gaps explicitly.
 
+### Primary-Source Test
+
+A `raw/` file's `url:` field is always citable. Any **other** URL may be cited only if it satisfies **all three** conditions:
+
+1. **It appears verbatim in the body of a `raw/` file.** Never reconstructed, never guessed, never recalled from memory. Copy it character-for-character from the raw/ file.
+2. **It is a primary source** — one of:
+   - vendor / manufacturer documentation about that vendor's own hardware or software (`coldcard.com/docs/...`, `trezor.io/security`, `help.blockstream.com/...`, `bitbox.swiss/...`);
+   - a vendor's own security advisory or engineering post about its own defect;
+   - a project source repository or license file (`github.com/<project>/...`);
+   - a protocol or standards document (BIPs, RFCs, NIST publications).
+3. **It is load-bearing for a technical claim** the page makes. Do not decorate a page with links.
+
+**Never citable, in `sources:` or in body text:** news outlets and crypto press, aggregators and content farms, social media posts, community-run trackers and dashboards, unaffiliated personal blogs, and any commentary about a vendor written by a third party. If the only support for a claim is a secondary source, the claim does not go in the wiki — flag it as a gap instead.
+
+**A vendor documenting its own product is primary; a vendor commenting on a competitor is not.** Comparative claims must be sourced to each vendor's own documentation, one link per vendor.
+
+**When a raw/ file is older than the facts it reports** (fast-moving incidents, figures still being revised), do not restate its volatile numbers as current. Prefer durable, checkable statements — mechanism, affected versions, what the vendor's own documentation says — over headline figures that will age.
+
 ---
 
 ## Directory Map
@@ -120,6 +139,9 @@ docs/
   WIKI-BACKLOG.md           ← Short-lived backlog
   link-map-en.md            ← Generated wikilink map for wiki-en/ (do not edit manually)
   link-map-ru.md            ← Generated wikilink map for wiki-ru/ (do not edit manually)
+
+.claude/skills/
+  preview/              ← Local Quartz build + preview; rendering checks lint.py cannot do
 
 tools/
   lint.py               ← Mechanical lint (wikilinks, frontmatter shape, tags); stdlib only
@@ -184,7 +206,7 @@ python3 tools/lint.py --strict              # exit 1 if any mechanical issue exi
 python3 tools/lint.py --strict-links        # exit 1 only on wrong wikilink prefix or broken target
 ```
 
-The script implements the **mechanical** checks below (wikilink prefix, broken `[[en/...]]` / `[[ru/...]]` targets, block `sources:`, standalone `---` and `#` in body, `raw/` in body, required frontmatter keys, `reviewed`, tags vs allowlist). It does **not** check orphans, `index.md` coverage, or EN/RU content parity — those remain human review. **Keep `ALLOW_TAGS` in `tools/lint.py` in sync** with the **Tags — Strict Allowlist** section below when the allowlist changes.
+The script implements the **mechanical** checks below (wikilink prefix, broken `[[en/...]]` / `[[ru/...]]` targets, block `sources:`, standalone `---` and `#` in body, `raw/` in body, unescaped `$` in body, required frontmatter keys, `reviewed`, tags vs allowlist). It does **not** check orphans, `index.md` coverage, or EN/RU content parity — those remain human review. **Keep `ALLOW_TAGS` in `tools/lint.py` in sync** with the **Tags — Strict Allowlist** section below when the allowlist changes.
 
 **Note:** `wiki-en/` is not yet fully enhanced; a full `--layer both` run will report many EN issues until that layer is brought up to the same standard as `wiki-ru/`.
 
@@ -199,6 +221,9 @@ The script implements the **mechanical** checks below (wikilink prefix, broken `
 - [ ] No tags outside the allowlist
 - [ ] All scalar frontmatter fields are double-quoted strings
 - [ ] `sources:` is an inline array (`sources: ["..."]`), not block YAML
+- [ ] No unescaped `$` in body text — Quartz enables remark-math, so a `$` opens an inline LaTeX span and the next one closes it, swallowing the text between. Currency must be written `\$77` 
+
+**Rendering checks — require a local build:** `tools/lint.py` validates structure, not output. To see how pages actually render (math spans, frontmatter titles, link resolution), build the site locally — see `.claude/skills/preview/SKILL.md`, or run `.claude/skills/preview/preview.sh serve`.
 
 **Content checks — flag for human review only:**
 - [ ] Orphan pages (no incoming wikilinks)
