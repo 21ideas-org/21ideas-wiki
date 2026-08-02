@@ -22,3 +22,6 @@ Thumbs.db
 
 # Claude/Cursor agent worktrees (ephemeral)
 .claude/worktrees/
+
+# Claude Code local machine settings
+.claude/settings.local.json
