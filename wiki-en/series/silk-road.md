@@ -21,7 +21,7 @@ Silk Road was an online marketplace that launched in January 2011. It operated o
 
 Key facts:
 - Founded by Ross Ulbricht ("Dread Pirate Roberts")
-- Revenue: ~$1.2 billion in sales before shutdown (approximately 9.5 million Bitcoin at average prices)
+- Revenue: ~\$1.2 billion in sales before shutdown (approximately 9.5 million Bitcoin at average prices)
 - Ran for ~2.5 years before FBI shutdown
 - The marketplace demonstrated that Bitcoin functioned as real money — people valued it enough to buy drugs with it
 
@@ -33,7 +33,7 @@ In 2011, Bitcoin's value was uncertain. Silk Road proved several things:
 - Censorship-resistance was a real property — no one could shut down Bitcoin payments even as the marketplace grew
 - The "criminals use Bitcoin" narrative cut both ways: criminals chose it because it *worked*
 
-Silk Road's $1+ billion in transactions was among the first real proof of Bitcoin's utility.
+Silk Road's \$1+ billion in transactions was among the first real proof of Bitcoin's utility.
 
 ## Ross Ulbricht's Story
 
@@ -51,7 +51,7 @@ Ulbricht's essay traces how Bitcoin spontaneously acquired value from zero — r
 
 Silk Road's shutdown demonstrated that you could destroy a *website* but not Bitcoin. The marketplace died; the money lived. This was one of Bitcoin's first major resilience tests.
 
-The government's seizure of ~144,000 BTC from Silk Road (worth ~$48 billion at 2021 prices) and subsequent auctions became a notable part of Bitcoin history — US Marshals auctioning seized Bitcoin to institutional buyers, who resold it at higher prices.
+The government's seizure of ~144,000 BTC from Silk Road (worth ~\$48 billion at 2021 prices) and subsequent auctions became a notable part of Bitcoin history — US Marshals auctioning seized Bitcoin to institutional buyers, who resold it at higher prices.
 
 ## Sources
 

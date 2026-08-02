@@ -46,7 +46,7 @@ Keeps private keys offline. Significantly better than software wallets for savin
 - DIY: Raspberry Pi Zero + camera + display
 - **Stateless**: no persistent storage — generates keys from seed words + camera entropy at runtime
 - Airgapped (QR codes for signing)
-- Very affordable (~$50 in parts)
+- Very affordable (~\$50 in parts)
 - Excellent privacy (no serial numbers, no manufacturer account)
 
 ### Electrum on Old Phone/Laptop
@@ -98,7 +98,7 @@ Before using any Bitcoin software, verify the developer's cryptographic signatur
 Consider:
 - **Loss** (fire, flood, hardware failure): solved by geographic distribution of backups
 - **Theft** (seed stolen): solved by passphrase (25th word) + multisig
-- **Physical coercion** ($5 wrench attack): solved by multisig with geographically distributed keys (attacker can't get all keys in one location) + small "decoy" wallet with plausible deniability
+- **Physical coercion** (\$5 wrench attack): solved by multisig with geographically distributed keys (attacker can't get all keys in one location) + small "decoy" wallet with plausible deniability
 - **Technical failure** (device breaks): solved by seed backup + multisig redundancy
 
 ## Sources

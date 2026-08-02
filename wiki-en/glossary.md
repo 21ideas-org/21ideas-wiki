@@ -310,7 +310,7 @@ The public part of a cryptographic key pair. Used to create receiving addresses 
 The pseudonymous creator of Bitcoin. Published the whitepaper October 31, 2008; launched the network January 3, 2009. Identity unknown. Holds ~1M BTC (never moved). See [[en/entities/satoshi-nakamoto]]].
 
 ### **Satoshi unit** 
-The smallest indivisible unit of bitcoin. 1 BTC = 100,000,000 satoshis. Named after Bitcoin's creator. At $100,000/BTC: 1 satoshi = $0.001.
+The smallest indivisible unit of bitcoin. 1 BTC = 100,000,000 satoshis. Named after Bitcoin's creator. At \$100,000/BTC: 1 satoshi = \$0.001.
 
 ### **Shitcoin**
 Any cryptocurrency other than Bitcoin. The 21ideas.org position: all altcoins reintroduce trusted parties, centralization, or inflation; no altcoin use case is improved by using an alternative blockchain instead of Bitcoin. See [[en/philosophy/overview]]].
